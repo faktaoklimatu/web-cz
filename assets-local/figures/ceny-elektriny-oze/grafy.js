@@ -635,7 +635,9 @@
     const noteLines = narrowNote(o.note, variant);
     // The room over the panels for a note that stands there; none for one the layout moves to the side (wide only).
     const noteH = o.note.sideNote && variant !== "narrow" ? 0 : noteLines.length * lineH + 26;
-    const cols = o.countries.length, slots = o.slots ?? cols;
+    const cols = o.countries.length;
+    // A phone has no room for the free slot: the panels share the whole width.
+    const slots = variant === "narrow" ? cols : o.slots ?? cols;
     const nameH = 26, axisH = TICK_GAP + TICK + 28;
     let noteTop = legendH + 8;
     const ticks = [0, 0.1, 0.2, 0.3];
@@ -697,8 +699,10 @@
     // below them with the arrow leaving from over it.
     const n = o.note, ng = svg.append("g"), bottom = plotTop + PLOT_H[variant] + axisH;
     if (below) noteTop = bottom + 8;
+    const noteW = d3.max(plainOf(noteLines), t => measure(t, fontSize));
     annotation(ng, ctx, {
       key: "poznamka", lines: noteLines, color: n.color, fontSize, shape: "vertical",
+      maxX: n.endAlign ? undefined : ctx.width - noteW - 2,   // not past the svg's right edge
       // `endAlign`: the note ends at the right edge of its panel instead of starting at its left edge.
       anchor: n.endAlign ? "end" : undefined,
       at: [n.atPanel != null ? panelX(n.atPanel) + (n.endAlign ? panelW : 0) : left + n.atFrac * (ctx.width - left),
@@ -750,7 +754,7 @@
     const lineH = fontSize * 1.25, topY = y(d3.max(ticks));
     const nameH = 38, captionH = Math.max(6, Math.ceil(lineH + 6 - topY));
     // Panels as wide as in a row of four, like chart 08's.
-    const { w: panelW, gap: gapX } = panelSize(ctx.width, 4, narrow);
+    const { w: panelW, gap: gapX } = panelSize(ctx.width, narrow ? 3 : 4, narrow);
     // Bars as wide as chart 04's: the padding that gives that width (step = panelW / (5 + p), width = step (1 − p)).
     const barTarget = countryBarWidth(ctx.width), pad = Math.max(0.05, (panelW - 5 * barTarget) / (panelW + barTarget));
     const x = d3.scaleBand().domain(BANDS).range([0, panelW]).padding(pad);
@@ -801,7 +805,10 @@
       // Only the ends are named; the first panel also says what they are.
       const ly = plotH + TICK_GAP + TICK + 6;
       // The units are short: in a panel this wide the two ends would otherwise run into each other.
-      const first = ["nízká", "spotřeba"].map(t => [[t, "b"]]), last = ["vysoká", "spotřeba"].map(t => [[t, "b"]]);
+      // On a phone only the first panel spells out "spotřeba"; the others would run into themselves.
+      const short = narrow && i > 0;
+      const first = (short ? ["nízká"] : ["nízká", "spotřeba"]).map(t => [[t, "b"]]);
+      const last = (short ? ["vysoká"] : ["vysoká", "spotřeba"]).map(t => [[t, "b"]]);
       const unitsL = ["do 1 000", "kWh/rok"];
       const unitsR = ["15 000+", "kWh/rok"];
       runs(p, x(BANDS[0]), ly + sub * 0.6, i === 0 ? [...first, ...unitsL.map(t => [[t]])] : first,
@@ -840,7 +847,8 @@
     const y = d3.scaleLinear().domain([0, o.yMax]).range([plotH, 0]);
     const axis = { tickValues: o.yTicks, tickFormat: v => num(v) };
     const left = fokAxisYWidth(y, axis, theme) + GRID_PAD;
-    const innerW = ctx.width - left - RIGHT;
+    // The plot ends at 0.8 of the width (on a phone it takes it all); the rest is room for the notes.
+    const innerW = narrow ? ctx.width - left - RIGHT : Math.round(ctx.width * 0.8) - left;
     const x = d3.scaleLinear().domain([0, xMax]).range([0, innerW]);
     // The caption stands over the unit, which is level with the top tick: room above if that is too near the top.
     const topY = y(d3.max(o.yTicks));
@@ -885,15 +893,25 @@
     drawDots(picked);
     fokAxisYLabel(ax, y, axis, UNIT, { inline: true }, theme);
 
+    // On a phone there is no room for notes among the dots: they stand under the chart, one after another, without arrows.
+    if (narrow) {
+      let ny = captionY + o.xCaption.length * lineH + 22;
+      o.notes.forEach(n => {
+        runs(g, -left, ny, n.lines, theme.colors.grey, fontSize);
+        ny += n.lines.length * lineH + 8;
+      });
+      return plotTop + ny - lineH / 2;
+    }
+
     o.notes.forEach(n => {
-      const lines = narrow && n.narrow ? n.narrow : n.lines, W = d3.max(plainOf(lines), t => measure(t, fontSize));
-      const end = narrow && n.endAlign;
+      const lines = n.lines, W = d3.max(plainOf(lines), t => measure(t, fontSize));
+      const end = false;
       annotation(g, ctx, {
         key: n.key, lines, color: theme.colors.grey, fontSize, shape: n.shape,
         anchor: end ? "end" : undefined,
-        // A note starts where its fraction says, but (maxX) never so far right that it runs off the plot.
+        // A note starts where its fraction says, but (maxX) never so far right that it runs off the chart.
         at: [end ? innerW + GRID_PAD : n.at[0] * innerW, y(n.at[1])],
-        maxX: end ? undefined : innerW + GRID_PAD - W,
+        maxX: end ? undefined : ctx.width - left - W - 2,   // not past the svg's right edge
         target: n.target && [n.target[0] * innerW, y(n.target[1])],
         from: n.target ? [(end ? -W : 0) - 10, 1.5 * lineH] : undefined,
       });

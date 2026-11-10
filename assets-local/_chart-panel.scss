@@ -7,11 +7,6 @@
     font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
     margin: 1.5rem 0 2rem;
 
-    // A panel at 0.8 of the text column, from the tablet width up (a phone gets all of it).
-    &.w-80 {
-        @media (min-width: 768px) { width: 80%; }
-    }
-
     .d3-title {
         font-size: 21px;
         font-weight: 700;

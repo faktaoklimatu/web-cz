@@ -146,7 +146,6 @@ Vztah mezi první složkou ceny a cenou zemního plynu v zemích EU v průběhu 
 
 {% include includes-local/chart-panel.html
     id="graf-scatter-plyn"
-    class="w-80"
     title="Vztah mezi silovou složkou ceny a cenou zemního plynu v zemích EU"
     alt="Bodový graf s regresními čarami ukazující vztah mezi průměrnou cenou zemního plynu a cenou elektřiny v EU. Ve většině zemí ceny elektřiny rostou spolu s cenou plynu, přičemž Řecko, Irsko a Itálie vykazují silnou závislost a Finsko naopak slabší. Graf zdůrazňuje rozdílnou citlivost jednotlivých států na vývoj cen plynu."
     source='<a href="https://ec.europa.eu/eurostat/databrowser/product/view/nrg_pc_204_c">Eurostat</a>, výpočty Fakta o klimatu'
@@ -156,7 +155,6 @@ Příkladem složitější vazby může být vztah mezi výstavbou fotovoltaick�
 
 {% include includes-local/chart-panel.html
     id="graf-scatter-site"
-    class="w-80"
     title="Vztah mezi síťovou složkou ceny a výstavbou fotovoltaických a větrných elektráren v zemích EU"
     alt="Bodový graf ukazující vztah mezi instalovaným výkonem solárních a větrných elektráren a síťovou složkou ceny elektřiny v zemích EU. V Belgii náklady na sítě klesaly i při postupné výstavbě zdrojů, zatímco v Nizozemsku rychlý rozvoj obnovitelných zdrojů vedl k růstu těchto nákladů. Celkově graf ilustruje rozdílný dopad rozšiřování obnovitelných zdrojů na ceny sítí v jednotlivých zemích."
     source='<a href="https://ec.europa.eu/eurostat/databrowser/product/view/nrg_pc_204_c">Eurostat</a>, <a href="https://ember-energy.org/">Ember</a>, výpočty Fakta o klimatu'
