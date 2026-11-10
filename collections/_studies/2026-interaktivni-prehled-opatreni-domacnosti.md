@@ -254,6 +254,59 @@ include_in_search: true
     width: 100%;
   }
 }
+.mobile-note, .controls-toggle, .controls-done { display: none; }
+@media (max-width: 767.98px) {
+  .mobile-note { display: block; font-size: 0.9rem; color: #515b66; margin-bottom: 0.5rem; }
+  /* .wide-figure-mobile is the scroller; a second one inside would nest */
+  .measure-chart { overflow-x: visible; }
+  /* no detail card on mobile, so no "more info" icon */
+  .measure-chart .material-symbols-outlined { display: none; }
+  /* the controls take a third of a phone screen — not sticky; a bottom button opens them as a sheet */
+  #secondary-navbar { position: static; }
+  #secondary-navbar.is-sheet {
+    position: fixed;
+    top: auto !important;   /* navbar.js sets an inline top */
+    bottom: 0; left: 0; right: 0;
+    z-index: 901;
+    margin: 0;
+    padding: 18px 0 calc(16px + env(safe-area-inset-bottom));
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -6px 24px rgba(0,0,0,0.18);
+  }
+  #secondary-navbar.is-sheet .controls-done {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #515b66;
+    color: #fff;
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+  .controls-toggle {
+    position: fixed;
+    left: 15px; right: 15px;
+    bottom: calc(15px + env(safe-area-inset-bottom));
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 10px;
+    background: #515b66;
+    color: #fff;
+    text-align: left;
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  .controls-toggle[hidden] { display: none; }
+  .controls-toggle-action { font-size: 0.875rem; font-weight: 700; }
+  .controls-toggle-summary { font-size: 0.75rem; opacity: 0.85; }
+}
 
 .measure-chart svg { display: block; }
 
@@ -512,8 +565,15 @@ include_in_search: true
       </div>
     </div>
 
+    <button type="button" class="controls-done">Hotovo</button>
+
   </div>
 </div>
+<div id="controls-spacer"></div>
+<button type="button" id="controls-toggle" class="controls-toggle" hidden>
+  <span class="controls-toggle-action">Uprav parametry</span>
+  <span class="controls-toggle-summary"></span>
+</button>
 
 <div id="row-detail-backdrop"></div>
 <div id="row-detail-bar">
@@ -522,6 +582,7 @@ include_in_search: true
 
 <div class="section pt-3 pb-2">
   <div class="container">
+    <p class="mobile-note">Přehled se nejlépe prohlíží na počítači.</p>
     <div class="wide-figure-mobile">
       <div id="summary-chart" class="measure-chart"></div>
     </div>
