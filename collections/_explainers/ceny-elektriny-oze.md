@@ -3,6 +3,7 @@ layout:      explainer
 title:       "Jak rozvoj solárních a větrných elektráren ovlivňuje ceny elektřiny?"
 slug:        "ceny-elektriny-oze"
 published:   2025-10-02
+updated:     2026-11-11
 authors:
   - ids: ["matej-grabovsky", "jan-krcal"]
   - ids: ["marcel-otruba", "matej-grabovsky"]
