@@ -1042,8 +1042,8 @@
         lines: [[["Velkoobchodní ceny se"]], [["do "], ["cen pro domácnosti", "c", SERIES[1].color]], [["promítají rychle"]]],
         atPanel: 2, fromFrac: 0.5, sideNote: true },
       fixovane: { country: "FRA", year: 2024, key: "NRG_SUP", color: theme.colors.grey,
-        lines: [[["V zemích s převahou"]], [["dlouhodobě fixovaných"]], [["kontraktů nastupuje reakce"]],
-          [["postupně a se zpožděním", "b"]]],
+        lines: [[["V zemích s převahou"]], [["dlouhodobě fixovaných"]], [["kontraktů nastupuje"]],
+          [["reakce "], ["postupně a", "b"]], [["se zpožděním", "b"]]],
         atPanel: 3, fromFrac: 0.1, sideNote: true },
     };
     const multiples = (id, countries, note, extra) => mount(id, (svg, ctx) =>
