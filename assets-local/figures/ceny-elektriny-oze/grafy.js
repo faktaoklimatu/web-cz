@@ -702,12 +702,9 @@
     const noteW = d3.max(plainOf(noteLines), t => measure(t, fontSize));
     annotation(ng, ctx, {
       key: "poznamka", lines: noteLines, color: n.color, fontSize, shape: "vertical",
-      maxX: n.endAlign ? undefined : ctx.width - noteW - 2,   // not past the svg's right edge
-      // `endAlign`: the note ends at the right edge of its panel instead of starting at its left edge.
-      anchor: n.endAlign ? "end" : undefined,
-      at: [n.atPanel != null ? panelX(n.atPanel) + (n.endAlign ? panelW : 0) : left + n.atFrac * (ctx.width - left),
-        noteTop + fontSize * 0.5], target,
-      from: [(n.endAlign ? n.fromFrac - 1 : n.fromFrac) * d3.max(plainOf(noteLines), t => measure(t, fontSize)),
+      maxX: ctx.width - noteW - 2,   // not past the svg's right edge
+      at: [n.atPanel != null ? panelX(n.atPanel) : left + n.atFrac * (ctx.width - left), noteTop + fontSize * 0.5], target,
+      from: [n.fromFrac * noteW,
         below ? -fontSize * 0.9 : (noteLines.length - 1) * lineH + fontSize * 0.9],
     });
 
@@ -835,8 +832,7 @@
   // its smallest x to its largest). A few countries are picked out in colour, with a note.
   // o: { points: [{ c, year, x, y }], highlight: { code: colour }, yMax, yTicks, xTicks, xDecimals,
   //      yCaption: [lines], xCaption: [lines of runs], tipX, tipY, notes: [...] }
-  // A note: { key, lines, narrow? (lines), at: [fx, y] (fraction of the plot's width, data y),
-  //           endAlign? (on phones: ends at the right edge), target?: [fx, y], from?, shape? }
+  // A note: { key, lines, at: [fx, y] (fraction of the plot's width, data y), target?: [fx, y], shape? }
   const LINE_GREY = "#c5a7c9", DOT_GREY = "#75808e";
   const xTicksCentered = a => { xTicks(a); a.selectAll(".tick text").attr("x", 0); };
 
@@ -905,15 +901,13 @@
 
     o.notes.forEach(n => {
       const lines = n.lines, W = d3.max(plainOf(lines), t => measure(t, fontSize));
-      const end = false;
       annotation(g, ctx, {
         key: n.key, lines, color: theme.colors.grey, fontSize, shape: n.shape,
-        anchor: end ? "end" : undefined,
         // A note starts where its fraction says, but (maxX) never so far right that it runs off the chart.
-        at: [end ? innerW + GRID_PAD : n.at[0] * innerW, y(n.at[1])],
-        maxX: end ? undefined : ctx.width - left - W - 2,   // not past the svg's right edge
+        at: [n.at[0] * innerW, y(n.at[1])],
+        maxX: ctx.width - left - W - 2,
         target: n.target && [n.target[0] * innerW, y(n.target[1])],
-        from: n.target ? [(end ? -W : 0) - 10, 1.5 * lineH] : undefined,
+        from: n.target ? [-10, 1.5 * lineH] : undefined,
       });
     });
     return plotTop + captionY + o.xCaption.length * lineH + 6;
@@ -1074,13 +1068,11 @@
       notes: [
         { key: "recko", at: [0.17, 0.34],
           lines: [[["Ceny v "], ["Řecku", "b", DARKRED], [", "], ["Irsku", "b", RED], [" a "], ["Itálii", "b", ORANGE], [" jsou silně"]],
-            [["provázané s cenami zemního plynu"]]],
-          narrow: [[["Ceny v "], ["Řecku", "b", DARKRED], [", "], ["Irsku", "b", RED]], [["a "], ["Itálii", "b", ORANGE], [" jsou silně provázané"]],
-            [["s cenami zemního plynu"]]] },
-        { key: "rostla", at: [0.71, 0.3], target: [0.64, 0.238], shape: "elbow", endAlign: true,
+            [["provázané s cenami zemního plynu"]]] },
+        { key: "rostla", at: [0.71, 0.3], target: [0.64, 0.238], shape: "elbow",
           lines: [[["Cena elektřiny téměř "], ["ve všech", GREY_BOLD]], [["státech ", GREY_BOLD], ["rostla", "b", LILAC], [" s cenou zemního"]],
             [["plynu, jen různým tempem"]]] },
-        { key: "finsko", at: [0.81, 0.067], endAlign: true,
+        { key: "finsko", at: [0.81, 0.067],
           lines: [[["Ceny ve "], ["Finsku", "b", PURPLE], [" jsou na"]], [["zemní plyn méně citlivé"]]] },
       ],
     }));
@@ -1099,9 +1091,8 @@
       tipX: "Výkon FVE a větru (kW na obyvatele)", tipY: "Náklady na sítě",
       notes: [
         { key: "belgie", at: [0.085, 0.8 * gridTop],
-          lines: [[["V "], ["Belgii", "b", TEAL], [" složka nákladů na sítě"]], [["klesala", "b"], [" navzdory postupné výstavbě zdrojů"]]],
-          narrow: [[["V "], ["Belgii", "b", TEAL], [" složka nákladů na sítě"]], [["klesala", "b"], [" navzdory postupné"]], [["výstavbě zdrojů"]]] },
-        { key: "nizozemsko", at: [0.65, 0.93 * gridTop], endAlign: true,
+          lines: [[["V "], ["Belgii", "b", TEAL], [" složka nákladů na sítě"]], [["klesala", "b"], [" navzdory postupné výstavbě zdrojů"]]] },
+        { key: "nizozemsko", at: [0.65, 0.93 * gridTop],
           lines: [[["V "], ["Nizozemsku", "b", RED], [" spolu s velmi"]], [["rychlým rozvojem nových"]],
             [["zdrojů náklady na sítě "], ["rostly", "b"]]] },
       ],
