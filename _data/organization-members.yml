@@ -68,6 +68,14 @@
     email: "jakub.komarek@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/jakub-kom%C3%A1rek/"
 
+  - id: "marketa-straka"
+    name: "Markéta Straka"
+    position: "Analytička"
+    summary: "Zajímá se o to, jak by mohla vypadat dekarbonizace Česka. Dříve pracovala na Ministerstvu financí, kde řešila energetickou účinnost budov."
+    img: "marketa-straka.jpg"
+    email: "marketa.straka@faktaoklimatu.cz"
+    linkedin: "www.linkedin.com/in/markéta-straka-189553104"
+
   - id: "marcel-otruba"
     name: "Marcel Otruba"
     position: "Designer"
@@ -112,12 +120,7 @@
     email: "tomas.protivinsky@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/tomas-protivinsky-49599040"
     twitter: "https://twitter.com/protivinsky"
-
-  - id: "marketa-straka"
-    name: "Markéta Straka"
-    position: "Analytička"
-    summary: "Zajímá se o to, jak by mohla vypadat dekarbonizace Česka. Dříve pracovala na MF, kde řešila energetickou účinnost budov."
-    img: "marketa-straka.jpg"
+    
 
 - title: "Faktům o klimatu dále pomáhají a pomáhali"
   lead: |
