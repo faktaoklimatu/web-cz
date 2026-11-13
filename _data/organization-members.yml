@@ -113,6 +113,12 @@
     linkedin: "https://www.linkedin.com/in/tomas-protivinsky-49599040"
     twitter: "https://twitter.com/protivinsky"
 
+  - id: "marketa-straka"
+    name: "Markéta Straka"
+    position: "Analytička"
+    summary: "Zajímá se o to, jak by mohla vypadat dekarbonizace Česka. Dříve pracovala na MF, kde řešila energetickou účinnost budov."
+    img: "marketa-straka.jpg"
+
 - title: "Faktům o klimatu dále pomáhají a pomáhali"
   lead: |
     Další lidé přispívají nebo přispěli konzultačně, rešeršemi, psaním textů nebo programováním webu.
