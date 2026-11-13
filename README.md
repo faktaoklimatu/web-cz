@@ -18,6 +18,7 @@ Jsme [tým profesionálů zabývajících se různými obory](CONTRIBUTORS.md) �
 * Nadpisy ke _commitům_ pište v češtině s diakritikou, velkým prvním písmenem a bez tečky na konci. Snažte se udržet je krátké (ideálně do 50 znaků).
 * Detailní popis _commitů_ může mít dle potřeby klidně i několik řádků. Používejte odrážky nebo celé věty (s tečkou na konci).
 * Chcete-li po přijetí commitu do produkce automaticky zavřít odpovídající _issue_ na GitHubu, přidejte větu _Resolves #257._ (257 nahraďte za dané číslo issue). Viz také [dokumentace](https://docs.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue).
+* Úvodní (cover) fotka explaineru je soubor `<slug>.jpg` vedle jeho `.md` souboru. Má mít rozměry **1920×960 px**, aby se do repozitáře nenahrávaly zbytečně velké obrázky. Větší fotku před nahráním zmenšete a oříznete.
 
 ## Lokální vývoj pro obsahové editory
 
