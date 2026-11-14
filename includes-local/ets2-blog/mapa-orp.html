@@ -1,0 +1,38 @@
+{%- comment -%}
+Mapa SO ORP. Parametr vrstvy: "uhli,plyn" (rodinné domy podle paliva, SLDB 2021) nebo "mf"
+(ohrožení energetickou chudobou podle MF). Data: _data/ets2/orp_mapa.json (generuje R/10_mapa_orp.R
+v dílně ETS2, ručně neupravovat). Kreslí assets-local/js/ets2-mapa.js (potřebuje d3 v extra-scripts).
+{%- endcomment -%}
+{%- assign vrstvy = include.vrstvy | default: "mf" | split: "," -%}
+<figure class="ets2-figure ets2-mapa" data-vrstvy="{{ vrstvy | join: ',' }}">
+  {%- if vrstvy contains "mf" %}
+  <h3 class="js-toc-ignore">Energetickou chudobou jsou nejvíc ohrožené periferie s rodinnými domy</h3>
+  {%- else %}
+  <h3 class="js-toc-ignore">[pracovní nadpis] Kde se v rodinných domech topí uhlím a kde plynem</h3>
+  {%- endif %}
+  {%- if vrstvy.size > 1 %}
+  <div class="mapa-vrstvy" role="group" aria-label="Co mapa ukazuje">
+    {%- if vrstvy contains "uhli" %}<button type="button" data-vrstva="uhli" aria-pressed="false">Rodinné domy na uhlí</button>{% endif %}
+    {%- if vrstvy contains "plyn" %}<button type="button" data-vrstva="plyn" aria-pressed="false">Rodinné domy na plyn</button>{% endif %}
+  </div>
+  {%- endif %}
+  <p class="ets2-sub" data-pro="mf" hidden>SO ORP podle podílu předpokládaných výdajů na vytápění na disponibilních příjmech domácností, rozdělené jako v reportu MF do kvartilů. Najeďte na obvod nebo ho vyberte ze seznamu.</p>
+  <p class="ets2-sub" data-pro="uhli" hidden>Podíl obydlených bytů v rodinných domech vytápěných uhlím, SO ORP (2021). Najeďte na obvod nebo ho vyberte ze seznamu.</p>
+  <p class="ets2-sub" data-pro="plyn" hidden>Podíl obydlených bytů v rodinných domech vytápěných plynem, SO ORP (2021). Najeďte na obvod nebo ho vyberte ze seznamu.</p>
+  <div class="mapctl">
+    <label>SO ORP <select class="orp-select"><option value="">vyberte…</option></select></label>
+  </div>
+  {%- if site.data.ets2.orp_mapa %}
+  <script type="application/json" class="orp-data">{{ site.data.ets2.orp_mapa | jsonify }}</script>
+  {%- if site.data.ets2.kraje_mapa %}
+  <script type="application/json" class="kraje-data">{{ site.data.ets2.kraje_mapa | jsonify }}</script>
+  {%- endif %}
+  <div class="mapwrap" role="img" aria-label="Mapa SO ORP"></div>
+  {%- else %}
+  <p class="mapa-chybi">Data mapy zatím chybí: spusťte v dílně ETS2 skript <code>R/10_mapa_orp.R</code>, který uloží <code>_data/ets2/orp_mapa.json</code>.</p>
+  {%- endif %}
+  <div class="mapa-legenda"></div>
+  <div class="mapa-info" aria-live="polite"></div>
+  <div class="ets2-src" data-pro="mf" hidden>Data: <a href="https://mpo.gov.cz/assets/cz/energetika/uspory-energie/aktuality/2026/11/Tematicky-report_Mikroregionalni_ukazatel_energeticke_chudoby_MF.pdf">Ministerstvo financí, Mikroregionální ukazatel energetické chudoby</a> (2026). Hranice SO ORP: <a href="https://vdp.cuzk.cz/">ČÚZK</a> přes balík <a href="https://github.com/jlacko/RCzechia">RCzechia</a>, zjednodušené. Ukazatel popisuje průměr území, ne jednotlivé domácnosti.</div>
+  <div class="ets2-src" data-pro="uhli plyn" hidden>Data: <a href="https://vdb.czso.cz">ČSÚ, Sčítání lidu, domů a bytů 2021</a>, obydlené byty v rodinných domech podle paliva (ústřední i lokální vytápění). Hranice SO ORP: <a href="https://vdp.cuzk.cz/">ČÚZK</a> přes balík <a href="https://github.com/jlacko/RCzechia">RCzechia</a>.</div>
+</figure>

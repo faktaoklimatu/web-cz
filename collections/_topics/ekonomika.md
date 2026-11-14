@@ -124,4 +124,16 @@ subtopics:
   - taxonomie-eu
   - 20-financni-sektor
   - klimaticke-finance
+
+- id:          "serie-ets2-domacnosti"
+  series:      True
+  title:       "Sociální klimatická politika"
+  title-short: "Sociální klimatická politika"
+  series-short-lead: |
+    Tento text je součástí série o sociální klimatické politice: koho by zavedení ETS2 zasáhlo a jak mu pomoci. [pracovní znění]
+  lead: |
+    [doplnit, pracovní návrh:] Zavedení ETS2 by zdražilo uhlí, plyn, benzín a naftu. První text ukazuje, které domácnosti by to zasáhlo nejvíc, druhý, jak jim lze pomoci a co z toho chystá Česko.
+  content:
+  - ets2-zranitelne-domacnosti
+  - ets2-socialni-klimaticka-politika
 ---
