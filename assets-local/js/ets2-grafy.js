@@ -90,6 +90,44 @@
                 }
             });
         },
+        // Bodový graf: náklad (x) proti vrácené části zdražení (y), jeden bod = jedno pravidlo
+        'kompenzace-bod': function (sel, data) {
+            var W = 600, H = 360, m = { t: 16, r: 20, b: 46, l: 52 };
+            var CIL = ['pal_vlastni_teplo', 'pal_vlastni_teplo_vse'];
+            // popisky: hlouček cílených pravidel má popisky pod sebou s vodicí čarou (absolutní poloha v datech x, y);
+            // ostatní body mají popisek vedle sebe [dx, dy, zarovnání]
+            var ABS = { pal_vlastni_teplo: [16, 48], pal_vlastni_teplo_vse: [16, 56] };
+            var POS = { plosne: [-12, 4, 'end'] };
+            var xmax = Math.ceil(d3.max(data, function (d) { return +d.naklad_mld; }) / 10) * 10;
+            var x = d3.scaleLinear().domain([0, xmax]).range([m.l, W - m.r]);
+            var y = d3.scaleLinear().domain([0, 100]).range([H - m.b, m.t]);
+            var svg = d3.select(sel).append('svg').attr('viewBox', '0 0 ' + W + ' ' + H).attr('width', '100%').style('display', 'block')
+                .style('font-family', FoKTheme.font).style('font-size', '12px');
+            // cílová oblast: levně a hodně vráceno
+            svg.append('rect').attr('x', x(0)).attr('y', y(100)).attr('width', x(15) - x(0)).attr('height', y(60) - y(100)).attr('fill', '#e6eef8').attr('rx', 4);
+            svg.append('text').attr('x', x(0) + 6).attr('y', y(100) + 14).attr('fill', '#0050ae').attr('font-size', 11).text('levně a hodně vráceno');
+            svg.append('g').attr('transform', 'translate(0,' + y(0) + ')').call(d3.axisBottom(x).ticks(5).tickFormat(function (v) { return cz(v); }))
+                .call(function (g) { g.selectAll('text').attr('fill', FoKTheme.colors.grey); g.selectAll('line,path').attr('stroke', '#bbb'); });
+            svg.append('g').attr('transform', 'translate(' + m.l + ',0)').call(d3.axisLeft(y).ticks(5).tickFormat(function (v) { return v + ' %'; }))
+                .call(function (g) { g.selectAll('text').attr('fill', FoKTheme.colors.grey); g.selectAll('line,path').attr('stroke', '#bbb'); });
+            svg.append('text').attr('x', W - m.r).attr('y', H - 8).attr('text-anchor', 'end').attr('fill', FoKTheme.colors.grey).text('Stálo by ročně, mld. Kč');
+            svg.append('text').attr('transform', 'rotate(-90)').attr('x', -m.t).attr('y', 14).attr('text-anchor', 'end').attr('fill', FoKTheme.colors.grey).text('Zranitelní dostanou zpět, % zdražení');
+            var b = svg.selectAll('g.bod').data(data).join('g').attr('class', 'bod')
+                .attr('transform', function (d) { return 'translate(' + x(+d.naklad_mld) + ',' + y(+d.vyrovnano_pct) + ')'; });
+            b.append('circle').attr('r', 7).attr('fill', function (d) { return CIL.indexOf(d.pravidlo) >= 0 ? '#0050ae' : '#8a96a3'; }).attr('stroke', '#fff').attr('stroke-width', 1.5)
+                .append('title').text(function (d) { return d.popisek + ': ' + cz(d.naklad_mld, 1) + ' mld. Kč ročně, vrátí ' + d.vyrovnano_pct + ' % zdražení, nedostane nic ' + d.nedostalo_pct + ' % zranitelných'; });
+            var cil = function (d) { return CIL.indexOf(d.pravidlo) >= 0; };
+            b.filter(function (d) { return ABS[d.pravidlo]; }).insert('line', 'circle')
+                .attr('x1', 0).attr('y1', 0).attr('stroke', '#0050ae').attr('stroke-width', 1)
+                .attr('x2', function (d) { return x(ABS[d.pravidlo][0]) - x(+d.naklad_mld) - 3; })
+                .attr('y2', function (d) { return y(ABS[d.pravidlo][1]) - y(+d.vyrovnano_pct) - 4; });
+            b.append('text')
+                .attr('x', function (d) { return ABS[d.pravidlo] ? x(ABS[d.pravidlo][0]) - x(+d.naklad_mld) : (POS[d.pravidlo] || [10])[0]; })
+                .attr('y', function (d) { return ABS[d.pravidlo] ? y(ABS[d.pravidlo][1]) - y(+d.vyrovnano_pct) : (POS[d.pravidlo] || [0, 4])[1]; })
+                .attr('text-anchor', function (d) { return (POS[d.pravidlo] || [0, 0, 'start'])[2]; })
+                .attr('fill', FoKTheme.colors.text).attr('font-weight', function (d) { return cil(d) ? 700 : 400; })
+                .text(function (d) { return d.popisek; });
+        },
         // Pravidla přímé platby: náklad a vyrovnaný podíl zdražení
         'kompenzace-naklad': function (sel, data) {
             fokBarChartStacked(sel, data.map(function (d) { return { label: d.popisek, v: +d.naklad_mld, raw: d }; }), {

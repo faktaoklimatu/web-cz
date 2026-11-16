@@ -78,7 +78,7 @@ Aby platba došla ke správným domácnostem, musí stát u každé znát tři v
 
 | Co je potřeba | Co stát má | Proč to nestačí |
 |---|---|---|
-| Příjem domácnosti | Příjmy jednotlivců u finanční správy, ČSSZ a úřadu práce | Neví, kdo s kým žije. Chybí lidé bez daňového přiznání a bez dávek. |
+| Příjem domácnosti | Příjmy jednotlivců u finanční správy, ČSSZ a Úřadu práce | Neví, kdo s kým žije. Chybí lidé bez daňového přiznání a bez dávek. |
 | Kde domácnost bydlí | Trvalý pobyt v registru obyvatel, typ domu v RÚIAN | Trvalý pobyt je k adrese domu, ne bytu, a často neodpovídá skutečnosti. Katastr zná vlastníka, ne obyvatele. |
 | Čím domácnost topí | Údaj o vytápění v RÚIAN, doklady o kontrole kotlů | Údaj v RÚIAN je špatně vyplněný. Kontroly kotlů nejsou centrálně evidované a nerozlišují uhlí od dřeva. |
 | Kam poslat peníze | Účty příjemců důchodů a dávek | Centrální evidence bankovních účtů neexistuje. |
@@ -88,7 +88,7 @@ Aby platba došla ke správným domácnostem, musí stát u každé znát tři v
 
 - **Stát nemá pojem domácnosti.** Registr obyvatel eviduje jednotlivce a jejich adresu, ale ne, kdo s kým hospodaří. Adresa je místo domu, byty v domě registr nerozlišuje ([zákon o základních registrech](https://www.zakonyprolidi.cz/cs/2009-111)).
 - **Každý úřad zná člověka pod jiným identifikátorem.** Základní registry používají pro každou agendu jiný identifikátor (AIFO), propojit údaje dvou úřadů jde jen přes převodník identifikátorů a jen tam, kde to výslovně dovoluje zákon. Sdílení přes propojený datový fond spravuje [Digitální a informační agentura](https://dia.gov.cz).
-- **Daňová data chrání mlčenlivost.** Finanční správa může údaje z daňových přiznání předat jinému úřadu jen tam, kde to zákon výslovně umožňuje ([daňový řád, § 52 a násl.](https://www.zakonyprolidi.cz/cs/2009-280)). Podobně jsou chráněná data ČSSZ a úřadu práce.
+- **Daňová data chrání mlčenlivost.** Finanční správa může údaje z daňových přiznání předat jinému úřadu jen tam, kde to zákon výslovně umožňuje ([daňový řád, § 52 a násl.](https://www.zakonyprolidi.cz/cs/2009-280)). Podobně jsou chráněná data ČSSZ a Úřadu práce.
 - **Úřady nevědí, čím kdo topí.** Takový údaj v žádném použitelném státním registru není.
 
 Když údaj chybí, musí si domácnost zažádat sama. Superdávku, o kterou se žádá, [čerpá jen čtvrtina až polovina oprávněných](https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf). Ze zranitelných domácností podle našeho výpočtu pobírá dávky na bydlení jen 15 %, v rodinných domech na uhlí jen 2 % ([EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions)).
@@ -105,10 +105,10 @@ Výhodou návrhu je jednoduchost: využívá existující systémy a nevyžaduje
 
 | | Návrh PAQ a CVF | Cílená varianta |
 |---|---|---|
-| Náklad ročně | 13,0 mld. Kč | 6,7–8,2 mld. Kč |
-| Podíl peněz, který by šel zranitelným | 7 % | 28–34 % |
-| Zranitelných by nedostalo nic | 7 % | 6–15 % |
-| Část zdražení, kterou by zranitelní dostali zpět | 29 % | 70–71 % |
+| Náklad ročně | 13,0 mld. Kč | 6,7 mld. Kč |
+| Podíl peněz, který by šel zranitelným | 7 % | 34 % |
+| Zranitelných by nedostalo nic | 7 % | 16 % |
+| Část zdražení, kterou by zranitelní dostali zpět | 29 % | 70 % |
 | z toho rodinné domy na tuhá paliva | 14 % | 79 % |
 {: .table .ets2-tabulka}
 
@@ -156,31 +156,49 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 
 **Nárok by měly jen nízko- a nižší středopříjmové domácnosti.** Plnou platbu by dostaly domácnosti do horní hranice 3. decilu ekvivalizovaného příjmu, pak by plynule klesala k nule na hranici 5. decilu (mediánu). Jednotlivec s čistým příjmem do zhruba 31 tis. Kč měsíčně by dostal celou platbu, od 39 tis. Kč nic. U páru jsou hranice 44 a 55 tis. Kč, u čtyřčlenné rodiny 62 a 78 tis. Kč ([EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions), výpočet Fakta o klimatu).
 
-**Navrhujeme dva kanály podle toho, kde automatika funguje:**
+**Výše platby** by se lišila podle paliva a typu bydlení:
 
-**1. Domácnosti s důchodcem: automaticky přes důchod**
+| | plyn | tuhá paliva | teplo ze zdroje v ETS2 |
+|---|---|---|---|
+| rodinný dům | 750 Kč | 1 450 Kč | – |
+| byt | 570 Kč | – | 500 Kč |
+{: .table .ets2-tabulka}
 
-- Tři čtvrtiny zranitelných domácností v rodinných domech mají v domácnosti důchodce. Právě pro starší lidi je žádost největší bariéra.
+Částky jsou měsíční. Kdyby o platbu požádali všichni oprávnění, stála by 6,7 mld. Kč ročně, dostalo by ji 85 % zranitelných domácností a vrátila by jim 70 % zdražení. Zbylých 15 % jsou domácnosti s jiným nebo kombinovaným vytápěním ([EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions), výpočet Fakta o klimatu). Ze Sociálního klimatického fondu by šlo pokrýt jen 2–2,5 mld. Kč, zbytek by musel jít z národních výnosů z dražeb ETS2.
+
+**Otevřená otázka: byty na teple z velkých tepláren.** Velké teplárny jsou v [systému povolenek od roku 2005](https://climate.ec.europa.eu/eu-action/carbon-markets/about-eu-ets_en), ETS2 by jejich teplo nezdražilo. Nájemník ale obvykle neví, odkud teplo do domu jde. Nabízí se dvě varianty:
+
+- **Platit jen bytům na teple ze zdroje v ETS2.** Přesnější a levnější: peníze jdou jen tam, kde by ETS2 topení zdražilo. Zdroj tepla by potvrdil dodavatel tepla.
+- **Platit všem bytům na dálkovém teple stejně.** Jednodušší na vysvětlení i vyřízení, ale [stálo by to asi 10,8 místo 6,7 mld. Kč ročně](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions) a zranitelným by to nevrátilo víc. Peníze navíc by šly domácnostem, kterým by ETS2 topení nezdražilo.
+
+**Navrhujeme tři kanály podle toho, co už stát o domácnosti ví:**
+
+**1. Příjemci dávek na bydlení: vyšší energetický paušál**
+
+- Příjem i bydlení mají ověřené a superdávka už počítá s energetickým paušálem i se zvláštní částkou na tuhá paliva. Platbu by stačilo přidat k paušálu, [vláda ho může zvýšit nařízením](https://www.epravo.cz/_dataPublic/sbirky/2025/Sb_2025_151_PZZ.pdf).
+- **Dosah je ale malý:** dávky na bydlení pobírá jen 15 % zranitelných domácností.
+
+**2. Domácnosti s důchodcem: jednou doložit palivo, pak automaticky s důchodem**
+
+- Tři čtvrtiny zranitelných domácností v rodinných domech mají v domácnosti důchodce. Právě pro starší lidi je opakovaná žádost největší bariéra.
 - ČSSZ by vyplácela dočasný příplatek k důchodu, oddělený od valorizace. Jen tak by byl dočasný a šel by platit ze Sociálního klimatického fondu.
 - Podmínkou by byl příjem domácnosti pod hranicí. To vyžaduje spojit důchod s příjmy ostatních osob na stejné adrese, tedy výjimku z ochrany dat popsané výše.
+- **ČSSZ neví, čím kdo topí.** Typ domu by šel zjistit z registru adres, palivo ne. Důchodce by proto jednou doložil palivo stejným dokladem jako ostatní žadatelé a dál by platba chodila s důchodem sama. Bez dokladu by stát musel platit všem stejně: domácnost na tuhá paliva by dostala méně, než by ji ETS2 stálo, a domácnost s tepelným čerpadlem peníze, které nepotřebuje.
 
-**2. Ostatní domácnosti: jednoduchá žádost s velkou kampaní**
+**3. Ostatní domácnosti: jednoduchá žádost s velkou kampaní**
 
-- **Příjem by si ověřil úřad sám** z dat finanční správy, ČSSZ a úřadu práce se souhlasem žadatele. Domácnost by nic nedokládala.
+- **Příjem by si ověřil úřad sám** z dat finanční správy, ČSSZ a Úřadu práce se souhlasem žadatele. Domácnost by nic nedokládala.
 - **Domácnost by doložila jen palivo:** vyúčtování plynu (je na něm odběrné místo a spotřeba, takže data od distributorů nejsou potřeba), doklad o kontrole kotle na tuhá paliva, nebo potvrzení od SVJ, družstva či dodavatele tepla. Doklad by musel být z doby před rozhodným dnem, aby se nezopakovalo polské přepisování na uhlí.
 - **Kampaň a pomoc obcí:** pro lidi, kteří online žádost sami nezvládnou, by pomohli sociální pracovníci obcí, kontaktní místa a energetické poradny.
 - **Riziko:** i s kampaní si část oprávněných nezažádá. Ve Francii po přechodu na žádost kleslo čerpání z 84 % na odhadem 3–12 % ([Hellowatt](https://www.hellowatt.fr/blog/fin-versement-automatique-cheque-energie/)).
 
-**Výše platby** by se lišila podle paliva a typu bydlení (rodinný dům na tuhá paliva 1 450 Kč, rodinný dům na plyn 750 Kč, byt na plyn 570 Kč, byt na teple ze zdroje v ETS2 500 Kč měsíčně). Kdyby o ni požádali všichni oprávnění, stála by 6,7 mld. Kč ročně, dostalo by ji 85 % zranitelných domácností a vrátila by jim 70 % zdražení. Zbylých 15 % jsou domácnosti s jiným nebo kombinovaným vytápěním ([EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions), výpočet Fakta o klimatu). Ze Sociálního klimatického fondu by šlo pokrýt jen 2–2,5 mld. Kč, zbytek by musel jít z národních výnosů z dražeb ETS2.
-
 Platba by byla dočasná a klesající podle předem známého plánu (například plná v letech 2028–2029, konec v roce 2032). Přechod na čistší zdroj by ji neukončil.
 
 <figure class="ets2-figure ets2-graf-fig">
-  <h3 class="js-toc-ignore">[pracovní nadpis] Cílená platba by vrátila zranitelným víc za menší peníze</h3>
-  <p class="ets2-sub">[pracovní podnadpis] Pravidla přímé platby v základním scénáři: kolik by stála ročně a jakou část svého zdražení by zranitelné domácnosti dostaly zpět</p>
+  <h3 class="js-toc-ignore">Cílená platba by vrátila zranitelným víc za menší peníze</h3>
+  <p class="ets2-sub">Pravidla přímé platby v základním scénáři: kolik by stála ročně a jakou část svého zdražení by zranitelné domácnosti dostaly zpět</p>
   <script type="application/json" class="graf-data">{{ site.data.ets2.kompenzace | jsonify }}</script>
-  <div class="ets2-graf" data-graf="kompenzace-naklad" role="img" aria-label="Náklad pravidel přímé platby v mld. Kč ročně"></div>
-  <div class="ets2-graf" data-graf="kompenzace-vyrovnano" role="img" aria-label="Jakou část zdražení by zranitelné domácnosti dostaly zpět"></div>
+  <div class="ets2-graf" data-graf="kompenzace-bod" role="img" aria-label="Pravidla přímé platby: roční náklad proti části zdražení, kterou zranitelné domácnosti dostanou zpět"></div>
   <div class="ets2-src">Zdroj: výpočet Fakt o klimatu z <a href="https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions">EU-SILC 2024</a>; návrh PAQ a CVF podle <a href="https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf">PAQ Research a CVF (2026)</a>.</div>
 </figure>
 
@@ -230,8 +248,8 @@ Všechny tyto odhady předpokládají, že ETS2 začne platit v roce 2028. Pokud
 | Kdo | Co by mohl prozkoumat |
 |---|---|
 | **MPSV a ČSSZ** | Zda jde vyplácet dočasný příplatek k důchodu odděleně od valorizace a jak spojit důchod s příjmy ostatních osob v domácnosti |
-| **MPSV a úřad práce** | Jak by vypadala jednoduchá online žádost, u které úřad ověří příjem sám a žadatel doloží jen palivo; jakou kapacitu by kontrola dokladů vyžadovala |
-| **Digitální a informační agentura** | Jak přes propojený datový fond a převodník identifikátorů zpřístupnit úřadu práce a ČSSZ příjmová data potřebná pro tento účel, a jaký zákonný titul je k tomu potřeba |
+| **MPSV a Úřad práce** | Jak by vypadala jednoduchá online žádost, u které úřad ověří příjem sám a žadatel doloží jen palivo; jakou kapacitu by kontrola dokladů vyžadovala |
+| **Digitální a informační agentura** | Jak přes propojený datový fond a převodník identifikátorů zpřístupnit Úřadu práce a ČSSZ příjmová data potřebná pro tento účel, a jaký zákonný titul je k tomu potřeba |
 | **MF a Generální finanční ředitelství** | Za jakých podmínek by šlo se souhlasem žadatele předat údaje z daňových přiznání pro ověření příjmu |
 | **ČSÚ** | Jak moc se trvalý pobyt v registru obyvatel liší od skutečného bydlení (porovnání se sčítáním 2021), zvlášť pro rodinné domy a byty |
 | **MŽP** | Zda zavést centrální evidenci kontrol kotlů na tuhá paliva s typem paliva; jak zapsat platbu do Sociálního klimatického plánu jako přímou podporu příjmu |

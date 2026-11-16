@@ -109,8 +109,8 @@ U dálkového tepla by zdražení nebylo plošné. Velké teplárny nad 20 MW u�
 {% include includes-local/ets2-blog/typove-domacnosti.html %}
 
 <figure class="ets2-figure ets2-graf-fig">
-  <h3 class="js-toc-ignore">[pracovní nadpis] Kolik domácností topí uhlím a plynem a kolik z nich je zranitelných</h3>
-  <p class="ets2-sub">[pracovní podnadpis] Jeden čtvereček = 10 tisíc domácností, oranžově zranitelné domácnosti (základní scénář)</p>
+  <h3 class="js-toc-ignore">Kolik domácností topí uhlím a plynem a kolik z nich je zranitelných</h3>
+  <p class="ets2-sub">Jeden čtvereček = 10 tisíc domácností, oranžově zranitelné domácnosti (základní scénář)</p>
   <script type="application/json" class="graf-data">{{ site.data.ets2.skupiny | jsonify }}</script>
   <div class="ets2-graf" data-graf="skupiny" role="img" aria-label="Velikost skupin domácností podle typu bydlení a vytápění a počet zranitelných domácností v nich"></div>
   <div class="ets2-src">Zdroj: výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; byty na teple rozdělené na asi 380 tis. domácností napojených na zdroj v ETS2 a zbytek na zdrojích v ETS1, kterým by ETS2 topení nezdražilo (<a href="https://faktaoklimatu.cz/studie/2026-odchod-teplaren-od-uhli">Fakta o klimatu</a>).</div>
