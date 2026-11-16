@@ -22,7 +22,7 @@ extra-scripts:
 - /assets-local/js/ets2-mapa.js
 - /assets-local/js/ets2-grafy.js
 perex: |
-  [doplnit perex – pracovní návrh:] Evropská pravidla počítají s tím, že sociální dopady ETS2 tlumí členské státy. Jaké nástroje mají, kolik by stály a co z toho zatím chystá Česko?
+  Evropská pravidla počítají s tím, že sociální dopady ETS2 tlumí členské státy. Jaké nástroje mají, kolik by stály a co z toho zatím chystá Česko?
 ---
 
 {% include series-box.html series-id=page.series-id selected=page.slug %}
@@ -154,7 +154,7 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 
 Žádný nástroj sám nestačí. Přímá platba pomůže hned, ale dům na uhlí zůstane domem na uhlí. Výměna zdroje pomůže natrvalo, ale trvá roky.
 
-**Nárok by měly jen nízko- a nižší středopříjmové domácnosti.** Plnou platbu by dostaly domácnosti do horní hranice 3. decilu ekvivalizovaného příjmu, pak by plynule klesala k nule na hranici 5. decilu (mediánu). Jednotlivec s čistým příjmem do zhruba 31 tis. Kč měsíčně by dostal celou platbu, od 39 tis. Kč nic. U páru jsou hranice 44 a 55 tis. Kč, u čtyřčlenné rodiny 62 a 78 tis. Kč ([EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions), výpočet Fakta o klimatu).
+**Nárok by měly jen nízko- a nižší středopříjmové domácnosti.** **Platba by s rostoucím příjmem plynule klesala, bez ostré hranice.** Plnou by dostaly domácnosti do horní hranice 3. decilu ekvivalizovaného příjmu, pak by klesala k nule na hranici 5. decilu (mediánu). Nikdo by tak nepřišel o celou platbu kvůli pár korunám příjmu navíc. Jednotlivec s čistým příjmem do zhruba 31 tis. Kč měsíčně by dostal celou platbu, od 39 tis. Kč nic. U páru jsou hranice 44 a 55 tis. Kč, u čtyřčlenné rodiny 62 a 78 tis. Kč ([EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions), výpočet Fakta o klimatu).
 
 **Výše platby** by se lišila podle paliva a typu bydlení:
 
@@ -182,7 +182,7 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 
 - Tři čtvrtiny zranitelných domácností v rodinných domech mají v domácnosti důchodce. Právě pro starší lidi je opakovaná žádost největší bariéra.
 - ČSSZ by vyplácela dočasný příplatek k důchodu, oddělený od valorizace. Jen tak by byl dočasný a šel by platit ze Sociálního klimatického fondu.
-- Podmínkou by byl příjem domácnosti pod hranicí. To vyžaduje spojit důchod s příjmy ostatních osob na stejné adrese, tedy výjimku z ochrany dat popsané výše.
+- Výše příplatku by závisela na příjmu celé domácnosti a s rostoucím příjmem by plynule klesala, jak je popsáno výše. To vyžaduje spojit důchod s příjmy ostatních osob na stejné adrese, tedy výjimku z ochrany dat popsané výše.
 - **ČSSZ neví, čím kdo topí.** Typ domu by šel zjistit z registru adres, palivo ne. Důchodce by proto jednou doložil palivo stejným dokladem jako ostatní žadatelé a dál by platba chodila s důchodem sama. Bez dokladu by stát musel platit všem stejně: domácnost na tuhá paliva by dostala méně, než by ji ETS2 stálo, a domácnost s tepelným čerpadlem peníze, které nepotřebuje.
 
 **3. Ostatní domácnosti: jednoduchá žádost s velkou kampaní**
