@@ -1,5 +1,6 @@
 // Mapy SO ORP pro ETS2 série (includes-local/ets2-blog/mapa-orp.html).
-// Vrstvy: mf = ohrožení energetickou chudobou (MF, kvartily), uhli / plyn = rodinné domy podle paliva (SLDB 2021).
+// Vrstvy: mf = ohrožení energetickou chudobou (MF, kvartily), uhli / plyn = rodinné domy podle paliva,
+// bj_plyn = byty v bytových domech na plyn (SLDB 2021).
 // Data jsou vložená ze _data/ets2/orp_mapa.json (generuje R/10_mapa_orp.R v dílně).
 (function () {
     if (!window.d3) return;
@@ -55,7 +56,16 @@
                 radky: function (p) { return [['Výdaje na vytápění / příjmy', fmt1(p.podil)], ['Podíl obydlí v rodinných domech', fmt1(p.rd)], ['Rodinné domy ve třídě E–G', fmt1(p.rd_eg)]]; }
             },
             uhli: stupnice('rd_uhli', [5, 10, 15, 20, 25], '#f4eee8', '#4a2418'),
-            plyn: stupnice('rd_plyn', [20, 35, 50, 65], '#eef3fa', '#0050ae')
+            plyn: stupnice('rd_plyn', [20, 35, 50, 65], '#eef3fa', '#0050ae'),
+            bj_plyn: stupnice('bj_plyn', [10, 20, 35, 50], '#eef3fa', '#0050ae'),
+            teplo_ets2: stupnice('teplo_ets2', [2, 5, 10, 20], '#f1eef7', '#3b3b93')
+        };
+        VRSTVY.teplo_ets2.radky = function (p) {
+            return [['Domácnosti na teple ze zdroje v ETS2 (odhad)', fmt1(p.teplo_ets2)], ['to je asi bytů', fmtN(p.teplo_ets2_byty)],
+                    ['Podíl dálkového tepla ze zdrojů v ETS2', fmt1(p.podil_tepla_ets2)]];
+        };
+        VRSTVY.bj_plyn.radky = function (p) {
+            return [['Byty v bytových domech (2021)', fmtN(p.bj_byty)], ['z toho na plyn', fmt1(p.bj_plyn)], ['z toho na dálkové teplo', fmt1(p.bj_czt)]];
         };
         VRSTVY.uhli.radky = VRSTVY.plyn.radky = function (p) {
             return [['Byty v rodinných domech (2021)', fmtN(p.rd_byty)], ['z toho na uhlí', fmt1(p.rd_uhli)], ['z toho na plyn', fmt1(p.rd_plyn)], ['z toho na dřevo a pelety', fmt1(p.rd_drevo)]];

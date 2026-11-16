@@ -109,16 +109,16 @@ U dálkového tepla by zdražení nebylo plošné. Velké teplárny nad 20 MW u�
 {% include includes-local/ets2-blog/typove-domacnosti.html %}
 
 <figure class="ets2-figure ets2-graf-fig">
-    <h3 class="js-toc-ignore">Nejvíc zranitelných je v domech na plyn, nejvíc by zaplatily domy na uhlí</h3>
-    <p class="ets2-sub">Zranitelné domácnosti podle typu bydlení a vytápění, tis.; v popisku náklad ETS2 v Kč měsíčně a % příjmu</p>
-    <script type="application/json" class="graf-data">{{ site.data.ets2.zranitelne | jsonify }}</script>
-    <div class="ets2-graf" data-graf="zranitelne" role="img" aria-label="Zranitelné domácnosti: rodinné domy na plyn 110–130 tis., 750 Kč měsíčně; rodinné domy na uhlí 40–50 tis., 1 450 Kč; byty na plyn 40–60 tis., 570 Kč; byty na teple ze zdroje v ETS2 30–40 tis., 500 Kč; ostatní 40–50 tis., 650 Kč"></div>
-    <div class="ets2-src">Zdroj: výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a> a <a href="https://csu.gov.cz/rodinne_ucty">SRÚ 2023</a>; scénář A, ceny a příjmy 2028. <span class="note-wrap"><button type="button" class="note-b" aria-expanded="false">poznámky</button><span class="note-t"> Byty na teple jen v rozsahu asi 380 tis. domácností napojených na zdroje v ETS2.</span></span></div>
-  </figure>
+  <h3 class="js-toc-ignore">[pracovní nadpis] Kolik domácností topí uhlím a plynem a kolik z nich je zranitelných</h3>
+  <p class="ets2-sub">[pracovní podnadpis] Jeden čtvereček = 10 tisíc domácností, oranžově zranitelné domácnosti (základní scénář)</p>
+  <script type="application/json" class="graf-data">{{ site.data.ets2.skupiny | jsonify }}</script>
+  <div class="ets2-graf" data-graf="skupiny" role="img" aria-label="Velikost skupin domácností podle typu bydlení a vytápění a počet zranitelných domácností v nich"></div>
+  <div class="ets2-src">Zdroj: výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; byty na teple rozdělené na asi 380 tis. domácností napojených na zdroj v ETS2 a zbytek na zdrojích v ETS1, kterým by ETS2 topení nezdražilo (<a href="https://faktaoklimatu.cz/studie/2026-odchod-teplaren-od-uhli">Fakta o klimatu</a>).</div>
+</figure>
 
-Ohrožení se liší i podle území. [Nový mikroregionální ukazatel ministerstva financí](https://mpo.gov.cz/assets/cz/energetika/uspory-energie/aktuality/2026/11/Tematicky-report_Mikroregionalni_ukazatel_energeticke_chudoby_MF.pdf) porovnává předpokládané výdaje na vytápění s disponibilními příjmy v každém správním obvodu obce s rozšířenou působností (SO ORP). Nejvíc ohrožené jsou vnější i vnitřní periferie s převahou starších rodinných domů, například SO ORP Broumov, Frýdlant, Konice, Hořice, Votice nebo Vlašim. Nízké příjmy přitom nejsou podmínkou: zhruba třetina nejohroženějších obvodů má příjmy nadprůměrné, rozhoduje hlavně podíl rodinných domů a jejich energetická náročnost.
+Kde by zavedení ETS2 dopadlo nejvíc, záleží na tom, čím se v regionu topí. Uhlím topí podle [sčítání 2021](https://vdb.czso.cz) zhruba každý desátý rodinný dům, nejčastěji v Ústeckém, Libereckém, Plzeňském a Karlovarském kraji a na periferiích: v obvodech Broumov, Frýdlant nebo Sedlčany je to přes čtvrtinu domů. Plyn převažuje v rodinných domech na jižní Moravě a v Praze, v bytových domech hlavně v Libereckém, Jihomoravském kraji a na Vysočině. Dálkové teplo ze zdrojů, které by spadaly pod ETS2, je hlavně v menších městech s vlastní plynovou nebo uhelnou výtopnou, například v Rýmařově, Varnsdorfu nebo Aši ([ERÚ 2024](https://eru.gov.cz/vysledne-ceny-tepelne-energie-v-cr-2024), výpočet Fakt o klimatu).
 
-{% include includes-local/ets2-blog/mapa-orp.html vrstvy="uhli,plyn" %}
+{% include includes-local/ets2-blog/mapa-orp.html vrstvy="uhli,plyn,bj_plyn,teplo_ets2" %}
 
 {% include includes-local/ets2-blog/preview-link.html url="/explainery/ets2-socialni-klimaticka-politika" kicker="Pokračování série" title="Česku chybí sociální klimatická politika. Stát ale ani neví, kdo čím topí" sub="Sociální klimatická politika, 2. díl · Fakta o klimatu" %}
 

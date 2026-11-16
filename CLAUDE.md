@@ -1,6 +1,6 @@
 # web-cz: pravidla pro ETS2 blog
 
-Platí pro práci na ETS2 blogu (`collections/_explainers/ets2-zranitelne-domacnosti.md`, větev `ets2-blog-zranitelne-domacnosti`). Repozitář je publikovaný výstup. Analýza, R skripty a metodika jsou v samostatné dílně (Google Drive, složka ETS2) a do repozitáře se nekopírují.
+Platí pro práci na sérii Sociální klimatická politika (`collections/_explainers/ets2-zranitelne-domacnosti.md` a `ets2-socialni-klimaticka-politika.md`, větev `preview-socialni-klimaticka-politika`, z níž se automaticky staví online náhled). Repozitář je publikovaný výstup. Analýza, R skripty a metodika jsou v samostatné dílně (Google Drive, složka ETS2) a do repozitáře se nekopírují.
 
 ## Obsah a styl
 - **ETS2 vždy v podmiňovacím způsobu** („zavedení ETS2 by…“). Vláda ETS2 odmítá, nepíšeme, že se stane jistě.
@@ -26,7 +26,7 @@ Platí pro práci na ETS2 blogu (`collections/_explainers/ets2-zranitelne-domacn
 ## Struktura (ETS2 blog)
 - Komponenty: `includes-local/ets2-blog/`, styly `assets-local/_ets2-blog.scss`, skript `assets-local/js/ets2-blog.js`.
 - Rozbalovací boxy dělá `expander.html`, shrnutí `tldr.html`. Klikací popovery a poznámky pod zdrojem jsou vlastní komponenty (`pop-inline`, `note-wrap`).
-- Placeholdery, které zůstávají otevřené: `#ODKAZ-PDF-studie`, `#ODKAZ-MF-hlavni-report`, autoři vizualizace a editace. Grafy a mapa jsou zatím vynechané (v `.md` komentáře `TODO graf …`).
+- Placeholdery, které zůstávají otevřené: `#ODKAZ-PDF-studie`, `#ODKAZ-MF-hlavni-report`, autoři vizualizace a editace. Grafy kreslí `assets-local/js/ets2-grafy.js` (knihovna `fok-chart-*` a vlastní čtverečkový graf), mapy `assets-local/js/ets2-mapa.js`.
 
 ## Postup
 - **Před změnou hotového výstupu nejdřív navrhnout změny a počkat na souhlas.**

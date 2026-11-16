@@ -8,17 +8,21 @@ v dílně ETS2, ručně neupravovat). Kreslí assets-local/js/ets2-mapa.js (pot�
   {%- if vrstvy contains "mf" %}
   <h3 class="js-toc-ignore">Energetickou chudobou jsou nejvíc ohrožené periferie s rodinnými domy</h3>
   {%- else %}
-  <h3 class="js-toc-ignore">[pracovní nadpis] Kde se v rodinných domech topí uhlím a kde plynem</h3>
+  <h3 class="js-toc-ignore">[pracovní nadpis] Kde se topí uhlím a kde plynem</h3>
   {%- endif %}
   {%- if vrstvy.size > 1 %}
   <div class="mapa-vrstvy" role="group" aria-label="Co mapa ukazuje">
     {%- if vrstvy contains "uhli" %}<button type="button" data-vrstva="uhli" aria-pressed="false">Rodinné domy na uhlí</button>{% endif %}
     {%- if vrstvy contains "plyn" %}<button type="button" data-vrstva="plyn" aria-pressed="false">Rodinné domy na plyn</button>{% endif %}
+    {%- if vrstvy contains "bj_plyn" %}<button type="button" data-vrstva="bj_plyn" aria-pressed="false">Byty na plyn</button>{% endif %}
+    {%- if vrstvy contains "teplo_ets2" %}<button type="button" data-vrstva="teplo_ets2" aria-pressed="false">Teplo ze zdrojů v ETS2</button>{% endif %}
   </div>
   {%- endif %}
   <p class="ets2-sub" data-pro="mf" hidden>SO ORP podle podílu předpokládaných výdajů na vytápění na disponibilních příjmech domácností, rozdělené jako v reportu MF do kvartilů. Najeďte na obvod nebo ho vyberte ze seznamu.</p>
   <p class="ets2-sub" data-pro="uhli" hidden>Podíl obydlených bytů v rodinných domech vytápěných uhlím, SO ORP (2021). Najeďte na obvod nebo ho vyberte ze seznamu.</p>
   <p class="ets2-sub" data-pro="plyn" hidden>Podíl obydlených bytů v rodinných domech vytápěných plynem, SO ORP (2021). Najeďte na obvod nebo ho vyberte ze seznamu.</p>
+  <p class="ets2-sub" data-pro="teplo_ets2" hidden>Odhad podílu domácností na dálkovém teple ze zdroje, který by spadal pod ETS2 (výtopny a kotelny na uhlí a plyn do 20 MW mimo ETS1), SO ORP. Najeďte na obvod nebo ho vyberte ze seznamu.</p>
+  <p class="ets2-sub" data-pro="bj_plyn" hidden>Podíl obydlených bytů v bytových domech vytápěných plynem (vlastní kotel i domovní kotelna), SO ORP (2021). Najeďte na obvod nebo ho vyberte ze seznamu.</p>
   <div class="mapctl">
     <label>SO ORP <select class="orp-select"><option value="">vyberte…</option></select></label>
   </div>
@@ -34,5 +38,6 @@ v dílně ETS2, ručně neupravovat). Kreslí assets-local/js/ets2-mapa.js (pot�
   <div class="mapa-legenda"></div>
   <div class="mapa-info" aria-live="polite"></div>
   <div class="ets2-src" data-pro="mf" hidden>Data: <a href="https://mpo.gov.cz/assets/cz/energetika/uspory-energie/aktuality/2026/11/Tematicky-report_Mikroregionalni_ukazatel_energeticke_chudoby_MF.pdf">Ministerstvo financí, Mikroregionální ukazatel energetické chudoby</a> (2026). Hranice SO ORP: <a href="https://vdp.cuzk.cz/">ČÚZK</a> přes balík <a href="https://github.com/jlacko/RCzechia">RCzechia</a>, zjednodušené. Ukazatel popisuje průměr území, ne jednotlivé domácnosti.</div>
-  <div class="ets2-src" data-pro="uhli plyn" hidden>Data: <a href="https://vdb.czso.cz">ČSÚ, Sčítání lidu, domů a bytů 2021</a>, obydlené byty v rodinných domech podle paliva (ústřední i lokální vytápění). Hranice SO ORP: <a href="https://vdp.cuzk.cz/">ČÚZK</a> přes balík <a href="https://github.com/jlacko/RCzechia">RCzechia</a>.</div>
+  <div class="ets2-src" data-pro="teplo_ets2" hidden>Data: <a href="https://vdb.czso.cz">ČSÚ, Sčítání lidu, domů a bytů 2021</a> (byty na dálkovém teple) a <a href="https://eru.gov.cz/vysledne-ceny-tepelne-energie-v-cr-2024">ERÚ, Výsledné ceny tepelné energie 2024</a> (podíl tepla z lokalit do 20 MW na uhlí a plyn, které teplo nenakupují z velkých zdrojů), výpočet Fakt o klimatu. Lokality ERÚ napárované na obce podle názvu; jde o přiblížení. Hranice SO ORP: <a href="https://vdp.cuzk.cz/">ČÚZK</a> přes balík <a href="https://github.com/jlacko/RCzechia">RCzechia</a>.</div>
+  <div class="ets2-src" data-pro="uhli plyn bj_plyn" hidden>Data: <a href="https://vdb.czso.cz">ČSÚ, Sčítání lidu, domů a bytů 2021</a>, obydlené byty v rodinných a bytových domech podle paliva (ústřední i lokální vytápění). Hranice SO ORP: <a href="https://vdp.cuzk.cz/">ČÚZK</a> přes balík <a href="https://github.com/jlacko/RCzechia">RCzechia</a>.</div>
 </figure>

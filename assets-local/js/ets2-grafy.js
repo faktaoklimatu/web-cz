@@ -5,6 +5,43 @@
     var cz = function (v, d) { return (+v).toLocaleString('cs-CZ', { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 }); };
 
     var GRAFY = {
+        // Čtverečkový graf: velikost skupin (1 čtvereček = 10 tis. domácností) a zranitelné v nich
+        skupiny: function (sel, data) {
+            var JED = 10, SL = 22, Q = 13, G = 3, LW = 236, W = 600;
+            var rows = data.map(function (d) {
+                // skupina bez posuzované zranitelnosti (byty na teple ze zdroje v ETS1): zranitelne_tis je NA
+                var bez = d.zranitelne_tis === 'NA' || d.zranitelne_tis === '' || d.zranitelne_tis == null;
+                var n = Math.round(+d.domacnosti_tis / JED), z = bez ? 0 : Math.min(n, Math.round(+d.zranitelne_tis / JED));
+                return { d: d, n: n, z: z, bez: bez, r: Math.ceil(n / SL) };
+            });
+            var y = 0, H = 0;
+            // zvýrazněné skupiny (podbarvení řádku): domácnosti, kterým by ETS2 zdražilo topení nejvíc
+            var ZVYR = ['RD plyn', 'RD uhlí', 'byt plyn', 'byt teplo (zdroj v ETS2)'];
+            rows.forEach(function (r) { r.h = Math.max(r.r * (Q + G), 44); r.zvyr = ZVYR.indexOf(r.d.archetyp) >= 0; r.y = y + 6; y += r.h + 18; });
+            y += 6;
+            H = y;
+            var svg = d3.select(sel).append('svg').attr('viewBox', '0 0 ' + W + ' ' + H).attr('width', '100%').style('display', 'block')
+                .style('font-family', FoKTheme.font);
+            var g = svg.selectAll('g.sk').data(rows).join('g').attr('class', 'sk').attr('transform', function (r) { return 'translate(0,' + r.y + ')'; });
+            g.filter(function (r) { return r.zvyr; }).append('rect').attr('x', -6).attr('y', -6).attr('width', W + 6)
+                .attr('height', function (r) { return r.h + 10; }).attr('rx', 6).attr('fill', '#fdeee9');
+            g.append('text').attr('x', 0).attr('y', 11).attr('font-size', 13).attr('font-weight', 700).attr('fill', FoKTheme.colors.text)
+                .text(function (r) { return r.d.popisek.replace(/ \(.*\)$/, ''); });
+            g.append('text').attr('x', 0).attr('y', 28).attr('font-size', 12).attr('fill', FoKTheme.colors.grey)
+                .text(function (r) { return cz(r.d.domacnosti_tis) + ' tis. domácností'; });
+            g.append('text').attr('x', 0).attr('y', 44).attr('font-size', 12).attr('font-weight', 700).attr('fill', '#c2412a')
+                .attr('fill', function (r) { return r.bez ? FoKTheme.colors.grey : '#c2412a'; })
+                .attr('font-weight', function (r) { return r.bez ? 400 : 700; })
+                .text(function (r) { return r.bez ? 'topení ETS2 nezdraží, neposuzováno' : cz(r.d.zranitelne_tis) + ' tis. zranitelných (' + cz(r.d.podil_zranitelnych_pct) + ' %)'; });
+            g.each(function (r) {
+                d3.select(this).selectAll('rect.ctv').data(d3.range(r.n)).join('rect').attr('class', 'ctv')
+                    .attr('x', function (i) { return LW + (i % SL) * (Q + G); })
+                    .attr('y', function (i) { return Math.floor(i / SL) * (Q + G); })
+                    .attr('width', Q).attr('height', Q).attr('rx', 2)
+                    .attr('fill', function (i) { return i < r.z ? '#f06a4e' : '#c9d6e6'; })
+                    .append('title').text(r.d.popisek + ': ' + cz(r.d.domacnosti_tis) + ' tis. domácností' + (r.bez ? '' : ', z toho ' + cz(r.d.zranitelne_tis) + ' tis. zranitelných'));
+            });
+        },
         // Spotřeba energie domácností podle zdroje, PJ (2005–2024)
         spotreba: function (sel, data) {
             var keys = ['uhli', 'plyn', 'drevo', 'jadro', 'oze'];
