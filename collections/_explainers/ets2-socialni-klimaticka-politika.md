@@ -281,3 +281,6 @@ Všechny tyto odhady předpokládají, že ETS2 začne platit v roce 2028. Pokud
 33. [měly by být dočasné a postupně klesat](https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1741138) – oeil.europarl.europa.eu
 34. [veřejný ochránce práv: připomínky k první verzi Sociálního klimatického plánu](https://www.ochrance.cz/uploads-import/ESO/57597-2025_soci%C3%A1ln%C3%AD_klimatick%C3%BD_pl%C3%A1n.pdf) – ochrance.cz
 35. [Centrum pro dopravu a energetiku: Sociální klimatický plán. Co obsahuje a co v něm chybí? (duben 2026)](https://www.cde-org.cz/media/object/2884/skf_analyza_04_2026.docx.pdf) – cde-org.cz
+
+{% comment %}Dočasné cíle zástupných odkazů #ODKAZ-*, aby prošla kontrola odkazů v buildu. Smazat, až budou odkazy doplněné.{% endcomment %}
+<span id="ODKAZ-PDF-studie"></span><span id="ODKAZ-MF-hlavni-report"></span>

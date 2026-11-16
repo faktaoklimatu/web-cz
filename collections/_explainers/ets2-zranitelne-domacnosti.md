@@ -165,3 +165,6 @@ Kde by zavedení ETS2 dopadlo nejvíc, záleží na tom, čím se v regionu top�
 15. [ČÚZK](https://vdp.cuzk.cz/) – vdp.cuzk.cz
 16. [RCzechia](https://github.com/jlacko/RCzechia) – github.com
 17. [ERÚ 2024](https://eru.gov.cz/vysledne-ceny-tepelne-energie-v-cr-2024) – eru.gov.cz
+
+{% comment %}Dočasné cíle zástupných odkazů #ODKAZ-*, aby prošla kontrola odkazů v buildu. Smazat, až budou odkazy doplněné.{% endcomment %}
+<span id="ODKAZ-PDF-studie"></span><span id="ODKAZ-MF-hlavni-report"></span>
