@@ -57,9 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // The countries are ordered by their share in the last year, low to high, and
   // split in three groups; each group ends with the country named here.
   const GROUPS = [
-    { title: 'Téměř odpojeno od fosilních zdrojů', last: 'ESP' },
-    { title: 'V přechodu', last: 'LUX' },
-    { title: 'Převážně fosilní', last: null },
+    { title: 'Ceny elektřiny výrazně odpojeny od cen fosilních paliv', last: 'DNK' },
+    { title: 'Cena elektřiny silně spojená s cenami fosilních paliv', last: null },
   ];
   // The groups come from the ranking by all fossil fuels (so a country stays in its
   // group when the view is switched to gas only); within a group, countries are
@@ -159,7 +158,13 @@ document.addEventListener('DOMContentLoaded', () => {
       : '<div class="fe-popup-values">' +
         `<div class="fe-popup-main"><b style="color:${GAS_ONLY.color}">${pct(row.gas_pct)}</b>` +
         '<span>vážený podíl hodin v roce nad náklady plynové elektrárny</span></div></div>';
-    return head + values +
+    const mixRow = mixRows.find(r => r.country === iso && r.year === row.year);
+    const share = mixRow
+      ? '<div class="fe-popup-mix">Podíl na výrobě elektřiny: ' +
+        `<span style="color:${MIX.clean}">●</span> nefosilní <b>${pct(mixRow.nonfossil_pct)}</b>, ` +
+        `<span style="color:${MIX.fossil}">●</span> fosilní <b>${pct(mixRow.fossil_pct)}</b></div>`
+      : '';
+    return head + values + share +
       '<div class="fe-popup-chart"><div class="fe-popup-loading">Načítám data…</div></div>' +
       '<div class="fe-popup-note">Každý čtvereček je jedna hodina: den v roce vodorovně, hodina dne (místní čas) svisle.' +
       '<div class="fe-popup-scale"><span>o 30 % nákladů a více pod nimi</span>' +
@@ -204,6 +209,62 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // A faint context strip under a country's chart: the annual shares of fossil and
+  // non-fossil (renewables and nuclear) sources in the generation, two thin pale lines.
+  const MIX = { fossil: '#c7aab3', clean: '#a9c3b4' };
+  // Per country, the two charts of a tile share one hover: the main chart registers
+  // how to show/hide a year, the strip registers how to move its vertical line.
+  const HOVER = {}, MIXLINE = {};
+  function drawMix(sel, iso, mix, endYear) {
+    const node = document.querySelector(sel);
+    if (!node) return;
+    node.innerHTML = '';
+    const rows = mix.filter(r => r.country === iso && r.year >= (LATE[iso] ?? 0));
+    const width = Math.round(node.getBoundingClientRect().width);
+    if (rows.length < 2 || !width) return;
+    // Aligned with the plot area of the chart above (its left margin holds the axis labels).
+    const m = { top: 3, right: 2, bottom: 3, left: 2 }, H = 34;
+    const plot = document.querySelector(sel.replace('fe-mix-', 'fe-chart-') + ' svg > g');
+    const clip = document.querySelector(sel.replace('fe-mix-', 'fe-chart-') + ' svg clipPath rect');
+    const shift = plot && /translate\(([-\d.]+)/.exec(plot.getAttribute('transform') || '');
+    if (shift && clip) { m.left = +shift[1]; m.right = width - m.left - +clip.getAttribute('width'); }
+    const x = d3.scaleLinear().domain([FIRST_YEAR, endYear]).range([m.left, width - m.right]);
+    const y = d3.scaleLinear().domain([0, 100]).range([H - m.bottom, m.top]);
+    const first = rows[0], last = rows[rows.length - 1];
+    const svg = d3.select(node).append('svg').attr('width', width).attr('height', H)
+      .attr('role', 'img').attr('aria-label',
+        `Podíl na výrobě elektřiny, ${first.year} a ${last.year}: nefosilní ${Math.round(first.nonfossil_pct)} a ${Math.round(last.nonfossil_pct)} %, fosilní ${Math.round(first.fossil_pct)} a ${Math.round(last.fossil_pct)} %.`);
+    // Grey guides at 0 and 100 %, a fainter one at 50 %.
+    [[0, '#dde2e8'], [50, '#edf0f3'], [100, '#dde2e8']].forEach(([v, color]) =>
+      svg.append('line').attr('x1', m.left).attr('x2', width - m.right).attr('y1', y(v)).attr('y2', y(v))
+        .attr('stroke', color).attr('stroke-width', 1));
+    // Minimal ticks, the same 0-100 % scale in every tile so they can be compared.
+    svg.append('g').selectAll('text').data([0, 50, 100]).join('text')
+      .attr('x', m.left - 5).attr('y', v => y(v) + 3).attr('text-anchor', 'end')
+      .attr('font-size', 9).attr('fill', '#a0aec0').text(v => `${v} %`);
+    [['fossil_pct', MIX.fossil], ['nonfossil_pct', MIX.clean]].forEach(([key, color]) => {
+      svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', color).attr('stroke-width', 1.4)
+        .attr('stroke-linejoin', 'round')
+        .attr('d', d3.line().x(r => x(r.year)).y(r => y(r[key])));
+    });
+    const vline = svg.append('line').attr('y1', m.top).attr('y2', H - m.bottom)
+      .attr('stroke', theme.colors.grey).attr('stroke-width', 1).attr('opacity', 0)
+      .attr('pointer-events', 'none');
+    MIXLINE[iso] = year => year == null
+      ? vline.attr('opacity', 0)
+      : vline.attr('x1', x(year)).attr('x2', x(year)).attr('opacity', 1);
+    // Hovering the strip does the same as hovering the chart above it.
+    svg.append('rect').attr('x', m.left).attr('y', 0).attr('width', Math.max(0, width - m.left - m.right)).attr('height', H)
+      .attr('fill', 'transparent').style('cursor', 'crosshair')
+      .on('mousemove', event => {
+        const link = HOVER[iso];
+        if (!link) return;
+        const [mx] = d3.pointer(event, svg.node());
+        link.activate(d3.least(link.rows, r => Math.abs(x(r.year) - mx)));
+      })
+      .on('mouseleave', () => HOVER[iso]?.deactivate());
+  }
+
   function drawCountry(sel, iso, rows, o) {
     const mine = rows.filter(r => r.country === iso && r.year >= (LATE[iso] ?? 0));
     if (!mine.length) return;
@@ -246,42 +307,49 @@ document.addEventListener('DOMContentLoaded', () => {
     const dots = g.append('g').attr('pointer-events', 'none');
     const tip = fokTooltip(theme);
     let current = null;
+    function activate(row) {
+      if (!row || row === current) return;
+      current = row;
+      MIXLINE[iso]?.(row.year);
+      vline.attr('x1', x(row.year)).attr('x2', x(row.year)).attr('opacity', 1);
+      dots.selectAll('circle').data(SERIES).join('circle')
+        .attr('cx', x(row.year)).attr('cy', s => y(row[s.key])).attr('r', s => s.width > 2 ? 5 : 3.5)
+        .attr('fill', s => s.color).attr('stroke', '#fff').attr('stroke-width', 1.5);
+      // The popup sits beside the chart (right, else left, else below), never on it.
+      const box = node.getBoundingClientRect();
+      const W = Math.min(430, window.innerWidth - 16), vw = window.innerWidth;
+      tip.show(`<div class="fe-popup">${popupHtml(iso, row)}</div>`);
+      const el = document.querySelector('.fok-tooltip');
+      el.style.boxSizing = 'border-box';
+      el.style.width = `${W}px`;
+      el.style.maxWidth = 'none';
+      let left, top = box.top;
+      if (box.right + 8 + W <= vw - 8) left = box.right + 8;
+      else if (box.left - 8 - W >= 8) left = box.left - 8 - W;
+      else { left = Math.max(8, Math.min(box.left, vw - W - 8)); top = box.bottom + 8; }
+      top = Math.max(8, Math.min(top, window.innerHeight - el.offsetHeight - 8));
+      el.style.left = `${left}px`;
+      el.style.top = `${top}px`;
+      const inner = W - 2 * parseFloat(getComputedStyle(el).paddingLeft || 0);
+      drawProfile(el.querySelector('.fe-popup'), iso, row.year, Math.round(inner));
+      if (mode === 'all') loadFuels().then(f => {
+        const slot = el.querySelector('.fe-popup-fuels');
+        if (slot && current === row) slot.innerHTML = fuelsHtml(f, iso, row.year);
+      });
+    }
+    function deactivate() {
+      current = null; vline.attr('opacity', 0); dots.selectAll('*').remove(); tip.hide();
+      MIXLINE[iso]?.(null);
+    }
+
     g.append('rect').attr('width', innerW).attr('height', innerH).attr('fill', 'transparent')
       .style('cursor', 'crosshair')
       .on('mousemove', event => {
         const [mx] = d3.pointer(event, gNode);
-        const row = d3.least(mine, r => Math.abs(x(r.year) - mx));
-        if (!row || row === current) return;
-        current = row;
-        vline.attr('x1', x(row.year)).attr('x2', x(row.year)).attr('opacity', 1);
-        dots.selectAll('circle').data(SERIES).join('circle')
-          .attr('cx', x(row.year)).attr('cy', s => y(row[s.key])).attr('r', s => s.width > 2 ? 5 : 3.5)
-          .attr('fill', s => s.color).attr('stroke', '#fff').attr('stroke-width', 1.5);
-        // The popup sits beside the chart (right, else left, else below), never on it.
-        const box = node.getBoundingClientRect();
-        const W = Math.min(430, window.innerWidth - 16), vw = window.innerWidth;
-        tip.show(`<div class="fe-popup">${popupHtml(iso, row)}</div>`);
-        const el = document.querySelector('.fok-tooltip');
-        el.style.boxSizing = 'border-box';
-        el.style.width = `${W}px`;
-        el.style.maxWidth = 'none';
-        let left, top = box.top;
-        if (box.right + 8 + W <= vw - 8) left = box.right + 8;
-        else if (box.left - 8 - W >= 8) left = box.left - 8 - W;
-        else { left = Math.max(8, Math.min(box.left, vw - W - 8)); top = box.bottom + 8; }
-        top = Math.max(8, Math.min(top, window.innerHeight - el.offsetHeight - 8));
-        el.style.left = `${left}px`;
-        el.style.top = `${top}px`;
-        const inner = W - 2 * parseFloat(getComputedStyle(el).paddingLeft || 0);
-        drawProfile(el.querySelector('.fe-popup'), iso, row.year, Math.round(inner));
-        if (mode === 'all') loadFuels().then(f => {
-          const slot = el.querySelector('.fe-popup-fuels');
-          if (slot && current === row) slot.innerHTML = fuelsHtml(f, iso, row.year);
-        });
+        activate(d3.least(mine, r => Math.abs(x(r.year) - mx)));
       })
-      .on('mouseleave', () => {
-        current = null; vline.attr('opacity', 0); dots.selectAll('*').remove(); tip.hide();
-      });
+      .on('mouseleave', () => deactivate());
+    HOVER[iso] = { rows: mine, activate, deactivate };
 
     // All fossil sources are the story: a thick line over a light area; gas is a thin helper.
     const root = d3.select(sel);
@@ -420,12 +488,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const renderLegend = () => {
     legend.innerHTML = view().series.map(s =>
       `<span><span class="swatch" style="border-color:${s.color};border-top-width:${s.width}px"></span>${s.label}</span>`).join('') +
-      '<span><span class="swatch dashed" style="border-color:#53616e"></span>rok, který ještě neskončil</span>';
+      '<span><span class="swatch dashed" style="border-color:#53616e"></span>rok, který ještě neskončil</span>' +
+      `<span class="fe-mix-key"><span class="swatch" style="border-color:${MIX.clean};border-top-width:2px"></span>nefosilní výroba</span>` +
+      `<span class="fe-mix-key"><span class="swatch" style="border-color:${MIX.fossil};border-top-width:2px"></span>fosilní výroba</span>`;
   };
 
-  d3.csv(`${DATA}/yearly.csv`, d => ({
+  // The generation mix is only context: the page works without it.
+  let mixRows = [];
+  const mixLoaded = d3.csv(`${DATA}/generation.csv`, d => ({
+    country: d.country, year: +d.year, nonfossil_pct: +d.nonfossil_pct, fossil_pct: +d.fossil_pct,
+  })).then(r => { mixRows = r; }).catch(() => {});
+
+  Promise.all([d3.csv(`${DATA}/yearly.csv`, d => ({
     country: d.country, year: +d.year, fossil_pct: +d.fossil_pct, gas_pct: +d.gas_pct, partial: +d.partial,
-  })).then(rows => {
+  })), mixLoaded]).then(([rows]) => {
     ranked(rows, 'fossil_pct'); // fixes the groups from the ranking by all fossil fuels
 
     // The small charts, in the order and groups of the comparison above.
@@ -445,7 +521,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const tile = document.createElement('div');
           tile.className = 'fe-tile';
           tile.id = `fe-tile-${d.iso}`;
-          tile.innerHTML = `<h3>${flagHtml(d.iso)}${label(d.iso)}${NON_EU.includes(d.iso) ? ' <span class="fe-non-eu">mimo EU</span>' : ''}</h3><div id="fe-chart-${d.iso}"></div>`;
+          tile.innerHTML = `<h3>${flagHtml(d.iso)}${label(d.iso)}${NON_EU.includes(d.iso) ? ' <span class="fe-non-eu">mimo EU</span>' : ''}</h3><div id="fe-chart-${d.iso}"></div><div class="fe-mix" id="fe-mix-${d.iso}" title="Podíl fosilních a nefosilních zdrojů na výrobě elektřiny"></div>`;
           section.querySelector('.fe-grid').appendChild(tile);
         });
         groups.appendChild(section);
@@ -457,7 +533,10 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('fe-compare-title').textContent = `${view().title}: ${CMP_FROM} a ${CMP_TO}`;
       renderLegend();
       drawCompare(rows);
-      GRID.forEach(iso => drawCountry(`#fe-chart-${iso}`, iso, rows, { height: TILE_HEIGHT }));
+      GRID.forEach(iso => {
+        drawCountry(`#fe-chart-${iso}`, iso, rows, { height: TILE_HEIGHT });
+        drawMix(`#fe-mix-${iso}`, iso, mixRows, d3.max(rows.filter(r => r.country === iso), r => r.year));
+      });
     };
 
     // The toggle: all fossil fuels or gas only; everything follows it.

@@ -46,7 +46,7 @@ extra-scripts:
 
     <h2 class="fe-heading">Vývoj jednotlivých zemí od roku 2016</h2>
     <p class="chart-note">Přerušovaná čára je rok, který ještě neskončil. Najeďte myší na rok v grafu: zobrazí se podíl za daný rok, které zdroje se započítávají, a pro každou hodinu roku (den v roce vodorovně, hodina dne svisle), jak daleko byla cena od nákladů fosilních elektráren. Plně červeně jsou hodiny nad náklady, s rostoucí vzdáleností pod nimi barva bledne a o 30 % nákladů pod nimi je bílá. Světlé hodiny uprostřed dne v létě ukazují vliv solární elektřiny.</p>
-    <p class="chart-note fe-grid-note">Řazeno stejně jako graf výše, do tří skupin. Země mimo EU (Velká Británie, Norsko, Švýcarsko, Srbsko) jsou označeny. Chybí Kypr a Malta (bez dat). * U Chorvatska, Irska a Velké Británie začíná graf prvním úplným rokem s daty (2017, 2018, 2017).</p>
+    <p class="chart-note fe-grid-note">Řazeno stejně jako graf výše, do dvou skupin. Země mimo EU (Velká Británie, Norsko, Švýcarsko, Srbsko) jsou označeny. Chybí Kypr a Malta (bez dat). * U Chorvatska, Irska a Velké Británie začíná graf prvním úplným rokem s daty (2017, 2018, 2017). Tenké čáry pod každým grafem jsou jen kontext: roční podíl nefosilních (obnovitelné zdroje a jádro) a fosilních zdrojů na výrobě elektřiny podle Emberu (0–100 %, bez vlastního popisku osy).</p>
     <div class="fe-legend" id="fe-legend"></div>
     <div id="fe-groups"></div>
 

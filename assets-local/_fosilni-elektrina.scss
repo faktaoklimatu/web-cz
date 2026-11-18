@@ -24,6 +24,7 @@ body.fosilni-elektrina {
         .swatch.dashed { border-top-style: dashed; }
     }
 
+    .fe-legend .fe-mix-key { font-size: 12px; color: #8895a3; }
     .fe-lead { font-size: 16px; margin: 0 0 10px; }
     .fe-legend .dot {
         display: inline-block; width: 11px; height: 11px; border-radius: 50%;
@@ -59,6 +60,8 @@ body.fosilni-elektrina {
         .fe-tile { scroll-margin-top: 90px; }
         /* A small flag before the name: subtle, with a thin outline. */
         .fe-flag { font-size: 11px; margin-right: 5px; vertical-align: -1px; border-radius: 1px; opacity: 0.9; box-shadow: 0 0 0 0.75px rgba(0, 0, 0, 0.15); }
+        /* The generation-mix strip: a quiet context under the chart. */
+        .fe-mix { margin: 0 0 4px; opacity: 0.9; svg { display: block; } }
         .fe-tile.fe-flash { animation: fe-flash 1.6s ease-out; }
     }
 
@@ -101,6 +104,7 @@ body.fosilni-elektrina {
     .fe-popup-sub { display: flex; align-items: baseline; margin-top: 2px; }
     .fe-popup-sub b { font-size: 16px; }
     .fe-popup-sub span { font-size: 12px; color: #53616e; }
+    .fe-popup-mix { font-size: 12px; color: #53616e; margin: 0 0 8px; b { color: #1a202c; } }
     .fe-popup-chart { min-height: 150px; }
     .fe-popup-loading { font-size: 12px; color: #53616e; padding: 8px 0; }
     .fe-popup-note { font-size: 11px; color: #53616e; margin-top: 4px; }
