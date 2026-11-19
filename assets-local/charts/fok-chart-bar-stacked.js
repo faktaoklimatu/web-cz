@@ -43,6 +43,9 @@
  *   showInnerLabels {boolean}  text inside bars    (default false)
  *   legend        {boolean}    render legend       (default true when >1 key)
  *   legendDirection {'horizontal'|'vertical'}      (default 'horizontal')
+ *   labelFormat   {function}   (value, rawRow, key) => text of an inner label (default whole number)
+ *   narrowLabelsOutside {boolean} horizontal: a bar too narrow for its inner label gets the
+ *                              label just right of it, in text colour (default false: no label)
  *   tooltipHtml   {function}   (rawRow, key) => HTML
  *   yMax          {number}     fixed top of the y-axis, e.g. to share a scale between charts
  *   markers       {object[]}   events: { band, offset, label } — a dashed vertical line at
@@ -249,21 +252,24 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
 
     // ── Inner labels (proportional + horizontal mode) ──────────────────────
     if (showLabels && horiz) {
+      const outside = options.narrowLabelsOutside ?? false;
+      const wide    = d => xScale(d[1]) - xScale(d[0]) > 28;
       grp.selectAll('.fok-bar-label')
-        .data(s.filter(d => xScale(d[1]) - xScale(d[0]) > 28))
+        .data(s.filter(d => wide(d) || (outside && d[1] - d[0] > 0)))
         .join('text')
         .attr('class', 'fok-bar-label')
-        .attr('x',    d => xScale(d[0]) + (xScale(d[1]) - xScale(d[0])) / 2)
+        .attr('x',    d => wide(d) ? xScale(d[0]) + (xScale(d[1]) - xScale(d[0])) / 2 : xScale(d[1]) + 4)
         .attr('y',    d => yScale(d.data._x) + yScale.bandwidth() / 2)
         .attr('dy',   '0.35em')
-        .attr('text-anchor', 'middle')
-        .attr('fill', '#fff')
+        .attr('text-anchor', d => wide(d) ? 'middle' : 'start')
+        .attr('fill', d => wide(d) ? '#fff' : theme.colors.text)
         .attr('font-family', theme.font)
         .attr('font-size', theme.fontSize.axisLabel)
         .attr('font-weight', theme.fontWeight.bold)
         .attr('pointer-events', 'none')
         .text(d => {
           const val = proportional ? (d[1] - d[0]) : d.data._raw[key];
+          if (options.labelFormat) return options.labelFormat(val, d.data._raw, key);
           return proportional
             ? Math.round(d[1] - d[0]) + ' %'
             : fokFormatNumber(val, 0);

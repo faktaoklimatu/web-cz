@@ -1,0 +1,50 @@
+<figure class="ets2-figure" id="kalkulacka">
+    <h3 class="js-toc-ignore">Kolik by ETS2 stálo typovou domácnost?</h3>
+    <p class="ets2-sub">Vyberte bydlení, vytápění a cenu povolenky. Náklad ETS2 v Kč měsíčně včetně DPH, ceny roku 2028.</p>
+    <div class="calcui">
+      <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+        <fieldset id="home">
+          <legend>1. Kde domácnost bydlí</legend>
+          <label class="opt"><input type="radio" name="home" value="rd" checked> Rodinný dům</label>
+          <label class="opt"><input type="radio" name="home" value="byt"> Byt</label>
+        </fieldset>
+        <fieldset id="heat">
+          <legend>2. Čím topí</legend>
+          <div class="grp" data-home="rd">
+            <label class="opt"><input type="radio" name="heat" value="1284" checked> Uhlí</label>
+            <label class="opt"><input type="radio" name="heat" value="917"> Hlavně uhlí, přitápí dřevem</label>
+            <label class="opt"><input type="radio" name="heat" value="441"> Zemní plyn</label>
+            <label class="opt"><input type="radio" name="heat" value="0"> Tepelné čerpadlo, dřevo nebo pelety</label>
+          </div>
+          <div class="grp" data-home="byt" hidden>
+            <label class="opt"><input type="radio" name="heat" value="260"> Plynový kotel v bytě nebo domě</label>
+            <label class="opt"><input type="radio" name="heat" value="288"> Dálkové teplo z menší výtopny (pod ETS2)</label>
+            <label class="opt"><input type="radio" name="heat" value="0"> Dálkové teplo z velké teplárny (už v ETS1)</label>
+            <label class="opt"><input type="radio" name="heat" value="0"> Tepelné čerpadlo nebo elektřina</label>
+          </div>
+        </fieldset>
+
+        <div class="slider">
+          <label for="price">Cena povolenky: <strong id="price-out">60 €/t</strong></label>
+          <div class="rangewrap">
+            <div class="band" aria-hidden="true"></div>
+            <input type="range" id="price" min="30" max="150" step="1" value="60" aria-describedby="band-note">
+          </div>
+          <div class="scale" aria-hidden="true">
+            <span style="left:0%">30</span>
+            <span class="bandlbl" style="left:31.7%">pravděpodobné pásmo 60–76</span>
+            <span style="left:100%;transform:translateX(-100%)">150 €/t</span>
+          </div>
+          <p class="note" id="band-note" style="font-size:13px;margin:4px 0 0">Oranžový pruh = pravděpodobné pásmo ceny v roce 2028. Dolní hranice odpovídá našemu scénáři A: <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023L0959">evropská pravidla</a> mají cenu nad zhruba 45 € v cenách 2020, tedy asi 60 € v roce 2028, tlumit uvolňováním povolenek z rezervy. Horní hranice je <a href="https://www.ice.com/products/83048353/EUA-2-Futures/expiry">cena budoucích kontraktů na prosinec 2028</a> z 1. 10. 2026, asi 76 €.</p>
+        </div>
+      </div>
+      <div class="result" aria-live="polite">
+        <span class="ets2-sub" style="margin:0">ETS2 by domácnost stálo</span>
+        <span class="big" id="r-total">–</span>
+        <div class="row"><span>z toho vytápění</span><span id="r-heat">–</span></div>
+        <div class="row"><span>za rok</span><span id="r-year">–</span></div>
+        <span class="inband" id="r-band">v pravděpodobném pásmu</span>
+      </div>
+    </div>
+    <div class="ets2-src">Zdroj: spotřeby typových domácností z <a href="https://csu.gov.cz/produkty/spotreba-paliv-a-energii-v-domacnostech-energo-2021">ČSÚ ENERGO 2021</a>, emisní faktory <a href="https://mzp.gov.cz/system/files/2026-02/opok-Vypoctove_faktory_2025_ETS2-20260213.pdf">ČHMÚ</a>. <span class="note-wrap"><button type="button" class="note-b" aria-expanded="false">poznámky</button><span class="note-t"> Náklad roste lineárně s cenou povolenky. Elektroauto ani tepelné čerpadlo ETS2 nezatíží: elektřina spadá pod stávající systém ETS1 a její cenu ETS2 nemění.</span></span></div>
+  </figure>
