@@ -127,7 +127,7 @@
                 .attr('r', 6).attr('fill', 'none').attr('stroke', '#0050ae').attr('stroke-width', 1.5);
             if (kles.length) svg.append('text').attr('x', x(d3.max(kles, function (d) { return +d.naklad_obdobi_mld; })) + 12)
                 .attr('y', y(+kles[0].vyrovnano_2032_pct) - 10).attr('fill', '#0050ae').attr('font-size', 11)
-                .text('v roce 2032 platba klesne na čtvrtinu a vrátí ' + kles[0].vyrovnano_2032_pct + ' % (průměr za 5 let ' + kles[0].vyrovnano_obdobi_pct + ' %)');
+                .text('v roce 2032 platba klesne na čtvrtinu a vrátí ' + kles[0].vyrovnano_2032_pct + ' %');
             var b = svg.selectAll('g.bod').data(data).join('g').attr('class', 'bod')
                 .attr('transform', function (d) { return 'translate(' + x(+d.naklad_obdobi_mld) + ',' + y(+d.vyrovnano_pct) + ')'; });
             b.append('circle').attr('r', 7).attr('fill', function (d) { return CIL.indexOf(d.pravidlo) >= 0 ? '#0050ae' : '#8a96a3'; }).attr('stroke', '#fff').attr('stroke-width', 1.5)
