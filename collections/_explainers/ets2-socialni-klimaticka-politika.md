@@ -20,7 +20,7 @@ extra-scripts:
 - /assets-local/charts/fok-chart-bar-stacked.js
 - /assets-local/js/ets2-blog.js
 - /assets-local/js/ets2-mapa.js
-- https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js
+- /assets-local/charts/d3-sankey.min.js
 - /assets-local/js/ets2-grafy.js
 perex: |
   Evropská pravidla počítají s tím, že sociální dopady ETS2 tlumí členské státy. Jaké nástroje mají, kolik by stály a co z toho zatím chystá Česko?
