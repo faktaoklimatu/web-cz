@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Dekarbonizace domácností už běží. Cílenou podporu by potřebovalo zhruba 300 tisíc domácností"
+title:       "Dekarbonizace domácností už běží. Cílenou podporu by potřebovalo zhruba 260 tisíc domácností"
 slug:        "ets2-zranitelne-domacnosti"
 series-id:   "serie-ets2-domacnosti"
 series-order: "I"
@@ -23,7 +23,7 @@ extra-scripts:
 - /assets-local/js/ets2-mapa.js
 - /assets-local/js/ets2-grafy.js
 perex: |
-  Evropská povolenka ETS2 by od roku 2028 zdražila uhlí, plyn, benzín a naftu. Domácnostem s penězi na výměnu kotle by to dalo další důvod přejít na tepelné čerpadlo. Zhruba 270–310 tisíc chudších domácností by na změnu ale potřebovalo pomoc ze Sociálního klimatického fondu. Jaké jsou možnosti?
+  Evropská povolenka ETS2 by od roku 2028 zdražila uhlí, plyn, benzín a naftu. Domácnostem s penězi na výměnu kotle by to dalo další důvod přejít na tepelné čerpadlo. Zhruba 240–290 tisíc chudších domácností by na změnu ale potřebovalo pomoc ze Sociálního klimatického fondu. Jaké jsou možnosti?
 ---
 
 {% include series-box.html series-id=page.series-id selected=page.slug %}
@@ -32,7 +32,7 @@ perex: |
 - **Zavedení ETS2 by změnilo, co se domácnostem vyplatí.** Uhlí, plyn, benzín a nafta by zdražily. Tepelné čerpadlo, které už dnes vychází levněji než starší plynový kotel, by se vyplatilo ještě víc, a nově by výrazně porazilo i starý kotel na uhlí.
 - **Domácnosti se středními a vyššími příjmy** by tak dostaly další důvod přejít na čistší vytápění. Na investici mají.
 - **Pro většinu domácností by zavedení ETS2 znamenalo stokoruny měsíčně.** U části z nich by ale prohloubilo chudobu, ve které už jsou.
-- **Zhruba 270–310 tisíc zranitelných domácností** by zavedení ETS2 zasáhlo citelně. Nejtvrději rodinné domy na uhlí, které by stálo 1 450 Kč měsíčně. Nejvíc zranitelných ale bydlí v domech na plyn, kde by to bylo 750 Kč.
+- **Zhruba 240–290 tisíc zranitelných domácností** by zavedení ETS2 zasáhlo citelně. Nejtvrději rodinné domy na uhlí, které by stálo 1 450 Kč měsíčně. Nejvíc zranitelných ale bydlí v domech na plyn, kde by to bylo 750 Kč.
 " %}
 
 <p class="dlrow"><a class="dl" href="#ODKAZ-PDF-studie" download>Stáhnout celou studii (PDF)</a></p>
@@ -88,7 +88,7 @@ Doprava je oblast, kde fosilních paliv v Česku neubývá. Konečná spotřeba 
 
 Zavedení ETS2 by při ceně 60 € za tunu zdražilo benzín a naftu [zhruba o 4–5 Kč za litr](#metodika) včetně DPH. Domácnost s autem natankuje v průměru [787 litrů ročně](https://csu.gov.cz/produkty/spotreba-paliv-a-energii-v-domacnostech-energo-2021), takže by ji to stálo kolem 270 Kč měsíčně. Auto přitom používá asi tři čtvrtiny domácností. Pro srovnání: benzín letos po uzavření Hormuzského průlivu zdražil asi o 10 Kč za litr, tedy víc než dvojnásobně.
 
-Elektroauto ETS2 nezatíží, protože elektřina spadá pod stávající systém ETS1. U dopravy je ale přechod pro chudší domácnosti ještě těžší než u vytápění: ojeté elektroauto je zatím drahé, kdo nemůže nabíjet doma, závisí na [veřejných nabíječkách, kterých je zatím málo](https://www.seznamzpravy.cz/clanek/ekonomika-byznys-doprava-cesko-ma-jednu-nabijecku-na-kazdych-pet-aut-sit-ale-eu-stale-nestaci-282982), a na venkově často chybí veřejná doprava. Sociální klimatický fond proto počítá i s podporou čistší a dostupné dopravy, například s příspěvky na veřejnou dopravu nebo na ojeté nízkoemisní vozy.
+Elektroauto ETS2 nezatíží, protože elektřina spadá pod stávající systém ETS1. U dopravy je ale přechod pro chudší domácnosti ještě těžší než u vytápění: ojeté elektroauto je zatím drahé, kdo nemůže nabíjet doma, závisí na [veřejných nabíječkách, kterých je zatím málo](https://www.seznamzpravy.cz/clanek/ekonomika-byznys-doprava-cesko-ma-jednu-nabijecku-na-kazdych-pet-aut-sit-ale-eu-stale-nestaci-282982), a na venkově často chybí veřejná doprava. Sociální klimatický fond proto umožňuje podporovat i čistší a dostupnou dopravu, například příspěvky na veřejnou dopravu nebo na ojeté nízkoemisní vozy. Český návrh plánu ale počítá hlavně s [poptávkovou dopravou a nákupem bezemisních autobusů](https://www.cde-org.cz/media/object/2884/skf_analyza_04_2026.docx.pdf) v hůře obsloužených oblastech.
 
 {% endcapture %}
 {% include expander.html name="doprava" label="Na okraj: Jak ETS2 dopadne na dopravu?" content=ex_doprava %}
@@ -99,10 +99,10 @@ Pro většinu domácností by zavedení ETS2 znamenalo stokoruny měsíčně. U 
 
 - patří do spodních dvou pětin podle příjmu na osobu;
 - po zavedení ETS2 by dávaly za energie na bydlení víc než dvojnásobek mediánového podílu na příjmu (indikátor energetické chudoby 2M);
-- <span class="pop-inline" tabindex="0"><span class="pv">ETS2 by jim vzalo aspoň 1 % čistého příjmu.</span><span class="pb" hidden>Bez této podmínky by mezi zranitelné spadaly i chudé domácnosti, kterým by zavedení ETS2 skoro nic nevzalo, například byty na elektřinu nebo na teple z velké teplárny v ETS1. Ty jsou energeticky chudé už dnes a potřebují pomoc z jiných důvodů. Podmínka vybírá ty, kterým by chudobu prohloubilo právě ETS2, a podporu ze Sociálního klimatického fondu lze proto zacílit na dopad ETS2. Hranice 1 % je naše volba: odpovídá zhruba 250 Kč měsíčně u domácnosti s čistým příjmem 25 tisíc Kč.</span></span>
+- <span class="pop-inline" tabindex="0"><span class="pv">zdražení vytápění kvůli ETS2 by jim vzalo aspoň 1 % čistého příjmu.</span><span class="pb" hidden>Bez této podmínky by mezi zranitelné spadaly i chudé domácnosti, kterým by zavedení ETS2 skoro nic nevzalo, například byty na elektřinu nebo na teple z velké teplárny v ETS1. Ty jsou energeticky chudé už dnes a potřebují pomoc z jiných důvodů. Podmínka vybírá ty, kterým by chudobu prohloubilo právě ETS2, a podporu ze Sociálního klimatického fondu lze proto zacílit na dopad ETS2. Benzín a naftu do této podmínky nezapočítáváme: podpora ze Sociálního klimatického fondu by měla mířit hlavně na vytápění, kde domácnost nemá snadnou náhradu. Hranice 1 % je naše volba: odpovídá zhruba 250 Kč měsíčně u domácnosti s čistým příjmem 25 tisíc Kč.</span></span>
 {: .plain}
 
-Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 270–310 tisíc, kolem 6 % všech. ETS2 by je stálo v průměru 780 Kč měsíčně, 2,7 % příjmu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a ETS2 by jí vzalo 4,7 % příjmu. <span class="pop-inline" tabindex="0"><span class="pv">Energetická chudoba</span><span class="pb" hidden>Podle <a href="https://mpo.gov.cz/cz/energetika/uspory-energie/dotace-a-setreni-energie/energeticka-chudoba/energeticka-chudoba--283379/">ministerstva průmyslu a obchodu</a> je domácnost energeticky chudá, pokud nemá dostatečný disponibilní příjem a přístup k základním energetickým službám kvůli vysokým výdajům za energie nebo vysoké energetické náročnosti bydlení. Výdajové kritérium je podíl výdajů za energie na příjmu vyšší než dvojnásobek mediánu (tzv. 2M).</span></span> v uhelných domech by stoupla z 16 na 22 %.
+Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 240–290 tisíc, necelých 6 % všech. ETS2 by je stálo v průměru 810 Kč měsíčně, 2,8 % příjmu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a ETS2 by jí vzalo 4,7 % příjmu. <span class="pop-inline" tabindex="0"><span class="pv">Energetická chudoba</span><span class="pb" hidden>Podle <a href="https://mpo.gov.cz/cz/energetika/uspory-energie/dotace-a-setreni-energie/energeticka-chudoba/energeticka-chudoba--283379/">ministerstva průmyslu a obchodu</a> je domácnost energeticky chudá, pokud nemá dostatečný disponibilní příjem a přístup k základním energetickým službám kvůli vysokým výdajům za energie nebo vysoké energetické náročnosti bydlení. Výdajové kritérium je podíl výdajů za energie na příjmu vyšší než dvojnásobek mediánu (tzv. 2M).</span></span> v uhelných domech by stoupla z 16 na 22 %.
 
 U dálkového tepla by zdražení nebylo plošné. Velké teplárny nad 20 MW už povolenky platí ve [stávajícím systému ETS1](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023L0959), pod ETS2 by spadly jen menší výtopny na plyn a uhlí. Dražší teplo by se tak týkalo hlavně bytů napojených na menší výtopnu, typicky v menších městech nebo na jednotlivých sídlištích s vlastní kotelnou.
 
@@ -113,12 +113,20 @@ U dálkového tepla by zdražení nebylo plošné. Velké teplárny nad 20 MW u�
   <p class="ets2-sub">Jeden čtvereček = 10 tisíc domácností, oranžově zranitelné domácnosti (základní scénář)</p>
   <script type="application/json" class="graf-data">{{ site.data.ets2.skupiny | jsonify }}</script>
   <div class="ets2-graf" data-graf="skupiny" role="img" aria-label="Velikost skupin domácností podle typu bydlení a vytápění a počet zranitelných domácností v nich"></div>
-  <div class="ets2-src">Zdroj: výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; byty na teple rozdělené na asi 380 tis. domácností napojených na zdroj v ETS2 a zbytek na zdrojích v ETS1, kterým by ETS2 topení nezdražilo (<a href="https://faktaoklimatu.cz/studie/2026-odchod-teplaren-od-uhli">Fakta o klimatu</a>).</div>
+  <div class="ets2-src">Zdroj: výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; byty na teple rozdělené na asi 380 tis. domácností napojených na zdroj v ETS2 a zbytek na zdrojích v ETS1, kterým by ETS2 topení nezdražilo (<a href="https://faktaoklimatu.cz/studie/2026-odchod-teplaren-od-uhli">Fakta o klimatu</a>). <span class="note-wrap"><button type="button" class="note-b" aria-expanded="false">poznámky</button><span class="note-t"> Skupiny jsou podle hlavního zdroje vytápění. Zranitelné mohou být i domácnosti, které topí hlavně elektřinou, dřevem nebo tepelným čerpadlem, pokud vedle toho přitápějí uhlím nebo plynem. Zdražení tohoto přitápění kvůli ETS2 jim pak může vzít aspoň 1 % příjmu. Jde o malé skupiny a počty jsou jen orientační.</span></span></div>
 </figure>
 
-Kde by zavedení ETS2 dopadlo nejvíc, záleží na tom, čím se v regionu topí. Uhlím topí podle [sčítání 2021](https://vdb.czso.cz) zhruba každý desátý rodinný dům, nejčastěji v Ústeckém, Libereckém, Plzeňském a Karlovarském kraji a na periferiích: v obvodech Broumov, Frýdlant nebo Sedlčany je to přes čtvrtinu domů. Plyn převažuje v rodinných domech na jižní Moravě a v Praze, v bytových domech hlavně v Libereckém, Jihomoravském kraji a na Vysočině. Dálkové teplo ze zdrojů, které by spadaly pod ETS2, je hlavně v menších městech s vlastní plynovou nebo uhelnou výtopnou, například v Rýmařově, Varnsdorfu nebo Aši ([ERÚ 2024](https://eru.gov.cz/vysledne-ceny-tepelne-energie-v-cr-2024), výpočet Fakt o klimatu).
+## Proč hodně záleží na mikroregionu?
+
+Kde by zavedení ETS2 dopadlo nejvíc, záleží na tom, čím se v regionu topí. Uhlím topí podle [sčítání 2021](https://vdb.czso.cz) zhruba každý desátý rodinný dům, nejčastěji v Ústeckém, Libereckém, Plzeňském a Karlovarském kraji a na periferiích: ve správních obvodech obcí s rozšířenou působností Broumov, Frýdlant nebo Sedlčany je to přes čtvrtinu domů. Plyn převažuje v rodinných domech na jižní Moravě a v Praze, v bytových domech hlavně v Libereckém, Jihomoravském kraji a na Vysočině. Dálkové teplo ze zdrojů, které by spadaly pod ETS2, je hlavně v menších městech s vlastní plynovou nebo uhelnou výtopnou, například v Rýmařově, Varnsdorfu nebo Aši ([ERÚ 2024](https://eru.gov.cz/vysledne-ceny-tepelne-energie-v-cr-2024), výpočet Fakt o klimatu).
 
 {% include includes-local/ets2-blog/mapa-orp.html vrstvy="uhli,plyn,bj_plyn,teplo_ets2" %}
+
+Palivo ale nestačí. Stejné zdražení dopadne jinak na domácnost s vysokým a s nízkým příjmem a jinak na zateplený a nezateplený dům. [Ministerstvo financí](https://mpo.gov.cz/assets/cz/energetika/uspory-energie/aktuality/2026/11/Tematicky-report_Mikroregionalni_ukazatel_energeticke_chudoby_MF.pdf) proto pro každý správní obvod obce s rozšířenou působností spočítalo, jakou část příjmů domácnosti v průměru dávají za vytápění. Nejvyšší podíl vychází na periferiích s rodinnými domy, často tam, kde se topí uhlím: v Broumově, Podbořanech nebo Frýdlantu je to přes 16 % příjmů, v Praze necelých 6 % (2026). Tam by zavedení ETS2 dopadlo nejcitelněji a tam by se vyplatilo nejvíc posílit podporu výměny zdrojů a zateplení.
+
+<div id="mapa-chudoby" class="ets2-anchor"></div>
+
+{% include includes-local/ets2-blog/mapa-orp.html vrstvy="mf" %}
 
 {% include includes-local/ets2-blog/preview-link.html url="/explainery/ets2-socialni-klimaticka-politika" kicker="Pokračování série" title="Česku chybí sociální klimatická politika. Stát ale ani neví, kdo čím topí" sub="Sociální klimatická politika, 2. díl · Fakta o klimatu" %}
 
@@ -136,7 +144,7 @@ Kde by zavedení ETS2 dopadlo nejvíc, záleží na tom, čím se v regionu top�
 
 - Dopady na domácnosti: mikrodata [EU-SILC 2024](https://csu.gov.cz/zivotni-podminky) (příjmy, typ bydlení, vytápění, výdaje na energie), pohonné hmoty a podíl uhlí v pevných palivech ze [Statistiky rodinných účtů 2023](https://csu.gov.cz/rodinne_ucty).
 - Ceny: plyn podle realizovaných cen Eurostatu, dálkové teplo podle [ERÚ 2024](https://eru.gov.cz/vysledne-ceny-tepelne-energie-v-cr-2024), uhlí podle ceníků uhelných skladů; vše převedeno na rok 2028.
-- Scénář A: povolenka 45 eur (ceny 2020), tedy asi 60 eur za tunu v roce 2028. Emisní faktory podle ČHMÚ.
+- Scénář A: povolenka 45 eur (ceny 2020), tedy asi 60 eur za tunu v roce 2028. Eura převádíme kurzem 24,2 Kč, který [Česká národní banka čeká pro rok 2028](https://www.cnb.cz/cs/menova-politika/prognoza/). Emisní faktory podle ČHMÚ.
 - Odhady nákladů jednotlivých možností jsou řádové a slouží k porovnání, ne jako rozpočtová kalkulace.
 - Typové domácnosti a detailní výsledky jsou v naší prezentaci a metodice.
 - Renovace, návratnost zateplení a kapacity stavebnictví: Ministerstvo financí, [hlavní report](#ODKAZ-MF-hlavni-report); regionální rozložení: [Mikroregionální ukazatel energetické chudoby](https://mpo.gov.cz/assets/cz/energetika/uspory-energie/aktuality/2026/11/Tematicky-report_Mikroregionalni_ukazatel_energeticke_chudoby_MF.pdf) (2026).

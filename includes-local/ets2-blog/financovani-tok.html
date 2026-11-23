@@ -1,0 +1,46 @@
+{%- comment -%}
+Kam by šly peníze z povolenek ETS2: dražby -> Sociální klimatický fond / příjem státního rozpočtu; Sociální klimatický plán
+podle MŽP a rozšířený o přímé platby. Data: _data/ets2/financovani.csv (R/13_data_web.R v dílně).
+Výnosy ETS2: PwC pro MŽP (2025), přepočteno z let 2027–2032 na 2028–2032.
+{%- endcomment -%}
+{%- assign fin = site.data.ets2.financovani -%}
+{%- for r in fin -%}
+  {%- assign v = r.mld | plus: 0 -%}
+  {%- if r.radek == "fond" and r.segment == "celkem" -%}{%- assign skf = v -%}{%- endif -%}
+  {%- if r.radek == "skp_mzp" and r.segment == "budovy" -%}{%- assign m_bud = v -%}{%- endif -%}
+  {%- if r.radek == "skp_mzp" and r.segment == "doprava" -%}{%- assign m_dop = v -%}{%- endif -%}
+  {%- if r.radek == "skp_mzp" and r.segment == "technicka" -%}{%- assign m_tp = v -%}{%- endif -%}
+  {%- if r.radek == "platba" and r.segment == "celkem" -%}{%- assign platba = v -%}{%- endif -%}
+  {%- if r.radek == "plan" and r.segment == "celkem" -%}{%- assign plan = v -%}{%- endif -%}
+  {%- if r.radek == "plan" and r.segment == "eu" -%}{%- assign plan_eu = v -%}{%- endif -%}
+  {%- if r.radek == "plan" and r.segment == "stat" -%}{%- assign plan_stat = v -%}{%- endif -%}
+  {%- if r.radek == "plan" and r.segment == "podil_prime_pct" -%}{%- assign podil = v -%}{%- endif -%}
+{%- endfor -%}
+{%- assign skf_cz = skf | minus: plan_eu -%}
+<figure class="ets2-figure ets2-tok">
+  <h3 class="js-toc-ignore">Kam by šly peníze z povolenek ETS2</h3>
+  <p class="ets2-sub">Česko, souhrn za roky 2028–2032, mld. Kč: kdo by povolenky v cenách paliv zaplatil, kam by šel výnos a na co by se použil podle našeho návrhu</p>
+  <script type="application/json" class="graf-data">{{ site.data.ets2.tok_penez | jsonify }}</script>
+  <div class="ets2-graf" data-graf="tok" role="img" aria-label="Tok peněz z povolenek ETS2: kdo platí, kam jde výnos a na co by šel"></div>
+  <div class="tok">
+    <div class="tok-box">
+      <b>Sociální klimatický plán</b>
+      <div class="tok-radek"><span class="tok-lab">Návrh MŽP: {{ skf | round }} mld. Kč</span>
+        <div class="tok-bar" style="width: {{ skf | divided_by: plan | times: 100 }}%">
+          <span class="c-bud" style="flex: {{ m_bud }}" title="Budovy">{{ m_bud | round }}</span>
+          <span class="c-dop" style="flex: {{ m_dop }}" title="Doprava">{{ m_dop | round }}</span>
+          <span class="c-tp" style="flex: {{ m_tp }}" title="Technická pomoc"></span>
+        </div></div>
+      <div class="tok-radek"><span class="tok-lab">Náš návrh: {{ plan | round }} mld. Kč</span>
+        <div class="tok-bar">
+          <span class="c-bud" style="flex: {{ m_bud }}" title="Budovy">{{ m_bud | round }}</span>
+          <span class="c-dop" style="flex: {{ m_dop }}" title="Doprava">{{ m_dop | round }}</span>
+          <span class="c-tp" style="flex: {{ m_tp }}" title="Technická pomoc"></span>
+          <span class="c-prime" style="flex: {{ platba }}" title="Přímé platby">{{ platba | round }}</span>
+        </div></div>
+      <p class="tok-pozn">Náš návrh by zaplatila EU z fondu ({{ plan_eu | round }} mld.) a stát z výnosů z dražeb povolenek ({{ plan_stat | round }} mld.). Investice i přímé platby by se z obou zdrojů platily ve stejném poměru.</p>
+      <div class="tok-leg"><i class="c-bud"></i>zateplení, výměna zdrojů, bydlení <i class="c-dop"></i>doprava <i class="c-tp"></i>technická pomoc <i class="c-prime"></i>přímé platby ({{ podil | round }} % plánu, limit 37,5 %)</div>
+    </div>
+  </div>
+  <div class="ets2-src">Zdroj: platby = emise v sektorech ETS2 v roce 2024 (<a href="https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table">inventura emisí, Eurostat</a>) × 60 € za tunu × kurz, bez DPH, bez menších průmyslových provozů; budovy −3 % ročně, doprava beze změny, od 2028 −2,5 % reakce na cenu; do fondu Česko přispívá podle podílu na emisích ETS2 v EU (2,5 %) a dostane 2,4 %, rozdíl asi 1 mld. Kč graf neukazuje (<a href="http://data.europa.eu/eli/dir/2023/959/oj">směrnice o ETS</a>, čl. 30d). Návrh plánu MŽP podle <a href="https://mzp.gov.cz/system/files/2025-10/Kulaty%CC%81%20stu%CC%8Al%20dopady%20ETS2%20PWC-2.pdf">PwC pro MŽP (2025)</a>; fond a limit přímých plateb podle <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955">nařízení o Sociálním klimatickém fondu</a>, čl. 8 a příloha II; kurz 24,2 Kč/€ (<a href="https://www.cnb.cz/cs/menova-politika/prognoza/">ČNB</a>); přímé platby výpočet Fakt o klimatu: dva roky plná výše, pak pokles o čtvrtinu ročně, kdyby o ni požádali všichni oprávnění.</div>
+</figure>

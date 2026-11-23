@@ -20,6 +20,7 @@ extra-scripts:
 - /assets-local/charts/fok-chart-bar-stacked.js
 - /assets-local/js/ets2-blog.js
 - /assets-local/js/ets2-mapa.js
+- https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js
 - /assets-local/js/ets2-grafy.js
 perex: |
   Evropská pravidla počítají s tím, že sociální dopady ETS2 tlumí členské státy. Jaké nástroje mají, kolik by stály a co z toho zatím chystá Česko?
@@ -28,12 +29,12 @@ perex: |
 {% include series-box.html series-id=page.series-id selected=page.slug %}
 
 {% include tldr.html title="Hlavní zjištění" content="
-- **Od roku 2028 by ETS2 zdražilo vytápění plynem a uhlím a pohonné hmoty.** Citelně by zasáhlo asi 290 tisíc domácností s nízkými příjmy, které na zdražení nemají. Průměrně by je stálo 780 Kč měsíčně, domácnosti v rodinných domech na uhlí kolem 1 450 Kč.
+- **Od roku 2028 by ETS2 zdražilo vytápění plynem a uhlím a pohonné hmoty.** Citelně by zasáhlo asi 260 tisíc domácností s nízkými příjmy, které na zdražení nemají. Průměrně by je stálo 810 Kč měsíčně, domácnosti v rodinných domech na uhlí kolem 1 450 Kč.
 - **Český návrh Sociálního klimatického plánu přímé platby nepočítá**, přestože by je pravidla fondu dovolila. Kritizuje to veřejný ochránce práv i Centrum pro dopravu a energetiku.
 - **Hlavní problém není, kolik peněz dát, ale jak je doručit.** Stát neví, čím kdo topí, nezná příjmy domácností (jen jednotlivců) a nemá účty, kam peníze poslat. Dávky, o které se musí žádat, čerpá jen čtvrtina až polovina oprávněných.
-- **Návrh PAQ Research a CVF by stál 13 mld. Kč ročně, ale zranitelným domácnostem by z něj šlo jen 7 % peněz** a vyrovnal by jim méně než třetinu zdražení. Jeho hlavní části (sleva na dani, valorizace důchodů) navíc nejsou cílené, a nešlo by je proto platit ze Sociálního klimatického fondu.
 - **V zahraničí funguje automatická výplata tam, kde stát umí spojit příjem s bydlištěm** (Francie do roku 2023) nebo navázat platbu na existující dávku či důchod (Španělsko, Irsko). Kde se musí žádat, čerpání padá (Francie od roku 2024) nebo lidé systém obcházejí (Polsko).
-- **Pro Česko navrhujeme dva kanály.** Domácnosti s důchodcem by platbu dostaly automaticky jako dočasný příplatek k důchodu. Ostatní by si o ni požádaly jednoduchou žádostí s velkou kampaní: příjem by úřad ověřil sám, domácnost by doložila jen palivo. Nárok by měly jen domácnosti s příjmem pod mediánem a cílená platba by stála 6–8 mld. Kč ročně.
+- **Pro Česko navrhujeme dočasnou platbu podle paliva a typu bydlení, kterou by stát doručoval třemi kanály.** Příjemcům dávek na bydlení by ji přidal k energetickému paušálu. Domácnosti s důchodcem by jednou doložily palivo a dál by platbu dostávaly automaticky jako příplatek k důchodu. Ostatní by si zažádaly jednoduchou žádostí s velkou kampaní: příjem by úřad ověřil sám, domácnost by doložila jen palivo. Platba by s rostoucím příjmem plynule klesala k nule u mediánu. V plné výši by stála asi 6 mld. Kč ročně, za roky 2028–2032 asi 21 mld. Kč, a zranitelným by vrátila necelé tři čtvrtiny zdražení vytápění.
+- **Návrh PAQ Research a CVF by stál 13 mld. Kč ročně, ale zranitelným domácnostem by z něj šlo jen 6 % peněz** a vyrovnal by jim jen zhruba třetinu zdražení vytápění. Jeho hlavní části (sleva na dani, valorizace důchodů) navíc nejsou cílené, a nešlo by je proto platit ze Sociálního klimatického fondu.
 - Koho by zavedení ETS2 zasáhlo nejvíc a kde tyto domácnosti žijí, rozebíráme v [prvním textu série](/explainery/ets2-zranitelne-domacnosti).
 " %}
 
@@ -45,7 +46,7 @@ perex: |
 
 Zavedení ETS2 by domácnostem zdražilo vytápění hned od roku 2028, výměna kotle nebo zateplení ale trvá roky. Na toto přechodné období proto [nařízení o Sociálním klimatickém fondu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955) dovoluje státům vyplácet zranitelným domácnostem dočasné přímé platby.
 
-**Český návrh Sociálního klimatického plánu přímé platby nepočítá.** [Plán je vylučuje](https://mzp.gov.cz/system/files/2026-01/OFDE-prvni_verze_SKP_pro_MPR-20251218.docx) s odkazem na dávky, přestože by na ně šlo použít až 37,5 % fondu. Kritizuje to [veřejný ochránce práv](https://www.ochrance.cz/uploads-import/ESO/57597-2025_soci%C3%A1ln%C3%AD_klimatick%C3%BD_pl%C3%A1n.pdf): podle něj v plánu „chybí kompenzace pro toto kritické přechodné období“, tedy dobu od zavedení ETS2 do chvíle, než se projeví investice do renovací. Absenci přímé podpory jako jednu z nejproblematičtějších částí plánu označuje i [Centrum pro dopravu a energetiku](https://www.cde-org.cz/media/object/2884/skf_analyza_04_2026.docx.pdf).
+**Český návrh Sociálního klimatického plánu přímé platby nepočítá.** [Plán je vylučuje](https://mzp.gov.cz/system/files/2026-01/OFDE-prvni_verze_SKP_pro_MPR-20251218.docx) s odkazem na dávky, přestože by mohly tvořit až 37,5 % nákladů plánu. Kritizuje to [veřejný ochránce práv](https://www.ochrance.cz/uploads-import/ESO/57597-2025_soci%C3%A1ln%C3%AD_klimatick%C3%BD_pl%C3%A1n.pdf): podle něj v plánu „chybí kompenzace pro toto kritické přechodné období“, tedy dobu od zavedení ETS2 do chvíle, než se projeví investice do renovací. Absenci přímé podpory jako jednu z nejproblematičtějších částí plánu označuje i [Centrum pro dopravu a energetiku](https://www.cde-org.cz/media/object/2884/skf_analyza_04_2026.docx.pdf).
 
 <div id="skp" class="ets2-anchor"></div>
 
@@ -56,7 +57,8 @@ První verze plánu, kterou připravilo [ministerstvo životního prostředí](h
 - **Žádný most.** Přímou podporu plán vylučuje s odkazem na dávky. Domácnost na uhlí by ale od roku 2028 platila 1 450 Kč měsíčně navíc dřív, než se k ní renovace dostane.
 - **Málo výměn kotlů.** Z 38 800 podpořených rodinných domů má jít jen asi 7 200 o výměnu zdroje vytápění. Zranitelných domácností v domech na uhlí je přitom 40–50 tisíc a na plyn 110–130 tisíc.
 - **Výměny necílí na palivo.** Renovace cílí na příjem a energetickou třídu domu, ne na to, čím se v něm topí. U investice to přitom jde: starý kotel na uhlí se při výměně fyzicky odstraní. Podporu tak může dostat i domácnost, které by zavedení ETS2 účty skoro nezvýšilo, třeba v domě, kde se topí dřevem.
-- **Velké investice s malým dosahem.** Nové nájemní byty i poptávková doprava do fondu patří: nabízejí bydlení tam, kde se renovace nevyplatí, a dopravu tam, kde autobus nejezdí. Na zhruba 3&nbsp;500 bytů ale jde 560 milionů eur, tedy přes 4 miliony korun na byt. U poptávkové dopravy plán platí hlavně nákup tisíce vozů, provoz jen na rozjezd, a nestanovuje jízdné ani napojení na krajskou dopravu.
+- **Drahé nájemní byty.** Nové nájemní byty do fondu patří: nabízejí bydlení tam, kde se renovace nevyplatí. Na zhruba 3&nbsp;500 bytů ale jde 560 milionů eur, tedy přes 4 miliony korun na byt.
+- **Doprava neřeší okamžitý dopad.** Investice do veřejné a poptávkové dopravy jsou podle [Centra pro dopravu a energetiku](https://www.cde-org.cz/media/object/2884/skf_analyza_04_2026.docx.pdf) dlouhodobé a zranitelní na jejich účinek můžou čekat roky. CDE se také ptá, zda nákup bezemisních autobusů opravdu míří na dopravní chudobu.
 - **Chybí analýza dopadů.** Plán pracuje jen s průměrnou domácností. Kdo zaplatí nejvíc a kde žije, neřeší.
 
 {% endcapture %}
@@ -91,34 +93,7 @@ Aby platba došla ke správným domácnostem, musí stát u každé znát tři v
 - **Daňová data chrání mlčenlivost.** Finanční správa může údaje z daňových přiznání předat jinému úřadu jen tam, kde to zákon výslovně umožňuje ([daňový řád, § 52 a násl.](https://www.zakonyprolidi.cz/cs/2009-280)). Podobně jsou chráněná data ČSSZ a Úřadu práce.
 - **Úřady nevědí, čím kdo topí.** Takový údaj v žádném použitelném státním registru není.
 
-Když údaj chybí, musí si domácnost zažádat sama. Superdávku, o kterou se žádá, [čerpá jen čtvrtina až polovina oprávněných](https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf). Ze zranitelných domácností podle našeho výpočtu pobírá dávky na bydlení jen 15 %, v rodinných domech na uhlí jen 2 % ([EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions)).
-
-## Co navrhují PAQ Research a CVF?
-
-[PAQ Research a Centrum pro veřejné finance (2026)](https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf) navrhují kompenzovat ETS2 třemi opatřeními:
-
-- **zvýšení slevy na poplatníka** o 1 200 Kč ročně pro všechny pracující, s náklady 5,9 mld. Kč ročně,
-- **mimořádná valorizace důchodů** za 5,5 mld. Kč ročně,
-- **zvýšení energetického paušálu o 20 %** pro příjemce dávek na bydlení.
-
-Výhodou návrhu je jednoduchost: využívá existující systémy a nevyžaduje nová data. Podle našeho výpočtu má ale zásadní nevýhody.
-
-| | Návrh PAQ a CVF | Cílená varianta |
-|---|---|---|
-| Náklad ročně | 13,0 mld. Kč | 6,7 mld. Kč |
-| Podíl peněz, který by šel zranitelným | 7 % | 34 % |
-| Zranitelných by nedostalo nic | 7 % | 16 % |
-| Část zdražení, kterou by zranitelní dostali zpět | 29 % | 70 % |
-| z toho rodinné domy na tuhá paliva | 14 % | 79 % |
-{: .table .ets2-tabulka}
-
-Zdroj: [EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions), výpočet Fakta o klimatu. Valorizace je rozpočítaná na všechny důchodce se stejným úhrnem jako v návrhu.
-{: .ets2-tab-src}
-
-1. **Je drahý a málo cílený.** Sleva na dani jde všem pracujícím, valorizace všem důchodcům. Zranitelným domácnostem by šlo jen 7 % peněz.
-2. **Nejvíc zasaženým by vrátil nejméně.** Domácnosti v rodinných domech na uhlí by ETS2 stálo kolem 1 450 Kč měsíčně, návrh by jim vrátil jen 14 % této částky. Sleva na dani i valorizace jsou stejné bez ohledu na to, čím domácnost topí.
-3. **Většinu by nešlo platit ze Sociálního klimatického fondu.** Fond smí platit jen dočasnou podporu zranitelným domácnostem ([čl. 4 odst. 3 a čl. 8 odst. 2 nařízení 2023/955](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955)). Plošná sleva ani valorizace všech důchodů tuto podmínku nesplňují. Valorizace navíc zůstává v důchodu trvale, takže není dočasná. Autoři sami uvádějí, že zbývajících asi 11,5 mld. Kč ročně „by musel financovat státní rozpočet“ ([s. 30](https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf)).
-4. **Cílená část dosáhne jen na menšinu.** Energetický paušál dostanou jen příjemci dávek na bydlení, tedy 15 % zranitelných.
+Když údaj chybí, musí si domácnost zažádat sama. Superdávku, o kterou se žádá, [čerpá jen čtvrtina až polovina oprávněných](https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf). Ze zranitelných domácností podle našeho výpočtu pobírá dávky na bydlení jen 16 %, v rodinných domech na uhlí jen 2 % ([EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions)).
 
 ## Jak to dělají jinde?
 
@@ -128,11 +103,11 @@ Zdroj: [EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union
 
 | Země | Nástroj | Jak se pozná nárok | Musí se žádat? | Výsledek |
 |---|---|---|---|---|
-| **Rakousko** | Klimabonus 2022–2024, 145–290 eur ročně | Hlavní bydliště z registru obyvatel, účet od finanční správy | Ne | Přes 90 % převodem, ostatní poukázka poštou. Stál přes 4,1 mld. eur, víc než vynesla uhlíková daň. Zrušen kvůli rozpočtu. |
-| **Francie** | chèque énergie, 48–277 eur ročně | Příjem z daňových údajů, adresa z daně z bydlení | Do roku 2023 ne | Čerpání 84 %. Po zrušení daně z bydlení stát přišel o adresy, musí se žádat a čerpání kleslo na odhadem 3–12 %. |
-| **Španělsko** | bono social térmico, od 50 eur podle klimatické zóny | Automaticky příjemci sociálního tarifu elektřiny | Ne | Funguje automaticky, ale jen pro ty, kdo si dřív požádali o sociální tarif. |
-| **Irsko** | Fuel Allowance, 38 eur týdně po 28 týdnů | Senioři s testem příjmu, příjemci vybraných dávek | Jednou | Vyplácí se s dávkami, každý rok bez nové žádosti. |
-| **Polsko** | dodatek węglowy 2022, 3 000 zł | Uhlí zapsané v registru zdrojů tepla | Ano, na obci | Lidé se hromadně přepisovali na uhlí, dokud zákon neurčil rozhodný den. Obce kontrolovaly kotle v domácnostech. |
+| **Rakousko** | Klimabonus 2022–2024, 145–290 eur ročně (asi 3 500–7 000 Kč) | Hlavní bydliště z registru obyvatel, účet od finanční správy | Ne | Přes 90 % převodem, ostatní poukázka poštou. Stál přes 4,1 mld. eur (asi 100 mld. Kč), víc než vynesla uhlíková daň. Zrušen kvůli rozpočtu. |
+| **Francie** | chèque énergie, 48–277 eur ročně (asi 1 200–6 700 Kč) | Příjem z daňových údajů, adresa z daně z bydlení | Do roku 2023 ne | Čerpání 84 %. Po zrušení daně z bydlení stát přišel o adresy, musí se žádat a čerpání kleslo na odhadem 3–12 %. |
+| **Španělsko** | bono social térmico, od 50 eur (asi 1 200 Kč) podle klimatické zóny | Automaticky příjemci sociálního tarifu elektřiny | Ne | Funguje automaticky, ale jen pro ty, kdo si dřív požádali o sociální tarif. |
+| **Irsko** | Fuel Allowance, 38 eur (asi 920 Kč) týdně po 28 týdnů | Senioři s testem příjmu, příjemci vybraných dávek | Jednou | Vyplácí se s dávkami, každý rok bez nové žádosti. |
+| **Polsko** | dodatek węglowy 2022, 3 000 zł (asi 16 500 Kč), nižší příspěvky i na pelety, dřevo a topný olej | Uhlí zapsané v registru zdrojů tepla | Ano, na obci | Nárok se řídil přiznáním zdroje tepla v registru. Po vyhlášení příspěvku přiznání uhlí přibylo, proto zákon stanovil rozhodný den. Obce kontrolovaly kotle v domácnostech. |
 | **Německo** | Klimageld, zatím nevyplácený | Daňové číslo a účet | Ne (plán) | Systém pro přímé platby se staví od roku 2021 a stále není hotový. Účet je evidovaný jen u 16 z 86 mil. daňových čísel. |
 {: .table .ets2-tabulka}
 
@@ -150,7 +125,7 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 3. **Navázání na existující dávku je levné, ale převezme její nízké čerpání.**
 4. **Nárok podle paliva na žádost vede k obcházení.** Rozhodný den musí být známý od začátku a data o palivu musí být taková, která domácnost nemůže sama změnit.
 
-## Co navrhujeme pro Česko?
+## Jaká je rozumná cesta pro Česko?
 
 Žádný nástroj sám nestačí. Přímá platba pomůže hned, ale dům na uhlí zůstane domem na uhlí. Výměna zdroje pomůže natrvalo, ale trvá roky.
 
@@ -160,23 +135,23 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 
 | | plyn | tuhá paliva | teplo ze zdroje v ETS2 |
 |---|---|---|---|
-| rodinný dům | 750 Kč | 1 450 Kč | – |
-| byt | 570 Kč | – | 500 Kč |
+| rodinný dům | 650 Kč | 1 300 Kč | – |
+| byt | 550 Kč | – | 430 Kč |
 {: .table .ets2-tabulka}
 
-Částky jsou měsíční. Kdyby o platbu požádali všichni oprávnění, stála by 6,7 mld. Kč ročně, dostalo by ji 85 % zranitelných domácností a vrátila by jim 70 % zdražení. Zbylých 15 % jsou domácnosti s jiným nebo kombinovaným vytápěním ([EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions), výpočet Fakta o klimatu). Ze Sociálního klimatického fondu by šlo pokrýt jen 2–2,5 mld. Kč, zbytek by musel jít z národních výnosů z dražeb ETS2.
+Částky jsou měsíční a odpovídají průměrnému zdražení vytápění zranitelných domácností v dané skupině, benzín a naftu platba nevyrovnává. Kdyby o platbu požádali všichni oprávnění, stála by v plné výši 6,0 mld. Kč ročně, dostalo by ji 89 % zranitelných domácností a vrátila by jim 72 % zdražení vytápění. Zbylých 11 % jsou domácnosti s jiným nebo kombinovaným vytápěním ([EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions), výpočet Fakta o klimatu). Stát by o ni rozšířil Sociální klimatický plán a navýšení zaplatil z výnosů z dražeb povolenek ETS2 ([víc níže](#financovani)).
 
 **Otevřená otázka: byty na teple z velkých tepláren.** Velké teplárny jsou v [systému povolenek od roku 2005](https://climate.ec.europa.eu/eu-action/carbon-markets/about-eu-ets_en), ETS2 by jejich teplo nezdražilo. Nájemník ale obvykle neví, odkud teplo do domu jde. Nabízí se dvě varianty:
 
 - **Platit jen bytům na teple ze zdroje v ETS2.** Přesnější a levnější: peníze jdou jen tam, kde by ETS2 topení zdražilo. Zdroj tepla by potvrdil dodavatel tepla.
-- **Platit všem bytům na dálkovém teple stejně.** Jednodušší na vysvětlení i vyřízení, ale [stálo by to asi 10,8 místo 6,7 mld. Kč ročně](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions) a zranitelným by to nevrátilo víc. Peníze navíc by šly domácnostem, kterým by ETS2 topení nezdražilo.
+- **Platit všem bytům na dálkovém teple stejně.** Jednodušší na vysvětlení i vyřízení, ale [stálo by to asi 9,5 místo 6,0 mld. Kč ročně](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions) a zranitelným by to nevrátilo víc. Peníze navíc by šly domácnostem, kterým by ETS2 topení nezdražilo.
 
 **Navrhujeme tři kanály podle toho, co už stát o domácnosti ví:**
 
 **1. Příjemci dávek na bydlení: vyšší energetický paušál**
 
 - Příjem i bydlení mají ověřené a superdávka už počítá s energetickým paušálem i se zvláštní částkou na tuhá paliva. Platbu by stačilo přidat k paušálu, [vláda ho může zvýšit nařízením](https://www.epravo.cz/_dataPublic/sbirky/2025/Sb_2025_151_PZZ.pdf).
-- **Dosah je ale malý:** dávky na bydlení pobírá jen 15 % zranitelných domácností.
+- **Dosah je ale malý:** dávky na bydlení pobírá jen 16 % zranitelných domácností.
 
 **2. Domácnosti s důchodcem: jednou doložit palivo, pak automaticky s důchodem**
 
@@ -192,31 +167,35 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 - **Kampaň a pomoc obcí:** pro lidi, kteří online žádost sami nezvládnou, by pomohli sociální pracovníci obcí, kontaktní místa a energetické poradny.
 - **Riziko:** i s kampaní si část oprávněných nezažádá. Ve Francii po přechodu na žádost kleslo čerpání z 84 % na odhadem 3–12 % ([Hellowatt](https://www.hellowatt.fr/blog/fin-versement-automatique-cheque-energie/)).
 
-Platba by byla dočasná a klesající podle předem známého plánu (například plná v letech 2028–2029, konec v roce 2032). Přechod na čistší zdroj by ji neukončil.
+Platba by byla dočasná a klesala by podle předem známého plánu: v letech 2028 a 2029 plná, pak by každý rok klesla o čtvrtinu (75, 50 a 25 %) a po roce 2032 by skončila. Domácnost tak ví, kolik a jak dlouho dostane, a má čas vyměnit zdroj, na což jí plán dává investice. Přechod na čistší zdroj by platbu neukončil. Výše by se odvíjela od skutečné ceny povolenky: kdyby byla vyšší než 60 eur za tunu, platba by se úměrně zvýšila. Za roky 2028–2032 by platba stála asi 21 mld. Kč, kdyby o ni požádali všichni oprávnění.
 
-<figure class="ets2-figure ets2-graf-fig">
-  <h3 class="js-toc-ignore">Cílená platba by vrátila zranitelným víc za menší peníze</h3>
-  <p class="ets2-sub">Pravidla přímé platby v základním scénáři: kolik by stála ročně a jakou část svého zdražení by zranitelné domácnosti dostaly zpět</p>
-  <script type="application/json" class="graf-data">{{ site.data.ets2.kompenzace | jsonify }}</script>
-  <div class="ets2-graf" data-graf="kompenzace-bod" role="img" aria-label="Pravidla přímé platby: roční náklad proti části zdražení, kterou zranitelné domácnosti dostanou zpět"></div>
-  <div class="ets2-src">Zdroj: výpočet Fakt o klimatu z <a href="https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions">EU-SILC 2024</a>; návrh PAQ a CVF podle <a href="https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf">PAQ Research a CVF (2026)</a>.</div>
-</figure>
 
 Vedle platby:
 
-- **Dlouhodobě výměna zdroje a zateplení**, nejvíc v rodinných domech na uhlí, s plnou úhradou pro nejchudší, platbou rovnou firmě, průvodcem z obce a kontrolou cen i práce. Podporu renovací lze posílit i v SO ORP, které mapa ukazuje jako nejohroženější.
+- **Dlouhodobě výměna zdroje a zateplení**, nejvíc v rodinných domech na uhlí, s plnou úhradou pro nejchudší, platbou rovnou firmě, průvodcem z obce a kontrolou cen i práce. Hranici zranitelnosti z naší analýzy by šlo použít i jako kritérium pro tyto dotace, například pro nárok na plnou úhradu výměny. Podporu renovací lze posílit i v SO ORP, které [mapa v prvním dílu](/explainery/ets2-zranitelne-domacnosti#mapa-chudoby) ukazuje jako nejohroženější.
 - **Platby by postupně ubývaly, investice přibývaly.**
 {: .plain}
 
-<div id="mapa-box" class="ets2-anchor"></div>
-
-{% capture ex_mapa %}{% include includes-local/ets2-blog/mapa-orp.html vrstvy="mf" %}{% endcapture %}
-{% include expander.html name="mapa-box" label="Mapa: Kde je energetická chudoba nejvyšší?" content=ex_mapa %}
 
 
 Výměnu zdroje ani zateplení přitom v bytě nájemník sám nezařídí, rozhoduje majitel domu nebo společenství vlastníků. Pro nájemníky proto zůstává platba hlavní pomocí déle.
 
 Vedle peněz může být stejně velkou překážkou kapacita. Polsko ani Irsko nenarazily na nedostatek dotací, ale na [nedostatek firem, poradců a kontroly](https://demagog.org.pl/analizy_i_raporty/spor-o-program-czyste-powietrze-jest-lepiej-czy-gorzej/); irské domácnosti čekají na plně hrazenou renovaci [kolem dvou let](https://www.oireachtas.ie/en/debates/question/2025-04-29/306). V Česku bude podle ministerstva financí ve vrcholu let 2028–2030 [chybět řádově 31 tisíc pracovníků](#ODKAZ-MF-hlavni-report) jen na renovace podle evropské směrnice o budovách a od roku 2029 se přidá stavba Dukovan. Síť průvodců, cenové stropy a ověřování nároku by proto bylo potřeba připravit předem.
+
+## Kde na to vzít?
+
+<div id="financovani" class="ets2-anchor"></div>
+
+**Peníze by byly.** Domácnosti by v cenách paliv zaplatily za povolenky ETS2 podle [našeho výpočtu](/explainery/ets2-zranitelne-domacnosti#metodika) kolem 26 miliard korun ročně. Povolenky by v cenách paliv platily i firmy, například nákladní doprava, obchody a kanceláře za vytápění budov nebo menší průmyslové provozy. Čeští odběratelé paliv by za roky 2028–2032 zaplatili za povolenky podle našeho odhadu zhruba 195 miliard korun bez DPH. Vycházíme z [emisí v roce 2024](https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table), u budov počítáme s poklesem o 3 % ročně, u dopravy se stagnací a od roku 2028 s mírně nižší spotřebou kvůli vyšším cenám. Podle tempa poklesu v [projekcích ČHMÚ](https://opendata.chmi.cz/air_quality/products/GHG_emissions/projections/documents/Projections_GHG_2025_CZ.pdf) (2025) by to bylo asi o desetinu méně, zhruba 170 miliard. Analýza [PwC pro ministerstvo životního prostředí](https://mzp.gov.cz/system/files/2025-10/Kulaty%CC%81%20stu%CC%8Al%20dopady%20ETS2%20PWC-2.pdf) počítá s nižší cenou povolenky a odhaduje výnos 154–205 miliard za roky 2027–2032, podobný řád vychází i z [evropského odhadu Transport & Environment](https://uploads.transportenvironment.org/production/files/ETS2_implementation_report.pdf) (2025).
+
+Výnos by šel dvěma cestami:
+
+- **Sociální klimatický fond.** Platí se z dražeb v celé EU. Česko z něj může za roky 2026–2032 dostat až [1,56 miliardy eur](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955), při kurzu 24,2 Kč za euro, který [Česká národní banka čeká pro rok 2028](https://www.cnb.cz/cs/menova-politika/prognoza/), asi 38 miliard korun. Nejméně čtvrtinu plánu musí stát doplatit ze svého rozpočtu, celkem tak jde zhruba o 50 miliard. Nařízení sice pro odklad ETS2 kvůli vysokým cenám energií počítá s menším fondem, ETS2 se ale odložilo [jiným nařízením](https://eur-lex.europa.eu/eli/reg/2026/667/oj/ces) a fond podle [Evropské komise](https://eprs.europarl.europa.eu/EPRS_BRI(2025)772878) zůstává stejný. Přímé platby smějí tvořit [nejvýš 37,5 % celkových nákladů plánu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955) a [měly by být dočasné a postupně klesat](https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1741138), zbytek musí jít na investice. Do fondu přitom čeští odběratelé paliv přispějí zhruba stejně, kolik z něj Česko dostane: podíl Česka na emisích ETS2 v EU je asi 2,5 %, podíl na fondu 2,4 %.
+- **Ostatní výnosy z dražeb** by šly rovnou do státního rozpočtu. Česko by z nich dostalo podíl podle svých emisí, tedy zhruba tolik, kolik zaplatí jeho odběratelé paliv. Stát je musí použít na klimatická a sociální opatření. Přímou podporu z nich [směrnice o ETS dovoluje bez pevného limitu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023L0959), pokud míří na domácnosti s nízkými příjmy.
+
+{% include includes-local/ets2-blog/financovani-tok.html %}
+
+**Jak by se přímá platba zaplatila.** Platba nemusí jít na úkor renovací ani dopravy. Stát musí do plánu přidat [nejméně čtvrtinu nákladů](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955), může ale přidat víc. Navrhujeme proto plán rozšířit: investice by zůstaly, jak je navrhlo ministerstvo životního prostředí, a přímé platby by se přidaly navrch. Navýšení by stát zaplatil z výnosů z dražeb ETS2, kterých by i po zaplacení plánu zbývalo víc než sto miliard. Plán je jeden celek, takže přímé platby by se platily zhruba z poloviny z evropského fondu a z poloviny ze státního rozpočtu. Přímé platby by tvořily necelou třetinu plánu, pod limitem 37,5 %. Vyplácel by je stát přes ČSSZ a Úřad práce, kanály popsané výše, a Evropská komise by fond uvolňovala podle splnění cílů zapsaných v plánu. Podmínkou je, aby plán platbu obsahoval jako dočasnou přímou podporu příjmu. Dnešní návrh plánu ji nemá.
 
 <div id="skf" class="ets2-anchor"></div>
 
@@ -227,19 +206,51 @@ Fond vznikl spolu s ETS2, aby zdražení paliv nedopadlo nejvíc na ty, kdo se m
 {% endcapture %}
 {% include expander.html name="skf" label="Kontext: Co je Sociální klimatický fond?" content=ex_skf %}
 
-**Peníze by byly.** Domácnosti by v cenách paliv zaplatily za povolenky ETS2 podle [našeho výpočtu](/explainery/ets2-zranitelne-domacnosti#metodika) kolem 26 miliard korun ročně, podobně odhadují i [PAQ a CVF](https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf). Tyto peníze by přes dodavatele paliv skončily ve výnosu z dražeb povolenek. Z výnosu dražeb v celé EU se platí [Sociální klimatický fond](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955), zbytek dostanou státy do rozpočtu. Z fondu by Česko za roky 2026–2032 mělo dostat zhruba 42 miliard korun, tedy v průměru asi 6 miliard ročně. Původně počítalo [ministerstvo životního prostředí](https://mzp.gov.cz/cz/agenda/prehled-dotaci/socialni-klimaticky-fond) s až 50 miliardami, ale [nařízení o fondu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955) při odkladu ETS2 na rok 2028 snižuje celkový objem fondu asi o šestinu. Zhruba tři čtvrtiny peněz pocházejí z evropského fondu, nejméně čtvrtinu musí stát doplatit ze svého rozpočtu.
+Ze samotného fondu by peníze na pomoc zranitelným domácnostem stačily jen zčásti. Pro představu, kolik by stály jednotlivé kroky ročně:
 
-Na pomoc zranitelným domácnostem by peníze stačily jen zčásti. Pro představu, kolik by stály jednotlivé kroky ročně:
-
-- cílená platba podle paliva a typu bydlení (návrh výše): asi 6,7 miliardy;
+- cílená platba podle paliva a typu bydlení (návrh výše): asi 6 miliard;
 - výměna zdrojů ve všech 43 tisících zranitelných domech na uhlí do roku 2032: 2,6–3,5 miliardy, za celé období 2028–2032 tedy zhruba 13–17 miliard;
 - síť průvodců, kteří domácnostem pomohou s výměnou: asi čtvrt miliardy.
 
-Přímé platby přitom mohou tvořit nejvýš 37,5 % fondu, zhruba 2–2,5 miliardy ročně, a [měly by být dočasné a postupně klesat](https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1741138), zbytek musí jít na investice.
 
 Záleží tedy na nastavení. Pokud by se část výnosů vracela cíleně, mohly by nejzranitelnější domácnosti dostat zpět víc, než by je zavedení ETS2 stálo, a zbytek by mohl jít na výměnu zdrojů, které jim účty sníží natrvalo.
 
 Všechny tyto odhady předpokládají, že ETS2 začne platit v roce 2028. Pokud by se jeho zavedení odložilo nebo změnilo, posunul by se i výnos a načasování peněz z fondu.
+
+## Jak si stojí návrh PAQ Research a CVF?
+
+[PAQ Research a Centrum pro veřejné finance (2026)](https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf) navrhují kompenzovat ETS2 třemi opatřeními:
+
+- **zvýšení slevy na poplatníka** o 1 200 Kč ročně pro všechny pracující, s náklady 5,9 mld. Kč ročně,
+- **mimořádná valorizace důchodů** za 5,5 mld. Kč ročně,
+- **zvýšení energetického paušálu o 20 %** pro příjemce dávek na bydlení.
+
+Výhodou návrhu je jednoduchost: využívá existující systémy a nevyžaduje nová data. Podle našeho výpočtu má ale zásadní nevýhody.
+
+<figure class="ets2-figure ets2-graf-fig">
+  <h3 class="js-toc-ignore">Cílená platba by vrátila zranitelným víc za menší peníze</h3>
+  <p class="ets2-sub">Pravidla přímé platby v základním scénáři: kolik by stála za roky 2028–2032 a jakou část zdražení vytápění by zranitelné domácnosti dostaly zpět v letech plné výše. Náš návrh od roku 2030 klesá, ostatní pravidla platí celých pět let</p>
+  <script type="application/json" class="graf-data">{{ site.data.ets2.kompenzace | jsonify }}</script>
+  <div class="ets2-graf" data-graf="kompenzace-bod" role="img" aria-label="Pravidla přímé platby: roční náklad proti části zdražení, kterou zranitelné domácnosti dostanou zpět"></div>
+  <div class="ets2-src">Zdroj: výpočet Fakt o klimatu z <a href="https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions">EU-SILC 2024</a>; návrh PAQ a CVF podle <a href="https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf">PAQ Research a CVF (2026)</a>.</div>
+</figure>
+
+| | Návrh PAQ a CVF | Náš návrh |
+|---|---|---|
+| Náklad ročně | 13,0 mld. Kč | 6,0 mld. Kč |
+| Podíl peněz, který by šel zranitelným | 6 % | 33 % |
+| Zranitelných by nedostalo nic | 6 % | 11 % |
+| Část zdražení vytápění, kterou by zranitelní dostali zpět | 32 % | 72 % |
+| z toho rodinné domy na tuhá paliva | 15 % | 78 % |
+{: .table .ets2-tabulka}
+
+Zdroj: [EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions), výpočet Fakta o klimatu. Valorizace je rozpočítaná na všechny důchodce se stejným úhrnem jako v návrhu.
+{: .ets2-tab-src}
+
+1. **Je drahý a málo cílený.** Sleva na dani jde všem pracujícím, valorizace všem důchodcům. Zranitelným domácnostem by šlo jen 6 % peněz.
+2. **Nejvíc zasaženým by vrátil nejméně.** Domácnosti v rodinných domech na uhlí by ETS2 stálo kolem 1 450 Kč měsíčně, návrh by jim vrátil jen 15 % zdražení vytápění. Sleva na dani i valorizace jsou stejné bez ohledu na to, čím domácnost topí.
+3. **Většinu by nešlo platit ze Sociálního klimatického fondu.** Fond smí platit jen dočasnou podporu zranitelným domácnostem ([čl. 4 odst. 3 a čl. 8 odst. 2 nařízení 2023/955](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955)). Plošná sleva ani valorizace všech důchodů tuto podmínku nesplňují. Valorizace navíc zůstává v důchodu trvale, takže není dočasná. Autoři sami uvádějí, že zbývajících asi 11,5 mld. Kč ročně „by musel financovat státní rozpočet“ ([s. 30](https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf)).
+4. **Cílená část dosáhne jen na menšinu.** Energetický paušál dostanou jen příjemci dávek na bydlení, tedy 16 % zranitelných.
 
 <div id="statni-sprava" class="ets2-anchor"></div>
 

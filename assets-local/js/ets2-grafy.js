@@ -55,6 +55,7 @@
                 legend: true,
                 yLabel: 'PJ',
                 xFormat: function (x) { return String(x); },
+                xTickValues: [2005, 2010, 2015, 2020, 2024],
                 width: 600, height: 360,
                 tooltipHtml: function (r) {
                     return '<b>' + r.rok + '</b><br>' + keys.map(function (k) {
@@ -96,37 +97,101 @@
             var CIL = ['pal_vlastni_teplo', 'pal_vlastni_teplo_vse'];
             // popisky: hlouček cílených pravidel má popisky pod sebou s vodicí čarou (absolutní poloha v datech x, y);
             // ostatní body mají popisek vedle sebe [dx, dy, zarovnání]
-            var ABS = { pal_vlastni_teplo: [16, 48], pal_vlastni_teplo_vse: [16, 56] };
+            var ABS = { pal_vlastni_teplo: [75, 82], pal_vlastni_teplo_vse: [75, 74] };
             var POS = { plosne: [-12, 4, 'end'] };
-            var xmax = Math.ceil(d3.max(data, function (d) { return +d.naklad_mld; }) / 10) * 10;
+            var xmax = Math.ceil(d3.max(data, function (d) { return +d.naklad_obdobi_mld; }) / 50) * 50;
             var x = d3.scaleLinear().domain([0, xmax]).range([m.l, W - m.r]);
             var y = d3.scaleLinear().domain([0, 100]).range([H - m.b, m.t]);
             var svg = d3.select(sel).append('svg').attr('viewBox', '0 0 ' + W + ' ' + H).attr('width', '100%').style('display', 'block')
                 .style('font-family', FoKTheme.font).style('font-size', '12px');
             // cílová oblast: levně a hodně vráceno
-            svg.append('rect').attr('x', x(0)).attr('y', y(100)).attr('width', x(15) - x(0)).attr('height', y(60) - y(100)).attr('fill', '#e6eef8').attr('rx', 4);
+            svg.append('rect').attr('x', x(0)).attr('y', y(100)).attr('width', x(60) - x(0)).attr('height', y(60) - y(100)).attr('fill', '#e6eef8').attr('rx', 4);
             svg.append('text').attr('x', x(0) + 6).attr('y', y(100) + 14).attr('fill', '#0050ae').attr('font-size', 11).text('levně a hodně vráceno');
             svg.append('g').attr('transform', 'translate(0,' + y(0) + ')').call(d3.axisBottom(x).ticks(5).tickFormat(function (v) { return cz(v); }))
                 .call(function (g) { g.selectAll('text').attr('fill', FoKTheme.colors.grey); g.selectAll('line,path').attr('stroke', '#bbb'); });
             svg.append('g').attr('transform', 'translate(' + m.l + ',0)').call(d3.axisLeft(y).ticks(5).tickFormat(function (v) { return v + ' %'; }))
                 .call(function (g) { g.selectAll('text').attr('fill', FoKTheme.colors.grey); g.selectAll('line,path').attr('stroke', '#bbb'); });
-            svg.append('text').attr('x', W - m.r).attr('y', H - 8).attr('text-anchor', 'end').attr('fill', FoKTheme.colors.grey).text('Stálo by ročně, mld. Kč');
+            svg.append('text').attr('x', W - m.r).attr('y', H - 8).attr('text-anchor', 'end').attr('fill', FoKTheme.colors.grey).text('Stálo by za roky 2028–2032, mld. Kč');
             svg.append('text').attr('transform', 'rotate(-90)').attr('x', -m.t).attr('y', 14).attr('text-anchor', 'end').attr('fill', FoKTheme.colors.grey).text('Zranitelní dostanou zpět, % zdražení');
+            // pravidla s poklesem v čase: plný bod v plné výši (2028–2029), šipka k prázdnému kroužku = rok 2032 (25 % plné výše)
+            var kles = data.filter(function (d) { return +d.vyrovnano_pct > +d.vyrovnano_2032_pct; });
+            svg.append('defs').append('marker').attr('id', 'sipka-kles').attr('viewBox', '0 0 10 10').attr('refX', 9).attr('refY', 5)
+                .attr('markerWidth', 6).attr('markerHeight', 6).attr('orient', 'auto')
+                .append('path').attr('d', 'M0,0 L10,5 L0,10 z').attr('fill', '#0050ae');
+            svg.selectAll('line.kles').data(kles).join('line').attr('class', 'kles')
+                .attr('x1', function (d) { return x(+d.naklad_obdobi_mld); }).attr('x2', function (d) { return x(+d.naklad_obdobi_mld); })
+                .attr('y1', function (d) { return y(+d.vyrovnano_pct) + 9; }).attr('y2', function (d) { return y(+d.vyrovnano_2032_pct) - 8; })
+                .attr('stroke', '#0050ae').attr('stroke-dasharray', '3 2').attr('marker-end', 'url(#sipka-kles)');
+            svg.selectAll('circle.duch').data(kles).join('circle').attr('class', 'duch')
+                .attr('cx', function (d) { return x(+d.naklad_obdobi_mld); }).attr('cy', function (d) { return y(+d.vyrovnano_2032_pct); })
+                .attr('r', 6).attr('fill', 'none').attr('stroke', '#0050ae').attr('stroke-width', 1.5);
+            if (kles.length) svg.append('text').attr('x', x(d3.max(kles, function (d) { return +d.naklad_obdobi_mld; })) + 12)
+                .attr('y', y(+kles[0].vyrovnano_2032_pct) - 10).attr('fill', '#0050ae').attr('font-size', 11)
+                .text('v roce 2032 platba klesne na čtvrtinu a vrátí ' + kles[0].vyrovnano_2032_pct + ' % (průměr za 5 let ' + kles[0].vyrovnano_obdobi_pct + ' %)');
             var b = svg.selectAll('g.bod').data(data).join('g').attr('class', 'bod')
-                .attr('transform', function (d) { return 'translate(' + x(+d.naklad_mld) + ',' + y(+d.vyrovnano_pct) + ')'; });
+                .attr('transform', function (d) { return 'translate(' + x(+d.naklad_obdobi_mld) + ',' + y(+d.vyrovnano_pct) + ')'; });
             b.append('circle').attr('r', 7).attr('fill', function (d) { return CIL.indexOf(d.pravidlo) >= 0 ? '#0050ae' : '#8a96a3'; }).attr('stroke', '#fff').attr('stroke-width', 1.5)
-                .append('title').text(function (d) { return d.popisek + ': ' + cz(d.naklad_mld, 1) + ' mld. Kč ročně, vrátí ' + d.vyrovnano_pct + ' % zdražení, nedostane nic ' + d.nedostalo_pct + ' % zranitelných'; });
+                .append('title').text(function (d) { return d.popisek + ': ' + cz(d.naklad_obdobi_mld, 1) + ' mld. Kč za 2028–2032, vrátí ' + d.vyrovnano_pct + ' % zdražení, nedostane nic ' + d.nedostalo_pct + ' % zranitelných'; });
             var cil = function (d) { return CIL.indexOf(d.pravidlo) >= 0; };
             b.filter(function (d) { return ABS[d.pravidlo]; }).insert('line', 'circle')
                 .attr('x1', 0).attr('y1', 0).attr('stroke', '#0050ae').attr('stroke-width', 1)
-                .attr('x2', function (d) { return x(ABS[d.pravidlo][0]) - x(+d.naklad_mld) - 3; })
+                .attr('x2', function (d) { return x(ABS[d.pravidlo][0]) - x(+d.naklad_obdobi_mld) - 3; })
                 .attr('y2', function (d) { return y(ABS[d.pravidlo][1]) - y(+d.vyrovnano_pct) - 4; });
             b.append('text')
-                .attr('x', function (d) { return ABS[d.pravidlo] ? x(ABS[d.pravidlo][0]) - x(+d.naklad_mld) : (POS[d.pravidlo] || [10])[0]; })
+                .attr('x', function (d) { return ABS[d.pravidlo] ? x(ABS[d.pravidlo][0]) - x(+d.naklad_obdobi_mld) : (POS[d.pravidlo] || [10])[0]; })
                 .attr('y', function (d) { return ABS[d.pravidlo] ? y(ABS[d.pravidlo][1]) - y(+d.vyrovnano_pct) : (POS[d.pravidlo] || [0, 4])[1]; })
                 .attr('text-anchor', function (d) { return (POS[d.pravidlo] || [0, 0, 'start'])[2]; })
                 .attr('fill', FoKTheme.colors.text).attr('font-weight', function (d) { return cil(d) ? 700 : 400; })
                 .text(function (d) { return d.popisek; });
+        },
+        // Tok peněz z povolenek ETS2 (Sankey), data _data/ets2/tok_penez.csv
+        'tok': function (sel, data) {
+            if (!d3.sankey) return;
+            var W = 760, H = 470, TOP = 34;
+            var BARVY = {
+                'Vytápění domácností': '#d9573b', 'Osobní auta': '#e98a6f', 'Nákladní doprava': '#8a96a3', 'Vytápění služeb a úřadů': '#9aa6b2',
+                'Povolenky ETS2': '#53616e', 'Sociální klimatický fond': '#0050ae', 'Státní rozpočet': '#2b3a4a',
+                'Investice z plánu': '#5b8fd0', 'Přímé platby': '#f06a4e', 'Další opatření': '#a8b4c2' };
+            var SLOUPCE = ['Kdo by platil', 'Povolenky', 'Kam jde výnos', 'Na co by šel'];
+            // Jekyll vkládá do textu nezlomitelné mezery (např. za „a“, „z“), sjednotit kvůli párování názvů
+            data = data.filter(function (d) { return d.zdroj !== 'citlivost'; });
+            data = data.map(function (d) { return { zdroj: d.zdroj.replace(/\u00a0/g, ' '), cil: d.cil.replace(/\u00a0/g, ' '), mld: d.mld }; });
+            var jm = []; data.forEach(function (d) { [d.zdroj, d.cil].forEach(function (n) { if (jm.indexOf(n) < 0) jm.push(n); }); });
+            var graf = d3.sankey().nodeId(function (d) { return d.name; }).nodeWidth(12).nodePadding(22).nodeSort(null)
+                .extent([[0, TOP], [W, H - 4]])({
+                    nodes: jm.map(function (n) { return { name: n }; }),
+                    links: data.filter(function (d) { return +d.mld > 0; }).map(function (d) { return { source: d.zdroj, target: d.cil, value: +d.mld }; })
+                });
+            var svg = d3.select(sel).append('svg').attr('viewBox', '0 0 ' + W + ' ' + H).attr('width', '100%').style('display', 'block')
+                .style('font-family', FoKTheme.font).style('font-size', '12px');
+            // záhlaví sloupců
+            var xs = d3.groups(graf.nodes, function (d) { return d.depth; }).map(function (g) { return g[1][0]; });
+            svg.append('g').selectAll('text').data(xs).join('text')
+                .attr('x', function (d) { return d.depth === 0 ? d.x0 : (d.x0 > W / 2 && d.depth === 3 ? d.x1 : (d.x0 + d.x1) / 2); })
+                .attr('y', 14).attr('text-anchor', function (d) { return d.depth === 0 ? 'start' : (d.depth === 3 ? 'end' : 'middle'); })
+                .attr('font-size', 11).attr('font-weight', 700).attr('letter-spacing', '0.04em').attr('fill', FoKTheme.colors.grey)
+                .text(function (d) { return SLOUPCE[d.depth].toUpperCase(); });
+            // toky: z plátců barva plátce, dál barva cíle; přímé platby zvýrazněné
+            var barvaToku = function (d) { return d.source.depth === 0 ? BARVY[d.source.name] : BARVY[d.target.name]; };
+            svg.append('g').attr('fill', 'none').selectAll('path').data(graf.links).join('path')
+                .attr('d', d3.sankeyLinkHorizontal()).attr('stroke', barvaToku)
+                .attr('stroke-opacity', function (d) { return d.target.name === 'Přímé platby' ? 0.8 : 0.28; })
+                .attr('stroke-width', function (d) { return Math.max(1, d.width); })
+                .append('title').text(function (d) { return d.source.name + ' → ' + d.target.name + ': ' + cz(d.value) + ' mld. Kč'; });
+            svg.append('g').selectAll('rect').data(graf.nodes).join('rect')
+                .attr('x', function (d) { return d.x0; }).attr('y', function (d) { return d.y0; }).attr('rx', 2)
+                .attr('width', function (d) { return d.x1 - d.x0; }).attr('height', function (d) { return Math.max(2, d.y1 - d.y0); })
+                .attr('fill', function (d) { return BARVY[d.name] || '#888'; });
+            // popisky: název tučně, částka pod ním; bílý obrys kvůli čitelnosti nad toky
+            var lab = svg.append('g').selectAll('text').data(graf.nodes).join('text')
+                .attr('x', function (d) { return d.depth === 3 ? d.x0 - 8 : d.x1 + 8; })
+                .attr('y', function (d) { return (d.y0 + d.y1) / 2 - 7; })
+                .attr('text-anchor', function (d) { return d.depth === 3 ? 'end' : 'start'; })
+                .attr('paint-order', 'stroke').attr('stroke', 'var(--bg, #fff)').attr('stroke-width', 4).attr('stroke-linejoin', 'round');
+            lab.append('tspan').attr('font-weight', 700).attr('fill', function (d) { return d.name === 'Přímé platby' ? '#c2412a' : FoKTheme.colors.text; })
+                .text(function (d) { return d.name; });
+            lab.append('tspan').attr('x', function (d) { return d.depth === 3 ? d.x0 - 8 : d.x1 + 8; }).attr('dy', '1.3em')
+                .attr('fill', FoKTheme.colors.grey).text(function (d) { return cz(d.value) + ' mld. Kč'; });
         },
         // Pravidla přímé platby: náklad a vyrovnaný podíl zdražení
         'kompenzace-naklad': function (sel, data) {

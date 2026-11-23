@@ -195,3 +195,36 @@ ul.plain { padding-left: 1.4rem; }
     td:first-child { font-weight: 600; }
     @media (max-width: 767px) { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; td, th { min-width: 9rem; } }
 }
+
+// Tok peněz z ETS2 (includes-local/ets2-blog/financovani-tok.html)
+.ets2-tok {
+  .tok { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+  .tok-zdroj, .tok-box, .tok-navrh { border-radius: 8px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+  .tok-zdroj { background: #eef3fa; border: 1px solid #c9d6e6; text-align: center; }
+  b { font-size: 0.95rem; }
+  span { font-size: 0.85rem; }
+  strong { font-size: 1.2rem; color: #0050ae; }
+  .tok-sipka { text-align: center; font-size: 0.8rem; color: #6b7280; padding: 4px 0; }
+  .tok-vetve { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .tok-vetev { display: flex; flex-direction: column; gap: 4px; }
+  .tok-box { background: var(--card, #fff); border: 1px solid #c9d6e6; }
+  .tok-skf { border-top: 4px solid #0050ae; }
+  .tok-ost { border-top: 4px solid #53616e; strong { color: #53616e; } }
+  .tok-seznam { margin: 6px 0 0; padding-left: 18px; font-size: 0.85rem; li { margin: 2px 0; } }
+  .tok-radek { display: grid; grid-template-columns: 1fr; gap: 2px; margin-top: 8px; }
+  .tok-lab { font-size: 0.8rem; font-weight: 700; }
+  .tok-bar { display: flex; border-radius: 4px; overflow: hidden; min-height: 26px; }
+  .tok-bar span { padding: 5px 6px; color: #fff; font-size: 0.75rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .c-prime { background: #f06a4e; }
+  .c-bud { background: #0050ae; }
+  .c-dop { background: #5b8fd0; }
+  .c-tp { background: #a8b4c2; }
+  .c-ost { background: #53616e; }
+  .c-eu { background: #2b7a4b; }
+  .tok-leg { font-size: 0.75rem; margin-top: 8px; line-height: 1.6;
+    i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin: 0 4px 0 8px; vertical-align: baseline; }
+    i:first-child { margin-left: 0; } }
+  .tok-pozn { font-size: 0.8rem; margin: 8px 0 0; }
+  .tok-navrh { background: #fdeee9; border: 1px solid #f2c4b6; }
+  @media (max-width: 575px) { .tok-vetve { grid-template-columns: 1fr; } }
+}
