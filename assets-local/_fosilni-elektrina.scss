@@ -1,0 +1,120 @@
+/* Fosilní zdroje a cena elektřiny — collections/_studies/2026-interaktivni-prehled-fosilni-elektrina.md
+ *
+ * Only the page's furniture: headings, panels, the small-multiples grid and the
+ * hover popup. The charts themselves are drawn by the shared chart library.
+ * Scoped to the page's body class (see _dovoz-fosilnich-paliv.scss for why).
+ */
+body.fosilni-elektrina {
+    --fe-border: 1px solid #e2e8f0;
+    --fe-gap: 16px;
+
+    background: #fff;
+    .section { background: #fff; }
+
+    .fe-heading { font-size: 24px; margin: 32px 0 12px; }
+
+    .chart-panel { border: var(--fe-border); padding: 16px 18px; background: #fff; }
+    .chart-title { font-size: 18px; margin: 0 0 8px; }
+    .chart-note { font-size: 13px; color: #53616e; margin: 8px 0 0; }
+
+    .fe-legend {
+        display: flex; flex-wrap: wrap; gap: 4px 20px; margin-bottom: 12px;
+        font-size: 14px; color: #53616e;
+        .swatch { display: inline-block; width: 22px; height: 0; border-top: 3px solid; margin-right: 6px; vertical-align: middle; }
+        .swatch.dashed { border-top-style: dashed; }
+    }
+
+    .fe-legend .fe-mix-key { font-size: 12px; color: #8895a3; }
+    .fe-lead { font-size: 16px; margin: 0 0 10px; }
+    .fe-legend .dot {
+        display: inline-block; width: 11px; height: 11px; border-radius: 50%;
+        background: #81334b; border: 2px solid #81334b; margin-right: 6px; vertical-align: middle;
+        &.hollow { background: #fff; }
+    }
+
+    /* Title and toggle on one row, the toggle to the right (wraps below the title on a phone). */
+    .fe-heading-row {
+        display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 16px;
+        margin: 32px 0 12px;
+        .fe-heading { margin: 0; }
+    }
+    /* The segmented buttons of the import page: a row, the pressed one dark. */
+    .seg-buttons {
+        display: flex; width: fit-content; overflow: hidden; border: var(--fe-border); border-radius: 6px;
+        button { border: 0; background: #fff; padding: 4px 12px; font: inherit; font-size: 14px; color: #515b66; cursor: pointer; }
+        button + button { border-left: var(--fe-border); }
+        button[aria-pressed="true"] { background: #3e3e4c; color: #fff; }
+    }
+    .fe-group { margin-top: 28px; }
+    .fe-non-eu { font-size: 10px; font-weight: 400; font-style: italic; color: #53616e; }
+    .fe-group-title { font-size: 24px; font-weight: 700; color: #1a202c; margin: 0 0 10px; }
+
+    .fe-grid {
+        display: grid; gap: 10px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        @media (min-width: 600px) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        @media (min-width: 768px) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        @media (min-width: 992px) { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+        .fe-tile { border: var(--fe-border); padding: 8px 8px 2px; background: #fff; min-width: 0; }
+        .fe-tile h3 { font-size: 13px; margin: 0 0 2px; line-height: 1.25; }
+        .fe-tile { scroll-margin-top: 90px; }
+        /* A small flag before the name: subtle, with a thin outline. */
+        .fe-flag { font-size: 11px; margin-right: 5px; vertical-align: -1px; border-radius: 1px; opacity: 0.9; box-shadow: 0 0 0 0.75px rgba(0, 0, 0, 0.15); }
+        /* The generation-mix strip: a quiet context under the chart. */
+        .fe-mix { margin: 0 0 4px; opacity: 0.9; svg { display: block; } }
+        .fe-tile.fe-flash { animation: fe-flash 1.6s ease-out; }
+    }
+
+    .fe-notes {
+        margin-top: 40px; font-size: 15px; line-height: 1.55;
+        p, ul, ol { max-width: 780px; }
+        h3 { font-size: 20px; margin: 36px 0 10px; }
+        ul { padding-left: 20px; }
+        a.expander { align-items: center; cursor: pointer; .fe-heading { margin: 0; } }
+        .fe-ex-picker { margin: 4px 0 8px; }
+        .fe-formula { font-weight: 600; background: #f4f5f7; padding: 8px 12px; border-left: 3px solid #81334b; }
+        .fe-caveat { font-size: 13px; color: #53616e; }
+        .fe-figure { margin: 18px 0 20px; padding: 14px 16px 8px; border: var(--fe-border); background: #fff;
+            figcaption { font-size: 12px; color: #53616e; margin-top: 6px; } }
+        .fe-ex-notes ol { font-size: 13px; margin: 8px 0 0; padding-left: 22px; }
+        .fe-table { width: 100%; max-width: 780px; border-collapse: collapse; font-size: 14px; margin: 12px 0 18px;
+            th, td { padding: 4px 8px; border-bottom: 1px solid #e2e8f0; }
+            thead th { font-size: 13px; color: #53616e; text-align: left; vertical-align: bottom; }
+            thead th:not(:first-child) { text-align: right; }
+            tbody th { font-weight: 400; text-align: left; }
+            td { text-align: right; font-variant-numeric: tabular-nums; }
+            td.chg { font-weight: 700; }
+            tr.sum th, tr.sum td { font-weight: 700; background: #f7f8f9; }
+        }
+    }
+    .fe-source { color: #a0aec0; font-size: 12px; }
+}
+
+/* The popup lives in the shared tooltip, which sits on <body>; the script sizes
+ * it to the chart it covers. */
+.fe-popup {
+    .fe-popup-title { font-weight: 700; font-size: 15px; margin-bottom: 6px; }
+    .fe-popup-partial { font-weight: 400; font-size: 12px; color: #53616e; }
+    .fe-popup-values { margin-bottom: 8px; }
+    .fe-popup-fuels { font-size: 12px; color: #1a202c; margin: 0 0 8px; min-height: 2.6em; }
+    .fe-popup-values b { display: inline-block; min-width: 3.4em; margin-right: 8px; }
+    .fe-popup-main { display: flex; align-items: baseline; }
+    .fe-popup-main b { font-size: 28px; line-height: 1.1; }
+    .fe-popup-main span { font-size: 13px; font-weight: 600; }
+    .fe-popup-sub { display: flex; align-items: baseline; margin-top: 2px; }
+    .fe-popup-sub b { font-size: 16px; }
+    .fe-popup-sub span { font-size: 12px; color: #53616e; }
+    .fe-popup-mix { font-size: 12px; color: #53616e; margin: 0 0 8px; b { color: #1a202c; } }
+    .fe-popup-chart { min-height: 150px; }
+    .fe-popup-loading { font-size: 12px; color: #53616e; padding: 8px 0; }
+    .fe-popup-note { font-size: 11px; color: #53616e; margin-top: 4px; }
+    .fe-popup-scale { white-space: nowrap; display: flex; align-items: center; gap: 6px; margin: 4px 0 3px; }
+    .fe-popup-scale i { flex: 0 0 70px; height: 9px; border: 1px solid #e2e8f0; }
+    .fe-popup-note .band { display: inline-block; width: 12px; height: 9px; margin: 0 4px 0 10px; vertical-align: -1px; }
+    
+}
+
+@keyframes fe-flash {
+    0%, 30% { box-shadow: 0 0 0 3px rgba(129, 51, 75, 0.45); }
+    100% { box-shadow: 0 0 0 3px rgba(129, 51, 75, 0); }
+}
