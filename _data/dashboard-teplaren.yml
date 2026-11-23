@@ -1,4 +1,4 @@
-timestamp: '2026-10-05'
+timestamp: '2026-11-23'
 highlights:
 - status: problematic
   number: 4
@@ -1312,13 +1312,14 @@ items:
   lat: 49.91
   status: done
   status_text: Bez uhlí
-  notes: 'Elektrárna na černé uhlí byla odstavena ke konci topné sezóny na jaře 2025. Dodávky tepla zatím provizorně zajišťuje záložní a špičková plynová kotelna o výkonu 18MWt. Do roku 2026 mají být v provozu další, účinnější zdroje: 8MWt biomasová kotelna a dvě kogenerační jednotky o výkonu 12MWe (oba projekty podpořeny z ModFondu, kogenerační jednotky mají navíc provozní podporu). Kromě toho je v plánu výstavba druhé záložní a špičkové plynové kotelny o výkonu 3x9 MWt.'
+  notes: 'Elektrárna na černé uhlí byla odstavena ke konci topné sezóny na jaře 2025. Od začátku topné sezóny 2026/27 dodává teplo do Orlové a Bohumína nová nízkoemisní teplárna ČEZ (instalovaný tepelný výkon 75 MWt: 8MWt biomasová kotelna, dvě kogenerační jednotky a plynové záložní a špičkové kotle), v současnosti ještě ve zkušebním provozu. Projekty byly podpořeny z ModFondu, kogenerační jednotky mají navíc provozní podporu.'
   owner: Skupina ČEZ
   owner_web: https://www.cez.cz/nextcez/cs/o-cez/vyrobni-zdroje/uhelne-elektrarny-a-teplarny/uhelne-elektrarny-a-teplarny-cez-v-cr/elektrarna-detmarovice-58185
   num_households: 14319
   munis_supplied: Bohumín, Orlová
   fuels_main_today:
   - natgas
+  - biomass
   emissions_mtco2eq:
   - 1.256
   - 0.519
@@ -2167,8 +2168,8 @@ items:
   - name: Výroba sulfátové buničiny a papíru ve Štětí a související činnosti
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejgjbs
 mf_chp_shown_subsidies_total: 100555
-mf_chp_subsidies_total: 101936
-mf_subsidies_total: 212510
+mf_chp_subsidies_total: 102698
+mf_subsidies_total: 215363
 chp_shown_subsidies_total_accepted: 2595
 chp_subsidies_total_accepted: 2889
 num_households_ets2_total: 384724
