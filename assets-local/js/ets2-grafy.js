@@ -184,13 +184,13 @@
                 .attr('fill', function (d) { return BARVY[d.name] || '#888'; });
             // popisky: název tučně, částka pod ním; bílý obrys kvůli čitelnosti nad toky
             var lab = svg.append('g').selectAll('text').data(graf.nodes).join('text')
-                .attr('x', function (d) { return d.depth === 3 ? d.x0 - 8 : d.x1 + 8; })
+                .attr('x', function (d) { return d.depth >= 2 ? d.x0 - 8 : d.x1 + 8; })
                 .attr('y', function (d) { return (d.y0 + d.y1) / 2 - 7; })
-                .attr('text-anchor', function (d) { return d.depth === 3 ? 'end' : 'start'; })
+                .attr('text-anchor', function (d) { return d.depth >= 2 ? 'end' : 'start'; })
                 .attr('paint-order', 'stroke').attr('stroke', 'var(--bg, #fff)').attr('stroke-width', 4).attr('stroke-linejoin', 'round');
             lab.append('tspan').attr('font-weight', 700).attr('fill', function (d) { return d.name === 'Přímé platby' ? '#c2412a' : FoKTheme.colors.text; })
                 .text(function (d) { return d.name; });
-            lab.append('tspan').attr('x', function (d) { return d.depth === 3 ? d.x0 - 8 : d.x1 + 8; }).attr('dy', '1.3em')
+            lab.append('tspan').attr('x', function (d) { return d.depth >= 2 ? d.x0 - 8 : d.x1 + 8; }).attr('dy', '1.3em')
                 .attr('fill', FoKTheme.colors.grey).text(function (d) { return cz(d.value) + ' mld. Kč'; });
         },
         // Pravidla přímé platby: náklad a vyrovnaný podíl zdražení
