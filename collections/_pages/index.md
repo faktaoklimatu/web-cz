@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Atlas klimatické změny</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Emisní povolenky</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -37,15 +37,16 @@ slug: index
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead">
     <div class="row">
-      <div class="col-md-4">
-        {% include preview-block.html slug="atlas" no_include_tags=true %}
-      </div>
       <div class="col-md-6" markdown="0">
-        <br>
-        <p>V polarizované debatě o klimatu lidé často utíkají k extrémům – bagatelizaci, nebo katastrofickým scénářům.</p>
-        <p>Po šesti letech jsme proto <strong>výrazně přepracovali náš původní Atlas klimatické změny</strong>. Přináší pevné základy pro porozumění změně klimatu v přehledných infografikách a srozumitelných textech. Aktualizovaný a rozšířený atlas si můžete přečíst online, stáhnout zdarma, nebo si koupit vytištěný.</p>
-  </div>
-  </div>
+        <p>Emisní povolenky jsou jedním z hlavních nástrojů EU pro snižování emisí a právě teď se na půdě Evropské unie i členských států <strong>vyjednává jejich podoba pro příští dekádu</strong>. V nových přehledech vysvětlujeme, o co ve vyjednávání jde, a ukazujeme, jak se dosud vyvíjelo jedno z hlavních témat, kterým je alokace bezplatných povolenek pro průmysl.</p>
+      </div>
+      <div class="col-md-3">
+        {% include preview-block.html slug="revize-ets" no_include_tags=true %}
+      </div>
+      <div class="col-md-3">
+        {% include preview-block.html slug="2026-interaktivni-prehled-ets" no_include_tags=true %}
+      </div>
+    </div>
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-lightblue pt-4 pb-4" id="tab2" role="tabpanel" aria-labelledby="tab-role-2"><div class="container">
