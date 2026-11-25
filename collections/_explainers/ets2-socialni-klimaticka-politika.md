@@ -219,7 +219,7 @@ Ze samotného fondu by peníze na pomoc zranitelným domácnostem stačily jen z
 <script type="application/json" id="graf-financovani-data">{{ site.data.ets2.financovani | jsonify }}</script>
 {% include includes-local/chart-panel.html
     id="graf-financovani"
-    title="Fond by dal asi 7 miliard ročně, cílená pomoc by stála 7–8"
+    title="Fond by dal asi 7 miliard ročně, cílená pomoc by stála 7,5–8"
     caption="Základní scénář, mld. Kč ročně"
     alt="Peníze ze Sociálního klimatického fondu a náklad pomoci zranitelným domácnostem, mld. Kč ročně"
     source='výpočet Fakt o klimatu z <a href="https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions">EU-SILC 2024</a>; <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955">nařízení (EU) 2023/955</a>.'

@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Kdo by zaplatil za dražší topení? Zhruba 180 tisíc domácností by potřebovalo pomoc"
+title:       "Kdo by zaplatil za dražší topení? Zhruba 190 tisíc domácností by potřebovalo pomoc"
 slug:        "ets2-zranitelne-domacnosti"
 published:   2026-11-04
 cover-source-author:      "alpha innotec"
@@ -25,9 +25,9 @@ perex: |
 ---
 
 {% include tldr.html title="Hlavní zjištění" content="
-- **Od roku 2028 by zdražilo topení uhlím a plynem i tankování.** U rodinných domů na uhlí by topení podražilo o 600 až 1 100 Kč měsíčně, na plyn o 200 až 500 Kč. Litr benzínu by byl dražší asi o 4 Kč.
+- **Od roku 2028 by zdražilo topení uhlím a plynem i tankování.** U rodinných domů na uhlí by topení podražilo o 600 až 1 100 Kč měsíčně, na plyn o 230 až¥0 Kč. Litr benzínu by byl dražší asi o 4 Kč.
 - **Přechod na tepelné čerpadlo by se vyplatil většímu počtu domácností.** Ty, které na něj mají, by dostaly další důvod přejít.
-- **Zhruba 180 tisíc domácností s nízkými příjmy by to zasáhlo citelně.** Většina z nich už dnes dává za energie neúměrně velkou část příjmu. V rodinných domech na uhlí by za topení platily o 700 až 1 400 Kč měsíčně víc, v domech na plyn o 400 až 600 Kč.
+- **Zhruba 190 tisíc domácností s nízkými příjmy by to zasáhlo citelně.** Většina z nich už dnes dává za energie neúměrně velkou část příjmu. V rodinných domech na uhlí by za topení platily o 700 až 1 400 Kč měsíčně víc, v domech na plyn o 350 až°0 Kč.
 - **Nejvíc jich bydlí v rodinných domech na plyn a uhlí**, často na periferiích. Byty na teple z velkých tepláren povolenky platí už dnes, ETS2 by jim topení nezdražilo.
 - **Peníze na pomoc by byly.** Povolenky by Česku za roky 2028–2032 vynesly zhruba 150 miliard korun.
 " %}
@@ -130,7 +130,7 @@ Pro většinu domácností by zavedení ETS2 znamenalo stokoruny měsíčně. U 
 - po zavedení ETS2 by **dávaly za energie na bydlení víc než dvojnásobek mediánového podílu na příjmu** (indikátor energetické chudoby 2M);
 - zdražení vytápění kvůli ETS2 by jim **vzalo aspoň 1 % čistého příjmu**.[^podminka-1]
 
-Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 165–205 tisíc, asi 4 % všech. Asi 150 tisíc z nich je energeticky chudých už dnes, zavedení ETS2 by přidalo asi 34 tisíc nových. Zdražení vytápění by je stálo v průměru kolem 600 Kč měsíčně, 2,1 % příjmu. Kdo jezdí autem, připlatil by navíc i za benzín nebo naftu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a zdražení vytápění by jí vzalo 3 % příjmu. Energetická chudoba v uhelných domech by stoupla z 19 na 25 %.[^energeticka-chudoba]
+Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 165–205 tisíc, asi 4 % všech. Asi 165 tisíc z nich je energeticky chudých už dnes, u dalších asi 25 tisíc by energetickou chudobu způsobilo až zavedení ETS2. Zdražení vytápění by je stálo v průměru kolem 600 Kč měsíčně, 2,1 % příjmu. Kdo jezdí autem, připlatil by navíc i za benzín nebo naftu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a zdražení vytápění by jí vzalo 3 % příjmu. Energetická chudoba v uhelných domech by stoupla z 19 na 25 %.[^energeticka-chudoba]
 
 U dálkového tepla by zdražení nebylo plošné. Velké teplárny nad 20 MW už povolenky platí ve stávajícím systému ETS1,[^ets1-teplarny] pod ETS2 by spadly jen menší výtopny na plyn a uhlí. Dražší teplo by se tak týkalo hlavně bytů napojených na menší výtopnu, typicky v menších městech nebo na jednotlivých sídlištích s vlastní kotelnou.
 
@@ -176,7 +176,7 @@ Palivo ale nestačí. Stejné zdražení dopadne jinak na domácnost s vysokým 
 {% include preview-box.html title="Pokračování série" slug="ets2-socialni-klimaticka-politika" %}
 
 {% capture ex_lim %}
-- **Pracujeme se vzorkem domácností z šetření EU-SILC, ne s konkrétními domy.** Výdaje za energie známe od domácností, spotřebu z nich přepočítáváme cenami a kalibrujeme na energetickou bilanci Česka. Benzín a naftu doplňujeme ze Statistiky rodinných účtů podle typu bydlení a příjmu.
+- **Pracujeme se vzorkem domácností z šetření EU-SILC, ne s konkrétními domy.** Výdaje za energie známe od domácností, spotřebu z nich přepočítáváme cenami a kalibrujeme na energetickou bilanci Česka. Benzín a naftu doplňujeme ze Statistiky rodinných účtů podle typu bydlení a příjmu. Dopady počítáme pro dnešní spotřebu a průměrnou zimu roku 2028, bez úspor ze zateplení a výměny kotlů do té doby. Jde tedy spíš o horní odhad zátěže. Výnos z povolenek v druhém díle naopak počítá s poklesem emisí, takže je spíš opatrný.
 - **Neznáme energetický stav domu.** Data neříkají, zda je dům zateplený, jaká má okna nebo jak starý je kotel. Dvě domácnosti se stejnými příjmy, které topí uhlím, tak mohou mít podle stavu domu velmi odlišný účet i dopad ETS2.
 - **Nevíme, zda domácnost dotápí, nebo přetápí.** Vycházíme ze skutečné spotřeby, takže domácnost, která šetří na úkor tepla a zdraví, se může jevit méně zasažená, než by odpovídalo potřebě. Skutečnou energetickou chudobu tak spíš podceňujeme.
 - **Nezohledňujeme reakci domácností.** Výpočet předpokládá stejnou spotřebu před a po zavedení ETS2. Ve skutečnosti část domácností začne šetřit nebo vymění zdroj.
