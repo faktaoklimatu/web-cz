@@ -669,8 +669,8 @@
         var svetle = d3.interpolateRgb('#fff', COL.ets2)(0.4);
         var BARVY = {
             'Vytápění domácností': COL.sok, 'Osobní auta': T.grey, 'Nákladní doprava': T.grey, 'Vytápění služeb a úřadů': T.grey,
-            'Povolenky ETS2': C.title, 'Sociální klimatický fond': C.title, 'Státní rozpočet': C.title,
-            'Investice z plánu': svetle, 'Přímé platby': COL.ets2, 'Další opatření': COL.ostatni };
+            'Povolenky ETS2': C.title, 'Sociální klimatický fond': C.title, 'Státní rozpočet (jen klima a sociální)': C.title,
+            'Investice z plánu': svetle, 'Přímé platby': COL.ets2, 'Další klimatická a sociální opatření': COL.ostatni, 'Rozdíl proti stropu': T.grey };
         var SLOUPCE = ['Kdo by platil', 'Povolenky', 'Kam jde výnos', 'Na co by šel'];
         // web-core po vykreslení mění mezeru za jednopísmennými slovy na nezlomitelnou, i ve vložených datech
         var rows = data.filter(function (d) { return d.zdroj !== 'citlivost' && +d.mld > 0; }).map(function (d) {
@@ -679,7 +679,7 @@
         var jm = [];
         rows.forEach(function (d) { [d.zdroj, d.cil].forEach(function (n) { if (jm.indexOf(n) < 0) jm.push(n); }); });
         var top = caption(svg, svg.node().dataset.caption, w) + 24, H = top + 440;
-        var graf = d3.sankey().nodeId(function (d) { return d.name; }).nodeWidth(12).nodePadding(22).nodeSort(null)
+        var graf = d3.sankey().nodeId(function (d) { return d.name; }).nodeAlign(d3.sankeyLeft).nodeWidth(12).nodePadding(22).nodeSort(null)
             .extent([[0, top], [w, H - 4]])({
                 nodes: jm.map(function (n) { return { name: n }; }),
                 links: rows.map(function (d) { return { source: d.zdroj, target: d.cil, value: d.mld }; })

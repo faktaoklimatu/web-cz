@@ -1,6 +1,6 @@
 pravidlo,popisek,naklad_mld,naklad_obdobi_mld,k_zranitelnym_pct,nedostalo_pct,vyrovnano_pct,vyrovnano_obdobi_pct,vyrovnano_2032_pct
-plosne,Všem domácnostem,39.2,196,6,0,78,78,78
-davky_bydleni,Příjemcům dávek na bydlení,1.9,9.5,18,84,12,12,12
-paq_balik,Návrh PAQ a CVF,13,65,6,6,32,32,32
-pal_vlastni_teplo,Náš návrh (teplo jen z ETS2),6,21,33,11,72,50,18
-pal_vlastni_teplo_vse,Náš návrh (teplo z ETS2 i ETS1),9.5,33.3,21,11,72,50,18
+plosne,Všem domácnostem,32.8,164,4,0,78,78,78
+davky_bydleni,Příjemcům dávek na bydlení,1.6,8,14,83,12,12,12
+paq_balik,Návrh PAQ a CVF,13,65,4,6,36,36,36
+pal_vlastni_teplo,Náš návrh (teplo jen z ETS2),4.6,16.1,23,15,68,47,17
+pal_vlastni_teplo_vse,Náš návrh (teplo z ETS2 i ETS1),6.9,24.2,16,11,69,49,17

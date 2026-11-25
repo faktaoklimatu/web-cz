@@ -1,6 +1,7 @@
 archetyp,popisek,zranitelne_tis,interval_tis,ets2_kc_mesic,ets2_pct_prijmu
-RD plyn,RD na plyn,120,104–134,750,2.4
-RD uhlí,RD na uhlí,45,35–53,1450,4.7
-byt plyn,Byt na plyn,45,33–56,600,2.2
-byt teplo (zdroj v ETS2),Byt na teple (ETS2),30,24–33,500,1.9
-ostatní,Ostatní,30,21–38,740,2.8
+RD plyn,RD na plyn,70,59–83,590,2
+RD uhlí,RD na uhlí,45,34–52,1160,3.5
+byt plyn,Byt na plyn,20,12–25,440,1.7
+byt teplo (zdroj v ETS1),byt teplo (zdroj v ETS1),5,3–12,400,1.7
+byt teplo (zdroj v ETS2),Byt na teple (ETS2),25,21–29,450,1.8
+ostatní,Ostatní,20,12–28,690,2.6

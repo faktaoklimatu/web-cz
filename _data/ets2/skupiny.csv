@@ -1,11 +1,11 @@
 archetyp,popisek,domacnosti_tis,zranitelne_tis,podil_zranitelnych_pct
-byt teplo (zdroj v ETS1),Byty na teple ze zdroje v ETS1,1524,NA,NA
-RD plyn,Rodinné domy na plyn,959,118,12
-byt plyn,Byty s plynovým kotlem,460,44,9
-ostatní: RD dřevo a biomasa,Rodinné domy na dřevo,440,4,1
-byt teplo (zdroj v ETS2),Byty na teple ze zdroje v ETS2,380,28,7
+byt teplo (zdroj v ETS1),Byty na teple ze zdroje v ETS1,1519,7,0
+RD plyn,Rodinné domy na plyn,959,70,7
+byt plyn,Byty s plynovým kotlem,460,18,4
+ostatní: RD dřevo a biomasa,Rodinné domy na dřevo,440,NA,NA
+byt teplo (zdroj v ETS2),Byty na teple ze zdroje v ETS2,380,25,7
 RD uhlí,Rodinné domy na uhlí,222,43,19
-ostatní: RD elektřina,Rodinné domy na elektřinu,194,5,3
-ostatní: byt elektřina,Byty na elektřinu,141,4,3
-ostatní: RD tepelné čerpadlo,Rodinné domy na TČ,126,0,0
-"ostatní: ostatní (solární a FVE, byty na dřevo nebo uhlí, dálkové teplo v RD, jiné)",Ostatní,126,16,13
+ostatní: RD elektřina,Rodinné domy na elektřinu,194,NA,NA
+ostatní: byt elektřina,Byty na elektřinu,141,NA,NA
+ostatní: RD tepelné čerpadlo,Rodinné domy na TČ,126,NA,NA
+"ostatní: ostatní (solární a FVE, byty na dřevo nebo uhlí, dálkové teplo v RD, jiné)",Ostatní,126,14,11
