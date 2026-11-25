@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Kdo by zaplatil za dražší topení? Zhruba 260 tisíc domácností by potřebovalo pomoc"
+title:       "Kdo by zaplatil za dražší topení? Zhruba 180 tisíc domácností by potřebovalo pomoc"
 slug:        "ets2-zranitelne-domacnosti"
 published:   2026-11-04
 cover-source-author:      "alpha innotec"
@@ -21,12 +21,12 @@ extra-scripts:
 - /assets-local/js/chart-download.js
 - /assets-local/js/ets2-grafy.js
 perex: |
-  Evropská povolenka ETS2 by od roku 2028 zdražila uhlí, plyn, benzín a naftu. Nejvíc by chudší domácnosti zasáhlo zdražení vytápění. Domácnostem s penězi na výměnu kotle by to dalo další důvod přejít na tepelné čerpadlo. Zhruba 240–285 tisíc chudších domácností by na změnu ale potřebovalo pomoc ze Sociálního klimatického fondu. Peníze by byly: povolenky by Česku za roky 2028–2032 vynesly zhruba 150 miliard korun. Jaké jsou možnosti?
+  Evropská povolenka ETS2 by od roku 2028 zdražila uhlí, plyn, benzín a naftu. Nejvíc by chudší domácnosti zasáhlo zdražení vytápění. Domácnostem s penězi na výměnu kotle by to dalo další důvod přejít na tepelné čerpadlo. Zhruba 165–205 tisíc chudších domácností by na změnu ale potřebovalo pomoc ze Sociálního klimatického fondu. Peníze by byly: povolenky by Česku za roky 2028–2032 vynesly zhruba 150 miliard korun. Jaké jsou možnosti?
 ---
 
 ## Jak se mění spotřeba fosilních paliv?
 
-České domácnosti topí čím dál méně uhlím a plynem. Fosilní paliva včetně jejich podílu na elektřině a teple ze sítě tvořila v roce 2005 tři čtvrtiny energie, kterou domácnosti spotřebovaly, v roce 2024 už jen polovinu.[^bilance] Uhlí v domácnostech ubylo o polovinu a plynu o třetinu, přibylo dřeva a pelet a tepla z tepelných čerpadel (2005–2024). Teplo ze sítě je v grafu rozdělené na velké teplárny, které už povolenky platí v ETS1, a menší výtopny, na které by se vztahovalo ETS2. Ty dodávají jen asi pětinu tepla. Pod ETS2 by tak v roce 2024 spadala zhruba třetina energie domácností (uhlí, plyn a teplo z menších výtopen, 84 PJ). Další třetina už povolenky platí v ETS1 (elektřina a teplo z velkých tepláren, 84 PJ) a zbytek je mimo povolenky (dřevo a okolní teplo z tepelných čerpadel, 93 PJ).
+České domácnosti topí čím dál méně uhlím a plynem. Fosilní paliva, včetně těch spálených na elektřinu a teplo ze sítě, tvořila v roce 2005 tři čtvrtiny jejich spotřeby energie, v roce 2024 už jen polovinu.[^bilance] Uhlí ubylo o polovinu, plynu o třetinu, přibylo dřeva, pelet a tepelných čerpadel. Zhruba třetinu energie domácností by zpoplatnilo ETS2: uhlí, plyn a teplo z menších výtopen. Další třetinu, elektřinu a teplo z velkých tepláren, už zpoplatňuje ETS1. Zbytek, tedy dřevo a teplo z okolí pro tepelná čerpadla, povolenky nezatěžují.
 
 <script type="application/json" id="graf-spotreba-data">{{ site.data.ets2.spotreba_domacnosti | jsonify }}</script>
 {% include includes-local/chart-panel.html
@@ -77,19 +77,23 @@ Ropu a plyn Česko téměř celé dováží,[^dovoz] takže světové cenové š
     class="narrow-figure"
     title="Fosilní šoky stály domácnosti víc, než by stálo ETS2"
     caption="Náklad navíc pro typovou domácnost v rodinném domě s plynovým kotlem a pro typickou domácnost s autem na benzín (asi 600 litrů ročně), Kč měsíčně včetně DPH"
-    alt="Plyn v rodinném domě: zdražení 2021–2023 asi 1 770 Kč měsíčně, ETS2 asi 440 Kč. Benzín: zdražení 2025–2026 asi 510 Kč měsíčně, ETS2 asi 190 Kč."
+    alt="Plyn v rodinném domě: zdražení 2021–2023 asi 1 770 Kč měsíčně, ETS2 asi 450 Kč. Benzín: zdražení 2025–2026 asi 510 Kč měsíčně, ETS2 asi 190 Kč."
     source='<a href="https://csu.gov.cz/produkty/spotreba-paliv-a-energii-v-domacnostech-energo-2021">ČSÚ ENERGO 2021</a>, <a href="https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_202/default/table">Eurostat nrg_pc_202</a>, ceny benzínu viz odkazy v textu, spotřeba benzínu: medián domácností s autem podle EU-SILC 2024 a Statistiky rodinných účtů; výpočet Fakt o klimatu.'
 %}
 
-Každé tepelné čerpadlo místo kotle a každé elektroauto místo spalovacího motoru chrání domácnost před dalším šokem, který nemáme pod kontrolou.
+Rozdíl je i v tom, kam peníze odtečou. Za dražší ropu a plyn platíme zahraničním dodavatelům. Výnos z ETS2 zůstane v Česku a v EU a může se domácnostem vrátit. Kdo dostane podporu, může na tom být i líp, než kolik zaplatí.
+
+Každé tepelné čerpadlo místo kotle a každá cesta veřejnou dopravou nebo elektroautem místo spalovacího motoru chrání domácnost před dalším šokem, který nemáme pod kontrolou.
 {: .callout}
 
 
-ETS2 by podle evropských pravidel mělo začít platit v roce 2028, o rok později, než se původně plánovalo.[^odklad] [V našem základním scénáři](#metodika) (asi 60 eur za tunu v roce 2028) by vytápění rodinného domu hnědým uhlím zdražilo o 33–42 % a vytápění plynem o 12–13 %. U uhlí záleží výsledná míra zdražení na tom, zda domácnost přitápí dřevem, které ETS2 nepodléhá.
+ETS2 by podle evropských pravidel mělo začít platit v roce 2028, o rok později, než se původně plánovalo.[^odklad] [V našem základním scénáři](#metodika) počítáme s 61 eury za tunu v roce 2028. Jde o strop 45 eur přepočtený z cen roku 2020 o inflaci. Pevný strop to ale není: když cena přesáhne tuto hranici, EU uvolní další povolenky, a cena ji tak může i překročit. Při 61 eurech by vytápění rodinného domu hnědým uhlím zdražilo o 33–42 % a vytápění plynem o 12–13 %. U uhlí záleží výsledná míra zdražení na tom, zda domácnost přitápí dřevem, které ETS2 nepodléhá.
 
 {% include preview-box.html title="Související studie" slug="2026-analyza-opatreni-domacnosti" %}
 
-Zavedení ETS2 by zdražilo uhlí a plyn, a odchod od nich by se proto vyplatil víc: teplo z tepelného čerpadla v sazbě pro tepelná čerpadla už dnes vychází zhruba o desetinu až dvě pětiny levněji než ze staršího plynového kotle a zhruba stejně jako ze starého kotle na uhlí. V našem základním scénáři by bylo o pětinu až polovinu levnější než z plynu i z uhlí.[^cena-tepla] Na tuto pobídku ale nemohou reagovat všichni stejně. Domácnosti se středními a vyššími příjmy si investici do čerpadla, zateplení nebo elektroauta spíše mohou dovolit. Chudším častěji chybějí úspory i přístup k úvěru, což je podle ministerstva financí jedna z hlavních bariér renovací.[^mf-bariery] Je proto pravděpodobné, že od uhlí a plynu odejdou dříve domácnosti s vyššími příjmy a chudší zůstanou u dražších paliv déle, pokud jim s výměnou nikdo nepomůže.
+Zavedení ETS2 by zdražilo uhlí a plyn, a odchod od nich by se proto vyplatil víc: teplo z tepelného čerpadla v sazbě pro tepelná čerpadla už dnes vychází v provozních nákladech zhruba o desetinu až dvě pětiny levněji než ze staršího plynového kotle a zhruba stejně jako ze starého kotle na uhlí. V našem základním scénáři by bylo o pětinu až polovinu levnější než z plynu i z uhlí.[^cena-tepla] Pořízení je ale dražší a jeho návratnost závisí na domě: čerpadlo potřebuje rozumně zateplený dům a vhodné otopné těleso. Na tuto pobídku ale nemohou reagovat všichni stejně. Domácnosti se středními a vyššími příjmy si investici do čerpadla, zateplení nebo elektroauta spíše mohou dovolit. Chudším častěji chybějí úspory i přístup k úvěru, což je podle ministerstva financí jedna z hlavních bariér renovací.[^mf-bariery] Je proto pravděpodobné, že od uhlí a plynu odejdou dříve domácnosti s vyššími příjmy a chudší zůstanou u dražších paliv déle, pokud jim s výměnou nikdo nepomůže.
+
+Nejde jen o peníze. Kamna bez rozvodů tepla a radiátorů nejdou vyměnit za kotel ani za čerpadlo bez celé otopné soustavy a kotlíkové dotace rozvody nepodporovaly. Část domácností se navíc nechce vázat na zdroj, který jim může někdo vypnout. Pomoc s přechodem proto není jen kompenzace. Domácnost, která přejde od uhlí a plynu, už při příští krizi nezaplatí víc a ETS2 se jí netýká.
 
 Kolik by zdražení stálo právě vaši domácnost a jak by si vedlo tepelné čerpadlo, si můžete spočítat v kalkulačce.
 
@@ -97,11 +101,11 @@ Kolik by zdražení stálo právě vaši domácnost a jak by si vedlo tepelné �
 
 {% capture ex_doprava %}
 
-**Pro rozpočty domácností by doprava byla menší problém než vytápění.** Proto se v tomto textu soustředíme na vytápění. Tankování by zdražilo zhruba o 10 %, vytápění rodinného domu uhlím o třetinu až dvě pětiny, kolem 1 300 Kč měsíčně. Ceny benzínu a nafty navíc kolísají víc, než by s nimi pohnulo ETS2.
+**Pro rozpočty domácností by doprava byla menší problém než vytápění.** Proto se v tomto textu soustředíme na vytápění. Tankování by zdražilo zhruba o 10 %, v mediánu asi o 190 Kč měsíčně, vytápění rodinného domu uhlím o třetinu až dvě pětiny, u zranitelných domácností kolem 1 000 Kč měsíčně. Ceny benzínu a nafty navíc kolísají víc, než by s nimi pohnulo ETS2.
 
-Doprava je oblast, kde fosilních paliv v Česku neubývá. Konečná spotřeba ropy, z velké části v dopravě, je [o 14 % vyšší než v roce 2005](https://ec.europa.eu/eurostat/databrowser/view/nrg_bal_c/default/table) a její podíl na konečné spotřebě energie stoupl z 26 na 33 % (2005–2024).
+Doprava je oblast, kde fosilních paliv v Česku neubývá. Konečná spotřeba ropy, z velké části v dopravě osobní i nákladní, je o 13 % vyšší než v roce 2005 a její podíl na konečné spotřebě energie stoupl z 26 na 33 % (2005–2024).[^ropa]
 
-Zavedení ETS2 by při ceně 60 € za tunu zdražilo benzín [asi o 3,8 Kč a naftu asi o 4,4 Kč za litr](#metodika) včetně DPH. Kolik by to domácnost stálo, záleží hlavně na tom, kolik jezdí. Polovina domácností s autem by připlatila méně než 190 Kč měsíčně, čtvrtina méně než 110 Kč. Desetina by ale dala víc než 500 Kč měsíčně, typicky ti, kdo denně dojíždějí autem daleko. Auto má asi dvě třetiny domácností, mezi zranitelnými jen dvě pětiny. Pro srovnání: benzín letos po uzavření Hormuzského průlivu zdražil asi o 10 Kč za litr, tedy víc než dvojnásobně.
+Zavedení ETS2 by při ceně 61 € za tunu zdražilo benzín [asi o 3,9 Kč a naftu asi o 4,5 Kč za litr](#metodika) včetně DPH. Kolik by to domácnost stálo, záleží hlavně na tom, kolik jezdí. Polovina domácností s autem by připlatila méně než 190 Kč měsíčně, čtvrtina méně než 110 Kč. Desetina by ale dala víc než 500 Kč měsíčně, typicky ti, kdo denně dojíždějí autem daleko. Rozhoduje hlavně, zda domácnost dojíždí za prací. Chudší domácnosti na venkově, kde někdo pracuje, by připlatily v mediánu asi 220 Kč měsíčně a desetina přes 570 Kč. Kde nikdo nepracuje, jen asi 60 Kč. Velikost obce sama hraje menší roli. Auto má asi dvě třetiny domácností, mezi zranitelnými jen dvě pětiny. Pro srovnání: benzín letos po uzavření Hormuzského průlivu zdražil asi o 10 Kč za litr, tedy víc než dvojnásobně.
 
 Elektroauto ETS2 nezatíží, protože elektřina spadá pod stávající systém ETS1. U dopravy je ale přechod pro chudší domácnosti ještě těžší než u vytápění: ojeté elektroauto je zatím drahé, kdo nemůže nabíjet doma, závisí na [veřejných nabíječkách, kterých je zatím málo](https://www.seznamzpravy.cz/clanek/ekonomika-byznys-doprava-cesko-ma-jednu-nabijecku-na-kazdych-pet-aut-sit-ale-eu-stale-nestaci-282982), a na venkově často chybí veřejná doprava. Sociální klimatický fond proto umožňuje podporovat i čistší a dostupnou dopravu, například příspěvky na veřejnou dopravu nebo na ojeté nízkoemisní vozy. Český návrh plánu ale počítá hlavně s [poptávkovou dopravou a nákupem bezemisních autobusů](https://www.cde-org.cz/media/object/2884/skf_analyza_04_2026.docx.pdf) v hůře obsloužených oblastech.
 
@@ -118,13 +122,13 @@ Pro většinu domácností by zavedení ETS2 znamenalo stokoruny měsíčně. U 
 - po zavedení ETS2 by **dávaly za energie na bydlení víc než dvojnásobek mediánového podílu na příjmu** (indikátor energetické chudoby 2M);
 - zdražení vytápění kvůli ETS2 by jim **vzalo aspoň 1 % čistého příjmu**.[^podminka-1]
 
-Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 240–290 tisíc, necelých 6 % všech. Zdražení vytápění by je stálo v průměru kolem 700 Kč měsíčně, 2,4 % příjmu. Kdo jezdí autem, připlatil by navíc i za benzín nebo naftu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a zdražení vytápění by jí vzalo 4,2 % příjmu. Energetická chudoba v uhelných domech by stoupla z 16 na 22 %.[^energeticka-chudoba]
+Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 165–205 tisíc, asi 4 % všech. Asi 150 tisíc z nich je energeticky chudých už dnes, zavedení ETS2 by přidalo asi 34 tisíc nových. Zdražení vytápění by je stálo v průměru kolem 600 Kč měsíčně, 2,1 % příjmu. Kdo jezdí autem, připlatil by navíc i za benzín nebo naftu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a zdražení vytápění by jí vzalo 3 % příjmu. Energetická chudoba v uhelných domech by stoupla z 19 na 25 %.[^energeticka-chudoba]
 
 U dálkového tepla by zdražení nebylo plošné. Velké teplárny nad 20 MW už povolenky platí ve stávajícím systému ETS1,[^ets1-teplarny] pod ETS2 by spadly jen menší výtopny na plyn a uhlí. Dražší teplo by se tak týkalo hlavně bytů napojených na menší výtopnu, typicky v menších městech nebo na jednotlivých sídlištích s vlastní kotelnou.
 
 {% include includes-local/ets2-blog/typove-domacnosti.html %}
 
-Graf níže ukazuje, proč na palivu tolik záleží. Rodinných domů na uhlí je jen asi 220 tisíc, zranitelný je ale skoro každý pátý. Domů na plyn je čtyřikrát víc a zranitelný je zhruba každý osmý, v absolutních číslech je jich proto nejvíc. Z 1,5 milionu bytů na teple z velkých tepláren je zranitelných jen asi 21 tisíc, a to kvůli plynu na vaření nebo ohřev vody.
+Graf níže ukazuje, proč na palivu tolik záleží. Rodinných domů na uhlí je jen asi 220 tisíc, zranitelný je ale skoro každý pátý. Domů na plyn je čtyřikrát víc a zranitelný je zhruba každý čtrnáctý, v absolutních číslech je jich proto nejvíc. Z 1,5 milionu bytů na teple z velkých tepláren je zranitelných jen asi 8 tisíc, a to kvůli plynu na vaření nebo ohřev vody. Povolenky ETS1 tyto domácnosti platí v ceně tepla už dnes.
 
 <script type="application/json" id="graf-skupiny-data">{{ site.data.ets2.skupiny | jsonify }}</script>
 {% include includes-local/chart-panel.html
@@ -164,18 +168,19 @@ Palivo ale nestačí. Stejné zdražení dopadne jinak na domácnost s vysokým 
 {% include preview-box.html title="Pokračování série" slug="ets2-socialni-klimaticka-politika" %}
 
 {% capture ex_lim %}
-- **Pracujeme s typovými domácnostmi (archetypy), ne s konkrétními domy.** Spotřeby jsou průměry za skupinu podle typu bydlení a paliva. Skutečná domácnost může spotřebovat výrazně víc i méně.
-- **Neznáme energetický stav domu.** Data neříkají, zda je dům zateplený, jaká má okna nebo jak starý je kotel. Dva domy na uhlí se stejnými příjmy tak mohou mít velmi odlišný účet i dopad ETS2.
+- **Pracujeme se vzorkem domácností z šetření EU-SILC, ne s konkrétními domy.** Výdaje za energie známe od domácností, spotřebu z nich přepočítáváme cenami a kalibrujeme na energetickou bilanci Česka. Benzín a naftu doplňujeme ze Statistiky rodinných účtů podle typu bydlení a příjmu.
+- **Neznáme energetický stav domu.** Data neříkají, zda je dům zateplený, jaká má okna nebo jak starý je kotel. Dvě domácnosti se stejnými příjmy, které topí uhlím, tak mohou mít podle stavu domu velmi odlišný účet i dopad ETS2.
 - **Nevíme, zda domácnost dotápí, nebo přetápí.** Vycházíme ze skutečné spotřeby, takže domácnost, která šetří na úkor tepla a zdraví, se může jevit méně zasažená, než by odpovídalo potřebě. Skutečnou energetickou chudobu tak spíš podceňujeme.
 - **Nezohledňujeme reakci domácností.** Výpočet předpokládá stejnou spotřebu před a po zavedení ETS2. Ve skutečnosti část domácností začne šetřit nebo vymění zdroj.
-- **Zdroj dálkového tepla neznáme.** U bytů na teple předpokládáme podíl zdrojů spadajících pod ETS2 pracovním odhadem.
-- **Cena povolenky je nejistá.** Základní scénář počítá s asi 60 € za tunu v roce 2028, trh nyní čeká víc. Dopady rostou s cenou zhruba úměrně.
+- **Zdroj dálkového tepla neznáme.** U bytů na teple počítáme s asi 380 tisíci byty napojenými na menší zdroje spadající pod ETS2 podle [dashboardu tepláren](https://faktaoklimatu.cz/studie/2026-odchod-teplaren-od-uhli).
+- **Výsledky stojí na výběrovém šetření.** Počty zranitelných domácností mají 95% interval spolehlivosti zhruba ±10 %. Nejistotu v prazích a v počtu bytů na teple z menších zdrojů interval nezahrnuje.
+- **Cena povolenky je nejistá.** Základní scénář počítá s 61 € za tunu v roce 2028, trh nyní čeká víc. Dopady rostou s cenou zhruba úměrně.
 {% endcapture %}
 {% capture ex_metodika %}
 
 - Dopady na domácnosti: mikrodata [EU-SILC 2024](https://csu.gov.cz/zivotni-podminky) (příjmy, typ bydlení, vytápění, výdaje na energie), pohonné hmoty a podíl uhlí v pevných palivech ze [Statistiky rodinných účtů 2023](https://csu.gov.cz/rodinne_ucty).
 - Ceny: plyn podle realizovaných cen Eurostatu, dálkové teplo podle [ERÚ 2024](https://eru.gov.cz/vysledne-ceny-tepelne-energie-v-cr-2024), uhlí podle ceníků uhelných skladů; vše převedeno na rok 2028.
-- Scénář A: povolenka 45 eur (ceny 2020), tedy asi 60 eur za tunu v roce 2028. Eura převádíme kurzem 24,2 Kč, který [Česká národní banka čeká pro rok 2028](https://www.cnb.cz/cs/menova-politika/prognoza/). Emisní faktory podle ČHMÚ.
+- Základní scénář: 45 eur za tunu v cenách roku 2020, horní hranice, nad kterou EU uvolní další povolenky. Přepočítáváme ho indexem spotřebitelských cen EU (HICP) 2020 → 2028 = 1,354: skutečná inflace 2021–2025 podle [Eurostatu](https://ec.europa.eu/eurostat/databrowser/product/view/tec00118), pro roky 2026–2028 [projekce ECB ze září 2026](https://www.ecb.europa.eu/press/projections/html/ecb.projections202609_ecbstaff~8e340fc69d.en.html) (3,0, 2,5 a 2,1 %). Vychází 45 × 1,354 = 61 eur v roce 2028. O „stropu 45 €“ se mluví v cenách roku 2020. Nejde o pevnou cenu, ale o mechanismus stability trhu: cena nad ni vystoupat může. Trh s termínovými kontrakty na prosinec 2028 dnes čeká asi 76 eur. Eura převádíme kurzem 24,2 Kč, který [Česká národní banka čeká pro rok 2028](https://www.cnb.cz/cs/menova-politika/prognoza/). Emisní faktory podle ČHMÚ.
 - Odhady nákladů jednotlivých možností jsou řádové a slouží k porovnání, ne jako rozpočtová kalkulace.
 - Typové domácnosti a detailní výsledky jsou v naší prezentaci a metodice.
 - Renovace, návratnost zateplení a kapacity stavebnictví: Ministerstvo financí, [hlavní report](#ODKAZ-MF-hlavni-report); regionální rozložení: [Mikroregionální ukazatel energetické chudoby](https://mpo.gov.cz/assets/cz/energetika/uspory-energie/aktuality/2026/11/Tematicky-report_Mikroregionalni_ukazatel_energeticke_chudoby_MF.pdf) (2026).
@@ -193,6 +198,7 @@ Palivo ale nestačí. Stejné zdražení dopadne jinak na domácnost s vysokým 
 [^dovoz]: Eurostat, [závislost na dovozu energie nrg_ind_id](https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_id/default/table).
 [^hormuz]: [IEA, Strait of Hormuz](https://www.iea.org/about/oil-security-and-emergency-response/strait-of-hormuz).
 [^odklad]: [Notes from Poland](https://notesfrompoland.com/2025/11/05/poland-hails-success-in-delaying-new-eu-emissions-system/) (5. 11. 2025).
+[^ropa]: Eurostat, [energetická bilance nrg_bal_c](https://ec.europa.eu/eurostat/databrowser/view/nrg_bal_c/default/table), Česko, konečná spotřeba energie (FC_E), ropné produkty bez biosložek (O4000XBIO): 272 PJ v roce 2005 a 309 PJ v roce 2024, z toho doprava 232 a 282 PJ. Celková konečná spotřeba energie 1 042 a 946 PJ.
 [^cena-tepla]: Výpočet Fakt o klimatu (skript 12_cena_tepla.R): cena elektřiny [ČSÚ](https://csu.gov.cz/ceny-energii) v pásmu spotřeby 5–15 a nad 15 MWh (1. pololetí 2026) jako přiblížení sazby pro tepelná čerpadla, sezónní topný faktor 2,5–3, plynový kotel s účinností 85 %, uhelný 55–65 %. Dřevo, kterého se ETS2 netýká, zůstává nejlevnější.
 [^mf-bariery]: Ministerstvo financí, [hlavní report](#ODKAZ-MF-hlavni-report).
 [^podminka-1]: Bez této podmínky by mezi zranitelné spadaly i chudé domácnosti, kterým by zavedení ETS2 skoro nic nevzalo, například byty na elektřinu nebo na teple z velké teplárny v ETS1. Ty jsou energeticky chudé už dnes a potřebují pomoc z jiných důvodů. Podmínka vybírá ty, kterým by chudobu prohloubilo právě ETS2, a podporu ze Sociálního klimatického fondu lze proto zacílit na dopad ETS2. Benzín a naftu do této podmínky nezapočítáváme: podpora ze Sociálního klimatického fondu by měla mířit hlavně na vytápění, kde domácnost nemá snadnou náhradu. Hranice 1 % je naše volba: odpovídá zhruba 250 Kč měsíčně u domácnosti s čistým příjmem 25 tisíc Kč.
