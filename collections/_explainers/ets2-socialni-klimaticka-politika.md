@@ -25,6 +25,15 @@ perex: |
   Evropská pravidla počítají s tím, že sociální dopady ETS2 tlumí členské státy. Jaké nástroje mají, kolik by stály a co z toho zatím chystá Česko?
 ---
 
+{% include tldr.html title="Hlavní zjištění" content="
+- **ETS2 by zdražilo topení hned, výměna kotle nebo zateplení ale trvá roky.** Chudší domácnosti by mezitím platily víc a na výměnu by neměly.
+- **Český plán na tuto dobu s přímou pomocí nepočítá**, přestože ji evropská pravidla dovolují. Její absenci kritizuje například ombudsman nebo Centrum pro dopravu a energetiku.
+- **Navrhujeme dočasnou měsíční platbu pro domácnosti s nízkými příjmy podle toho, čím topí:** 1 000 Kč pro rodinný dům na uhlí, 500 Kč na plyn, 360 Kč pro byt s plynovým kotlem a 300 Kč pro byt na teple z menší výtopny. Od roku 2030 by klesala a po roce 2032 skončila.
+- **V prvním roce by stála asi 4,6 miliardy korun, pak by klesala.** Je to zlomek výnosu z povolenek. Domácnostem, které to nejvíc potřebují, by vrátila zhruba dvě třetiny zdražení topení.
+- **Těžší než najít peníze je doručit je.** Stát neví, čím kdo topí, ani kdo s kým žije. Navrhujeme proto tři cesty: přidat platbu k dávkám na bydlení, k důchodu a pro ostatní jednoduchou žádost.
+- **Plošné kompenzace jsou drahé a míjejí ty, kdo pomoc potřebují.** Například návrh PAQ Research a CVF by stál 13 miliard ročně, ale domácnostem, které to nejvíc potřebují, by z něj šla jen 4 % peněz.
+" %}
+
 ## Co chystá Česko a co v plánu chybí?
 
 Zavedení ETS2 by domácnostem zdražilo vytápění hned od roku 2028, výměna kotle nebo zateplení ale trvá roky. Na toto přechodné období proto [nařízení o Sociálním klimatickém fondu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32023R0955) dovoluje státům vyplácet zranitelným domácnostem dočasné přímé platby.
@@ -88,7 +97,7 @@ Aby platba došla ke správným domácnostem, musí stát u každé znát tři v
 - **Daňová data chrání mlčenlivost.** Finanční správa může údaje z daňových přiznání předat jinému úřadu jen tam, kde to zákon výslovně umožňuje.[^danovy-rad] Podobně jsou chráněná data ČSSZ a Úřadu práce.
 - **Úřady nevědí, čím kdo topí.** Takový údaj v žádném použitelném státním registru není.
 
-Když údaj chybí, musí si domácnost zažádat sama. Superdávku, o kterou se žádá, čerpá jen čtvrtina až polovina oprávněných.[^paq-cvf] Ze zranitelných domácností podle našeho výpočtu pobírá dávky na bydlení jen 17 %, v rodinných domech na uhlí jen 2 %.[^silc]
+Když údaj chybí, musí si domácnost zažádat sama. Superdávku, o kterou se žádá, čerpá jen čtvrtina až polovina oprávněných.[^paq-cvf] Jednoduchou podporu ale lidé čerpají: jednorázový příspěvek 5 000 Kč na dítě z roku 2022 s mírnými podmínkami dostalo přes 80 % oprávněných dětí.[^prispevek-5000] Ze zranitelných domácností podle našeho výpočtu pobírá dávky na bydlení jen 17 %, v rodinných domech na uhlí jen 2 %.[^silc]
 
 ## Jak to dělají jinde?
 
@@ -299,6 +308,7 @@ Zdroj: [EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union
 [^paq-cvf]: [PAQ Research a Centrum pro veřejné finance](https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf) (2026).
 [^silc]: Výpočet Fakt o klimatu z [EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions).
 [^teplo-povolenky]: Do roku 2012 dostávaly teplárny povolenky téměř celé zdarma. Od roku 2013 dostávají zdarma povolenky jen na část tepla pro domácnosti, v roce 2013 na 80 % a od roku 2020 na 30 % podle evropského srovnávacího standardu ([směrnice 2003/87/ES, čl. 10a](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:02003L0087-20240301)), zbytek kupují. Do regulované ceny tepla smějí promítnout jen skutečně nakoupené povolenky ([ERÚ](https://eru.gov.cz/sites/default/files/obsah/prilohy/teplo/04_nakup-emisnich-povolenek.pdf)). Podle Teplárenského sdružení tvoří povolenky asi čtvrtinu ceny tepla z uhelných tepláren a asi desetinu z plynových ([prezentace TS ČR](https://www.smocr.cz/Shared/Clanky/17109/hajek-tscr-transformace-tepl.pdf)).
+[^prispevek-5000]: Nárok mělo asi 1,6 milionu dětí ([MPSV](https://mpsv.gov.cz/zacal-se-vyplacet-jednorazovy-prispevek-na-dite-pozadat-bude-mozne-od-poloviny-srpna)), stát vyplatil 6,7 mld. Kč ([ČSÚ](https://www.czso.cz/documents/10180/191486277/19002923k3.pdf)), tedy asi 1,34 milionu příspěvků.
 [^eu-ets]: [Evropská komise, systém EU pro obchodování s emisemi](https://climate.ec.europa.eu/eu-action/carbon-markets/about-eu-ets_en).
 [^hellowatt]: [Hellowatt](https://www.hellowatt.fr/blog/fin-versement-automatique-cheque-energie/).
 [^ie-cekani]: [Houses of the Oireachtas, parlamentní otázka](https://www.oireachtas.ie/en/debates/question/2025-04-29/306) (29. 4. 2025).

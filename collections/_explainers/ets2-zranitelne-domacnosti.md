@@ -24,6 +24,14 @@ perex: |
   Evropská povolenka ETS2 by od roku 2028 zdražila uhlí, plyn, benzín a naftu. Nejvíc by chudší domácnosti zasáhlo zdražení vytápění. Domácnostem s penězi na výměnu kotle by to dalo další důvod přejít na tepelné čerpadlo. Zhruba 165–205 tisíc chudších domácností by na změnu ale potřebovalo pomoc ze Sociálního klimatického fondu. Peníze by byly: povolenky by Česku za roky 2028–2032 vynesly zhruba 150 miliard korun. Jaké jsou možnosti?
 ---
 
+{% include tldr.html title="Hlavní zjištění" content="
+- **Od roku 2028 by zdražilo topení uhlím a plynem i tankování.** U rodinných domů na uhlí by topení podražilo o 600 až 1 100 Kč měsíčně, na plyn o 200 až 500 Kč. Litr benzínu by byl dražší asi o 4 Kč.
+- **Přechod na tepelné čerpadlo by se vyplatil většímu počtu domácností.** Ty, které na něj mají, by dostaly další důvod přejít.
+- **Zhruba 180 tisíc domácností s nízkými příjmy by to zasáhlo citelně.** Většina z nich už dnes dává za energie neúměrně velkou část příjmu. V rodinných domech na uhlí by za topení platily o 700 až 1 400 Kč měsíčně víc, v domech na plyn o 400 až 600 Kč.
+- **Nejvíc jich bydlí v rodinných domech na plyn a uhlí**, často na periferiích. Byty na teple z velkých tepláren povolenky platí už dnes, ETS2 by jim topení nezdražilo.
+- **Peníze na pomoc by byly.** Povolenky by Česku za roky 2028–2032 vynesly zhruba 150 miliard korun.
+" %}
+
 ## Jak se mění spotřeba fosilních paliv?
 
 České domácnosti topí čím dál méně uhlím a plynem. Fosilní paliva, včetně těch spálených na elektřinu a teplo ze sítě, tvořila v roce 2005 tři čtvrtiny jejich spotřeby energie, v roce 2024 už jen polovinu.[^bilance] Uhlí ubylo o polovinu, plynu o třetinu, přibylo dřeva, pelet a tepelných čerpadel. Zhruba třetinu energie domácností by zpoplatnilo ETS2: uhlí, plyn a teplo z menších výtopen. Další třetinu, elektřinu a teplo z velkých tepláren, už zpoplatňuje ETS1. Zbytek, tedy dřevo a teplo z okolí pro tepelná čerpadla, povolenky nezatěžují.
@@ -91,7 +99,7 @@ ETS2 by podle evropských pravidel mělo začít platit v roce 2028, o rok pozd�
 
 {% include preview-box.html title="Související studie" slug="2026-analyza-opatreni-domacnosti" %}
 
-Zavedení ETS2 by zdražilo uhlí a plyn, a odchod od nich by se proto vyplatil víc: teplo z tepelného čerpadla v sazbě pro tepelná čerpadla už dnes vychází v provozních nákladech zhruba o desetinu až dvě pětiny levněji než ze staršího plynového kotle a zhruba stejně jako ze starého kotle na uhlí. V našem základním scénáři by bylo o pětinu až polovinu levnější než z plynu i z uhlí.[^cena-tepla] Pořízení je ale dražší a jeho návratnost závisí na domě: čerpadlo potřebuje rozumně zateplený dům a vhodné otopné těleso. Na tuto pobídku ale nemohou reagovat všichni stejně. Domácnosti se středními a vyššími příjmy si investici do čerpadla, zateplení nebo elektroauta spíše mohou dovolit. Chudším častěji chybějí úspory i přístup k úvěru, což je podle ministerstva financí jedna z hlavních bariér renovací.[^mf-bariery] Je proto pravděpodobné, že od uhlí a plynu odejdou dříve domácnosti s vyššími příjmy a chudší zůstanou u dražších paliv déle, pokud jim s výměnou nikdo nepomůže.
+Zavedení ETS2 by zdražilo uhlí a plyn, a odchod od nich by se proto vyplatil víc: teplo z tepelného čerpadla v sazbě pro tepelná čerpadla už dnes vychází v provozních nákladech zhruba o desetinu až dvě pětiny levněji než ze staršího plynového kotle a zhruba stejně jako ze starého kotle na uhlí. V našem základním scénáři by bylo o pětinu až polovinu levnější než z plynu i z uhlí.[^cena-tepla] Kde přesně se přechod vyplatí, záleží na ceně povolenky a elektřiny i na spotřebě a stavu domu. Pořízení je ale dražší a jeho návratnost závisí na domě: čerpadlo potřebuje rozumně zateplený dům a vhodné otopné těleso. Na tuto pobídku ale nemohou reagovat všichni stejně. Domácnosti se středními a vyššími příjmy si investici do čerpadla, zateplení nebo elektroauta spíše mohou dovolit. Chudším častěji chybějí úspory i přístup k úvěru, což je podle ministerstva financí jedna z hlavních bariér renovací.[^mf-bariery] Je proto pravděpodobné, že od uhlí a plynu odejdou dříve domácnosti s vyššími příjmy a chudší zůstanou u dražších paliv déle, pokud jim s výměnou nikdo nepomůže.
 
 Nejde jen o peníze. Kamna bez rozvodů tepla a radiátorů nejdou vyměnit za kotel ani za čerpadlo bez celé otopné soustavy a kotlíkové dotace rozvody nepodporovaly. Část domácností se navíc nechce vázat na zdroj, který jim může někdo vypnout. Pomoc s přechodem proto není jen kompenzace. Domácnost, která přejde od uhlí a plynu, už při příští krizi nezaplatí víc a ETS2 se jí netýká.
 
