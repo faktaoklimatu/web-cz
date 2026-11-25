@@ -10,10 +10,9 @@
 
     var T = FoKTheme.colors;
     // Barvy série, každý význam jednou: modrá = ETS2 a domácnosti, které by zasáhlo, a cílená pravidla;
-    // červená = cenový šok; šedá = ostatní. Uhlí, plyn a biomasa mají barvy grafů o skladbě elektřiny
-    // (assets-local/figures/klimaticka-politika-svetove-regiony/grafy.js).
+    // červená = cenový šok; šedá = ostatní. Paliva mají vlastní barvy (FUEL), stejné ve všech grafech a mapách série.
     var COL = {
-        ets2: T.primary,
+        ets2: '#3B3B93',   // jako kalkulačka (a kalkulačka v explaineru emisni-povolenky-ets-2)
         zranitelne: T.sectors.energetika,   // zranitelné domácnosti ve čtverečkovém grafu
         sok: T.negative,
         ostatni: T.lightGrey,
@@ -23,21 +22,21 @@
     // Spotřeba domácností podle toho, co do nich přiteklo; pořadí vrstev zdola nahoru. Teplo ze sítě
     // je v pohledu ETS rozdělené na zdroje v ETS1 a ETS2, se stejnou barvou i popiskem.
     var FUEL = [
-        { key: 'uhli', label: 'Uhlí', color: '#914b64' },
-        { key: 'plyn', label: 'Plyn a ropné produkty', color: '#e29292' },
-        { key: 'drevo', label: 'Dřevo a jiná biomasa', color: '#ca851c' },
-        { key: 'tc', label: 'Okolní a solární teplo', color: T.positive },
-        { key: 'teplo', label: 'Teplo ze sítě', color: '#c3a8e3' },
-        { key: 'teplo_ets1', label: 'Teplo ze sítě', color: '#c3a8e3' },
-        { key: 'teplo_ets2', label: 'Teplo ze sítě', color: '#c3a8e3' },
-        { key: 'elektrina', label: 'Elektřina', color: '#2fbfbf' }
+        { key: 'uhli', label: 'Uhlí', color: '#993d59' },
+        { key: 'plyn', label: 'Plyn a ropné produkty', color: '#e27373' },
+        { key: 'drevo', label: 'Dřevo a jiná biomasa', color: '#e0c7a4' },
+        { key: 'tc', label: 'Okolní a solární teplo', color: '#2dab96' },
+        { key: 'teplo', label: 'Teplo ze sítě', color: '#a17db8' },
+        { key: 'teplo_ets1', label: 'Teplo ze sítě', color: '#a17db8' },
+        { key: 'teplo_ets2', label: 'Teplo ze sítě', color: '#a17db8' },
+        { key: 'elektrina', label: 'Elektřina', color: '#6db7cc' }
     ];
     var fuel = function (k) { return FUEL.filter(function (f) { return f.key === k; })[0]; };
     // Pohledy grafu spotřeby: jeden graf, nebo malé grafy se stejnou osou y
     var POHLEDY = [
         { key: 'kde', label: 'Kde vznikají emise', panely: [
-            { title: 'V domácnosti', keys: ['uhli', 'plyn', 'drevo', 'tc'] },
-            { title: 'V elektrárnách a teplárnách', keys: ['teplo', 'elektrina'] }] },
+            { title: 'Energie vyrobená v domácnosti', sub: 'na vytápění, ohřev vody, vaření a spotřebiče', keys: ['uhli', 'plyn', 'drevo', 'tc'] },
+            { title: 'Energie dodaná\nz elektráren a tepláren', keys: ['teplo', 'elektrina'] }] },
         { key: 'celkem', label: 'Celkem', panely: [{ keys: ['uhli', 'plyn', 'drevo', 'tc', 'teplo', 'elektrina'] }] },
         { key: 'ets', label: 'ETS1 a ETS2', panely: [
             { title: 'Zpoplatněno v ETS1', keys: ['teplo_ets1', 'elektrina'] },
@@ -55,10 +54,10 @@
     ];
     // Emise CO2 (emise_domacnosti.csv), samostatný graf pod spotřebou: elektřina a teplo ze sítě s emisemi
     // elektráren a tepláren; dřevo a TČ 0
+    // zrcadlí výchozí pohled grafu spotřeby: vlevo domácnost, vpravo elektrárny a teplárny
     var EMISE = { key: 'emise', jednotka: 'Mt CO₂', desetiny: 2, panely: [
-        { title: 'Celkem', keys: ['uhli', 'plyn', 'teplo', 'elektrina'] },
-        { title: 'Spáleno mimo domácnost', keys: ['teplo', 'elektrina'] },
-        { title: 'Spáleno v domácnosti', keys: ['uhli', 'plyn'] }] };
+        { title: 'Emise ze spalování paliv v domácnostech', keys: ['uhli', 'plyn'] },
+        { title: 'Emise z výroby elektřiny a dálkového tepla', keys: ['teplo', 'elektrina'] }] };
     // Přepínače pohledů jen pro vývoj: ?dev=1 v adrese
     var DEV = new URLSearchParams(location.search).get('dev') === '1';
     var C = { grid: '#edf2f7', axis: '#718096', title: '#2d3748', axisFont: 12, legendFont: 14 };
@@ -118,6 +117,40 @@
 
     function axisText(sel) { return sel.attr('font-size', C.axisFont).attr('fill', C.axis); }
 
+    // Osa y jako v grafech fok-chart-* (fokAxisYWidth, fokAxisYLabel v fok-utils.js): levý okraj = nejširší
+    // popisek + odsazení, takže nejširší popisek začíná na levém okraji svg; jednotka hned za nejvyšším popiskem
+    // („250 PJ“) na podkladu barvy pozadí, který zakryje mřížku.
+    var TICK_PAD = 6;
+    function sirkaOsyY(svg, y, ticks, fmt) {
+        var t = svg.append('text').attr('font-size', C.axisFont), sirka = 0;
+        y.ticks(ticks).forEach(function (v) { t.text(fmt ? fmt(v) : cz(v)); sirka = Math.max(sirka, t.node().getComputedTextLength()); });
+        t.remove();
+        return Math.ceil(sirka) + TICK_PAD;
+    }
+    // g: skupina posunutá na levý okraj grafu; popisky: false u dalších panelů vedle prvního
+    function osaY(g, y, ticks, sirkaMrizky, jednotka, popisky, fmt) {
+        g.call(d3.axisLeft(y).ticks(ticks).tickSize(-sirkaMrizky).tickPadding(TICK_PAD)
+            .tickFormat(popisky ? function (v) { return fmt ? fmt(v) : cz(v); } : ''))
+            .call(function (a) { a.select('.domain').remove(); a.selectAll('.tick line').attr('stroke', C.grid); axisText(a.selectAll('.tick text')); });
+        if (!popisky || !jednotka) return;
+        // jednotka ve vlastní skupině na konci rodiče, aby ležela nad daty
+        var lg = d3.select(g.node().parentNode).append('g').attr('transform', g.attr('transform'));
+        var horni = d3.max(y.ticks(ticks)), box = lg.append('rect');
+        var t = axisText(lg.append('text')).attr('x', -TICK_PAD).attr('dx', '0.3em').attr('y', y(horni)).attr('dy', '0.32em').text(jednotka);
+        var b = t.node().getBBox();
+        box.attr('x', b.x).attr('y', b.y).attr('width', b.width + 4).attr('height', b.height).attr('fill', '#fff');
+    }
+    // Osa x pod nejnižší mřížkou s mezerou, bez čáry osy; čárky 1,5× delší než výchozí
+    function osaX(g, x, tickValues, fmt) {
+        g.call(d3.axisBottom(x).tickValues(tickValues).tickFormat(fmt || d3.format('d')).tickSize(6).tickPadding(4))
+            .call(function (a) {
+                a.select('.domain').remove();
+                a.selectAll('.tick line').attr('stroke', C.axis);
+                axisText(a.selectAll('.tick text'));
+            });
+        return g;
+    }
+
     // Hlavička grafu: popisek jednotek a legenda; vrací y, kde začíná graf.
     function head(svg, width, items, text) {
         var top = caption(svg, text || svg.node().dataset.caption, width);
@@ -133,16 +166,18 @@
         if (!el || !dataEl) return;
         var data = JSON.parse(dataEl.textContent);
         if (!data || !data.length) { el.outerHTML = '<p>Data grafu zatím chybí (spusťte R/13_data_web.R).</p>'; return; }
+        // šířka svg, ne rodiče: panel s class="narrow-figure" má svg užší (_chart-panel.scss)
+        var sirka = function () { return Math.round(el.getBoundingClientRect().width); };
         var last = 0;
         var redraw = function () {
-            var w = el.parentNode.clientWidth;
+            var w = sirka();
             if (!w) return;
             last = w;
             var svg = d3.select(el);
             svg.selectAll('*').remove();
             svg.attr('height', draw(svg, w, data));
         };
-        new ResizeObserver(function () { if (el.parentNode.clientWidth !== last) redraw(); }).observe(el.parentNode);
+        new ResizeObserver(function () { if (sirka() !== last) redraw(); }).observe(el.parentNode);
         document.fonts.ready.then(redraw);
         redraw();
         return redraw;
@@ -166,7 +201,8 @@
 
     // Spotřeba energie domácností podle přímých toků, PJ (2005–2024), a emise CO2: plošné grafy po panelech.
     // getPohled() vrací, který pohled kreslit (spotřeba se přepíná, emise mají jeden).
-    function kresliSpotrebu(getPohled) { return function (svg, w, zdroj) {
+    // vyska: násobek výšky grafu (výchozí 1)
+    function kresliSpotrebu(getPohled, vyska) { return function (svg, w, zdroj) {
         var pohled = getPohled();
         var jed = pohled.jednotka || 'PJ', des = pohled.desetiny || 1;
         var rows = zdroj.map(function (d) {
@@ -182,12 +218,31 @@
             if (keys.indexOf(f.key) >= 0 && !leg.some(function (l) { return l.label === f.label; })) leg.push(f);
         });
         var top = head(svg, w, pohled.bezLegendy ? null : leg);
-        var left = 34, gapX = 20, titleH = n > 1 ? 24 : 0, axisH = 24, rowGap = 16;
+        var ymax = d3.max(panely, function (p) { return d3.max(rows, function (r) { return d3.sum(p.keys, function (k) { return r[k]; }); }); });
+        var y = d3.scaleLinear().domain([0, ymax]).nice(4);
+        var left = sirkaOsyY(svg, y, 4), gapX = 40, axisH = 32, rowGap = 16;
         var cols = Math.max(1, Math.min(n, Math.floor((w - left - 6 + gapX) / (150 + gapX))));
         var panelW = (w - left - 6 - gapX * (cols - 1)) / cols;
-        var plotH = n === 1 ? Math.max(220, Math.min(320, w * 0.5)) : Math.max(160, Math.min(240, panelW * 0.75));
-        var ymax = d3.max(panely, function (p) { return d3.max(rows, function (r) { return d3.sum(p.keys, function (k) { return r[k]; }); }); });
-        var y = d3.scaleLinear().domain([0, ymax]).range([plotH, 0]).nice(4);
+        // název panelu: tučně, „\n“ = nový řádek, zalamuje se na šířku panelu (první sloupec i přes osu y);
+        // sub = řádek běžným písmem pod názvem. Vrací počet řádků; výška záhlaví podle nejdelšího.
+        var titleW = function (i) { return panelW + (i % cols === 0 ? left : 0); };
+        var nazev = function (g, p, x, maxW) {
+            var radky = 0;
+            p.title.split('\n').map(function (t) { return [t, 700]; }).concat(p.sub ? [[p.sub, 400]] : []).forEach(function (r) {
+                var t = g.append('text').attr('y', 14 + 17 * radky).attr('font-size', 15).attr('font-weight', r[1]).attr('fill', C.title);
+                radky += wrap(t, r[0], x, maxW, 17);
+            });
+            return radky;
+        };
+        var radkuNazvu = d3.max(panely, function (p, i) {
+            if (!p.title) return 0;
+            var g = svg.append('g'), k = nazev(g, p, 0, titleW(i));
+            g.remove();
+            return k;
+        });
+        var titleH = n > 1 ? 34 + 17 * (radkuNazvu - 1) : 0;
+        var plotH = (vyska || 1) * (n === 1 ? Math.max(220, Math.min(320, w * 0.5)) : Math.max(160, Math.min(240, panelW * 0.75)));
+        y.range([plotH, 0]);
         var x = d3.scaleLinear().domain(d3.extent(rows, function (r) { return r.rok; })).range([0, panelW]);
         var xTicks = panelW >= 300 ? [2005, 2010, 2015, 2020, 2024] : [2005, 2015, 2024];
         var area = d3.area().x(function (d) { return x(d.data.rok); }).y0(function (d) { return y(d[0]); }).y1(function (d) { return y(d[1]); });
@@ -195,20 +250,14 @@
             var col = i % cols, row = Math.floor(i / cols);
             var g = svg.append('g').attr('transform', 'translate(' + (left + col * (panelW + gapX)) + ',' +
                 (top + row * (titleH + plotH + axisH + rowGap)) + ')');
-            if (p.title) g.append('text').attr('x', col === 0 ? -left : 0).attr('y', 14).attr('font-size', 15).attr('font-weight', 700)
-                .attr('fill', C.title).text(p.title);
+            if (p.title) nazev(g, p, col === 0 ? -left : 0, titleW(i));
             var pg = g.append('g').attr('transform', 'translate(0,' + titleH + ')');
-            pg.append('g').call(d3.axisLeft(y).ticks(4).tickSize(-panelW).tickFormat(col === 0 ? d3.format('d') : ''))
-                .call(function (a) { a.select('.domain').remove(); a.selectAll('.tick line').attr('stroke', C.grid); axisText(a.selectAll('.tick text')); });
             pg.selectAll('path.plocha').data(d3.stack().keys(p.keys)(rows)).join('path')
-                .attr('class', 'plocha').attr('fill', function (s, j) { return fuel(p.keys[j]).color; }).attr('d', area);
-            pg.append('g').attr('transform', 'translate(0,' + plotH + ')')
-                .call(d3.axisBottom(x).tickValues(xTicks).tickFormat(d3.format('d')).tickSize(4))
-                .call(function (a) {
-                    a.select('.domain').attr('stroke', C.axis);
-                    a.selectAll('.tick line').attr('stroke', C.axis);
-                    axisText(a.selectAll('.tick text')).attr('text-anchor', function (d, j, all) { return j === 0 ? 'start' : j === all.length - 1 ? 'end' : 'middle'; });
-                });
+                .attr('class', 'plocha').attr('fill', function (s, j) { return fuel(p.keys[j]).color; }).attr('d', area)
+                .attr('stroke', '#fff').attr('stroke-width', 1).attr('stroke-linejoin', 'round');
+            osaY(pg.insert('g', ':first-child'), y, 4, panelW, jed, col === 0);
+            osaX(pg.append('g').attr('transform', 'translate(0,' + (plotH + 6) + ')'), x, xTicks)
+                .selectAll('.tick text').attr('text-anchor', function (d, j, all) { return j === 0 ? 'start' : j === all.length - 1 ? 'end' : 'middle'; });
             var rule = pg.append('line').attr('y1', 0).attr('y2', plotH).attr('stroke', C.title).style('display', 'none');
             pg.append('rect').attr('width', panelW).attr('height', plotH).attr('fill', 'transparent')
                 .on('mousemove', function (ev) {
@@ -227,16 +276,15 @@
     // Uhlí spálené v domácnostech a okolní a solární teplo (hlavně tepelná čerpadla), PJ: čárový graf
     // s popisky na konci čar. Data jako graf spotřeby (spotreba_domacnosti.csv).
     mount('uhli-tc', function (svg, w, data) {
-        var KEYS = ['uhli', 'tc'], m = { l: 34, r: 150 };
+        var KEYS = ['uhli', 'tc'];
         var rows = data.map(function (d) { return { rok: +d.rok, uhli: +d.uhli, tc: +d.tc }; });
-        var top = head(svg, w, null) + 8, plotH = Math.max(200, Math.min(300, w * 0.45)), r = w < 480 ? 90 : m.r;
+        var y = d3.scaleLinear().domain([0, d3.max(rows, function (d) { return Math.max(d.uhli, d.tc); })]).nice(4);
+        var m = { l: sirkaOsyY(svg, y, 4) }, r = w < 480 ? 90 : 150;
+        var top = head(svg, w, null) + 14, plotH = Math.max(200, Math.min(300, w * 0.45));
         var x = d3.scaleLinear().domain(d3.extent(rows, function (d) { return d.rok; })).range([m.l, w - r]);
-        var y = d3.scaleLinear().domain([0, d3.max(rows, function (d) { return Math.max(d.uhli, d.tc); })]).range([top + plotH, top]).nice(4);
-        svg.append('g').attr('transform', 'translate(' + m.l + ',0)').call(d3.axisLeft(y).ticks(4).tickSize(-(w - r - m.l)))
-            .call(function (a) { a.select('.domain').remove(); a.selectAll('.tick line').attr('stroke', C.grid); axisText(a.selectAll('.tick text')); });
-        svg.append('g').attr('transform', 'translate(0,' + (top + plotH) + ')')
-            .call(d3.axisBottom(x).tickValues(w - r - m.l >= 300 ? [2005, 2010, 2015, 2020, 2024] : [2005, 2015, 2024]).tickFormat(d3.format('d')).tickSize(4))
-            .call(function (a) { a.select('.domain').attr('stroke', C.axis); a.selectAll('.tick line').attr('stroke', C.axis); axisText(a.selectAll('.tick text')); });
+        y.range([top + plotH, top]);
+        osaY(svg.append('g').attr('transform', 'translate(' + m.l + ',0)'), y, 4, w - r - m.l, 'PJ', true);
+        osaX(svg.append('g').attr('transform', 'translate(0,' + (top + plotH + 6) + ')'), x, w - r - m.l >= 300 ? [2005, 2010, 2015, 2020, 2024] : [2005, 2015, 2024]);
         var last = rows[rows.length - 1], dole = -Infinity;
         KEYS.forEach(function (k) {
             svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', fuel(k).color).attr('stroke-width', 3)
@@ -257,11 +305,11 @@
                 showTip(ev, '<b>' + yr + '</b><br>' + KEYS.map(function (k) { return sw(fuel(k).color) + fuel(k).label + ': ' + cz(d[k], 1) + ' PJ'; }).join('<br>'));
             })
             .on('mouseleave', function () { rule.style('display', 'none'); hideTip(); });
-        return top + plotH + 26;
+        return top + plotH + 32;
     }, 'spotreba');
 
     var pohled = POHLEDY[0];
-    var spotreba = mount('spotreba', kresliSpotrebu(function () { return pohled; }));
+    var spotreba = mount('spotreba', kresliSpotrebu(function () { return pohled; }, 1.2));
     if (spotreba && DEV) prepinac('spotreba', POHLEDY, function (d) { pohled = d; spotreba(); });
     mount('emise', kresliSpotrebu(function () { return EMISE; }));
 
@@ -288,6 +336,14 @@
     // Mapy SO ORP (orp_mapa.json, R/10_mapa_orp.R). Každá mapa: key = vlastnost v datech, prahy tříd
     // (pole, nebo funkce dat), barvy od světlé k tmavé a popisky tříd; bez barev se škála dopočte z palety paliva.
     var fmtPct = function (v) { return v == null ? '–' : cz(v, 1) + ' %'; };
+    // Zvýraznění oblasti z textu (odkazy na konci souboru): oblast = { mapa, typ: 'orp' | 'kraj', kod }; mapa = klíč
+    // mapy (rd_uhli, rd_plyn, bj_plyn, teplo_ets2, mf), bez něj všechny mapy; ORP podle názvu bez diakritiky („broumov“),
+    // kraj podle kódu NUTS 3 („CZ042“). Každá vykreslená mapa si uloží funkci, která zvýraznění použije (svg._zvyraznit),
+    // i po překreslení.
+    var oblast = null, mapySvg = [];
+    var bezDiakritiky = function (t) { return t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, '-'); };
+    var patri = function (p) { return oblast.typ === 'orp' ? bezDiakritiky(p.orp) === oblast.kod : p.KOD_CZNUTS3 === oblast.kod; };
+    function zvyraznit(o) { oblast = o; mapySvg.forEach(function (n) { if (n._zvyraznit) n._zvyraznit(); }); }
     function mapy(MAPY, tipRadky) {
         return function (svg, w, data) {
             var geo = data._geo;
@@ -302,11 +358,11 @@
                     .map(function (f) { f.geometry = prevrat(f.geometry); return f; }).filter(function (f) { return f.geometry; }) : [];
             }
             var top = head(svg, w, null);
-            // samostatná mapa (normální šířka) má stejnou velikost jako jedna mapa v širší mřížce map paliv, na střed
+            // samostatná mapa (normální šířka) má stejnou velikost jako jedna mapa v širší mřížce map paliv, zarovnaná vlevo
             var gapX = 24, gapY = 22, ref = document.getElementById('graf-mapy-svg');
             var sirka = MAPY.length === 1 && ref && ref.clientWidth ? ref.clientWidth : w;
             var mrizka = sirka >= 560 ? 2 : 1, cols = Math.min(MAPY.length, mrizka);
-            var panelW = Math.min(w, (sirka - gapX * (mrizka - 1)) / mrizka), x0 = cols === 1 ? (w - panelW) / 2 : 0;
+            var panelW = Math.min(w, (sirka - gapX * (mrizka - 1)) / mrizka);
             var proj = d3.geoMercator().fitWidth(panelW, geo), path = d3.geoPath(proj);
             var mapH = Math.ceil(path.bounds(geo)[1][1]) + 2;
             var bins = MAPY.map(function (m) {
@@ -326,12 +382,13 @@
                 var rowH = 0, heads = [];
                 for (var c = 0; c < cols; c++) {
                     var i = r * cols + c; if (i >= MAPY.length) break;
-                    var g = svg.append('g').attr('transform', 'translate(' + (x0 + c * (panelW + gapX)) + ',' + y + ')'), hh = 0;
+                    var g = svg.append('g').attr('transform', 'translate(' + c * (panelW + gapX) + ',' + y + ')'), hh = 0;
                     if (MAPY[i].title) {
                         var t = g.append('text').attr('y', 14).attr('font-size', 14).attr('font-weight', 700).attr('fill', C.title);
                         hh = wrap(t, MAPY[i].title, 0, panelW, 16) * 16 + 6;
                     }
                     hh += legend(g.append('g').attr('transform', 'translate(0,' + hh + ')'), bins[i].legenda, panelW, 12);
+                    hh += 14;   // mezera mezi legendou a mapou
                     heads.push({ g: g, hh: hh, i: i });
                     rowH = Math.max(rowH, hh);
                 }
@@ -341,23 +398,35 @@
                     var ps = mg.append('g').selectAll('path').data(geo.features).join('path').attr('d', path)
                         .attr('fill', function (f) { return b.barva(f.properties[m.key]); }).attr('stroke', '#fff').attr('stroke-width', 0.4)
                         .on('mousemove', function (ev, f) {
-                            all.forEach(function (q) {
+                            all.forEach(function (a) {
+                                var q = a.ps;
                                 q.attr('stroke', function (x) { return x === f ? C.title : '#fff'; }).attr('stroke-width', function (x) { return x === f ? 1.5 : 0.4; });
                                 q.filter(function (x) { return x === f; }).raise();
                             });
                             showTip(ev, '<b>' + f.properties.orp + '</b><br>' + tipRadky(f.properties).join('<br>'));
                         })
-                        .on('mouseleave', function () {
-                            all.forEach(function (q) { q.attr('stroke', '#fff').attr('stroke-width', 0.4); });
-                            hideTip();
-                        });
-                    all.push(ps);
-                    mg.append('g').attr('class', 'kraje').style('pointer-events', 'none')
+                        .on('mouseleave', function () { styl(); hideTip(); });
+                    all.push({ ps: ps, mapa: m.mapa || m.key, kraje: mg.append('g').attr('class', 'kraje').style('pointer-events', 'none')
                         .selectAll('path').data(data._kraje).join('path').attr('d', path)
-                        .attr('fill', 'none').attr('stroke', C.title).attr('stroke-width', 1).attr('stroke-linejoin', 'round');
+                        .attr('fill', 'none').attr('stroke', C.title).attr('stroke-width', 1).attr('stroke-linejoin', 'round') });
                 });
                 y += rowH + mapH + gapY;
             }
+            // zvýraznění z textu jen v mapě, o které text mluví: ostatní obvody vyblednou, ORP tmavý obrys,
+            // kraj silnější hranice
+            var styl = function () {
+                var kraj = oblast && oblast.typ === 'kraj' ? (geo.features.filter(function (f) { return patri(f.properties); })[0] || { properties: {} }).properties.KOD_KRAJ : null;
+                all.forEach(function (a) {
+                    var tady = oblast && (!oblast.mapa || oblast.mapa === a.mapa);
+                    a.ps.attr('stroke', '#fff').attr('stroke-width', 0.4)
+                        .attr('opacity', function (f) { return !tady || patri(f.properties) ? 1 : 0.3; });
+                    if (tady && oblast.typ === 'orp') a.ps.filter(function (f) { return patri(f.properties); }).raise().attr('stroke', C.title).attr('stroke-width', 2.5);
+                    a.kraje.attr('stroke-width', function (f) { return tady && kraj && f.properties.KOD_KRAJ === kraj ? 3 : 1; });
+                });
+            };
+            svg.node()._zvyraznit = styl;
+            if (mapySvg.indexOf(svg.node()) < 0) mapySvg.push(svg.node());
+            styl();
             return y - gapY;
         };
     }
@@ -373,55 +442,60 @@
     ];
     mount('mapy', mapy(PALIVA, function (p) { return PALIVA.map(function (q) { return q.title + ': ' + fmtPct(p[q.key]); }); }));
 
-    // Ohrožení energetickou chudobou podle MF: kvartily podle pořadí, jako v reportu MF. Barva šoku = ohrožení.
+    // Ohrožení energetickou chudobou podle MF: kvartily podle pořadí, jako v reportu MF.
     var MF = [{
-        key: 'podil',
+        key: 'podil', mapa: 'mf',
         prahy: function (fs) {
             var v = fs.map(function (f) { return f.properties.podil; }).sort(d3.descending), q = Math.ceil(v.length / 4);
             return [v[2 * q - 1], v[q - 1]];
         },
-        barvy: ['#f4f1ee', d3.interpolateRgb('#fff', COL.sok)(0.45), COL.sok],
+        barvy: ['#f4f1ee', d3.interpolateRgb('#fff', '#7f5a99')(0.45), '#7f5a99'],
         popisky: ['Ostatní', 'Ohrožené (2. kvartil)', 'Velmi ohrožené (horní kvartil)']
     }];
     mount('mapa-mf', mapy(MF, function (p) {
         return ['Výdaje na vytápění / příjmy: ' + fmtPct(p.podil), 'Podíl obydlí v rodinných domech: ' + fmtPct(p.rd), 'Rodinné domy ve třídě E–G: ' + fmtPct(p.rd_eg)];
     }), 'mapy');
 
-    // Fosilní šoky vs. ETS2, Kč měsíčně
+    // Fosilní šoky vs. ETS2, Kč měsíčně: pruhy od levého okraje, popisek bílý v pruhu, hodnota za pruhem
+    // v barvě pruhu, bez legendy. Když se popisek do pruhu nevejde, je za pruhem v jeho barvě před hodnotou.
+    // názvy skupin v grafu (v datech z R zkratky)
+    var SKUP_SOKY = { 'RD na plyn': 'Rodinný dům na plyn', 'Auto': 'Průměrné auto' };
     mount('soky', function (svg, w, data) {
         var items = data.map(function (d) {
             var p = d.polozka.split(': ');
-            return { skup: p[0], jmeno: p[1].replace('→', '–'), druh: d.druh, v: +d.kc_mesic, raw: d.polozka };
+            var skup = SKUP_SOKY[p[0]] || p[0], jmeno = p[1].replace('→', '–');
+            return { skup: skup, jmeno: jmeno, druh: d.druh, v: +d.kc_mesic, raw: skup + ': ' + jmeno };
         });
-        var top = head(svg, w, [{ key: 'sok', label: 'Cenový šok', color: COL.sok }, { key: 'ets2', label: 'Zavedení ETS2', color: COL.ets2 }]);
-        var labW = Math.max.apply(null, items.map(function (d) {
-            var t = svg.append('text').attr('font-size', 13).text(d.jmeno), n = t.node().getComputedTextLength(); t.remove(); return n;
-        })) + 10;
-        var x0 = labW, valW = 64, barH = 24, gap = 6;
-        var x = d3.scaleLinear().domain([0, d3.max(items, function (d) { return d.v; })]).range([0, Math.max(40, w - x0 - valW)]);
+        var top = head(svg, w, null) + 8, barH = 30, gap = 8, fs = 15, valW = 90;
+        var x = d3.scaleLinear().domain([0, d3.max(items, function (d) { return d.v; })]).range([0, Math.max(60, w - valW)]);
         var y = top;
         d3.groups(items, function (d) { return d.skup; }).forEach(function (grp) {
-            svg.append('text').attr('y', y + 13).attr('font-size', 13).attr('font-weight', 700).attr('fill', C.title).text(grp[0]);
-            y += 22;
+            svg.append('text').attr('y', y + 15).attr('font-size', 16).attr('font-weight', 700).attr('fill', C.title).text(grp[0]);
+            y += 26;
             grp[1].forEach(function (d) {
-                var col = d.druh === 'ets2' ? COL.ets2 : COL.sok;
+                var col = d.druh === 'ets2' ? COL.ets2 : COL.sok, bw = x(d.v);
                 var row = svg.append('g').attr('transform', 'translate(0,' + y + ')')
                     .on('mousemove', function (ev) { showTip(ev, '<b>' + d.raw + '</b><br>≈ ' + cz(d.v) + ' Kč měsíčně'); })
                     .on('mouseleave', hideTip);
-                row.append('text').attr('y', barH / 2 + 4).attr('font-size', 13).attr('fill', C.title).text(d.jmeno);
-                row.append('rect').attr('x', x0).attr('width', x(d.v)).attr('height', barH).attr('fill', col);
-                row.append('text').attr('x', x0 + x(d.v) + 6).attr('y', barH / 2 + 4).attr('font-size', 13).attr('font-weight', 700)
-                    .attr('fill', C.title).text(cz(d.v) + ' Kč');
+                row.append('rect').attr('width', bw).attr('height', barH).attr('fill', col);
+                var lab = row.append('text').attr('x', 10).attr('y', barH / 2).attr('dy', '0.35em').attr('font-size', fs).attr('fill', '#fff').text(d.jmeno);
+                var konec = bw + 8;
+                if (lab.node().getComputedTextLength() > bw - 20) {
+                    lab.attr('x', konec).attr('fill', col);
+                    konec += lab.node().getComputedTextLength() + 8;
+                }
+                row.append('text').attr('x', konec).attr('y', barH / 2).attr('dy', '0.35em').attr('font-size', fs).attr('font-weight', 700)
+                    .attr('fill', col).text(cz(d.v) + ' Kč');
                 y += barH + gap;
             });
-            y += 14;
+            y += 18;
         });
-        return y - 4;
+        return y - 18;
     });
 
     // Čtverečkový graf: velikost skupin (1 čtvereček = 10 tis. domácností) a zranitelné v nich
     // pohledy: bloky po 22 čtverečcích v řadě, nebo pruhy 4 čtverečky vysoké plněné zleva doprava
-    var SKUP_POHLEDY = [{ key: 'bloky', label: 'Bloky' }, { key: 'pruhy', label: 'Pruhy' }];
+    var SKUP_POHLEDY = [{ key: 'pruhy', label: 'Pruhy' }, { key: 'bloky', label: 'Bloky' }];
     var skupPohled = SKUP_POHLEDY[0];
     var skupiny = mount('skupiny', function (svg, w, data) {
         var JED = 10, SL = 22, PAD = 8, LW = 220, pruhy = skupPohled.key === 'pruhy', VYS = 4;
@@ -438,7 +512,7 @@
             var sl = data.filter(sloucit);
             data = data.filter(function (d) { return !sloucit(d); });
             var dom = d3.sum(sl, function (d) { return +d.domacnosti_tis; }), zr = d3.sum(sl, function (d) { return isNA(d.zranitelne_tis) ? 0 : +d.zranitelne_tis; });
-            data.push({ popisek: 'Byty a rodinné domy na elektřinu, rodinné domy na dřevo a na TČ, byty na teple ze zdroje v ETS1 a ostatní', domacnosti_tis: dom,
+            data.push({ popisek: 'Ostatní', pozn: '(Byty a rodinné domy na elektřinu, rodinné domy na dřevo a na TČ, byty na teple ze zdroje v ETS1)', domacnosti_tis: dom,
                         zranitelne_tis: zr, podil_zranitelnych_pct: 100 * zr / dom, slouceno: true });
         }
         var top = head(svg, w, [{ key: 'z', label: 'Zranitelné domácnosti', color: COL.zranitelne }, { key: 'o', label: 'Ostatní domácnosti', color: COL.ctverecek }]);
@@ -446,7 +520,8 @@
         var x0 = wide ? PAD + LW : PAD, textW = wide ? LW - PAD : w - 2 * PAD;
         var pocet = function (d) { return Math.round(+d.domacnosti_tis / JED); };
         var sloupcu = pruhy ? d3.max(data.filter(function (d) { return !d.slouceno; }), function (d) { return Math.ceil(pocet(d) / VYS); }) : SL;
-        var pitch = Math.min(18, (w - x0 - PAD) / sloupcu), Q = Math.round(pitch * 0.8 * 10) / 10;
+        // čtverečky jako ve vaflovém grafu explaineru o světových regionech: ostré rohy, mezera 2 px
+        var pitch = Math.min(18, (w - x0 - PAD) / sloupcu), Q = pitch - 2;
         var y = top;
         data.forEach(function (d) {
             // skupina bez posuzované zranitelnosti (byty na teple ze zdroje v ETS1): zranitelne_tis je NA
@@ -463,6 +538,8 @@
                 .on('mouseleave', hideTip);
             var t = g.append('text').attr('y', 11).attr('font-size', 13).attr('font-weight', 700).attr('fill', C.title);
             var dy = (wrap(t, d.popisek.replace(/ \(.*\)$/, ''), PAD, textW, 15) - 1) * 15;
+            // vysvětlivka pod názvem skupiny běžným písmem a šedě (sloučená skupina „Ostatní“)
+            if (d.pozn) dy += wrap(g.append('text').attr('y', 26 + dy).attr('font-size', 12).attr('fill', T.grey), d.pozn, PAD, textW, 14) * 14;
             g.append('text').attr('x', PAD).attr('y', 28 + dy).attr('font-size', 12).attr('fill', T.grey).text(cz(d.domacnosti_tis) + ' tis. domácností');
             g.append('text').attr('x', PAD).attr('y', 44 + dy).attr('font-size', 12).attr('font-weight', bez ? 400 : 700).attr('fill', bez ? T.grey : COL.zranitelne)
                 .text(bez ? 'topení ETS2 nezdraží, neposuzováno' : cz(d.zranitelne_tis) + ' tis. zranitelných (' + cz(d.podil_zranitelnych_pct) + ' %)');
@@ -471,35 +548,32 @@
             g.selectAll('rect.ctv').data(d3.range(n)).join('rect').attr('class', 'ctv')
                 .attr('x', function (i) { return x0 + px(i) * pitch; })
                 .attr('y', function (i) { return (wide ? 0 : textH + 6) + py(i) * pitch; })
-                .attr('width', Q).attr('height', Q).attr('rx', 2)
+                .attr('width', Q).attr('height', Q)
                 .attr('fill', function (i) { return i < z ? COL.zranitelne : COL.ctverecek; });
             y += h + 18;
         });
         return y - 6;
     });
-    if (skupiny) prepinac('skupiny', SKUP_POHLEDY, function (d) { skupPohled = d; skupiny(); });
+    if (skupiny && DEV) prepinac('skupiny', SKUP_POHLEDY, function (d) { skupPohled = d; skupiny(); });
 
     // Bodový graf: náklad (x) proti vrácené části zdražení (y), jeden bod = jedno pravidlo
     mount('kompenzace', function (svg, w, data) {
         var CIL = ['pal_vlastni_teplo_vse', 'pal_vlastni_teplo'];   // cílená pravidla, popisky nad sebou
         var isCil = function (d) { return CIL.indexOf(d.pravidlo) >= 0; };
-        var m = { l: 44, r: 12 };
-        var top = caption(svg, svg.node().dataset.caption, w) + 4;
-        axisText(svg.append('text')).attr('y', top + 10).text('Zranitelní dostanou zpět, % zdražení');
-        top += 22;
+        var y = d3.scaleLinear().domain([0, 100]), pct = function (v) { return v + ' %'; };
+        var m = { l: sirkaOsyY(svg, y, 5, pct), r: 12 };
+        var top = caption(svg, svg.node().dataset.caption, w) + 14;
         var plotH = Math.max(260, Math.min(380, w * 0.6));
         var xmax = Math.ceil(d3.max(data, function (d) { return +d.naklad_mld; }) / 10) * 10;
         var x = d3.scaleLinear().domain([0, xmax]).range([m.l, w - m.r]);
-        var y = d3.scaleLinear().domain([0, 100]).range([top + plotH, top]);
+        y.range([top + plotH, top]);
         // cílová oblast: levně a hodně vráceno
         svg.append('rect').attr('x', x(0)).attr('y', y(100)).attr('width', x(15) - x(0)).attr('height', y(60) - y(100)).attr('fill', COL.pozadi).attr('rx', 4);
-        var zona = svg.append('text').attr('y', y(100) + 16).attr('font-size', 12).attr('font-weight', 700).attr('fill', COL.ets2);
+        var zona = svg.append('text').attr('y', y(100) + 24).attr('font-size', 12).attr('font-weight', 700).attr('fill', COL.ets2);
         wrap(zona, 'levně a hodně vráceno', x(0) + 6, x(15) - x(0) - 8, 14);
-        svg.append('g').call(d3.axisLeft(y).ticks(5).tickSize(-(w - m.r - m.l)).tickFormat(function (v) { return v + ' %'; })).attr('transform', 'translate(' + m.l + ',0)')
-            .call(function (a) { a.select('.domain').remove(); a.selectAll('.tick line').attr('stroke', C.grid); axisText(a.selectAll('.tick text')); });
-        svg.append('g').attr('transform', 'translate(0,' + y(0) + ')').call(d3.axisBottom(x).ticks(5).tickFormat(function (v) { return cz(v); }))
-            .call(function (a) { a.select('.domain').attr('stroke', C.axis); a.selectAll('.tick line').attr('stroke', C.axis); axisText(a.selectAll('.tick text')); });
-        axisText(svg.append('text')).attr('x', w - m.r).attr('y', y(0) + 38).attr('text-anchor', 'end').text('Stálo by ročně, mld. Kč');
+        osaY(svg.insert('g', ':first-child').attr('transform', 'translate(' + m.l + ',0)'), y, 5, w - m.r - m.l, 'zdražení dostanou zranitelní zpět', true, pct);
+        osaX(svg.append('g').attr('transform', 'translate(0,' + (y(0) + 6) + ')'), x, x.ticks(5), function (v) { return cz(v); });
+        axisText(svg.append('text')).attr('x', w - m.r).attr('y', y(0) + 44).attr('text-anchor', 'end').text('Stálo by ročně, mld. Kč');
 
         // popisky: cílená pravidla pod sebou vpravo od hloučku s vodicí čarou, ostatní vedle bodu
         var xLab = x(16), labW = w - m.r - xLab, yLab = y(60);
@@ -525,7 +599,7 @@
             svg.append('text').attr('x', x(+d.naklad_mld) + (levo ? -12 : 12)).attr('y', y(+d.vyrovnano_pct) + 4)
                 .attr('text-anchor', levo ? 'end' : 'start').attr('font-size', 12).attr('fill', T.text).text(d.popisek);
         });
-        return y(0) + 46;
+        return y(0) + 52;
     });
 
     // Peníze na pomoc, mld. Kč ročně: fond a náklad pomoci.
@@ -679,4 +753,18 @@
         });
         return y;
     }
+    // Odkazy v textu na oblasti v mapách: [Broumov](#mapa-rd_uhli-orp-broumov), [Ústeckém](#mapa-rd_uhli-kraj-CZ042);
+    // mapa je nepovinná (#mapa-orp-broumov zvýrazní ve všech). Jen na zařízení s myší: najetí zvýrazní oblast.
+    // Na dotykových jsou to obyčejná slova.
+    var sMysi = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    document.querySelectorAll('a[href^="#mapa-"]').forEach(function (a) {
+        var m = a.getAttribute('href').match(/^#mapa-(?:(rd_uhli|rd_plyn|bj_plyn|teplo_ets2|mf)-)?(orp|kraj)-(.+)$/);
+        if (!m) return;
+        var o = { mapa: m[1], typ: m[2], kod: m[3] };
+        a.classList.add(sMysi ? 'mapa-odkaz' : 'mapa-odkaz-vypnuto');
+        a.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); });
+        if (!sMysi) { a.setAttribute('tabindex', '-1'); return; }
+        ['mouseenter', 'focus'].forEach(function (ev) { a.addEventListener(ev, function () { zvyraznit(o); }); });
+        ['mouseleave', 'blur'].forEach(function (ev) { a.addEventListener(ev, function () { zvyraznit(null); }); });
+    });
 })();

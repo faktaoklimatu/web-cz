@@ -65,7 +65,7 @@ Aby platba došla ke správným domácnostem, musí stát u každé znát tři v
 | Kde domácnost bydlí | Trvalý pobyt v registru obyvatel, typ domu v RÚIAN | Trvalý pobyt je k adrese domu, ne bytu, a často neodpovídá skutečnosti. Katastr zná vlastníka, ne obyvatele. |
 | Čím domácnost topí | Údaj o vytápění v RÚIAN, doklady o kontrole kotlů | Údaj v RÚIAN je špatně vyplněný. Kontroly kotlů nejsou centrálně evidované a nerozlišují uhlí od dřeva. |
 | Kam poslat peníze | Účty příjemců důchodů a dávek | Centrální evidence bankovních účtů neexistuje. |
-{: .table}
+{: .table .tabulka-vlevo}
 
 **Proč je propojování dat tak těžké:**
 
@@ -88,7 +88,7 @@ Když údaj chybí, musí si domácnost zažádat sama. Superdávku, o kterou se
 | **Irsko** | Fuel Allowance, 38 eur (asi 920 Kč) týdně po 28 týdnů | Senioři s testem příjmu, příjemci vybraných dávek | Jednou | Vyplácí se s dávkami, každý rok bez nové žádosti. |
 | **Polsko** | dodatek węglowy 2022, jednorázově 3 000 zł (asi 16 500 Kč), bez příjmového testu; jiná paliva měla vlastní příspěvek (pelety 3 000, topný olej 2 000, dřevo 1 000, LPG 500 zł) | Uhlí zapsané v registru zdrojů tepla | Ano, na obci | Rozhodovalo uhlí jako hlavní zdroj přiznaný v registru zdrojů tepla k 11. 8. 2022, pozdější přiznání se nepočítala. Bez rozhodného dne by se lidé mohli na uhlí přepsat dodatečně. Obce kontrolovaly kotle v domácnostech. |
 | **Německo** | Klimageld, zatím nevyplácený | Daňové číslo a účet | Ne (plán) | Systém pro přímé platby se staví od roku 2021 a stále není hotový. Účet je evidovaný jen u 16 z 86 mil. daňových čísel. |
-{: .table}
+{: .table .tabulka-vlevo}
 
 Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/klibg), [ORF](https://orf.at/stories/3366925/), [ORF](https://orf.at/stories/3293206/), [vienna.at](https://www.vienna.at/klimabonus-faellt-weg-pendler-erhalten-neuen-steuer-ausgleich/9323774), [Hellowatt](https://www.hellowatt.fr/blog/fin-versement-automatique-cheque-energie/), [Consumo Responde](https://www.consumoresponde.es/artículos/el_bono_social_termico), [gov.ie](https://www.gov.ie/fuelallowance), [Infor](https://www.infor.pl/prawo/nowosci-prawne/5578929,Koniec-ze-zmiana-deklaracji-w-CEEB-aby-dostac-dodatek-weglowy.html), [gov.pl](https://www.gov.pl/attachment/6e7dd744-9419-4a2f-bcc7-6b06ae6dd7c1), [Murator: příspěvek na jiná paliva](https://muratordom.pl/prawo/formalnosci-budowlane/ustawa-o-wsparciu-dla-odbiorcow-ciepla-przyjeta-przez-rzad-kto-dostanie-doplate-do-ogrzewania-aa-qavY-pQGp-vDXU.html), [Murator](https://muratordom.pl/prawo/formalnosci-budowlane/zlozyles-wniosek-o-3000-zl-dodatku-weglowego-urzednicy-przyjda-i-sprawdza-czy-na-pewno-palisz-weglem-aa-fKHc-nTQT-1dHk.html), [Bundestag](https://www.bundestag.de/presse/hib/kurzmeldungen-1183566).
 
@@ -116,7 +116,7 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 |---|---|---|---|
 | rodinný dům | 650 Kč | 1 300 Kč | – |
 | byt | 550 Kč | – | 430 Kč |
-{: .table}
+{: .table .tabulka-vlevo}
 
 Částky jsou měsíční a odpovídají průměrnému zdražení vytápění zranitelných domácností v dané skupině, benzín a naftu platba nevyrovnává. Kdyby o platbu požádali všichni oprávnění, stála by v plné výši 6,0 mld. Kč ročně, dostalo by ji 89 % zranitelných domácností a vrátila by jim 72 % zdražení vytápění. Zbylých 11 % jsou domácnosti s jiným nebo kombinovaným vytápěním.[^silc] Stát by o ni rozšířil Sociální klimatický plán a navýšení zaplatil z výnosů z dražeb povolenek ETS2 ([víc níže](#financovani)).
 
@@ -230,7 +230,7 @@ Výhodou návrhu je jednoduchost: využívá existující systémy a nevyžaduje
 | Zranitelných by nedostalo nic | 6 % | 11 % |
 | Část zdražení vytápění, kterou by zranitelní dostali zpět | 32 % | 72 % |
 | z toho rodinné domy na tuhá paliva | 15 % | 78 % |
-{: .table}
+{: .table .tabulka-vlevo}
 
 Zdroj: [EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions), výpočet Fakta o klimatu. Valorizace je rozpočítaná na všechny důchodce se stejným úhrnem jako v návrhu.
 
@@ -251,7 +251,7 @@ Zdroj: [EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union
 | **MŽP** | Zda zavést centrální evidenci kontrol kotlů na tuhá paliva s typem paliva; jak zapsat platbu do Sociálního klimatického plánu jako přímou podporu příjmu |
 | **ERÚ** | Které cenové lokality tepla používají zdroj na plyn nebo uhlí mimo ETS1, aby šlo ověřit potvrzení od dodavatelů tepla |
 | **Obce s rozšířenou působností a kraje** | Jak by sociální pracovníci a kontaktní místa pomáhali se žádostmi; zda by kraje mohly využít seznamy z kotlíkových dotací, aby domácnosti, které už vyměnily kotel, o platbu nepřišly |
-{: .table}
+{: .table .tabulka-vlevo}
 
 {% endcapture %}
 {% include expander.html name="statni-sprava" label="Na okraj: Co může státní správa prozkoumat" content=ex_statni %}

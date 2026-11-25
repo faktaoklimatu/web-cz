@@ -31,8 +31,7 @@ perex: |
 <script type="application/json" id="graf-spotreba-data">{{ site.data.ets2.spotreba_domacnosti | jsonify }}</script>
 {% include includes-local/chart-panel.html
     id="graf-spotreba"
-    title="Na vytápění a provoz domácnosti padne o třetinu méně fosilních paliv než v roce 2005"
-    caption="Spotřeba energie domácností na vytápění, ohřev vody, vaření a spotřebiče, bez paliv do aut, PJ (2005–2024)"
+    title="V domácnostech se spaluje méně uhlí a plynu, elektřiny ze sítě je zhruba stejně"
     alt="Spotřeba energie domácností 2005–2024 podle toho, co do domácností přiteklo: ubývá uhlí, plynu a tepla ze sítě, přibývá dřeva a okolního a solárního tepla, elektřiny je zhruba stejně."
     source='Eurostat, <a href="https://ec.europa.eu/eurostat/databrowser/view/nrg_bal_c/default/table">energetické bilance nrg_bal_c</a>, konečná spotřeba energie domácností (FC_OTH_HH_E).'
 %}
@@ -41,6 +40,7 @@ Mění se i vytápění. V roce 2022, kdy prudce zdražil plyn, si české domá
 
 {% include includes-local/chart-panel.html
     id="graf-uhli-tc"
+    class="narrow-figure"
     title="Uhlí v domácnostech ubývá, tepla z tepelných čerpadel přibývá"
     caption="Uhlí spálené v domácnostech a okolní a solární teplo (hlavně z tepelných čerpadel), PJ (2005–2024)"
     alt="Uhlí spálené v domácnostech kleslo z 29 PJ v roce 2005 na 14 PJ v roce 2024, okolní a solární teplo vzrostlo z 0,5 PJ na 17 PJ."
@@ -56,12 +56,12 @@ Emise CO₂ ze spotřeby energie domácností klesly mezi lety 2005 a 2024 zhrub
     id="graf-emise"
     title="Emise CO₂ ze spotřeby energie domácností"
     caption="Emise CO₂ ze spotřeby energie domácností podle zdroje, Mt CO₂ (2005–2024)"
-    alt="Emise CO₂ ze spotřeby energie domácností 2005–2024: celkem, spáleno mimo domácnost (elektřina a teplo ze sítě) a spáleno v domácnosti (uhlí a plyn)."
+    alt="Emise CO₂ ze spotřeby energie domácností 2005–2024: z uhlí a plynu spálených v domácnosti a z výroby elektřiny a tepla ze sítě v elektrárnách a teplárnách."
     source='Eurostat, <a href="https://ec.europa.eu/eurostat/databrowser/view/nrg_bal_c/default/table">energetické bilance nrg_bal_c</a>; emisní faktory <a href="https://mzp.gov.cz/system/files/2026-02/opok-Vypoctove_faktory_2025_ETS2-20260213.pdf">ČHMÚ</a> a výchozí hodnoty IPCC; výpočet Fakt o klimatu.'
 %}
 
 {% endcapture %}
-{% include expander-figure.html name="emise" label="Na okraj: Jak klesají emise z domácností?" content=ex_emise %}
+{% include expander-figure.html name="emise" label="Emise klesají v domácnostech i při výrobě elektřiny a tepla" content=ex_emise %}
 
 ## Co by změnilo zavedení ETS2?
 
@@ -74,6 +74,7 @@ Ropu a plyn Česko téměř celé dováží,[^dovoz] takže světové cenové š
 <script type="application/json" id="graf-soky-data">{{ site.data.ets2.soky | jsonify }}</script>
 {% include includes-local/chart-panel.html
     id="graf-soky"
+    class="narrow-figure"
     title="Fosilní šoky stály domácnosti víc, než by stálo ETS2"
     caption="Náklad navíc pro typovou domácnost v rodinném domě s plynovým kotlem a autem na benzín, Kč měsíčně včetně DPH"
     alt="Plyn v rodinném domě: zdražení 2021–2023 asi 1 770 Kč měsíčně, ETS2 asi 440 Kč. Benzín: zdražení 2025–2026 asi 650 Kč měsíčně, ETS2 asi 270 Kč."
@@ -130,7 +131,7 @@ U dálkového tepla by zdražení nebylo plošné. Velké teplárny nad 20 MW u�
 
 ## Proč hodně záleží na mikroregionu?
 
-Kde by zavedení ETS2 dopadlo nejvíc, záleží na tom, čím se v regionu topí. Uhlím topí podle sčítání 2021[^sldb] zhruba každý desátý rodinný dům, nejčastěji v Ústeckém, Libereckém, Plzeňském a Karlovarském kraji a na periferiích: ve správních obvodech obcí s rozšířenou působností Broumov, Frýdlant nebo Sedlčany je to přes čtvrtinu domů. Plyn převažuje v rodinných domech na jižní Moravě a v Praze, v bytových domech hlavně v Libereckém, Jihomoravském kraji a na Vysočině. Dálkové teplo ze zdrojů, které by spadaly pod ETS2, je hlavně v menších městech s vlastní plynovou nebo uhelnou výtopnou, například v Rýmařově, Varnsdorfu nebo Aši.[^eru]
+Kde by zavedení ETS2 dopadlo nejvíc, záleží na tom, čím se v regionu topí. Uhlím topí podle sčítání 2021[^sldb] zhruba každý desátý rodinný dům, nejčastěji v [Ústeckém](#mapa-rd_uhli-kraj-CZ042), [Libereckém](#mapa-rd_uhli-kraj-CZ051), [Plzeňském](#mapa-rd_uhli-kraj-CZ032) a [Karlovarském](#mapa-rd_uhli-kraj-CZ041) kraji a na periferiích: ve správních obvodech obcí s rozšířenou působností [Broumov](#mapa-rd_uhli-orp-broumov), [Frýdlant](#mapa-rd_uhli-orp-frydlant) nebo [Sedlčany](#mapa-rd_uhli-orp-sedlcany) je to přes čtvrtinu domů. Plyn převažuje v rodinných domech na [jižní Moravě](#mapa-rd_plyn-kraj-CZ064) a v [Praze](#mapa-rd_plyn-orp-praha), v bytových domech hlavně v [Libereckém](#mapa-bj_plyn-kraj-CZ051), [Jihomoravském](#mapa-bj_plyn-kraj-CZ064) kraji a na [Vysočině](#mapa-bj_plyn-kraj-CZ063). Dálkové teplo ze zdrojů, které by spadaly pod ETS2, je hlavně v menších městech s vlastní plynovou nebo uhelnou výtopnou, například v [Rýmařově](#mapa-teplo_ets2-orp-rymarov), [Varnsdorfu](#mapa-teplo_ets2-orp-varnsdorf) nebo [Aši](#mapa-teplo_ets2-orp-as).[^eru]
 
 <script type="application/json" id="graf-mapy-data">{{ site.data.ets2.orp_mapa.features | jsonify }}</script>
 <script type="application/json" id="graf-kraje-data">{{ site.data.ets2.kraje_mapa | jsonify }}</script>
@@ -143,7 +144,7 @@ Kde by zavedení ETS2 dopadlo nejvíc, záleží na tom, čím se v regionu top�
     source='<a href="https://vdb.czso.cz">ČSÚ, Sčítání lidu, domů a bytů 2021</a>, <a href="https://eru.gov.cz/vysledne-ceny-tepelne-energie-v-cr-2024">ERÚ, Výsledné ceny tepelné energie 2024</a>, výpočet Fakt o klimatu. Hranice SO ORP: <a href="https://vdp.cuzk.cz/">ČÚZK</a> přes balík <a href="https://github.com/jlacko/RCzechia">RCzechia</a>.'
 %}
 
-Palivo ale nestačí. Stejné zdražení dopadne jinak na domácnost s vysokým a s nízkým příjmem a jinak na zateplený a nezateplený dům. Ministerstvo financí proto pro každý správní obvod obce s rozšířenou působností spočítalo, jakou část příjmů domácnosti v průměru dávají za vytápění. Nejvyšší podíl vychází na periferiích s rodinnými domy, často tam, kde se topí uhlím: v Broumově, Podbořanech nebo Frýdlantu je to přes 16 % příjmů, v Praze necelých 6 % (2026).[^mf-mikroregiony] Tam by zavedení ETS2 dopadlo nejcitelněji a tam by se vyplatilo nejvíc posílit podporu výměny zdrojů a zateplení.
+Palivo ale nestačí. Stejné zdražení dopadne jinak na domácnost s vysokým a s nízkým příjmem a jinak na zateplený a nezateplený dům. Ministerstvo financí proto pro každý správní obvod obce s rozšířenou působností spočítalo, jakou část příjmů domácnosti v průměru dávají za vytápění. Nejvyšší podíl vychází na periferiích s rodinnými domy, často tam, kde se topí uhlím: v [Broumově](#mapa-mf-orp-broumov), [Podbořanech](#mapa-mf-orp-podborany) nebo [Frýdlantu](#mapa-mf-orp-frydlant) je to přes 16 % příjmů, v [Praze](#mapa-mf-orp-praha) necelých 6 % (2026).[^mf-mikroregiony] Tam by zavedení ETS2 dopadlo nejcitelněji a tam by se vyplatilo nejvíc posílit podporu výměny zdrojů a zateplení.
 {: #mapa-chudoby}
 
 {% include includes-local/chart-panel.html

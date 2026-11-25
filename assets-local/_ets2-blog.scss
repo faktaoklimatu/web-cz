@@ -3,7 +3,7 @@
 // Blog „ETS2 a zranitelné domácnosti“ (collections/_explainers/ets2-zranitelne-domacnosti.md)
 // Komponenty: kalkulačka, kartičky domácností.
 
-.longread, .ets2-figure {
+.longread {
     --e-navy: #{colors.$c-accent};
     --e-orange: #f06a4e;
     --e-orange-ink: #c2412a;
@@ -17,14 +17,11 @@
     --e-bg: #fff;
 }
 
-// Figure (kartičky domácností)
-.ets2-figure {
-    background: var(--e-card); border-radius: .5rem; padding: 1.5rem 1.5rem 1rem; margin: 2rem 0;
-    display: flex; flex-direction: column; gap: 10px; min-width: 0; font-size: .95rem;
-    h3 { font-size: 1.1rem; font-weight: 700; margin: 0; line-height: 1.35; }
-    .ets2-sub { font-size: .85rem; color: var(--e-muted); margin: 0; }
-    .ets2-src { font-size: .8rem; color: var(--e-muted); margin: 0; }
+// Kartičky typových domácností: bez šedého rámečku, nadpis a popisek jako u grafů (.d3-panel .d3-title v _chart-panel.scss)
+.ets2-personas {
+    .personas-src { font-size: .8rem; color: #a0aec0; margin-top: 12px; }
 }
+
 // Kalkulačka ve stylu kalkulačky z explaineru emisni-povolenky-ets-2 (#ets2-kalkulacka v _local.scss):
 // šedá karta, cena povolenky a posuvník, pod nimi řádky „domácnost | +Kč měsíčně | Kč ročně“
 .ets2-kalk {
@@ -61,15 +58,22 @@
     }
 }
 
-.pgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin-top: 6px; }
+// tři sloupce bez rámečků; na úzkém displeji pod sebou
+.pgrid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 24px;
+    @media (min-width: 576px) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .pcard {
-    background: #fff; border: 1px solid var(--e-rule); border-radius: 10px; padding: 12px 14px;
-    svg { display: block; width: 100%; max-width: 170px; height: auto; margin: 0 auto 6px;
-          --navy: var(--e-navy); --orange: var(--e-orange); --soft: var(--e-soft); --card: var(--e-card); --map-lo: var(--e-map-lo); --risk-hi: var(--e-risk-hi); --grey: #b9b9b9; }
-    h4 { margin: 0; font-size: 1rem; color: var(--e-navy); }
+    img { display: block; width: 100%; max-width: 120px; height: auto; margin: 0 0 6px; }
+    h4 { margin: 0; font-size: 1rem; color: colors.$c-primary; }
     p { margin: 0; }
-    .pn { margin: 2px 0 8px; font-size: 13px; color: var(--e-muted); }
-    .pv2 { font-size: 21px; font-weight: 800; color: var(--e-orange-ink); white-space: nowrap; .pm { display: block; font-size: 14px; font-weight: 500; color: var(--e-muted); } }
+    .pn { margin: 2px 0 8px; font-size: 13px; font-weight: 700; color: #f4465b; }   // barva zranitelných jako ve čtverečkovém grafu (COL.zranitelne)
+    .pv2 { font-size: 21px; line-height: 1.2; font-weight: 800; color: colors.$c-primary; margin-bottom: 4px; .pm { font-size: 16px; font-weight: 400; } }
     .ps { margin: 0 0 6px; font-size: 13px; font-weight: 600; }
     .pd { font-size: 13px; color: var(--e-muted); line-height: 1.4; }
 }
+
+// Tabulky zarovnané k levému okraji textu (web-core .table je na střed)
+.table.tabulka-vlevo { margin-left: 0; margin-right: 0; }
+
+// Odkazy v textu na oblasti v mapách (ets2-grafy.js): s myší tečkované podtržení, na dotykových obyčejný text
+.longread a.mapa-odkaz { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; cursor: default; }
+.longread a.mapa-odkaz-vypnuto { color: inherit; text-decoration: none; pointer-events: none; }
