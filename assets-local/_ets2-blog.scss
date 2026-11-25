@@ -1,7 +1,7 @@
 @use "colors";
 
 // Blog „ETS2 a zranitelné domácnosti“ (collections/_explainers/ets2-zranitelne-domacnosti.md)
-// Komponenty: klikací popover, poznámky pod zdrojem, kalkulačka, kartičky domácností, náhledový odkaz.
+// Komponenty: kalkulačka, kartičky domácností.
 
 .longread, .ets2-figure {
     --e-navy: #{colors.$c-accent};
@@ -17,73 +17,7 @@
     --e-bg: #fff;
 }
 
-// Poznámky (tlačítko „poznámky“ rozbalí skrytý text)
-.note-wrap .note-t { display: none; }
-.note-wrap.open .note-t { display: inline; }
-.note-wrap.open .note-b { display: none; }
-.note-b {
-    border: 1px solid var(--e-soft);
-    background: var(--e-card);
-    border-radius: 999px;
-    padding: 1px 9px;
-    margin-left: 4px;
-    font: inherit;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    color: var(--e-navy);
-    white-space: nowrap;
-    &::before { content: "+ "; }
-    &:hover { background: var(--e-map-lo); }
-    &:focus-visible { outline: 2px solid var(--e-orange); }
-}
-
-// Klikací popover
-.pop-inline {
-    cursor: pointer;
-    .pv {
-        text-decoration: underline dotted var(--e-soft);
-        text-underline-offset: 3px;
-        &::after { content: "ⓘ"; font-size: .8em; color: var(--e-orange-ink); margin-left: 3px; display: inline-block; text-decoration: none; }
-    }
-    &:focus-visible { outline: 2px solid var(--e-orange); outline-offset: 2px; }
-}
-.popwin {
-    position: fixed; z-index: 1050; max-width: 320px;
-    background: #fff; color: colors.$c-primary;
-    border: 1px solid var(--e-rule, #dde5e8); border-top: 3px solid #f06a4e; border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 30, 45, .18);
-    padding: 14px 16px 12px; font-size: 14px; line-height: 1.5;
-    .ph { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #5d666e; margin-bottom: 6px; padding-right: 22px; }
-    button { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 18px; line-height: 1; color: #5d666e; cursor: pointer; padding: 4px; }
-}
-
-// Kotva rozbalovacího boxu
-.ets2-anchor { height: 0; scroll-margin-top: 90px; }
-
-// Stažení PDF
-.dlrow { margin: 14px 0 24px; }
-.dl {
-    display: inline-block; background: colors.$c-accent; color: #fff !important; text-decoration: none;
-    font-weight: 600; padding: 10px 16px; border-radius: 6px;
-    &:hover { opacity: .9; }
-    &::before { content: "↓ "; }
-}
-
-.callout { border-left: 4px solid #f06a4e; padding: 4px 0 4px 18px; font-size: 1.2em; font-weight: 600; }
-ul.plain { padding-left: 1.4rem; }
-
-// Náhledový odkaz
-.ets2-preview {
-    display: block; border: 1px solid var(--e-rule); border-left: 4px solid var(--e-orange); border-radius: 6px;
-    padding: 12px 16px; margin: 4px 0 22px; text-decoration: none !important; color: var(--e-fg) !important;
-    &:hover { background: var(--e-card); }
-    .pv-k { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--e-muted); }
-    .pv-t { display: block; font-weight: 700; color: var(--e-navy); margin: 2px 0; }
-    .pv-s { font-size: 13px; color: var(--e-muted); }
-}
-
-// Figure (kalkulačka, kartičky)
+// Figure (kartičky domácností)
 .ets2-figure {
     background: var(--e-card); border-radius: .5rem; padding: 1.5rem 1.5rem 1rem; margin: 2rem 0;
     display: flex; flex-direction: column; gap: 10px; min-width: 0; font-size: .95rem;
@@ -91,45 +25,39 @@ ul.plain { padding-left: 1.4rem; }
     .ets2-sub { font-size: .85rem; color: var(--e-muted); margin: 0; }
     .ets2-src { font-size: .8rem; color: var(--e-muted); margin: 0; }
 }
-.ets2-figure .grp { display: flex; flex-direction: column; gap: 8px; &[hidden] { display: none; } }
-
-.calcui {
-    display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px; align-items: start;
-    @media (max-width: 640px) { grid-template-columns: 1fr; }
-    fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
-    legend { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--e-muted); margin-bottom: 6px; width: auto; }
-    .opt {
-        display: flex; gap: 10px; align-items: center; padding: 8px 12px; border: 1px solid var(--e-rule);
-        border-radius: 10px; cursor: pointer; font-size: 15px; background: #fff; margin: 0;
-        &:has(input:checked) { border-color: var(--e-navy); box-shadow: inset 0 0 0 1px var(--e-navy); }
-        input { accent-color: var(--e-navy); }
+// Kalkulačka ve stylu kalkulačky z explaineru emisni-povolenky-ets-2 (#ets2-kalkulacka v _local.scss):
+// šedá karta, cena povolenky a posuvník, pod nimi řádky „domácnost | +Kč měsíčně | Kč ročně“
+.ets2-kalk {
+    border-radius: 0.5rem; background-color: #f7f7f7; padding: 1.5rem; margin: 2rem 0;
+    clear: both;   // náhled studie před kalkulačkou je na desktopu plovoucí, posuvník by jinak spadl pod něj
+    h3 { margin-bottom: 0.5rem; }
+    .kalk-sub { color: gray; font-size: 1rem; margin-bottom: 1rem; }
+    .kalk-cena { font-weight: 600; }
+    #kalk-eur, .kalk-mesic { color: #3B3B93; font-weight: 600; font-size: 1.3rem; }
+    .kalk-slider { position: relative; margin: 1rem 0 0.25rem; }
+    // pravděpodobné pásmo 60–76 €/t na stupnici 30–150
+    .kalk-pasmo { position: absolute; left: 25%; width: 13.33%; top: 50%; height: 12px; margin-top: -6px; border-radius: 6px; background: rgba(59, 59, 147, 0.25); }
+    input[type=range] { position: relative; display: block; width: 100%; margin: 0; accent-color: #3B3B93; }
+    .kalk-skala { display: flex; justify-content: space-between; font-size: 0.8rem; color: gray; margin-bottom: 1rem; }
+    // volby jako tlačítka (radio): vybrané plné v barvě čísel kalkulačky
+    .kalk-volba { border: 0; padding: 0; margin: 0 0 1rem; min-width: 0;
+        legend { font-weight: 600; color: gray; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.04em; margin-bottom: 0.5rem; }
+        label { display: inline-block; margin: 0 0.4rem 0.4rem 0; cursor: pointer; }
+        input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+        span { display: inline-block; padding: 0.35rem 0.9rem; border: 1px solid #3B3B93; border-radius: 999px; background: #fff; color: #3B3B93; font-weight: 600; font-size: 0.95rem; }
+        input:checked + span { background: #3B3B93; color: #fff; }
+        input:focus-visible + span { outline: 2px solid #3B3B93; outline-offset: 2px; }
     }
-    .slider { display: flex; flex-direction: column; gap: 6px; margin-top: 6px; font-size: 15px; }
-    .rangewrap {
-        position: relative; height: 28px; display: flex; align-items: center;
-        &::before { content: ""; position: absolute; left: 0; right: 0; top: 12px; height: 4px; border-radius: 2px; background: var(--e-rule); }
-        .band { position: absolute; left: 25%; width: 13.33%; top: 9px; height: 10px; background: var(--e-orange); border-radius: 5px; }
-        input { position: relative; width: 100%; margin: 0; background: transparent; appearance: none; -webkit-appearance: none; height: 28px; }
-        input::-webkit-slider-runnable-track { background: transparent; height: 28px; }
-        input::-moz-range-track { background: transparent; }
-        input::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--e-navy); border: 3px solid #fff; box-shadow: 0 0 0 1px var(--e-navy); margin-top: 3px; cursor: pointer; }
-        input::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: var(--e-navy); border: 3px solid #fff; box-shadow: 0 0 0 1px var(--e-navy); cursor: pointer; }
-    }
-    .scale {
-        position: relative; height: 20px; font-size: 12px; color: var(--e-muted);
-        span { position: absolute; top: 0; white-space: nowrap; }
-        .bandlbl { color: var(--e-orange-ink); font-weight: 600; transform: translateX(-50%); }
-        @media (max-width: 520px) { height: 34px; .bandlbl { top: 16px; left: 0 !important; transform: none; } }
-    }
-    .result {
-        background: #fff; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px; border: 1px solid var(--e-rule);
-        .big { font-size: 2.2rem; font-weight: 800; color: var(--e-orange-ink); line-height: 1.1; font-variant-numeric: tabular-nums; }
-        .row { display: flex; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums; span:first-child { color: var(--e-muted); } }
-    }
-    .inband {
-        align-self: flex-start; margin-top: 4px; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
-        padding: 3px 8px; border-radius: 999px; background: var(--e-map-lo); color: var(--e-navy);
-        &.out { background: var(--e-card); color: var(--e-muted); }
+    .kalk-grp[hidden] { display: none; }
+    .kalk-radek { display: grid; grid-template-columns: 1fr; align-items: baseline; padding-top: 0.25rem; }
+    .kalk-jmeno, .kalk-rok { font-weight: 600; }
+    .kalk-rok { color: gray; }
+    .kalk-ikona { height: 1rem; margin-bottom: 0.2rem; }
+    .kalk-pozn { font-size: 0.9rem; color: gray; margin: 1.5rem 0 0; }
+    .kalk-kurz { text-align: right; margin-top: 0.75rem; }
+    .kalk-zdroj { font-size: 0.8rem; color: gray; margin-top: 1rem; }
+    @media (min-width: 768px) {
+        .kalk-radek { grid-template-columns: 5fr 3fr 3fr; padding-top: 0.5rem; }
     }
 }
 
@@ -144,87 +72,4 @@ ul.plain { padding-left: 1.4rem; }
     .pv2 { font-size: 21px; font-weight: 800; color: var(--e-orange-ink); white-space: nowrap; .pm { display: block; font-size: 14px; font-weight: 500; color: var(--e-muted); } }
     .ps { margin: 0 0 6px; font-size: 13px; font-weight: 600; }
     .pd { font-size: 13px; color: var(--e-muted); line-height: 1.4; }
-}
-
-// Mapa SO ORP (includes-local/ets2-blog/mapa-orp.html, assets-local/js/ets2-mapa.js)
-.mapa-vrstvy {
-    display: flex; flex-wrap: wrap; gap: 6px;
-    button {
-        border: 1px solid var(--e-rule); background: #fff; color: var(--e-fg); border-radius: 999px;
-        padding: 4px 12px; font-size: 13px; cursor: pointer;
-        &[aria-pressed="true"] { border-color: var(--e-navy); background: var(--e-navy); color: #fff; }
-        &:focus-visible { outline: 2px solid var(--e-orange); outline-offset: 2px; }
-    }
-}
-.mapctl {
-    display: flex; gap: 10px; align-items: center; font-size: 14px; flex-wrap: wrap;
-    label { margin: 0; }
-    select { font: inherit; font-size: 14px; padding: 4px 8px; border: 1px solid var(--e-rule); border-radius: 8px; background: #fff; max-width: 100%; }
-}
-.mapwrap { width: 100%; }
-.mapa-legenda {
-    display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px;
-    .pol { display: inline-flex; align-items: center; gap: 6px; }
-    i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; border: 1px solid var(--e-rule); }
-}
-.mapa-info {
-    font-size: 13px; line-height: 1.45; min-height: 1em; max-width: 360px;
-    &:empty { display: none; }
-    background: #fff; border: 1px solid var(--e-rule); border-top: 3px solid var(--e-orange); border-radius: 10px; padding: 10px 12px;
-    b { display: block; font-size: 15px; }
-    .k { display: block; color: var(--e-muted); font-size: 12px; margin-bottom: 6px; }
-    .r { display: flex; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums;
-         span:first-child { color: var(--e-muted); } span:last-child { white-space: nowrap; } }
-}
-.mapa-chybi { font-size: 14px; color: var(--e-muted); border: 1px dashed var(--e-rule); border-radius: 8px; padding: 12px; margin: 0; }
-
-// Viditelný zástupný text („[doplnit …]“) v rozpracovaném textu
-.ets2-todo { border: 2px dashed #f06a4e; border-radius: 8px; padding: 12px 16px; margin: 0 0 24px; background: #fff8f6; font-size: .95rem; p:last-child { margin-bottom: 0; } }
-.mapa-legenda i.kraj-cara { width: 18px; height: 0; border: 0; border-top: 2px solid #3a3a45; border-radius: 0; }
-.ets2-graf { width: 100%; min-height: 40px; }
-
-// Tabulky v textu série (Markdown) a řádek se zdrojem pod nimi
-.ets2-tab-src { font-size: .8rem; color: var(--e-muted); }
-
-// Markdown tabulky (třída .table ze šablony webu): nadpisy bez verzálek, zarovnání nahoru,
-// na úzkém displeji vodorovné posouvání místo přetékání
-.ets2-tabulka {
-    width: 100%; margin: 1.5rem 0 .5rem;
-    thead th { text-transform: none; letter-spacing: 0; vertical-align: bottom; border-bottom: 2px solid #dde5e8; }
-    td { vertical-align: top; }
-    td:first-child { font-weight: 600; }
-    @media (max-width: 767px) { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; td, th { min-width: 9rem; } }
-}
-
-// Tok peněz z ETS2 (includes-local/ets2-blog/financovani-tok.html)
-.ets2-tok {
-  .tok { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
-  .tok-zdroj, .tok-box, .tok-navrh { border-radius: 8px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
-  .tok-zdroj { background: #eef3fa; border: 1px solid #c9d6e6; text-align: center; }
-  b { font-size: 0.95rem; }
-  span { font-size: 0.85rem; }
-  strong { font-size: 1.2rem; color: #0050ae; }
-  .tok-sipka { text-align: center; font-size: 0.8rem; color: #6b7280; padding: 4px 0; }
-  .tok-vetve { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .tok-vetev { display: flex; flex-direction: column; gap: 4px; }
-  .tok-box { background: var(--card, #fff); border: 1px solid #c9d6e6; }
-  .tok-skf { border-top: 4px solid #0050ae; }
-  .tok-ost { border-top: 4px solid #53616e; strong { color: #53616e; } }
-  .tok-seznam { margin: 6px 0 0; padding-left: 18px; font-size: 0.85rem; li { margin: 2px 0; } }
-  .tok-radek { display: grid; grid-template-columns: 1fr; gap: 2px; margin-top: 8px; }
-  .tok-lab { font-size: 0.8rem; font-weight: 700; }
-  .tok-bar { display: flex; border-radius: 4px; overflow: hidden; min-height: 26px; }
-  .tok-bar span { padding: 5px 6px; color: #fff; font-size: 0.75rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .c-prime { background: #f06a4e; }
-  .c-bud { background: #0050ae; }
-  .c-dop { background: #5b8fd0; }
-  .c-tp { background: #a8b4c2; }
-  .c-ost { background: #53616e; }
-  .c-eu { background: #2b7a4b; }
-  .tok-leg { font-size: 0.75rem; margin-top: 8px; line-height: 1.6;
-    i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin: 0 4px 0 8px; vertical-align: baseline; }
-    i:first-child { margin-left: 0; } }
-  .tok-pozn { font-size: 0.8rem; margin: 8px 0 0; }
-  .tok-navrh { background: #fdeee9; border: 1px solid #f2c4b6; }
-  @media (max-width: 575px) { .tok-vetve { grid-template-columns: 1fr; } }
 }
