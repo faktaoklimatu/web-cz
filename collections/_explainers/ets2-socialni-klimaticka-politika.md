@@ -28,7 +28,7 @@ perex: |
 {% include tldr.html title="Hlavní zjištění" content="
 - **ETS2 by zdražilo topení hned, výměna kotle nebo zateplení ale trvá roky.** Chudší domácnosti by mezitím platily víc a na výměnu by neměly.
 - **Český plán na tuto dobu s přímou pomocí nepočítá**, přestože ji evropská pravidla dovolují. Její absenci kritizuje například ombudsman nebo Centrum pro dopravu a energetiku.
-- **Navrhujeme dočasnou měsíční platbu pro domácnosti s nízkými příjmy podle toho, čím topí:** 1 000 Kč pro rodinný dům na uhlí, 500 Kč na plyn, 360 Kč pro byt s plynovým kotlem a 310 Kč pro byt na teple z menší výtopny. Od roku 2030 by klesala a po roce 2032 skončila.
+- **Navrhujeme dočasnou měsíční platbu pro domácnosti s nízkými příjmy podle toho, čím topí:** 1 000 Kč pro rodinný dům na uhlí, 500 Kč na plyn, 360 Kč pro byt s plynovým kotlem a 310 Kč pro byt na teple z menší výtopny. Od roku 2030 by klesala a po roce 2032 skončila. Nárok by se řídil tím, čím domácnost topila při zavedení ETS2 v roce 2028, takže po výměně kotle by platbu neztratila a motivace k přechodu by zůstala.
 - **V prvním roce by stála asi 4,6 miliardy korun, pak by klesala.** Je to zlomek výnosu z povolenek. Domácnostem, které to nejvíc potřebují, by vrátila zhruba dvě třetiny zdražení topení.
 - **Těžší než najít peníze je doručit je.** Stát neví, čím kdo topí, ani kdo s kým žije. Navrhujeme proto tři cesty: přidat platbu k dávkám na bydlení, k důchodu a pro ostatní jednoduchou žádost.
 - **Plošné kompenzace jsou drahé a míjejí ty, kdo pomoc potřebují.** Například návrh PAQ Research a CVF by stál 13 miliard ročně, ale domácnostem, které to nejvíc potřebují, by z něj šla jen 4 % peněz.
@@ -77,7 +77,7 @@ Na přechodné období má stát v zásadě čtyři možnosti:
 
 **Platba signál neoslabuje.** Pevná částka nezávisí na tom, kolik domácnost spálí. Každá ušetřená tuna uhlí nebo kubík plynu se jí proto vyplatí stejně jako bez platby. Peníze jí jen pomohou zaplatit účty, dokud nevymění zdroj. Proto navrhujeme platbu pevnou podle paliva a typu bydlení, ne slevu na palivu.
 
-**Dočasná a postupně klesající.** Platba by šla dva roky v plné výši, pak by každý rok klesla o čtvrtinu a v roce 2032 by skončila. Domácnost dopředu ví, že ochrana končí a že se vyplatí využít podporu na výměnu zdroje. Přechod na čistší zdroj by platbu neukončil, takže by výměnu netrestal.
+**Dočasná a postupně klesající.** Platba by šla dva roky v plné výši, pak by každý rok klesla o čtvrtinu a v roce 2032 by skončila. Domácnost dopředu ví, že ochrana končí a že se vyplatí využít podporu na výměnu zdroje. Nárok by se řídil palivem k rozhodnému dni při zavedení ETS2 v roce 2028, takže přechod na čistší zdroj by platbu neukončil a výměnu by netrestal. Domácnost, která kotel vymění dřív, si platbu ponechá a navíc ušetří na účtech.
 
 **Malá částka, velký rozdíl pro málo lidí.** Kolem 5 mld. Kč ročně je zlomek výnosu z povolenek a v porovnání s cenovými šoky posledních let je to málo. Pro rodinu v domě na uhlí s příjmem kolem 30 tisíc měsíčně ale jde asi o 3 % příjmu. Zkušenost z Francie, kde zdražení paliv bez viditelné kompenzace vyvolalo protesty žlutých vest, ukazuje, že bez ochrany nejslabších může celá politika narazit.
 
@@ -175,7 +175,7 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 
 - **Příjem by si ověřil úřad sám** z dat finanční správy, ČSSZ a Úřadu práce se souhlasem žadatele. Většina domácností by tak nic nedokládala. Od dubna 2026 navíc zaměstnavatelé hlásí státu každý měsíc všechny příjmy zaměstnanců včetně dohod ([jednotné měsíční hlášení](https://mpsv.gov.cz/firmam-odlehci-administrativa-a-stat-ziska-lepsi-data-jednotne-mesicni-hlaseni-startuje-1-dubna-2026)). Úřad tak bude mít aktuální údaje o příjmech zaměstnanců. Doložit by je musely jen domácnosti s jinými příjmy, například živnostníci.
 - **Když propojení dat nebude včas hotové, lze začít čestným prohlášením.** Tak fungoval jednorázový příspěvek 5 000 Kč na dítě z roku 2022: žádost se podávala online, žadatel jen prohlásil, že příjem domácnosti nepřesáhl limit, a úřad to kontroloval až dodatečně. Dostalo ho přes 80 % oprávněných.[^prispevek-5000] Zavádění superdávky ukazuje, že propojení dat úřadů může trvat. Ověření z dat státu by proto mohlo prohlášení nahradit až později.
-- **Domácnost by doložila jen palivo:** vyúčtování plynu (je na něm odběrné místo a spotřeba, takže data od distributorů nejsou potřeba), doklad o kontrole kotle na tuhá paliva, nebo potvrzení od SVJ, družstva či dodavatele tepla. Doklad by musel být z doby před rozhodným dnem, aby se nezopakovalo polské přepisování na uhlí.
+- **Domácnost by doložila jen palivo:** vyúčtování plynu (je na něm odběrné místo a spotřeba, takže data od distributorů nejsou potřeba), doklad o kontrole kotle na tuhá paliva, nebo potvrzení od SVJ, družstva či dodavatele tepla. Doklad by musel být z doby před rozhodným dnem v roce 2028, aby se nezopakovalo polské přepisování na uhlí.
 - **Kampaň a pomoc obcí:** pro lidi, kteří online žádost sami nezvládnou, by pomohli sociální pracovníci obcí, kontaktní místa a energetické poradny.
 - **Riziko:** i s kampaní si část oprávněných nezažádá. Ve Francii po přechodu na žádost kleslo čerpání z 84 % na odhadem 3–12 %.[^hellowatt]
 
