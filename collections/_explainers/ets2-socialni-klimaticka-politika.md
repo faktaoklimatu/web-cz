@@ -29,7 +29,7 @@ perex: |
 - **ETS2 by zdražilo topení hned, výměna kotle nebo zateplení ale trvá roky.** Chudší domácnosti by mezitím platily víc a na výměnu by neměly.
 - **Český plán na tuto dobu s přímou pomocí nepočítá**, přestože ji evropská pravidla dovolují. Její absenci kritizuje například ombudsman nebo Centrum pro dopravu a energetiku.
 - **Navrhujeme dočasnou měsíční platbu pro domácnosti s nízkými příjmy podle toho, čím topí:** 1 000 Kč pro rodinný dům na uhlí, 500 Kč na plyn, 360 Kč pro byt s plynovým kotlem a 310 Kč pro byt na teple z menší výtopny. Od roku 2030 by klesala a po roce 2032 skončila. Nárok by se řídil tím, čím domácnost topila při zavedení ETS2 v roce 2028, takže po výměně kotle by platbu neztratila a motivace k přechodu by zůstala.
-- **V prvním roce by stála asi 4,6 miliardy korun, pak by klesala.** Je to zlomek výnosu z povolenek. Domácnostem, které to nejvíc potřebují, by vrátila zhruba dvě třetiny zdražení topení.
+- **V prvním roce by stála asi 4,6 miliardy korun, pak by klesala.** Dostalo by ji asi 980 tisíc domácností s nízkými příjmy, zhruba 2,3 milionu lidí. Je to zlomek výnosu z povolenek. Domácnostem, které to nejvíc potřebují, by vrátila zhruba dvě třetiny zdražení topení.
 - **Těžší než najít peníze je doručit je.** Stát neví, čím kdo topí, ani kdo s kým žije. Navrhujeme proto tři cesty: přidat platbu k dávkám na bydlení, k důchodu a pro ostatní jednoduchou žádost.
 - **Plošné kompenzace jsou drahé a míjejí ty, kdo pomoc potřebují.** Například návrh PAQ Research a CVF by stál 13 miliard ročně, ale domácnostem, které to nejvíc potřebují, by z něj šla jen 4 % peněz.
 " %}
@@ -70,8 +70,8 @@ I dobře nastavené investice ale potřebují roky, než se dostanou ke všem. D
 
 Na přechodné období má stát v zásadě čtyři možnosti:
 
-1. **Nedělat nic.** Náklad by nesly domácnosti, které se mu nemohou vyhnout, a rostl by tlak na odklad nebo oslabení ETS2.
-2. **Plošné kompenzace.** Návrh PAQ Research a CVF (sleva na dani a valorizace důchodů) by stál dvakrát až třikrát víc než cílená platba a zranitelným domácnostem by z něj šla jen 4 % peněz (srovnání níže).
+1. **Nedělat nic.** Náklad by nesly domácnosti, které se mu nemohou vyhnout, a rostl by tlak na odklad nebo oslabení ETS2. Důchody se sice valorizují o inflaci, takže část zdražení se důchodcům vrátí sama. ETS2 by ale zvedlo ceny jen asi o půl procenta, kdežto zranitelným domácnostem s důchodcem by zdražení vytápění vzalo 2,3 % příjmu. Valorizace by jim tak vrátila nanejvýš čtvrtinu, a to s ročním zpožděním.[^silc]
+2. **Plošné kompenzace.** Návrh PAQ Research a CVF zvyšuje slevu na poplatníka a mimořádně valorizuje důchody. Stál by dvakrát až třikrát víc než cílená platba a zranitelným domácnostem by z něj šla jen 4 % peněz, protože sleva i valorizace jdou všem bez ohledu na to, čím topí. Samotná vyšší sleva na poplatníka by navíc minula 70 % zranitelných domácností: nikdo v nich nepracuje, většinou jde o důchodce ([srovnání níže](#jak-si-stojí-návrh-paq-research-a-cvf)).
 3. **Zásahy do cen.** Stropy nebo nižší DPH na paliva se zavádějí nejsnáz, ale cenový signál oslabují nejvíc. Maďarsko má plošný cenový strop:[^hu-rekk] stát domácnostem garantuje nízkou regulovanou cenu plynu a elektřiny a rozdíl proti tržní ceně doplácí. Je to drahé a domácnosti topící dřevem nebo uhlím z toho nemají nic.
 4. **Cílená přímá platba.** Pomůže hned, signál neoslabí a stojí zlomek výnosu z povolenek.
 
@@ -137,6 +137,19 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 ## Jaká je rozumná cesta pro Česko?
 
 Žádný nástroj sám nestačí. Přímá platba pomůže hned, ale dům na uhlí zůstane domem na uhlí. Výměna zdroje pomůže natrvalo, ale trvá roky.
+
+**Proč platba nemíří přímo na zranitelné domácnosti?** Zranitelnost z prvního dílu stát ověřit neumí: nezná výdaje domácností za energie, a tedy ani to, kdo je energeticky chudý. Taková podmínka by navíc trestala úspory, protože kdo by ušetřil, ztratil by nárok. Pravidlo proto stojí na tom, co ověřit jde: na příjmu a hlavním zdroji vytápění. **Oprávněných domácností je tak víc než zranitelných:** platbu by dostalo asi 980 tisíc domácností s nízkými příjmy, které topí uhlím, plynem nebo teplem z menší výtopny. Mezi nimi je 160 tisíc zranitelných, 84 % ze všech. Zbytek peněz dostanou domácnosti, kterým ETS2 topení také zdraží, jen zatím nejsou energeticky chudé nebo je zdražení stojí méně než 1 % příjmu.[^silc]
+
+<script type="application/json" id="graf-opravneni-data">[{"archetyp":"opravnene","popisek":"Domácnosti s nárokem na platbu","domacnosti_tis":980,"zranitelne_tis":160,"podil_zranitelnych_pct":16},{"archetyp":"bez_naroku","popisek":"Zranitelné domácnosti bez nároku","pozn":"(topí hlavně elektřinou, dřevem nebo teplem z velké teplárny)","domacnosti_tis":29,"zranitelne_tis":29,"podil_zranitelnych_pct":100}]</script>
+{% include includes-local/chart-panel.html
+    id="graf-opravneni"
+    title="Platbu by dostalo asi 980 tisíc domácností, mezi nimi většina zranitelných"
+    caption="Jeden čtvereček = 10 tisíc domácností, červeně zranitelné domácnosti (základní scénář)"
+    alt="Počet domácností s nárokem na přímou platbu a počet zranitelných domácností mezi nimi a mimo ně"
+    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>'
+%}
+
+**Kdo platbu nedostane:** domácnosti, které hlavně topí elektřinou (přímotopy, elektrokotel), tepelným čerpadlem, dřevem nebo peletami a byty na teple z velké teplárny v ETS1. ETS2 by jim hlavní zdroj vytápění nezdražilo.
 
 **Nárok by měly jen nízko- a nižší středopříjmové domácnosti.** **Platba by s rostoucím příjmem plynule klesala, bez ostré hranice.** Plnou by dostaly domácnosti do horní hranice 3. decilu ekvivalizovaného příjmu, pak by klesala k nule na hranici 5. decilu (mediánu). Nikdo by tak nepřišel o celou platbu kvůli pár korunám příjmu navíc. Jednotlivec s čistým příjmem do zhruba 27 tis. Kč měsíčně by dostal celou platbu, od 32 tis. Kč nic. U páru jsou hranice 45 a 54 tis. Kč, u čtyřčlenné rodiny s dětmi do 13 let 72 a 85 tis. Kč (vše v příjmech roku 2028).[^silc]
 
@@ -258,6 +271,8 @@ Výhodou návrhu je jednoduchost: využívá existující systémy a nevyžaduje
 
 | | Návrh PAQ a CVF | Náš návrh |
 |---|---|---|
+| Kolik by dostala domácnost měsíčně | 100 Kč na každého pracujícího a asi 170 Kč na důchodce, v průměru asi 240 Kč | 310–1 000 Kč podle paliva a bydlení (v letech plné výše), v průměru asi 390 Kč |
+| Kolik domácností by dostalo peníze | asi 4,5 milionu | asi 980 tisíc |
 | Náklad ročně | 13,0 mld. Kč | 4,6–7 mld. Kč |
 | Podíl peněz, který by šel zranitelným | 4 % | 16–23 % |
 | Zranitelných by nedostalo nic | 6 % | 14–16 % |
@@ -275,6 +290,7 @@ Zdroj: [EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union
 2. **Nejvíc zasaženým by vrátil nejméně.** Domácnostem v rodinných domech na uhlí by ETS2 zdražilo vytápění kolem 1 000 Kč měsíčně, návrh by jim vrátil jen 20 % zdražení vytápění. Sleva na dani i valorizace jsou stejné bez ohledu na to, čím domácnost topí.
 3. **Většinu by nešlo platit ze Sociálního klimatického fondu.** Fond smí platit jen dočasnou podporu zranitelným domácnostem.[^skf-cl4] Plošná sleva ani valorizace všech důchodů tuto podmínku nesplňují. Valorizace navíc zůstává v důchodu trvale, takže není dočasná. Autoři sami uvádějí, že zbývajících asi 11,5 mld. Kč ročně „by musel financovat státní rozpočet“.[^paq-s30]
 4. **Cílená část dosáhne jen na menšinu.** Energetický paušál dostanou jen příjemci dávek na bydlení, tedy 17 % zranitelných.
+5. **Vyšší sleva na poplatníka by sama nestačila.** Je to nejjednodušší cesta, peníze ale dostane jen ten, kdo platí daň z příjmu. V 70 % zranitelných domácností nikdo nepracuje, většinou jde o důchodce. Sleva navíc nevrací víc, než kolik člověk na dani zaplatí, takže nejméně dostanou ti s nejnižšími výdělky.[^silc]
 
 {% capture ex_statni %}
 

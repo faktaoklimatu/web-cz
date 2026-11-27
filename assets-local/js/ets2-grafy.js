@@ -497,7 +497,7 @@
     // pohledy: bloky po 22 čtverečcích v řadě, nebo pruhy 4 čtverečky vysoké plněné zleva doprava
     var SKUP_POHLEDY = [{ key: 'pruhy', label: 'Pruhy' }, { key: 'bloky', label: 'Bloky' }];
     var skupPohled = SKUP_POHLEDY[0];
-    var skupiny = mount('skupiny', function (svg, w, data) {
+    var kresliSkupiny = function (svg, w, data) {
         var JED = 10, SL = 22, PAD = 8, LW = 220, pruhy = skupPohled.key === 'pruhy', VYS = 4;
         // pořadí podle podílu zranitelných, skupina bez posuzování (NA) na konec
         data = data.slice().sort(function (a, b) {
@@ -553,16 +553,25 @@
             y += h + 18;
         });
         return y - 6;
-    });
+    };
+    var skupiny = mount('skupiny', kresliSkupiny);
+    // díl II: domácnosti s nárokem na platbu a zranitelné mezi nimi (stejný čtverečkový graf)
+    mount('opravneni', kresliSkupiny);
     if (skupiny && DEV) prepinac('skupiny', SKUP_POHLEDY, function (d) { skupPohled = d; skupiny(); });
 
     // Bodový graf: náklad (x) proti vrácené části zdražení (y), jeden bod = jedno pravidlo
-    mount('kompenzace', function (svg, w, data) {
+    // pohled na část vráceného zdražení: plná výše (2028–2029), průměr za období, poslední rok 2032 (naše pravidla na 25 %)
+    var KOMP_POHLEDY = [{ key: 'vyrovnano_pct', label: '2028 a 2029', cap: 'v letech plné výše (2028 a 2029)' },
+                        { key: 'vyrovnano_obdobi_pct', label: 'Průměr 2028–2032', cap: 'v průměru za roky 2028–2032' },
+                        { key: 'vyrovnano_2032_pct', label: '2032', cap: 'v roce 2032, kdy naše platba klesne na čtvrtinu' }];
+    var kompPohled = KOMP_POHLEDY[0];
+    var kompenzace = mount('kompenzace', function (svg, w, data) {
+        var V = kompPohled.key;
         var CIL = ['pal_vlastni_teplo_vse', 'pal_vlastni_teplo'];   // cílená pravidla, popisky nad sebou
         var isCil = function (d) { return CIL.indexOf(d.pravidlo) >= 0; };
         var y = d3.scaleLinear().domain([0, 100]), pct = function (v) { return v + ' %'; };
         var m = { l: sirkaOsyY(svg, y, 5, pct), r: 12 };
-        var top = caption(svg, svg.node().dataset.caption, w) + 14;
+        var top = caption(svg, svg.node().dataset.caption.replace('v letech plné výše', kompPohled.cap), w) + 14;
         var plotH = Math.max(260, Math.min(380, w * 0.6));
         var xmax = Math.ceil(d3.max(data, function (d) { return +d.naklad_mld; }) / 10) * 10;
         var x = d3.scaleLinear().domain([0, xmax]).range([m.l, w - m.r]);
@@ -579,28 +588,29 @@
         var xLab = x(16), labW = w - m.r - xLab, yLab = y(60);
         var bodTip = function (d) {
             return '<b>' + d.popisek + '</b><br>stálo by ' + cz(d.naklad_mld, 1) + ' mld. Kč ročně<br>zranitelným by šlo ' + d.k_zranitelnym_pct +
-                ' % peněz<br>vrátilo by ' + d.vyrovnano_pct + ' % jejich zdražení<br>nedostalo by nic ' + d.nedostalo_pct + ' % zranitelných';
+                ' % peněz<br>vrátilo by ' + d[V] + ' % jejich zdražení (' + kompPohled.label + ')<br>nedostalo by nic ' + d.nedostalo_pct + ' % zranitelných';
         };
         CIL.forEach(function (k) {
             var d = data.filter(function (r) { return r.pravidlo === k; })[0];
             if (!d) return;
             var t = svg.append('text').attr('y', yLab + 4).attr('font-size', 12).attr('font-weight', 700).attr('fill', T.text);
             var lines = wrap(t, d.popisek, xLab, labW, 15);
-            svg.append('line').attr('x1', x(+d.naklad_mld)).attr('y1', y(+d.vyrovnano_pct)).attr('x2', xLab - 4).attr('y2', yLab)
+            svg.append('line').attr('x1', x(+d.naklad_mld)).attr('y1', y(+d[V])).attr('x2', xLab - 4).attr('y2', yLab)
                 .attr('stroke', COL.ets2);
             yLab += lines * 15 + 10;
         });
         svg.selectAll('circle.bod').data(data).join('circle').attr('class', 'bod')
-            .attr('cx', function (d) { return x(+d.naklad_mld); }).attr('cy', function (d) { return y(+d.vyrovnano_pct); }).attr('r', 7)
+            .attr('cx', function (d) { return x(+d.naklad_mld); }).attr('cy', function (d) { return y(+d[V]); }).attr('r', 7)
             .attr('fill', function (d) { return isCil(d) ? COL.ets2 : COL.ostatni; }).attr('stroke', '#fff').attr('stroke-width', 1.5)
             .on('mousemove', function (ev, d) { showTip(ev, bodTip(d)); }).on('mouseleave', hideTip);
         data.filter(function (d) { return !isCil(d); }).forEach(function (d) {
             var levo = d.pravidlo === 'plosne';
-            svg.append('text').attr('x', x(+d.naklad_mld) + (levo ? -12 : 12)).attr('y', y(+d.vyrovnano_pct) + 4)
+            svg.append('text').attr('x', x(+d.naklad_mld) + (levo ? -12 : 12)).attr('y', y(+d[V]) + 4)
                 .attr('text-anchor', levo ? 'end' : 'start').attr('font-size', 12).attr('fill', T.text).text(d.popisek);
         });
         return y(0) + 52;
     });
+    if (kompenzace) prepinac('kompenzace', KOMP_POHLEDY, function (d) { kompPohled = d; kompenzace(); });
 
     // Peníze na pomoc, mld. Kč ročně: fond a náklad pomoci.
     // Modrá = přímé platby (strop fondu i cílená platba), světle modrá = investice; výměna zdrojů je rozsah.
