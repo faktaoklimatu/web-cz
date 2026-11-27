@@ -194,15 +194,6 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 - **Riziko:** i s kampaní si část oprávněných nezažádá. Ve Francii po přechodu na žádost kleslo čerpání z 84 % na odhadem 3–12 %.[^hellowatt]
 - **Možná zkratka pro pracující: sleva na dani podle vytápění.** Zhruba čtvrtina zranitelných domácností s nárokem má jen pracující, bez důchodce. Ty by mohly platbu dostávat přes zaměstnavatele jako slevu na dani, podobně jako dnes slevu na dítě. Doklad o palivu by ale stejně musely předložit a sleva by musela být vratná jako daňový bonus, jinak by lidé s nízkým výdělkem nedostali celou částku. Domácnostem, kde nikdo nepracuje ani nepobírá důchod, asi 12 % zranitelných s nárokem, by zůstala žádost.[^silc] Právě na tyto domácnosti přitom pomoc míří nejhůř a rezervu mají nejmenší: tři čtvrtiny z nich si nemohou dovolit neočekávaný výdaj 15 600 Kč.
 
-<script type="application/json" id="graf-kanaly-data">[{"label":"Mají důchodce","pct":61,"tis":97,"rez":41,"cesta":"platba k důchodu, kterou náš návrh už počítá"},{"label":"Mají jen pracující","pct":27,"tis":43,"rez":36,"cesta":"sleva na dani přes zaměstnavatele, nebo žádost"},{"label":"Nikdo nepracuje ani nepobírá důchod","pct":12,"tis":19,"rez":73,"cesta":"jen žádost, s pomocí obce"}]</script>
-{% include includes-local/chart-panel.html
-    id="graf-kanaly"
-    title="Většinu zranitelných domácností jde zastihnout přes důchod"
-    caption="160 tisíc zranitelných domácností s nárokem na platbu podle toho, kudy by k nim mohla platba dojít (základní scénář)"
-    alt="Podíl zranitelných domácností s nárokem, které mají důchodce, jen pracující, nebo ani jedno"
-    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; pracující = ekonomicky aktivní člen domácnosti (včetně nezaměstnaných); bez rezervy = domácnost si nemůže dovolit zaplatit neočekávaný výdaj 15 600 Kč. Skupina bez pracujícího i důchodce má ve vzorku jen 79 domácností, číslo je orientační.'
-%}
-
 
 Platba by byla dočasná a klesala by podle předem známého plánu: v letech 2028 a 2029 plná, pak by každý rok klesla o čtvrtinu (75, 50 a 25 %) a po roce 2032 by skončila. Domácnost by tak věděla, kolik a jak dlouho dostane, a má čas vyměnit zdroj, na což jí plán dává investice. Přechod na čistší zdroj by platbu neukončil. **Platba by se nesměla započítávat do příjmu pro jiné dávky**, hlavně pro dávku státní sociální pomoci (superdávku). Jinak by ji stát domácnosti druhou rukou zase vzal. Výše by se odvíjela od skutečné ceny povolenky: kdyby byla vyšší než 61 eur za tunu, platba by se úměrně zvýšila. Za roky 2028–2032 by platba stála asi 20 mld. Kč, kdyby o ni požádali všichni oprávnění.
 

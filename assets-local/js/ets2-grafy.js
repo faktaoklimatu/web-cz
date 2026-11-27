@@ -497,10 +497,11 @@
     // pohledy: bloky po 22 čtverečcích v řadě, nebo pruhy 4 čtverečky vysoké plněné zleva doprava
     var SKUP_POHLEDY = [{ key: 'pruhy', label: 'Pruhy' }, { key: 'bloky', label: 'Bloky' }];
     var skupPohled = SKUP_POHLEDY[0];
-    var kresliSkupiny = function (svg, w, data) {
-        var JED = 10, SL = 22, PAD = 8, LW = 220, pruhy = skupPohled.key === 'pruhy', VYS = 4;
+    // Čtverečkový graf skupin; o (volitelně): JED (tis. na čtvereček), zLabel, oLabel, zSlovo, poradi (zachovat pořadí dat)
+    var kresliCtverecky = function (o) { o = Object.assign({ JED: 10, zLabel: 'Zranitelné domácnosti', oLabel: 'Ostatní domácnosti', zSlovo: 'zranitelných', poradi: false }, o || {}); return function (svg, w, data) {
+        var JED = o.JED, SL = 22, PAD = 8, LW = 220, pruhy = skupPohled.key === 'pruhy', VYS = 4;
         // pořadí podle podílu zranitelných, skupina bez posuzování (NA) na konec
-        data = data.slice().sort(function (a, b) {
+        if (!o.poradi) data = data.slice().sort(function (a, b) {
             return (isNA(b.podil_zranitelnych_pct) ? -1 : +b.podil_zranitelnych_pct) - (isNA(a.podil_zranitelnych_pct) ? -1 : +a.podil_zranitelnych_pct);
         });
         // v pruzích jsou skupiny, kterým ETS2 topení skoro nezdraží, sloučené do jedné na konci (bez pravidla 4 čtverečků)
@@ -515,7 +516,7 @@
             data.push({ popisek: 'Ostatní', pozn: '(Byty a rodinné domy na elektřinu, rodinné domy na dřevo a na TČ, byty na teple ze zdroje v ETS1)', domacnosti_tis: dom,
                         zranitelne_tis: zr, podil_zranitelnych_pct: 100 * zr / dom, slouceno: true });
         }
-        var top = head(svg, w, [{ key: 'z', label: 'Zranitelné domácnosti', color: COL.zranitelne }, { key: 'o', label: 'Ostatní domácnosti', color: COL.ctverecek }]);
+        var top = head(svg, w, [{ key: 'z', label: o.zLabel, color: COL.zranitelne }, { key: 'o', label: o.oLabel, color: COL.ctverecek }]);
         var wide = w >= 520;
         var x0 = wide ? PAD + LW : PAD, textW = wide ? LW - PAD : w - 2 * PAD;
         var pocet = function (d) { return Math.round(+d.domacnosti_tis / JED); };
@@ -533,7 +534,7 @@
             var py = function (i) { return pruhy ? i % vys : Math.floor(i / SL); };
             var g = svg.append('g').attr('transform', 'translate(0,' + y + ')')
                 .on('mousemove', function (ev) {
-                    showTip(ev, '<b>' + d.popisek + '</b><br>' + cz(d.domacnosti_tis) + ' tis. domácností' + (bez ? '' : '<br>z toho ' + cz(d.zranitelne_tis) + ' tis. zranitelných'));
+                    showTip(ev, '<b>' + d.popisek + '</b><br>' + cz(d.domacnosti_tis) + ' tis. domácností' + (bez ? '' : '<br>z toho ' + cz(d.zranitelne_tis) + ' tis. ' + o.zSlovo));
                 })
                 .on('mouseleave', hideTip);
             var t = g.append('text').attr('y', 11).attr('font-size', 13).attr('font-weight', 700).attr('fill', C.title);
@@ -542,7 +543,7 @@
             if (d.pozn) dy += wrap(g.append('text').attr('y', 26 + dy).attr('font-size', 12).attr('fill', T.grey), d.pozn, PAD, textW, 14) * 14;
             g.append('text').attr('x', PAD).attr('y', 28 + dy).attr('font-size', 12).attr('fill', T.grey).text(cz(d.domacnosti_tis) + ' tis. domácností');
             g.append('text').attr('x', PAD).attr('y', 44 + dy).attr('font-size', 12).attr('font-weight', bez ? 400 : 700).attr('fill', bez ? T.grey : COL.zranitelne)
-                .text(bez ? 'topení ETS2 nezdraží, neposuzováno' : cz(d.zranitelne_tis) + ' tis. zranitelných (' + cz(d.podil_zranitelnych_pct) + ' %)');
+                .text(bez ? 'topení ETS2 nezdraží, neposuzováno' : cz(d.zranitelne_tis) + ' tis. ' + o.zSlovo + ' (' + cz(d.podil_zranitelnych_pct) + ' %)');
             var textH = 44 + dy, gridH = vys * pitch;
             var h = wide ? Math.max(gridH, textH) : textH + 6 + gridH;
             g.selectAll('rect.ctv').data(d3.range(n)).join('rect').attr('class', 'ctv')
@@ -553,8 +554,11 @@
             y += h + 18;
         });
         return y - 6;
-    };
+    }; };
+    var kresliSkupiny = kresliCtverecky();
     var skupiny = mount('skupiny', kresliSkupiny);
+    // díl I: zranitelné domácnosti podle toho, zda mají důchodce nebo pracujícího, a kolik z nich nemá rezervu
+    mount('rezerva', kresliCtverecky({ JED: 2, zLabel: 'Nemůže si dovolit neočekávaný výdaj', oLabel: 'Ostatní zranitelné domácnosti', zSlovo: 'bez rezervy', poradi: true }));
     // díl II: domácnosti s nárokem na platbu a zranitelné mezi nimi (stejný čtverečkový graf)
     mount('opravneni', kresliSkupiny);
     if (skupiny && DEV) prepinac('skupiny', SKUP_POHLEDY, function (d) { skupPohled = d; skupiny(); });
@@ -611,30 +615,6 @@
         return y(0) + 52;
     });
     if (kompenzace) prepinac('kompenzace', KOMP_POHLEDY, function (d) { kompPohled = d; kompenzace(); });
-
-    // Kudy by platba došla k zranitelným domácnostem s nárokem: jeden skládaný pruh (podíl a tisíce domácností)
-    mount('kanaly', function (svg, w, data) {
-        var barvy = [COL.ets2, d3.interpolateRgb('#fff', COL.ets2)(0.45), COL.ostatni];
-        var top = caption(svg, svg.node().dataset.caption, w) + 10, PAD = 8, barH = 34;
-        var x = d3.scaleLinear().domain([0, 100]).range([PAD, w - PAD]), x0 = 0;
-        data.forEach(function (d, i) {
-            svg.append('rect').attr('x', x(x0)).attr('y', top).attr('width', x(x0 + +d.pct) - x(x0) - (i < data.length - 1 ? 2 : 0)).attr('height', barH)
-                .attr('fill', barvy[i])
-                .on('mousemove', function (ev) { showTip(ev, '<b>' + d.label + '</b><br>' + d.pct + ' % (asi ' + cz(d.tis) + ' tis. domácností)<br>' + d.cesta + '<br>nemůže si dovolit neočekávaný výdaj: ' + d.rez + ' %'); })
-                .on('mouseleave', hideTip);
-            if (x(x0 + +d.pct) - x(x0) > 44) svg.append('text').attr('x', x(x0) + 8).attr('y', top + 22).attr('font-size', 14).attr('font-weight', 700)
-                .attr('fill', i === 0 ? '#fff' : T.text).text(d.pct + ' %');
-            x0 += +d.pct;
-        });
-        var y = top + barH + 18;
-        data.forEach(function (d, i) {
-            svg.append('rect').attr('x', PAD).attr('y', y - 11).attr('width', 12).attr('height', 12).attr('fill', barvy[i]);
-            var t = svg.append('text').attr('y', y).attr('font-size', 13).attr('fill', T.text);
-            var n = wrap(t, d.label + ' (' + d.pct + ' %, asi ' + cz(d.tis) + ' tis.): ' + d.cesta + '; bez rezervy ' + d.rez + ' %', PAD + 20, w - 2 * PAD - 20, 16);
-            y += n * 16 + 8;
-        });
-        return y;
-    });
 
     // Kolik by dostala zranitelná domácnost měsíčně: zdražení vytápění proti platbě podle návrhu PAQ a CVF a našeho návrhu
     mount('castky', function (svg, w, data) {
