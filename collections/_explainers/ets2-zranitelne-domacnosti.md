@@ -134,15 +134,15 @@ Za zranitelné považujeme domácnosti, které splňují tři podmínky současn
 - po zavedení ETS2 by **dávaly za energie na bydlení víc než dvojnásobek mediánového podílu na příjmu** (jsou energeticky chudé podle ukazatele 2M);
 - zdražení vytápění kvůli ETS2 by jim **vzalo aspoň 1 % čistého příjmu**.[^podminka-1]
 
-Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 170–205 tisíc, asi 4 % všech. Asi 165 tisíc z nich je energeticky chudých už dnes, u dalších asi 25 tisíc by energetickou chudobu způsobilo až zavedení ETS2. Zdražení vytápění by je stálo v průměru kolem 600 Kč měsíčně, 2,1 % příjmu. Rezervu na to přitom nemají: skoro polovina z nich (47 %) si podle šetření nemůže dovolit zaplatit neočekávaný výdaj 15 600 Kč, mezi všemi domácnostmi je to pětina. Kdo jezdí autem, připlatil by navíc i za benzín nebo naftu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a zdražení vytápění by jí vzalo 3 % příjmu. Energetická chudoba v uhelných domech by stoupla z 19 na 25 %.
+Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 170–205 tisíc, asi 4 % všech. Asi 165 tisíc z nich je energeticky chudých už dnes, u dalších asi 25 tisíc by energetickou chudobu způsobilo až zavedení ETS2. Zdražení vytápění by je stálo v průměru kolem 600 Kč měsíčně, 2,1 % příjmu. Rezervu na to přitom nemají: skoro polovina z nich (47 %) si podle šetření nemůže dovolit zaplatit neočekávaný výdaj 15 600 Kč, mezi všemi domácnostmi je to pětina. Nejhůř jsou na tom domácnosti nezaměstnaných: rezervu nemá devět z deseti. Kdo jezdí autem, připlatil by navíc i za benzín nebo naftu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a zdražení vytápění by jí vzalo 3 % příjmu. Energetická chudoba v uhelných domech by stoupla z 19 na 25 %.
 
-<script type="application/json" id="graf-rezerva-data">[{"archetyp":"vse","popisek":"Všechny zranitelné domácnosti","domacnosti_tis":189,"zranitelne_tis":90,"podil_zranitelnych_pct":47},{"archetyp":"duchod","popisek":"z toho s důchodcem","domacnosti_tis":109,"zranitelne_tis":47,"podil_zranitelnych_pct":43}]</script>
+<script type="application/json" id="graf-rezerva-data">[{"archetyp":"duchodci","popisek":"Domácnosti důchodců","pozn":"(nikdo nepracuje, aspoň jeden člen pobírá důchod)","domacnosti_tis":99,"zranitelne_tis":40,"podil_zranitelnych_pct":40},{"archetyp":"pracujici","popisek":"Domácnosti pracujících","pozn":"(aspoň jeden člen pracuje)","domacnosti_tis":58,"zranitelne_tis":23,"podil_zranitelnych_pct":40},{"archetyp":"nezamestnani","popisek":"Domácnosti nezaměstnaných","pozn":"(nikdo nepracuje, aspoň jeden člen je nezaměstnaný; ve vzorku 59 domácností)","domacnosti_tis":26,"zranitelne_tis":23,"podil_zranitelnych_pct":89}]</script>
 {% include includes-local/chart-panel.html
     id="graf-rezerva"
-    title="Skoro polovina zranitelných domácností nemá rezervu na nečekaný výdaj"
-    caption="Jeden čtvereček = 2 tisíce domácností; červeně domácnosti, které si nemohou dovolit zaplatit neočekávaný výdaj 15 600 Kč"
-    alt="Zranitelné domácnosti a ty s důchodcem a podíl těch, které si nemohou dovolit neočekávaný výdaj"
-    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>'
+    title="Rezervu na nečekaný výdaj nemá skoro polovina zranitelných domácností, u nezaměstnaných skoro žádná"
+    caption="Zranitelné domácnosti podle pracovní aktivity, jeden čtvereček = 2 tisíce domácností; červeně domácnosti, které si nemohou dovolit zaplatit neočekávaný výdaj 15 600 Kč"
+    alt="Zranitelné domácnosti důchodců, pracujících a nezaměstnaných a podíl těch, které si nemohou dovolit neočekávaný výdaj"
+    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; druh domácnosti podle pracovní aktivity podle ČSÚ (proměnná DOM_EA). Nezobrazeny ostatní ekonomicky neaktivní domácnosti, asi 7 tisíc.'
 %}
 
 
