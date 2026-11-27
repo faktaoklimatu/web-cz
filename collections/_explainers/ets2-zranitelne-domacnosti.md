@@ -134,15 +134,15 @@ Za zranitelné považujeme domácnosti, které splňují tři podmínky současn
 - po zavedení ETS2 by **dávaly za energie na bydlení víc než dvojnásobek mediánového podílu na příjmu** (jsou energeticky chudé podle ukazatele 2M);
 - zdražení vytápění kvůli ETS2 by jim **vzalo aspoň 1 % čistého příjmu**.[^podminka-1]
 
-Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 170–205 tisíc, asi 4 % všech. Asi 165 tisíc z nich je energeticky chudých už dnes, u dalších asi 25 tisíc by energetickou chudobu způsobilo až zavedení ETS2. Zdražení vytápění by je stálo v průměru kolem 600 Kč měsíčně, 2,1 % příjmu. Rezervu na to přitom nemají: skoro polovina z nich (47 %) si podle šetření nemůže dovolit zaplatit neočekávaný výdaj 15 600 Kč, mezi všemi domácnostmi je to pětina. Nejhůř jsou na tom domácnosti, kde nikdo nepracuje ani nepobírá důchod: rezervu nemá osm z deseti. Kdo jezdí autem, připlatil by navíc i za benzín nebo naftu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a zdražení vytápění by jí vzalo 3 % příjmu. Energetická chudoba v uhelných domech by stoupla z 19 na 25 %.
+Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 170–205 tisíc, asi 4 % všech. Asi 165 tisíc z nich je energeticky chudých už dnes, u dalších asi 25 tisíc by energetickou chudobu způsobilo až zavedení ETS2. Zdražení vytápění by je stálo v průměru kolem 600 Kč měsíčně, 2,1 % příjmu. Rezervu na to přitom nemají: skoro polovina z nich (47 %) si podle šetření nemůže dovolit zaplatit neočekávaný výdaj 15 600 Kč, mezi všemi domácnostmi je to pětina. Kdo jezdí autem, připlatil by navíc i za benzín nebo naftu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a zdražení vytápění by jí vzalo 3 % příjmu. Energetická chudoba v uhelných domech by stoupla z 19 na 25 %.
 
-<script type="application/json" id="graf-rezerva-data">[{"archetyp":"duchod","popisek":"S důchodcem","domacnosti_tis":109,"zranitelne_tis":47,"podil_zranitelnych_pct":43},{"archetyp":"prac","popisek":"Bez důchodce, s pracujícím nebo nezaměstnaným","domacnosti_tis":53,"zranitelne_tis":20,"podil_zranitelnych_pct":38},{"archetyp":"nikdo","popisek":"Bez pracujícího i důchodce","pozn":"(ve vzorku jen 88 domácností, číslo je orientační)","domacnosti_tis":28,"zranitelne_tis":23,"podil_zranitelnych_pct":81}]</script>
+<script type="application/json" id="graf-rezerva-data">[{"archetyp":"vse","popisek":"Všechny zranitelné domácnosti","domacnosti_tis":189,"zranitelne_tis":90,"podil_zranitelnych_pct":47},{"archetyp":"duchod","popisek":"z toho s důchodcem","domacnosti_tis":109,"zranitelne_tis":47,"podil_zranitelnych_pct":43}]</script>
 {% include includes-local/chart-panel.html
     id="graf-rezerva"
     title="Skoro polovina zranitelných domácností nemá rezervu na nečekaný výdaj"
-    caption="Zranitelné domácnosti podle složení, jeden čtvereček = 2 tisíce domácností; červeně domácnosti, které si nemohou dovolit zaplatit neočekávaný výdaj 15 600 Kč"
-    alt="Zranitelné domácnosti s důchodcem, s pracujícím a bez obou a podíl těch, které si nemohou dovolit neočekávaný výdaj"
-    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; pracující = ekonomicky aktivní člen domácnosti (včetně nezaměstnaných).'
+    caption="Jeden čtvereček = 2 tisíce domácností; červeně domácnosti, které si nemohou dovolit zaplatit neočekávaný výdaj 15 600 Kč"
+    alt="Zranitelné domácnosti a ty s důchodcem a podíl těch, které si nemohou dovolit neočekávaný výdaj"
+    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>'
 %}
 
 
