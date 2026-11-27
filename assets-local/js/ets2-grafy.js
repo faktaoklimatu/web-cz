@@ -558,7 +558,7 @@
     var kresliSkupiny = kresliCtverecky();
     var skupiny = mount('skupiny', kresliSkupiny);
     // díl I: zranitelné domácnosti podle toho, zda mají důchodce nebo pracujícího, a kolik z nich nemá rezervu
-    mount('rezerva', kresliCtverecky({ JED: 2, zLabel: 'Nemůže si dovolit neočekávaný výdaj', oLabel: 'Ostatní zranitelné domácnosti', zSlovo: 'bez rezervy', poradi: true }));
+    mount('rezerva', kresliCtverecky({ JED: 10, zLabel: 'Nemůže si dovolit neočekávaný výdaj', oLabel: 'Ostatní zranitelné domácnosti', zSlovo: 'bez rezervy', poradi: true }));
     // díl II: domácnosti s nárokem na platbu a zranitelné mezi nimi (stejný čtverečkový graf)
     mount('opravneni', kresliSkupiny);
     if (skupiny && DEV) prepinac('skupiny', SKUP_POHLEDY, function (d) { skupPohled = d; skupiny(); });

@@ -140,7 +140,7 @@ Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-S
 {% include includes-local/chart-panel.html
     id="graf-rezerva"
     title="Rezervu na nečekaný výdaj nemá skoro polovina zranitelných domácností, u nezaměstnaných skoro žádná"
-    caption="Zranitelné domácnosti podle pracovní aktivity, jeden čtvereček = 2 tisíce domácností; červeně domácnosti, které si nemohou dovolit zaplatit neočekávaný výdaj 15 600 Kč"
+    caption="Zranitelné domácnosti podle pracovní aktivity, jeden čtvereček = 10 tisíc domácností; červeně domácnosti, které si nemohou dovolit zaplatit neočekávaný výdaj 15 600 Kč"
     alt="Zranitelné domácnosti důchodců, pracujících a nezaměstnaných a podíl těch, které si nemohou dovolit neočekávaný výdaj"
     source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; druh domácnosti podle pracovní aktivity podle ČSÚ (proměnná DOM_EA). Nezobrazeny ostatní ekonomicky neaktivní domácnosti, asi 7 tisíc.'
 %}
