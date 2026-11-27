@@ -1,0 +1,79 @@
+@use "colors";
+
+// Blog „ETS2 a zranitelné domácnosti“ (collections/_explainers/ets2-zranitelne-domacnosti.md)
+// Komponenty: kalkulačka, kartičky domácností.
+
+.longread {
+    --e-navy: #{colors.$c-accent};
+    --e-orange: #f06a4e;
+    --e-orange-ink: #c2412a;
+    --e-fg: #{colors.$c-primary};
+    --e-muted: #5d666e;
+    --e-rule: #dde5e8;
+    --e-card: #f7f7f7;
+    --e-soft: #7fa9ba;
+    --e-map-lo: #e3eef3;
+    --e-risk-hi: #b8402c;
+    --e-bg: #fff;
+}
+
+// Kartičky typových domácností: bez šedého rámečku, nadpis a popisek jako u grafů (.d3-panel .d3-title v _chart-panel.scss)
+.ets2-personas {
+    .personas-src { font-size: .8rem; color: #a0aec0; margin-top: 12px; }
+}
+
+// Kalkulačka ve stylu kalkulačky z explaineru emisni-povolenky-ets-2 (#ets2-kalkulacka v _local.scss):
+// šedá karta, cena povolenky a posuvník, pod nimi řádky „domácnost | +Kč měsíčně | Kč ročně“
+.ets2-kalk {
+    border-radius: 0.5rem; background-color: #f7f7f7; padding: 1.5rem; margin: 2rem 0;
+    clear: both;   // náhled studie před kalkulačkou je na desktopu plovoucí, posuvník by jinak spadl pod něj
+    h3 { margin-bottom: 0.5rem; }
+    .kalk-sub { color: gray; font-size: 1rem; margin-bottom: 1rem; }
+    .kalk-cena { font-weight: 600; }
+    #kalk-eur, .kalk-mesic { color: #3B3B93; font-weight: 600; font-size: 1.3rem; }
+    .kalk-slider { position: relative; margin: 1rem 0 0.25rem; }
+    // pravděpodobné pásmo 60–76 €/t na stupnici 30–150
+    .kalk-pasmo { position: absolute; left: 25%; width: 13.33%; top: 50%; height: 12px; margin-top: -6px; border-radius: 6px; background: rgba(59, 59, 147, 0.25); }
+    input[type=range] { position: relative; display: block; width: 100%; margin: 0; accent-color: #3B3B93; }
+    .kalk-skala { display: flex; justify-content: space-between; font-size: 0.8rem; color: gray; margin-bottom: 1rem; }
+    // volby jako tlačítka (radio): vybrané plné v barvě čísel kalkulačky
+    .kalk-volba { border: 0; padding: 0; margin: 0 0 1rem; min-width: 0;
+        legend { font-weight: 600; color: gray; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.04em; margin-bottom: 0.5rem; }
+        label { display: inline-block; margin: 0 0.4rem 0.4rem 0; cursor: pointer; }
+        input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+        span { display: inline-block; padding: 0.35rem 0.9rem; border: 1px solid #3B3B93; border-radius: 999px; background: #fff; color: #3B3B93; font-weight: 600; font-size: 0.95rem; }
+        input:checked + span { background: #3B3B93; color: #fff; }
+        input:focus-visible + span { outline: 2px solid #3B3B93; outline-offset: 2px; }
+    }
+    .kalk-grp[hidden] { display: none; }
+    .kalk-radek { display: grid; grid-template-columns: 1fr; align-items: baseline; padding-top: 0.25rem; }
+    .kalk-jmeno, .kalk-rok { font-weight: 600; }
+    .kalk-rok { color: gray; }
+    .kalk-ikona { height: 1rem; margin-bottom: 0.2rem; }
+    .kalk-pozn { font-size: 0.9rem; color: gray; margin: 1.5rem 0 0; }
+    .kalk-kurz { text-align: right; margin-top: 0.75rem; }
+    .kalk-zdroj { font-size: 0.8rem; color: gray; margin-top: 1rem; }
+    @media (min-width: 768px) {
+        .kalk-radek { grid-template-columns: 5fr 3fr 3fr; padding-top: 0.5rem; }
+    }
+}
+
+// tři sloupce bez rámečků; na úzkém displeji pod sebou
+.pgrid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 24px;
+    @media (min-width: 576px) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.pcard {
+    img { display: block; width: 100%; max-width: 120px; height: auto; margin: 0 0 6px; }
+    h4 { margin: 0; font-size: 1rem; color: colors.$c-primary; }
+    p { margin: 0; }
+    .pn { margin: 2px 0 8px; font-size: 13px; font-weight: 700; color: #f4465b; }   // barva zranitelných jako ve čtverečkovém grafu (COL.zranitelne)
+    .pv2 { font-size: 21px; line-height: 1.2; font-weight: 800; color: colors.$c-primary; margin-bottom: 4px; .pm { font-size: 16px; font-weight: 400; } }
+    .ps { margin: 0 0 6px; font-size: 13px; font-weight: 600; }
+    .pd { font-size: 13px; color: var(--e-muted); line-height: 1.4; }
+}
+
+// Tabulky zarovnané k levému okraji textu (web-core .table je na střed)
+.table.tabulka-vlevo { margin-left: 0; margin-right: 0; }
+
+// Odkazy v textu na oblasti v mapách (ets2-grafy.js): s myší tečkované podtržení, na dotykových obyčejný text
+.longread a.mapa-odkaz { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; cursor: default; }
+.longread a.mapa-odkaz-vypnuto { color: inherit; text-decoration: none; pointer-events: none; }

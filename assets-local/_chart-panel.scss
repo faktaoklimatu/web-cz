@@ -100,3 +100,9 @@
 // so the panel's own nested divs stacked up an indent. Keep the panel flush.
 .expandable-content .d3-panel,
 .expandable-content .d3-panel div { padding: 0; }
+
+// Užší graf jako .narrow-figure u obrázků (web-core _figure.scss): svg na 2/3 šířky sloupce, zarovnané vlevo.
+// Skript stránky kreslí podle šířky svg.
+@media (min-width: 576px) {
+    .d3-panel.narrow-figure svg { width: 66.66%; }
+}
