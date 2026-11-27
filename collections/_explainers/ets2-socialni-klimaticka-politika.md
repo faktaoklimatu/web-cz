@@ -192,15 +192,15 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 - **Domácnost by doložila jen palivo:** vyúčtování plynu (je na něm odběrné místo a spotřeba, takže data od distributorů nejsou potřeba), doklad o kontrole kotle na tuhá paliva, nebo potvrzení od SVJ, družstva či dodavatele tepla. Doklad by musel být z doby před rozhodným dnem v roce 2028, aby se nezopakovalo polské přepisování na uhlí.
 - **Kampaň a pomoc obcí:** pro lidi, kteří online žádost sami nezvládnou, by pomohli sociální pracovníci obcí, kontaktní místa a energetické poradny.
 - **Riziko:** i s kampaní si část oprávněných nezažádá. Ve Francii po přechodu na žádost kleslo čerpání z 84 % na odhadem 3–12 %.[^hellowatt]
-- **Možná zkratka pro pracující: sleva na dani podle vytápění.** Zhruba čtvrtina zranitelných domácností s nárokem má jen pracující, bez důchodce. Ty by mohly platbu dostávat přes zaměstnavatele jako slevu na dani, podobně jako dnes slevu na dítě. Doklad o palivu by ale stejně musely předložit a sleva by musela být vratná jako daňový bonus, jinak by lidé s nízkým výdělkem nedostali celou částku. Domácnostem, kde nikdo nepracuje ani nepobírá důchod, asi 12 % zranitelných s nárokem, by zůstala žádost.[^silc]
+- **Možná zkratka pro pracující: sleva na dani podle vytápění.** Zhruba čtvrtina zranitelných domácností s nárokem má jen pracující, bez důchodce. Ty by mohly platbu dostávat přes zaměstnavatele jako slevu na dani, podobně jako dnes slevu na dítě. Doklad o palivu by ale stejně musely předložit a sleva by musela být vratná jako daňový bonus, jinak by lidé s nízkým výdělkem nedostali celou částku. Domácnostem, kde nikdo nepracuje ani nepobírá důchod, asi 12 % zranitelných s nárokem, by zůstala žádost.[^silc] Právě na tyto domácnosti přitom pomoc míří nejhůř a rezervu mají nejmenší: tři čtvrtiny z nich si nemohou dovolit neočekávaný výdaj 15 600 Kč.
 
-<script type="application/json" id="graf-kanaly-data">[{"label":"Mají důchodce","pct":61,"tis":98,"cesta":"platba k důchodu, kterou náš návrh už počítá"},{"label":"Mají jen pracující","pct":27,"tis":43,"cesta":"sleva na dani přes zaměstnavatele, nebo žádost"},{"label":"Nikdo nepracuje ani nepobírá důchod","pct":12,"tis":19,"cesta":"jen žádost, s pomocí obce"}]</script>
+<script type="application/json" id="graf-kanaly-data">[{"label":"Mají důchodce","pct":61,"tis":97,"rez":41,"cesta":"platba k důchodu, kterou náš návrh už počítá"},{"label":"Mají jen pracující","pct":27,"tis":43,"rez":36,"cesta":"sleva na dani přes zaměstnavatele, nebo žádost"},{"label":"Nikdo nepracuje ani nepobírá důchod","pct":12,"tis":19,"rez":73,"cesta":"jen žádost, s pomocí obce"}]</script>
 {% include includes-local/chart-panel.html
     id="graf-kanaly"
     title="Většinu zranitelných domácností jde zastihnout přes důchod"
     caption="160 tisíc zranitelných domácností s nárokem na platbu podle toho, kudy by k nim mohla platba dojít (základní scénář)"
     alt="Podíl zranitelných domácností s nárokem, které mají důchodce, jen pracující, nebo ani jedno"
-    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; pracující = ekonomicky aktivní člen domácnosti.'
+    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; pracující = ekonomicky aktivní člen domácnosti (včetně nezaměstnaných); bez rezervy = domácnost si nemůže dovolit zaplatit neočekávaný výdaj 15 600 Kč. Skupina bez pracujícího i důchodce má ve vzorku jen 79 domácností, číslo je orientační.'
 %}
 
 

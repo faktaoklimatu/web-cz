@@ -620,7 +620,7 @@
         data.forEach(function (d, i) {
             svg.append('rect').attr('x', x(x0)).attr('y', top).attr('width', x(x0 + +d.pct) - x(x0) - (i < data.length - 1 ? 2 : 0)).attr('height', barH)
                 .attr('fill', barvy[i])
-                .on('mousemove', function (ev) { showTip(ev, '<b>' + d.label + '</b><br>' + d.pct + ' % (asi ' + cz(d.tis) + ' tis. domácností)<br>' + d.cesta); })
+                .on('mousemove', function (ev) { showTip(ev, '<b>' + d.label + '</b><br>' + d.pct + ' % (asi ' + cz(d.tis) + ' tis. domácností)<br>' + d.cesta + '<br>nemůže si dovolit neočekávaný výdaj: ' + d.rez + ' %'); })
                 .on('mouseleave', hideTip);
             if (x(x0 + +d.pct) - x(x0) > 44) svg.append('text').attr('x', x(x0) + 8).attr('y', top + 22).attr('font-size', 14).attr('font-weight', 700)
                 .attr('fill', i === 0 ? '#fff' : T.text).text(d.pct + ' %');
@@ -630,7 +630,7 @@
         data.forEach(function (d, i) {
             svg.append('rect').attr('x', PAD).attr('y', y - 11).attr('width', 12).attr('height', 12).attr('fill', barvy[i]);
             var t = svg.append('text').attr('y', y).attr('font-size', 13).attr('fill', T.text);
-            var n = wrap(t, d.label + ' (' + d.pct + ' %, asi ' + cz(d.tis) + ' tis.): ' + d.cesta, PAD + 20, w - 2 * PAD - 20, 16);
+            var n = wrap(t, d.label + ' (' + d.pct + ' %, asi ' + cz(d.tis) + ' tis.): ' + d.cesta + '; bez rezervy ' + d.rez + ' %', PAD + 20, w - 2 * PAD - 20, 16);
             y += n * 16 + 8;
         });
         return y;
