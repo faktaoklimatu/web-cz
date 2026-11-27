@@ -68,12 +68,13 @@ I dobře nastavené investice ale potřebují roky, než se dostanou ke všem. D
 
 ## Proč právě přímé platby?
 
-Na přechodné období má stát v zásadě čtyři možnosti:
+Na přechodné období má stát v zásadě pět možností:
 
 1. **Nedělat nic.** Náklad by nesly domácnosti, které se mu nemohou vyhnout, a rostl by tlak na odklad nebo oslabení ETS2. Důchody se sice valorizují o inflaci, takže část zdražení se důchodcům vrátí sama. ETS2 by ale zvedlo ceny jen asi o půl procenta, kdežto zranitelným domácnostem s důchodcem by zdražení vytápění vzalo 2,3 % příjmu. Valorizace by jim tak vrátila nanejvýš čtvrtinu, a to s ročním zpožděním.[^silc]
 2. **Plošné kompenzace.** Návrh PAQ Research a CVF zvyšuje slevu na poplatníka a mimořádně valorizuje důchody. Dohromady by dosáhl skoro na všechny zranitelné domácnosti, ale dal by jim v průměru jen asi 250 Kč měsíčně, protože sleva i valorizace jdou všem stejně, bez ohledu na to, čím topí. Domácnostem na uhlí by vrátil pětinu zdražení. Přitom by stál dvakrát až třikrát víc než cílená platba ([srovnání níže](#jak-si-stojí-návrh-paq-research-a-cvf)).
-3. **Zásahy do cen.** Stropy nebo nižší DPH na paliva se zavádějí nejsnáz, ale cenový signál oslabují nejvíc. Maďarsko má plošný cenový strop:[^hu-rekk] stát domácnostem garantuje nízkou regulovanou cenu plynu a elektřiny a rozdíl proti tržní ceně doplácí. Je to drahé a domácnosti topící dřevem nebo uhlím z toho nemají nic.
-4. **Cílená přímá platba.** Pomůže hned, signál neoslabí a stojí zlomek výnosu z povolenek.
+3. **Cílená sleva na dani a příplatek k důchodu.** Slevu na poplatníka a důchod by šlo zvýšit jen domácnostem s nízkými příjmy. Se stejnými 4,6 miliardy ročně jako naše platba by dosáhly na podobný podíl zranitelných, peníze by se ale rozdělily mezi 2,2 milionu domácností bez ohledu na to, čím topí. Zranitelným by vrátily asi 30 % zdražení vytápění, domům na uhlí pětinu. Aby vrátily tolik co naše platba, musely by stát zhruba třikrát víc. Minuly by navíc 15 % zranitelných domácností, kde nikdo nepracuje ani nepobírá důchod, a sleva na dani nepomůže tomu, kdo skoro žádnou daň neplatí.[^silc]
+4. **Zásahy do cen.** Stropy nebo nižší DPH na paliva se zavádějí nejsnáz, ale cenový signál oslabují nejvíc. Maďarsko má plošný cenový strop:[^hu-rekk] stát domácnostem garantuje nízkou regulovanou cenu plynu a elektřiny a rozdíl proti tržní ceně doplácí. Je to drahé a domácnosti topící dřevem nebo uhlím z toho nemají nic.
+5. **Cílená přímá platba podle paliva.** Pomůže hned, signál neoslabí a stojí zlomek výnosu z povolenek.
 
 **Platba signál neoslabuje.** Pevná částka nezávisí na tom, kolik domácnost spálí. Každá ušetřená tuna uhlí nebo kubík plynu se jí proto vyplatí stejně jako bez platby. Peníze jí jen pomohou zaplatit účty, dokud nevymění zdroj. Proto navrhujeme platbu pevnou podle paliva a typu bydlení, ne slevu na palivu.
 
@@ -271,27 +272,22 @@ Výhodou návrhu je jednoduchost: využívá existující systémy a nevyžaduje
 
 | | Návrh PAQ a CVF | Náš návrh |
 |---|---|---|
-| **Kdo by peníze dostal** | všichni pracující a důchodci, asi 4,5 milionu domácností | domácnosti s nízkými příjmy, které topí uhlím, plynem nebo teplem z menší výtopny, asi 980 tisíc |
-| **Kolik by dostali** | 100 Kč měsíčně na každého pracujícího, asi 170 Kč na důchodce | 310–1 000 Kč měsíčně na domácnost podle paliva a bydlení |
-| **Kolik by to stálo ročně** | 13,0 mld. Kč | 4,6–7 mld. Kč |
-| **Co by to dalo zranitelným domácnostem** | | |
-| dostaly by aspoň něco | 94 % | 84–86 % |
-| dostaly by v průměru | asi 250 Kč měsíčně | asi 470 Kč měsíčně |
-| vrátilo by jim to zdražení vytápění | 36 % | 67–69 % |
-| … v rodinných domech na uhlí | 20 % | 76 % |
-| podíl všech peněz, který by šel k nim | 4 % | 16–23 % |
+| Kdo dostane peníze | každý pracující a důchodce | domácnosti s nízkými příjmy, které topí uhlím, plynem nebo teplem z menší výtopny |
+| Kolik měsíčně | 100 Kč na pracujícího, asi 170 Kč na důchodce | 310–1 000 Kč na domácnost podle paliva |
+| Náklad ročně | 13 mld. Kč | 4,6 mld. Kč |
+| Zranitelná domácnost dostane v průměru | asi 250 Kč, na uhlí 210 Kč | asi 470 Kč, na uhlí 940 Kč |
 {: .table .tabulka-vlevo}
 
-<script type="application/json" id="graf-castky-data">[{"skupina":"Všechny zranitelné domácnosti","zdrazeni":600,"paq":250,"nas":470},{"skupina":"Zranitelné rodinné domy na uhlí","zdrazeni":1030,"paq":210,"nas":940}]</script>
+<script type="application/json" id="graf-castky-data">[{"skupina":"Všechny zranitelné domácnosti","zdrazeni":600,"paq":250,"cil":190,"nas":470},{"skupina":"Zranitelné rodinné domy na uhlí","zdrazeni":1030,"paq":210,"cil":210,"nas":940}]</script>
 {% include includes-local/chart-panel.html
     id="graf-castky"
     title="Plošný návrh dá zranitelným málo, nejméně těm na uhlí"
     caption="Průměr na zranitelnou domácnost, Kč měsíčně v letech plné výše (2028 a 2029), základní scénář"
     alt="Zdražení vytápění zranitelných domácností a průměrná částka, kterou by dostaly z návrhu PAQ a CVF a z našeho návrhu"
-    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; návrh PAQ a CVF podle <a href="https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf">PAQ Research a CVF (2026)</a>. Průměr zahrnuje i domácnosti, které by nedostaly nic.'
+    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; návrh PAQ a CVF podle <a href="https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf">PAQ Research a CVF (2026)</a>. Průměr zahrnuje i domácnosti, které by nedostaly nic. Cílená sleva a příplatek k důchodu: stejný rozpočet jako náš návrh (4,6 mld. Kč), stejné snižování podle příjmu, bez ohledu na palivo.'
 %}
 
-U našeho návrhu je rozpětí podle toho, zda se podaří odlišit uhlí od dřeva (nižší náklad), nebo platbu dostanou i domy na dřevo (vyšší).
+Kdyby se nepodařilo odlišit uhlí od dřeva a platbu dostaly i domy na dřevo, stál by náš návrh asi 7 mld. Kč ročně.
 
 Srovnání má dvě výhrady. Návrh PAQ a CVF kompenzuje i benzín a naftu, my hodnotíme jen vytápění. Náš model naopak dává slevu na poplatníka všem ekonomicky aktivním, i nezaměstnaným, takže náklad návrhu PAQ spíš nadsazuje.
 

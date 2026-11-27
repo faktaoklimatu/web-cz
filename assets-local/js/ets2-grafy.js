@@ -616,6 +616,7 @@
     mount('castky', function (svg, w, data) {
         var S = [{ key: 'zdrazeni', label: 'Zdražení vytápění kvůli ETS2', color: COL.sok },
                  { key: 'paq', label: 'Návrh PAQ a CVF', color: COL.ostatni },
+                 { key: 'cil', label: 'Cílená sleva a příplatek k důchodu', color: d3.interpolateRgb('#fff', COL.ets2)(0.4) },
                  { key: 'nas', label: 'Náš návrh', color: COL.ets2 }];
         var top = head(svg, w, S);
         var PAD = 8, barH = 18, gap = 4, wide = w >= 520, LW = wide ? 200 : 0;
