@@ -499,7 +499,7 @@
     var skupPohled = SKUP_POHLEDY[0];
     // Čtverečkový graf skupin; o (volitelně): JED (tis. na čtvereček), zLabel, oLabel, zSlovo, poradi (zachovat pořadí dat)
     var kresliCtverecky = function (o) { o = Object.assign({ JED: 10, zLabel: 'Zranitelné domácnosti', oLabel: 'Ostatní domácnosti', zSlovo: 'zranitelných', poradi: false }, o || {}); return function (svg, w, data) {
-        var JED = o.JED, SL = 22, PAD = 8, LW = 220, pruhy = skupPohled.key === 'pruhy', VYS = 4;
+        var JED = o.JED, SL = 22, PAD = 8, LW = 220, pruhy = !o.radek && skupPohled.key === 'pruhy', VYS = 4;
         // pořadí podle podílu zranitelných, skupina bez posuzování (NA) na konec
         if (!o.poradi) data = data.slice().sort(function (a, b) {
             return (isNA(b.podil_zranitelnych_pct) ? -1 : +b.podil_zranitelnych_pct) - (isNA(a.podil_zranitelnych_pct) ? -1 : +a.podil_zranitelnych_pct);
@@ -516,11 +516,11 @@
             data.push({ popisek: 'Ostatní', pozn: '(Byty a rodinné domy na elektřinu, rodinné domy na dřevo a na TČ, byty na teple ze zdroje v ETS1)', domacnosti_tis: dom,
                         zranitelne_tis: zr, podil_zranitelnych_pct: 100 * zr / dom, slouceno: true });
         }
-        var top = head(svg, w, [{ key: 'z', label: o.zLabel, color: COL.zranitelne }, { key: 'o', label: o.oLabel, color: COL.ctverecek }]);
+        var top = head(svg, w, [{ key: 'z', label: o.zLabel, color: COL.zranitelne }].concat(o.oLabel ? [{ key: 'o', label: o.oLabel, color: COL.ctverecek }] : []));
         var wide = w >= 520;
         var x0 = wide ? PAD + LW : PAD, textW = wide ? LW - PAD : w - 2 * PAD;
         var pocet = function (d) { return Math.round(+d.domacnosti_tis / JED); };
-        var sloupcu = pruhy ? d3.max(data.filter(function (d) { return !d.slouceno; }), function (d) { return Math.ceil(pocet(d) / VYS); }) : SL;
+        var sloupcu = o.radek ? d3.max(data, function (d) { return pocet(d); }) : pruhy ? d3.max(data.filter(function (d) { return !d.slouceno; }), function (d) { return Math.ceil(pocet(d) / VYS); }) : SL;
         // čtverečky jako ve vaflovém grafu explaineru o světových regionech: ostré rohy, mezera 2 px
         var pitch = Math.min(18, (w - x0 - PAD) / sloupcu), Q = pitch - 2;
         var y = top;
@@ -529,9 +529,9 @@
             var bez = isNA(d.zranitelne_tis);
             var n = pocet(d), z = bez ? 0 : Math.min(n, Math.round(+d.zranitelne_tis / JED));
             // výška ve čtverečcích: bloky po 22 v řadě; pruhy 4 vysoké, sloučená skupina tak vysoká, aby se vešla do šířky
-            var vys = !pruhy ? Math.ceil(n / SL) : d.slouceno ? Math.ceil(n / sloupcu) : VYS;
-            var px = function (i) { return pruhy ? Math.floor(i / vys) : i % SL; };
-            var py = function (i) { return pruhy ? i % vys : Math.floor(i / SL); };
+            var vys = o.radek ? 1 : !pruhy ? Math.ceil(n / SL) : d.slouceno ? Math.ceil(n / sloupcu) : VYS;
+            var px = function (i) { return o.radek ? i : pruhy ? Math.floor(i / vys) : i % SL; };
+            var py = function (i) { return o.radek ? 0 : pruhy ? i % vys : Math.floor(i / SL); };
             var g = svg.append('g').attr('transform', 'translate(0,' + y + ')')
                 .on('mousemove', function (ev) {
                     showTip(ev, '<b>' + d.popisek + '</b><br>' + cz(d.domacnosti_tis) + ' tis. domácností' + (bez ? '' : '<br>z toho ' + cz(d.zranitelne_tis) + ' tis. ' + o.zSlovo));
@@ -559,7 +559,7 @@
     var skupiny = mount('skupiny', kresliSkupiny);
     // díl I: zranitelné domácnosti podle toho, zda mají důchodce nebo pracujícího, a kolik z nich nemá rezervu
     // díl I: zranitelné domácnosti podle pracovní aktivity, každá skupina v jednom řádku čtverečků, červeně bez rezervy
-    mount('rezerva', kresliCtverecky({ JED: 10, zLabel: 'Nemůže si dovolit neočekávaný výdaj', oLabel: 'Ostatní zranitelné domácnosti', zSlovo: 'bez rezervy', poradi: true }));
+    mount('rezerva', kresliCtverecky({ JED: 10, zLabel: 'Nemůže si dovolit neočekávaný výdaj', oLabel: null, zSlovo: 'bez rezervy', poradi: true, radek: true }));
     // díl II: domácnosti s nárokem na platbu a zranitelné mezi nimi (stejný čtverečkový graf)
     mount('opravneni', kresliSkupiny);
     if (skupiny && DEV) prepinac('skupiny', SKUP_POHLEDY, function (d) { skupPohled = d; skupiny(); });
