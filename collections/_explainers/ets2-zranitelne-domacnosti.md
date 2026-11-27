@@ -25,9 +25,9 @@ perex: |
 ---
 
 {% include tldr.html title="Hlavní zjištění" content="
-- **Od roku 2028 by zdražilo topení uhlím a plynem i tankování.** U rodinných domů na uhlí by topení podražilo o 600 až 1 100 Kč měsíčně, na plyn o 230 až¥0 Kč. Litr benzínu by byl dražší asi o 4 Kč.
+- **Od roku 2028 by zdražilo topení uhlím a plynem i tankování.** U rodinných domů na uhlí by topení podražilo o 600 až 1 100 Kč měsíčně, na plyn o 230 až 450 Kč. Litr benzínu by byl dražší asi o 4 Kč.
 - **Přechod na tepelné čerpadlo by se vyplatil většímu počtu domácností.** Ty, které na něj mají, by dostaly další důvod přejít.
-- **Zhruba 190 tisíc domácností s nízkými příjmy by to zasáhlo citelně.** Většina z nich už dnes dává za energie neúměrně velkou část příjmu. V rodinných domech na uhlí by za topení platily o 650 až 1 350 Kč měsíčně víc, v domech na plyn o 350 až°0 Kč.
+- **Zhruba 190 tisíc domácností s nízkými příjmy by to zasáhlo citelně.** Většina z nich už dnes dává za energie neúměrně velkou část příjmu. V rodinných domech na uhlí by za topení platily o 650 až 1 350 Kč měsíčně víc, v domech na plyn o 350 až 600 Kč.
 - **Nejvíc jich bydlí v rodinných domech na plyn a uhlí**, často na periferiích. Byty na teple z velkých tepláren povolenky platí už dnes, ETS2 by jim topení nezdražilo.
 - **Peníze na pomoc by byly.** Povolenky by Česku za roky 2028–2032 vynesly zhruba 150 miliard korun.
 " %}
