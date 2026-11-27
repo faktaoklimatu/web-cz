@@ -28,7 +28,7 @@ perex: |
 {% include tldr.html title="Hlavní zjištění" content="
 - **ETS2 by zdražilo topení hned, výměna kotle nebo zateplení ale trvá roky.** Chudší domácnosti by mezitím platily víc a na výměnu by neměly.
 - **Český plán na tuto dobu s přímou pomocí nepočítá**, přestože ji evropská pravidla dovolují. Její absenci kritizuje například ombudsman nebo Centrum pro dopravu a energetiku.
-- **Navrhujeme dočasnou měsíční platbu pro domácnosti s nízkými příjmy podle toho, čím topí:** 1 000 Kč pro rodinný dům na uhlí, 500 Kč na plyn, 360 Kč pro byt s plynovým kotlem a 300 Kč pro byt na teple z menší výtopny. Od roku 2030 by klesala a po roce 2032 skončila.
+- **Navrhujeme dočasnou měsíční platbu pro domácnosti s nízkými příjmy podle toho, čím topí:** 1 000 Kč pro rodinný dům na uhlí, 500 Kč na plyn, 360 Kč pro byt s plynovým kotlem a 310 Kč pro byt na teple z menší výtopny. Od roku 2030 by klesala a po roce 2032 skončila.
 - **V prvním roce by stála asi 4,6 miliardy korun, pak by klesala.** Je to zlomek výnosu z povolenek. Domácnostem, které to nejvíc potřebují, by vrátila zhruba dvě třetiny zdražení topení.
 - **Těžší než najít peníze je doručit je.** Stát neví, čím kdo topí, ani kdo s kým žije. Navrhujeme proto tři cesty: přidat platbu k dávkám na bydlení, k důchodu a pro ostatní jednoduchou žádost.
 - **Plošné kompenzace jsou drahé a míjejí ty, kdo pomoc potřebují.** Například návrh PAQ Research a CVF by stál 13 miliard ročně, ale domácnostem, které to nejvíc potřebují, by z něj šla jen 4 % peněz.
@@ -145,7 +145,7 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 | | plyn | tuhá paliva | teplo ze zdroje v ETS2 |
 |---|---|---|---|
 | rodinný dům | 500 Kč | 1 000 Kč | – |
-| byt | 360 Kč | – | 300 Kč |
+| byt | 360 Kč | – | 310 Kč |
 {: .table .tabulka-vlevo}
 
 Částky jsou měsíční a odpovídají průměrnému zdražení hlavního zdroje vytápění zranitelných domácností v dané skupině, benzín a naftu platba nevyrovnává. Kdyby o platbu požádali všichni oprávnění, stála by v plné výši 4,6 mld. Kč ročně, dostalo by ji 84 % zranitelných domácností a vrátila by jim 67 % zdražení vytápění. **Platba by se řídila jen hlavním zdrojem vytápění**, protože ten jde doložit. Zbylých 16 % zranitelných by proto nedostalo nic: topí hlavně elektřinou, dřevem nebo teplem z velké teplárny a ETS2 by jim zdražilo jen plyn nebo uhlí, které používají vedle hlavního zdroje, například na vaření, ohřev vody nebo přitápění.[^silc]
@@ -155,7 +155,7 @@ Zdroje: [Klimabonusgesetz](https://gesetzefinden.at/bundesrecht/bundesgesetze/kl
 **Otevřená otázka: byty na teple z velkých tepláren.** Velké teplárny jsou v systému povolenek od roku 2005,[^eu-ets] ETS2 by jejich teplo nezdražilo. Jejich zákazníci přitom povolenky v ceně tepla platí už dnes, bez cenového stropu a bez možnosti změnit dodavatele, kterou u plynu mají. Citelně od roku 2018, kdy povolenky zdražily a teplárny jich většinu musí kupovat.[^teplo-povolenky] Nájemník ale obvykle neví, odkud teplo do domu jde. Nabízí se dvě varianty:
 
 - **Platit jen bytům na teple ze zdroje v ETS2.** Přesnější a levnější: peníze jdou jen tam, kde by ETS2 topení zdražilo. Zdroj tepla by potvrdil dodavatel tepla.
-- **Platit všem bytům na dálkovém teple stejně.** Jednodušší na vysvětlení i vyřízení, ale stálo by to asi 6,9 místo 4,6 mld. Kč ročně[^silc] a zranitelným by to vrátilo jen o málo víc (69 místo 67 % zdražení vytápění). Peníze navíc by šly domácnostem, kterým by ETS2 topení nezdražilo.
+- **Platit všem bytům na dálkovém teple stejně.** Jednodušší na vysvětlení i vyřízení, ale stálo by to asi 7 místo 4,6 mld. Kč ročně[^silc] a zranitelným by to vrátilo jen o málo víc (69 místo 67 % zdražení vytápění). Peníze navíc by šly domácnostem, kterým by ETS2 topení nezdražilo.
 
 **Navrhujeme tři kanály podle toho, co už stát o domácnosti ví:**
 

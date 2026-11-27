@@ -21,7 +21,7 @@ extra-scripts:
 - /assets-local/js/chart-download.js
 - /assets-local/js/ets2-grafy.js
 perex: |
-  Evropská povolenka ETS2 by od roku 2028 zdražila uhlí, plyn, benzín a naftu. Nejvíc by chudší domácnosti zasáhlo zdražení vytápění. Domácnostem s penězi na výměnu kotle by to dalo další důvod přejít na tepelné čerpadlo. Zhruba 165–205 tisíc chudších domácností by na změnu ale potřebovalo pomoc ze Sociálního klimatického fondu. Peníze by byly: povolenky by Česku za roky 2028–2032 vynesly zhruba 150 miliard korun. Jaké jsou možnosti?
+  Evropská povolenka ETS2 by od roku 2028 zdražila uhlí, plyn, benzín a naftu. Nejvíc by chudší domácnosti zasáhlo zdražení vytápění. Domácnostem s penězi na výměnu kotle by to dalo další důvod přejít na tepelné čerpadlo. Zhruba 170–205 tisíc chudších domácností by na změnu ale potřebovalo pomoc ze Sociálního klimatického fondu. Peníze by byly: povolenky by Česku za roky 2028–2032 vynesly zhruba 150 miliard korun. Jaké jsou možnosti?
 ---
 
 {% include tldr.html title="Hlavní zjištění" content="
@@ -124,13 +124,17 @@ Elektroauto ETS2 nezatíží, protože elektřina spadá pod stávající systé
 
 **Zranitelnost posuzujeme podle vytápění, ne podle dopravy.** Topit se musí a domácnost je v krátké době odkázaná na kotel, který má. Výměna stojí desítky až stovky tisíc korun. Doprava zatěžuje rozpočty méně a nerovnoměrně: auto má jen asi dvě pětiny zranitelných domácností, ale dvě třetiny všech domácností, a zdražení tankování se dá zčásti omezit tím, že člověk jezdí méně. Dopravní chudoba je skutečná, hlavně na venkově, potřebuje ale jiné nástroje (veřejnou dopravu, sdílení, příspěvky na dojíždění). Proto ji rozebíráme zvlášť v [boxu výše](#doprava).
 
-Pro většinu domácností by zavedení ETS2 znamenalo stokoruny měsíčně. U části z nich by ale prohloubilo chudobu, ve které už jsou. Za zranitelné považujeme domácnosti, které splňují tři podmínky současně:
+Pro většinu domácností by zavedení ETS2 znamenalo stokoruny měsíčně. U části z nich by ale prohloubilo chudobu, ve které už jsou.
+
+**Vycházíme z toho, jak energetickou chudobu pro účely Sociálního klimatického fondu vymezuje ministerstvo průmyslu a obchodu:** domácnost je energeticky chudá, když kvůli vysokým výdajům za energie nebo energeticky náročnému bydlení nemá dost peněz na základní energetické služby. Měří se to hlavně ukazatelem 2M: domácnost dává za energie víc než dvojnásobek mediánového podílu výdajů na příjmu, tedy víc než dvojnásobek toho, co dává typická domácnost.[^energeticka-chudoba] Stejný ukazatel používáme i my.
+
+Za zranitelné považujeme domácnosti, které splňují tři podmínky současně:
 
 - patří do **spodních dvou pětin podle příjmu přepočteného na velikost domácnosti**;
-- po zavedení ETS2 by **dávaly za energie na bydlení víc než dvojnásobek mediánového podílu na příjmu** (indikátor energetické chudoby 2M);
+- po zavedení ETS2 by **dávaly za energie na bydlení víc než dvojnásobek mediánového podílu na příjmu** (jsou energeticky chudé podle ukazatele 2M);
 - zdražení vytápění kvůli ETS2 by jim **vzalo aspoň 1 % čistého příjmu**.[^podminka-1]
 
-Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 165–205 tisíc, asi 4 % všech. Asi 165 tisíc z nich je energeticky chudých už dnes, u dalších asi 25 tisíc by energetickou chudobu způsobilo až zavedení ETS2. Zdražení vytápění by je stálo v průměru kolem 600 Kč měsíčně, 2,1 % příjmu. Kdo jezdí autem, připlatil by navíc i za benzín nebo naftu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a zdražení vytápění by jí vzalo 3 % příjmu. Energetická chudoba v uhelných domech by stoupla z 19 na 25 %.[^energeticka-chudoba]
+Takových domácností je podle [našeho výpočtu](#metodika) z šetření EU-SILC zhruba 170–205 tisíc, asi 4 % všech. Asi 165 tisíc z nich je energeticky chudých už dnes, u dalších asi 25 tisíc by energetickou chudobu způsobilo až zavedení ETS2. Zdražení vytápění by je stálo v průměru kolem 600 Kč měsíčně, 2,1 % příjmu. Kdo jezdí autem, připlatil by navíc i za benzín nebo naftu. Nejvíc jich bydlí v rodinných domech vytápěných plynem. Nejtvrději by to ale dopadlo na rodinné domy na uhlí: zranitelná je tam každá pátá domácnost a zdražení vytápění by jí vzalo 3 % příjmu. Energetická chudoba v uhelných domech by stoupla z 19 na 25 %.
 
 U dálkového tepla by zdražení nebylo plošné. Velké teplárny nad 20 MW už povolenky platí ve stávajícím systému ETS1,[^ets1-teplarny] pod ETS2 by spadly jen menší výtopny na plyn a uhlí. Dražší teplo by se tak týkalo hlavně bytů napojených na menší výtopnu, typicky v menších městech nebo na jednotlivých sídlištích s vlastní kotelnou.
 
@@ -162,7 +166,7 @@ Kde by zavedení ETS2 dopadlo nejvíc, záleží na tom, čím se v regionu top�
     source='<a href="https://vdb.czso.cz">ČSÚ, Sčítání lidu, domů a bytů 2021</a>, <a href="https://eru.gov.cz/vysledne-ceny-tepelne-energie-v-cr-2024">ERÚ, Výsledné ceny tepelné energie 2024</a>, výpočet Fakt o klimatu. Hranice SO ORP: <a href="https://vdp.cuzk.cz/">ČÚZK</a> přes balík <a href="https://github.com/jlacko/RCzechia">RCzechia</a>.'
 %}
 
-Palivo ale nestačí. Stejné zdražení dopadne jinak na domácnost s vysokým a s nízkým příjmem a jinak na zateplený a nezateplený dům. Ministerstvo financí proto pro každý správní obvod obce s rozšířenou působností spočítalo, jakou část příjmů domácnosti v průměru dávají za vytápění. Nejvyšší podíl vychází na periferiích s rodinnými domy, často tam, kde se topí uhlím: v [Broumově](#mapa-mf-orp-broumov), [Podbořanech](#mapa-mf-orp-podborany) nebo [Frýdlantu](#mapa-mf-orp-frydlant) je to přes 16 % příjmů, v [Praze](#mapa-mf-orp-praha) necelých 6 % (2026).[^mf-mikroregiony] Tam by zavedení ETS2 dopadlo nejcitelněji a tam by se vyplatilo nejvíc posílit podporu výměny zdrojů a zateplení.
+Palivo ale nestačí. Stejné zdražení dopadne jinak na domácnost s vysokým a s nízkým příjmem a jinak na zateplený a nezateplený dům. Ministerstvo financí proto pro každý správní obvod obce s rozšířenou působností spočítalo, jakou část příjmů domácnosti v průměru dávají za vytápění. Nejvyšší podíl vychází na periferiích s rodinnými domy, často tam, kde se topí uhlím: v [Broumově](#mapa-mf-orp-broumov), [Podbořanech](#mapa-mf-orp-podborany) nebo [Frýdlantu](#mapa-mf-orp-frydlant) je to přes 16 % příjmů, v [Praze](#mapa-mf-orp-praha) necelých 6 % (2026).[^mf-mikroregiony] Energetická chudoba je ale vlastnost konkrétní domácnosti, ne území. Kolik energeticky chudých domácností v daném obvodu přesně žije, se z dostupných dat určit nedá. Ukazatel ministerstva je odhad z průměrů: říká, kde je energetická chudoba pravděpodobně nejvíc soustředěná. Tam by zavedení ETS2 nejspíš dopadlo nejcitelněji a tam by se vyplatilo nejvíc posílit podporu výměny zdrojů a zateplení.
 {: #mapa-chudoby}
 
 {% include includes-local/chart-panel.html
