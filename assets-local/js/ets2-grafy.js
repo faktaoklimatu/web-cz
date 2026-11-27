@@ -558,30 +558,8 @@
     var kresliSkupiny = kresliCtverecky();
     var skupiny = mount('skupiny', kresliSkupiny);
     // díl I: zranitelné domácnosti podle toho, zda mají důchodce nebo pracujícího, a kolik z nich nemá rezervu
-    // díl I: zranitelné domácnosti v jedné řadě čtverečků, úseky podle pracovní aktivity, červeně bez rezervy
-    mount('rezerva', function (svg, w, data) {
-        var JED = 10, PAD = 8, MEZ = 14;
-        var top = head(svg, w, [{ label: 'Nemůže si dovolit neočekávaný výdaj', color: COL.zranitelne }, { label: 'Ostatní zranitelné domácnosti', color: COL.ctverecek }]);
-        var n = data.map(function (d) { return Math.round(+d.domacnosti_tis / JED); });
-        var celkem = d3.sum(n), pitch = Math.min(30, (w - 2 * PAD - MEZ * (data.length - 1)) / celkem), Q = pitch - 2;
-        var x = PAD, yQ = top + 4, yT = yQ + Q + 16, maxH = 0;
-        data.forEach(function (d, k) {
-            var z = Math.min(n[k], Math.round(+d.zranitelne_tis / JED)), sirka = n[k] * pitch;
-            var g = svg.append('g')
-                .on('mousemove', function (ev) { showTip(ev, '<b>' + d.popisek + '</b>' + (d.pozn ? '<br>' + d.pozn.replace(/^\(|\)$/g, '') : '') + '<br>' + cz(d.domacnosti_tis) + ' tis. zranitelných domácností<br>bez rezervy ' + cz(d.zranitelne_tis) + ' tis. (' + d.podil_zranitelnych_pct + ' %)'); })
-                .on('mouseleave', hideTip);
-            g.selectAll('rect').data(d3.range(n[k])).join('rect').attr('x', function (i) { return x + i * pitch; }).attr('y', yQ)
-                .attr('width', Q).attr('height', Q).attr('fill', function (i) { return i < z ? COL.zranitelne : COL.ctverecek; });
-            var tw = Math.max(sirka, 90);
-            var l1 = wrap(g.append('text').attr('y', yT).attr('font-size', 13).attr('font-weight', 700).attr('fill', C.title), d.popisek, x, tw, 15);
-            g.append('text').attr('x', x).attr('y', yT + l1 * 15 + 2).attr('font-size', 12).attr('fill', T.grey).text(cz(d.domacnosti_tis) + ' tis.');
-            g.append('text').attr('x', x).attr('y', yT + l1 * 15 + 18).attr('font-size', 12).attr('font-weight', 700).attr('fill', COL.zranitelne)
-                .text(d.podil_zranitelnych_pct + ' % bez rezervy');
-            maxH = Math.max(maxH, l1 * 15 + 24);
-            x += sirka + MEZ;
-        });
-        return yT + maxH + 8;
-    });
+    // díl I: zranitelné domácnosti podle pracovní aktivity, každá skupina v jednom řádku čtverečků, červeně bez rezervy
+    mount('rezerva', kresliCtverecky({ JED: 10, zLabel: 'Nemůže si dovolit neočekávaný výdaj', oLabel: 'Ostatní zranitelné domácnosti', zSlovo: 'bez rezervy', poradi: true }));
     // díl II: domácnosti s nárokem na platbu a zranitelné mezi nimi (stejný čtverečkový graf)
     mount('opravneni', kresliSkupiny);
     if (skupiny && DEV) prepinac('skupiny', SKUP_POHLEDY, function (d) { skupPohled = d; skupiny(); });
