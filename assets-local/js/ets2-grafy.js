@@ -612,6 +612,33 @@
     });
     if (kompenzace) prepinac('kompenzace', KOMP_POHLEDY, function (d) { kompPohled = d; kompenzace(); });
 
+    // Kolik by dostala zranitelná domácnost měsíčně: zdražení vytápění proti platbě podle návrhu PAQ a CVF a našeho návrhu
+    mount('castky', function (svg, w, data) {
+        var S = [{ key: 'zdrazeni', label: 'Zdražení vytápění kvůli ETS2', color: COL.sok },
+                 { key: 'paq', label: 'Návrh PAQ a CVF', color: COL.ostatni },
+                 { key: 'nas', label: 'Náš návrh', color: COL.ets2 }];
+        var top = head(svg, w, S);
+        var PAD = 8, barH = 18, gap = 4, wide = w >= 520, LW = wide ? 200 : 0;
+        var xmax = d3.max(data, function (d) { return d3.max(S, function (s) { return +d[s.key]; }); });
+        var x = d3.scaleLinear().domain([0, xmax * 1.15]).range([0, w - LW - 2 * PAD]);
+        var y = top + 6;
+        data.forEach(function (d) {
+            var g = svg.append('g').attr('transform', 'translate(0,' + y + ')');
+            var t = g.append('text').attr('y', 13).attr('font-size', 13).attr('font-weight', 700).attr('fill', C.title);
+            var lines = wrap(t, d.skupina, PAD, wide ? LW - 2 * PAD : w - 2 * PAD, 15);
+            var by = wide ? 0 : lines * 15 + 6;
+            S.forEach(function (s, i) {
+                var v = +d[s.key], yy = by + i * (barH + gap);
+                g.append('rect').attr('x', LW + PAD).attr('y', yy).attr('width', x(v)).attr('height', barH).attr('fill', s.color)
+                    .on('mousemove', function (ev) { showTip(ev, '<b>' + d.skupina + '</b><br>' + s.label + ': ' + cz(v) + ' Kč měsíčně'); })
+                    .on('mouseleave', hideTip);
+                g.append('text').attr('x', LW + PAD + x(v) + 6).attr('y', yy + 13).attr('font-size', 12).attr('fill', T.text).text(cz(v) + ' Kč');
+            });
+            y += Math.max(wide ? lines * 15 : 0, by + S.length * (barH + gap)) + 18;
+        });
+        return y;
+    });
+
     // Peníze na pomoc, mld. Kč ročně: fond a náklad pomoci.
     // Modrá = přímé platby (strop fondu i cílená platba), světle modrá = investice; výměna zdrojů je rozsah.
     var FIN_POHLEDY = [{ key: 'rok', label: 'Ročně' }, { key: 'obdobi', label: 'Za celé období fondu' }];

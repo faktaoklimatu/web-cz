@@ -71,7 +71,7 @@ I dobře nastavené investice ale potřebují roky, než se dostanou ke všem. D
 Na přechodné období má stát v zásadě čtyři možnosti:
 
 1. **Nedělat nic.** Náklad by nesly domácnosti, které se mu nemohou vyhnout, a rostl by tlak na odklad nebo oslabení ETS2. Důchody se sice valorizují o inflaci, takže část zdražení se důchodcům vrátí sama. ETS2 by ale zvedlo ceny jen asi o půl procenta, kdežto zranitelným domácnostem s důchodcem by zdražení vytápění vzalo 2,3 % příjmu. Valorizace by jim tak vrátila nanejvýš čtvrtinu, a to s ročním zpožděním.[^silc]
-2. **Plošné kompenzace.** Návrh PAQ Research a CVF zvyšuje slevu na poplatníka a mimořádně valorizuje důchody. Stál by dvakrát až třikrát víc než cílená platba a zranitelným domácnostem by z něj šla jen 4 % peněz, protože sleva i valorizace jdou všem bez ohledu na to, čím topí. Samotná vyšší sleva na poplatníka by navíc minula 70 % zranitelných domácností: nikdo v nich nepracuje, většinou jde o důchodce ([srovnání níže](#jak-si-stojí-návrh-paq-research-a-cvf)).
+2. **Plošné kompenzace.** Návrh PAQ Research a CVF zvyšuje slevu na poplatníka a mimořádně valorizuje důchody. Dohromady by dosáhl skoro na všechny zranitelné domácnosti, ale dal by jim v průměru jen asi 250 Kč měsíčně, protože sleva i valorizace jdou všem stejně, bez ohledu na to, čím topí. Domácnostem na uhlí by vrátil pětinu zdražení. Přitom by stál dvakrát až třikrát víc než cílená platba ([srovnání níže](#jak-si-stojí-návrh-paq-research-a-cvf)).
 3. **Zásahy do cen.** Stropy nebo nižší DPH na paliva se zavádějí nejsnáz, ale cenový signál oslabují nejvíc. Maďarsko má plošný cenový strop:[^hu-rekk] stát domácnostem garantuje nízkou regulovanou cenu plynu a elektřiny a rozdíl proti tržní ceně doplácí. Je to drahé a domácnosti topící dřevem nebo uhlím z toho nemají nic.
 4. **Cílená přímá platba.** Pomůže hned, signál neoslabí a stojí zlomek výnosu z povolenek.
 
@@ -271,14 +271,25 @@ Výhodou návrhu je jednoduchost: využívá existující systémy a nevyžaduje
 
 | | Návrh PAQ a CVF | Náš návrh |
 |---|---|---|
-| Kolik by dostala domácnost měsíčně | 100 Kč na každého pracujícího a asi 170 Kč na důchodce, v průměru asi 240 Kč | 310–1 000 Kč podle paliva a bydlení (v letech plné výše), v průměru asi 390 Kč |
-| Kolik domácností by dostalo peníze | asi 4,5 milionu | asi 980 tisíc |
-| Náklad ročně | 13,0 mld. Kč | 4,6–7 mld. Kč |
-| Podíl peněz, který by šel zranitelným | 4 % | 16–23 % |
-| Zranitelných by nedostalo nic | 6 % | 14–16 % |
-| Část zdražení vytápění, kterou by zranitelní dostali zpět | 36 % | 67–69 % |
-| z toho rodinné domy na tuhá paliva | 20 % | 76 % |
+| **Kdo by peníze dostal** | všichni pracující a důchodci, asi 4,5 milionu domácností | domácnosti s nízkými příjmy, které topí uhlím, plynem nebo teplem z menší výtopny, asi 980 tisíc |
+| **Kolik by dostali** | 100 Kč měsíčně na každého pracujícího, asi 170 Kč na důchodce | 310–1 000 Kč měsíčně na domácnost podle paliva a bydlení |
+| **Kolik by to stálo ročně** | 13,0 mld. Kč | 4,6–7 mld. Kč |
+| **Co by to dalo zranitelným domácnostem** | | |
+| dostaly by aspoň něco | 94 % | 84–86 % |
+| dostaly by v průměru | asi 250 Kč měsíčně | asi 470 Kč měsíčně |
+| vrátilo by jim to zdražení vytápění | 36 % | 67–69 % |
+| … v rodinných domech na uhlí | 20 % | 76 % |
+| podíl všech peněz, který by šel k nim | 4 % | 16–23 % |
 {: .table .tabulka-vlevo}
+
+<script type="application/json" id="graf-castky-data">[{"skupina":"Všechny zranitelné domácnosti","zdrazeni":600,"paq":250,"nas":470},{"skupina":"Zranitelné rodinné domy na uhlí","zdrazeni":1030,"paq":210,"nas":940}]</script>
+{% include includes-local/chart-panel.html
+    id="graf-castky"
+    title="Plošný návrh dá zranitelným málo, nejméně těm na uhlí"
+    caption="Průměr na zranitelnou domácnost, Kč měsíčně v letech plné výše (2028 a 2029), základní scénář"
+    alt="Zdražení vytápění zranitelných domácností a průměrná částka, kterou by dostaly z návrhu PAQ a CVF a z našeho návrhu"
+    source='výpočet Fakt o klimatu z <a href="https://csu.gov.cz/zivotni-podminky">ČSÚ EU-SILC 2024</a>; návrh PAQ a CVF podle <a href="https://www.paqresearch.cz/content/files/2026/03/PAQ-CVF_ETS2.pdf">PAQ Research a CVF (2026)</a>. Průměr zahrnuje i domácnosti, které by nedostaly nic.'
+%}
 
 U našeho návrhu je rozpětí podle toho, zda se podaří odlišit uhlí od dřeva (nižší náklad), nebo platbu dostanou i domy na dřevo (vyšší).
 
@@ -290,7 +301,7 @@ Zdroj: [EU-SILC 2024](https://ec.europa.eu/eurostat/web/microdata/european-union
 2. **Nejvíc zasaženým by vrátil nejméně.** Domácnostem v rodinných domech na uhlí by ETS2 zdražilo vytápění kolem 1 000 Kč měsíčně, návrh by jim vrátil jen 20 % zdražení vytápění. Sleva na dani i valorizace jsou stejné bez ohledu na to, čím domácnost topí.
 3. **Většinu by nešlo platit ze Sociálního klimatického fondu.** Fond smí platit jen dočasnou podporu zranitelným domácnostem.[^skf-cl4] Plošná sleva ani valorizace všech důchodů tuto podmínku nesplňují. Valorizace navíc zůstává v důchodu trvale, takže není dočasná. Autoři sami uvádějí, že zbývajících asi 11,5 mld. Kč ročně „by musel financovat státní rozpočet“.[^paq-s30]
 4. **Cílená část dosáhne jen na menšinu.** Energetický paušál dostanou jen příjemci dávek na bydlení, tedy 17 % zranitelných.
-5. **Vyšší sleva na poplatníka by sama nestačila.** Je to nejjednodušší cesta, peníze ale dostane jen ten, kdo platí daň z příjmu. V 70 % zranitelných domácností nikdo nepracuje, většinou jde o důchodce. Sleva navíc nevrací víc, než kolik člověk na dani zaplatí, takže nejméně dostanou ti s nejnižšími výdělky.[^silc]
+5. **Sleva a valorizace dohromady dosáhnou skoro na všechny, ale dají málo.** Samotná sleva na poplatníka by minula 70 % zranitelných domácností, protože v nich nikdo nepracuje; většinou jde o důchodce. Spolu s valorizací důchodů dostane něco 94 % zranitelných, v průměru ale jen asi 250 Kč měsíčně, zatímco zdražení vytápění je kolem 600 Kč. Částka nezávisí na tom, čím domácnost topí, takže nejvíc chybí v domech na uhlí.[^silc]
 
 {% capture ex_statni %}
 
