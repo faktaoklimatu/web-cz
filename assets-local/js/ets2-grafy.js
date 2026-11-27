@@ -612,6 +612,30 @@
     });
     if (kompenzace) prepinac('kompenzace', KOMP_POHLEDY, function (d) { kompPohled = d; kompenzace(); });
 
+    // Kudy by platba došla k zranitelným domácnostem s nárokem: jeden skládaný pruh (podíl a tisíce domácností)
+    mount('kanaly', function (svg, w, data) {
+        var barvy = [COL.ets2, d3.interpolateRgb('#fff', COL.ets2)(0.45), COL.ostatni];
+        var top = caption(svg, svg.node().dataset.caption, w) + 10, PAD = 8, barH = 34;
+        var x = d3.scaleLinear().domain([0, 100]).range([PAD, w - PAD]), x0 = 0;
+        data.forEach(function (d, i) {
+            svg.append('rect').attr('x', x(x0)).attr('y', top).attr('width', x(x0 + +d.pct) - x(x0) - (i < data.length - 1 ? 2 : 0)).attr('height', barH)
+                .attr('fill', barvy[i])
+                .on('mousemove', function (ev) { showTip(ev, '<b>' + d.label + '</b><br>' + d.pct + ' % (asi ' + cz(d.tis) + ' tis. domácností)<br>' + d.cesta); })
+                .on('mouseleave', hideTip);
+            if (x(x0 + +d.pct) - x(x0) > 44) svg.append('text').attr('x', x(x0) + 8).attr('y', top + 22).attr('font-size', 14).attr('font-weight', 700)
+                .attr('fill', i === 0 ? '#fff' : T.text).text(d.pct + ' %');
+            x0 += +d.pct;
+        });
+        var y = top + barH + 18;
+        data.forEach(function (d, i) {
+            svg.append('rect').attr('x', PAD).attr('y', y - 11).attr('width', 12).attr('height', 12).attr('fill', barvy[i]);
+            var t = svg.append('text').attr('y', y).attr('font-size', 13).attr('fill', T.text);
+            var n = wrap(t, d.label + ' (' + d.pct + ' %, asi ' + cz(d.tis) + ' tis.): ' + d.cesta, PAD + 20, w - 2 * PAD - 20, 16);
+            y += n * 16 + 8;
+        });
+        return y;
+    });
+
     // Kolik by dostala zranitelná domácnost měsíčně: zdražení vytápění proti platbě podle návrhu PAQ a CVF a našeho návrhu
     mount('castky', function (svg, w, data) {
         var S = [{ key: 'zdrazeni', label: 'Zdražení vytápění kvůli ETS2', color: COL.sok },
